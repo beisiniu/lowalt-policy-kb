@@ -1,0 +1,149 @@
+{
+  "case_key": "bcd6ef2d2b58a029deb77cb59e20cb397fed7657451e3a76a0ac867dd338a43c",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-016",
+  "item_fingerprint": "603ce2ba5e714360f3042ccea15eea6033b82dfca122208c4f740403f4e46b7c",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_missing",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "5060616fef2498b867b560f6550b34154c30630f9933e6031b6e2f91bd1c8197",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 8
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_a17c34f10656262c0c024751",
+        "usable": true,
+        "reason": "状态为空，生效日2023-12-27早于评估日，失效日为空，不因缺失判过期"
+      },
+      {
+        "id": "clause_aba66f43e645d108be585078",
+        "usable": true,
+        "reason": "状态为空，生效日2023-10-24早于评估日，失效日为空，不因缺失判过期"
+      },
+      {
+        "id": "clause_8423ab41dad8a9d00f59d92d",
+        "usable": true,
+        "reason": "状态为空，生效日2023-12-27早于评估日，失效日为空，不因缺失判过期"
+      },
+      {
+        "id": "clause_ef3ae4843a4e5b135215241f",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_cd022a0cc45192920d49ce97",
+        "usable": true,
+        "reason": "状态为空，生效日2023-12-27早于评估日，失效日为空，不因缺失判过期"
+      },
+      {
+        "id": "clause_5b4ab64b18e7e50594fcf4b4",
+        "usable": true,
+        "reason": "状态为空，生效日2023-12-27早于评估日，失效日为空，不因缺失判过期"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": true,
+        "reason": "状态为空，生效日2023-12-27早于评估日，失效日为空，不因缺失判过期"
+      },
+      {
+        "id": "clause_f25486df002c9d150a9f34b4",
+        "usable": true,
+        "reason": "状态为空，生效日2023-12-27早于评估日，失效日为空，不因缺失判过期"
+      },
+      {
+        "id": "clause_cd7ceed42ae1ccd56168dc52",
+        "usable": true,
+        "reason": "状态为空，生效日2023-12-27早于评估日，失效日为空，不因缺失判过期"
+      }
+    ],
+    "request_key": "0a0143b061cddc8f64f3ebd983842ecd05d50f3e11154dcc3f622756ab4d986e",
+    "cache_hit": false
+  },
+  "answer": "按《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条，对规模以上的低空经济与航空航天企业，在我区规划打造的低空经济和航空航天特色产业集聚区内租赁研发、生产、办公用房且自用的，在政策有效期内综合企业产值/营收规模，最高给予实际租金费用50%且不超过20元每月每平方米的场地支持，每家企业每年最高补贴200万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新措施，标准为实际租金50%且不超过20元/㎡/月，与标准答案一致，未采用旧50元标准。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_f25486df002c9d150a9f34b4",
+      "clause_cd7ceed42ae1ccd56168dc52"
+    ],
+    "context_ids": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_f25486df002c9d150a9f34b4",
+      "clause_cd7ceed42ae1ccd56168dc52"
+    ],
+    "true_invalid_retrieved": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_f25486df002c9d150a9f34b4",
+      "clause_cd7ceed42ae1ccd56168dc52"
+    ],
+    "true_invalid_kept": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_f25486df002c9d150a9f34b4",
+      "clause_cd7ceed42ae1ccd56168dc52"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "b7dffd6d8299a1522a9e53aa541663158ec014466dd5465a7448f4187831e945",
+    "judge_key": "274e460958fc435924b8719d5b0725b3a4205761b7d8cf1050c2f022afc4f8d0",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:09:39+08:00"
+}

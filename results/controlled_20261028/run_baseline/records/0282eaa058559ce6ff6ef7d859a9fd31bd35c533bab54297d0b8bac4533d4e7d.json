@@ -1,0 +1,116 @@
+{
+  "case_key": "0282eaa058559ce6ff6ef7d859a9fd31bd35c533bab54297d0b8bac4533d4e7d",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-001",
+  "item_fingerprint": "69d2e6ebabcb944d1a74dc2ebfdf170e3ff706621ed65cf728ed744d5921a93f",
+  "condition": {
+    "suite": "baseline",
+    "method": "llm_gate"
+  },
+  "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_deab65b7bb0fa8bac59f9cde",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-03-01早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_fc742e4863fee41a6e3c622d",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-03-01早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_b8e19c90f082da244d01f627",
+        "usable": true,
+        "reason": "现行有效，生效日2024-09-24早于评估日，无失效日"
+      },
+      {
+        "id": "clause_2e71fb5e3544815d142e044f",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-03-01早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_408f3d58cac63ec2a1b232aa",
+        "usable": true,
+        "reason": "现行有效，生效日2024-05-01早于评估日，无失效日"
+      },
+      {
+        "id": "clause_85aa48df9637f7906651befb",
+        "usable": true,
+        "reason": "现行有效，生效日2024-05-01早于评估日，无失效日"
+      },
+      {
+        "id": "clause_ea93d2e4f433de0764bffc1d",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-03-01早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_b9858eb943fd52a844cc95b7",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-03-01早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_d9a2bf82c0dfbbceb2529619",
+        "usable": true,
+        "reason": "现行有效，生效日2024-09-24早于评估日，无失效日"
+      }
+    ],
+    "request_key": "4e7b8c41346935c125dca390a7c80f823d921745d90c2e374bfbf8c340abf7c9",
+    "cache_hit": true
+  },
+  "answer": "根据现有政策资料无法确定。\n\n《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》已废止原《张家界市加快通用航空产业发展推进方案》（张政办发〔2023〕4号）中“对开辟省内外短途客运航线（飞机乘客座位不少于8个，年均乘客上座率不低于50%）且单条航线年飞行时间200小时及以上的通用航空企业，按航线给予财政补贴”的内容，即该航线财政补贴条款已不再施行。通告同时明确张政办发〔2023〕4号文件其余内容在规定有效期内继续施行，但现有资料未显示还有其他可适用的航线补贴条款，因此无法确定是否还能按航线申请财政补贴。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答正确指出原补贴条款已废止，但以资料不足为由未给出明确结论，属于拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_b8e19c90f082da244d01f627",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_408f3d58cac63ec2a1b232aa",
+      "clause_85aa48df9637f7906651befb",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_d9a2bf82c0dfbbceb2529619"
+    ],
+    "context_ids": [
+      "clause_b8e19c90f082da244d01f627",
+      "clause_408f3d58cac63ec2a1b232aa",
+      "clause_85aa48df9637f7906651befb",
+      "clause_d9a2bf82c0dfbbceb2529619"
+    ],
+    "true_invalid_retrieved": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "808b7984b728d57285cd15a84d530d302a20f0f6d8edd0579071291480f3398f",
+    "judge_key": "ea67837c0c3ef39de03784c513ab454bf080831606489b460dab4620c2f40519",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:03:09+08:00"
+}

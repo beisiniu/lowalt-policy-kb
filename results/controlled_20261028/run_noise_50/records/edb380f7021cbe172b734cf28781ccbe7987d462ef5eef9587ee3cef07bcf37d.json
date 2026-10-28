@@ -1,0 +1,94 @@
+{
+  "case_key": "edb380f7021cbe172b734cf28781ccbe7987d462ef5eef9587ee3cef07bcf37d",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-039",
+  "item_fingerprint": "51fa5d78218c4585a058cbe0d445aa19714b23da35941cc6e093d6d00d920c52",
+  "condition": {
+    "suite": "noise",
+    "method": "naive",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "311e0e43c8103ce1a8ad63d3f1973e63c565884aa2e1f5bd89d808778258c6f6",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 2
+  },
+  "gate": null,
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条，起降点设施点位需经区住房和城乡建设局组织第三方专业技术团队审查通过方可申请该项补贴；同条另规定起降点设施建设竣工时间应在《措施》有效期内且起降点设施点位经区住房和城乡建设局组织第三方专业技术团队审查通过。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答依据旧实施细则第九条，将第三方技术团队审查通过作为申请前提，与现行新措施仅要求纳入规划且常态化运营不符，核心结论错误且源于旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "03c24918bc1308d064ac083d3d69457d70879de2c16afa44ffa76526304c5a69",
+    "judge_key": "ae20d16a0b99b6de39ed07895266fc1bef4184ec664919ccd22def7efcda42a5",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:11:45+08:00"
+}

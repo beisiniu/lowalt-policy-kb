@@ -1,0 +1,93 @@
+{
+  "case_key": "2df6b7d5abca89bec833dc440f7613c070d597bfe6fc23b849405557e65d7613",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-010",
+  "item_fingerprint": "be25e764bacb8ac282bb8e22fcf0904a63e914225b40ba3bc333a75450d1ccfc",
+  "condition": {
+    "suite": "noise",
+    "method": "prompt_only",
+    "noise": "joint_missing",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "870eeab791bfd88226b7a9e2614f9963847f27d0d01bc433fbe025af2a30d69d",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 5
+  },
+  "gate": null,
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条（2025-06-26至2028-06-25，评估日有效），大型载人新型航空器每次奖励1500万元；结合《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条第一项，大型载人无人驾驶航空器在获得生产许可证（PC）后，须产品交付量达到50架，才给予一次性奖励1500万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答依据旧细则要求交付满50架，与现行新政策“取得PC即每次奖励1500万元”不符，核心结论错误且明确来自旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_7fc6ffd3aef849c56a4cc051",
+      "clause_5301605e260f3f11821b9726"
+    ],
+    "context_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_7fc6ffd3aef849c56a4cc051",
+      "clause_5301605e260f3f11821b9726"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "61aed65bfacdd767656fb200cae2732cb04dcfd6cef30ba5cc379dadc3463f68",
+    "judge_key": "a19dcc2d70b88c08466c9cfdcf5e4eaf6ad1e26920d6d8ff154a5c49ab362444",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:05:47+08:00"
+}

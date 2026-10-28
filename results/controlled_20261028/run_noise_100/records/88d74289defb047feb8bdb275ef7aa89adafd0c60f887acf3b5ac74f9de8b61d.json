@@ -1,0 +1,149 @@
+{
+  "case_key": "88d74289defb047feb8bdb275ef7aa89adafd0c60f887acf3b5ac74f9de8b61d",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-006",
+  "item_fingerprint": "fe9ec6e1e4126b77ab87a0b7b59aaa5d1dab7b5b5de9fef9a2b18e480e59c517",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "55fc05dd47d917bf65635cc94dab5c5b994d83d092644a6e4fe4fa78edd83c6a",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "0f38fee3eea24f06",
+      "b6919dae3085302f"
+    ],
+    "actual_chunks": 8
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_deab65b7bb0fa8bac59f9cde",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-03-02早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_d9a2bf82c0dfbbceb2529619",
+        "usable": true,
+        "reason": "状态现行有效，生效日2024-09-24早于评估日，失效日为空不判过期"
+      },
+      {
+        "id": "clause_70da7dc80dc7c9ba269150f6",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-03-02早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_2e71fb5e3544815d142e044f",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-03-02早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_ea93d2e4f433de0764bffc1d",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-03-02早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_b42d435ed531ab8f272f3897",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-03-02早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_b9858eb943fd52a844cc95b7",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-03-02早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_5b0712af59cfb92ad4e7ae94",
+        "usable": true,
+        "reason": "状态现行有效，生效日为空不判过期，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_87d16f6eba3f1e8cd28606e3",
+        "usable": true,
+        "reason": "状态现行有效，生效日为空不判过期，失效日2099-12-31晚于评估日"
+      }
+    ],
+    "request_key": "5323a5f568c357fece8518f3b95c7c81992e0d2ecdeec91fcdaf1fe53864354a",
+    "cache_hit": false
+  },
+  "answer": "不能。根据《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》，已废止《张家界市加快通用航空产业发展推进方案》第（六）项中“对通用航空企业提供上述业务年度纳税10万元及以上的，前三年分别按市级经济贡献的50%、40%、30%给予奖励”的规定，该通告自2024年9月24日公布之日起施行。因此，在张家界开展森林灭火、医疗救助等业务且年纳税10万元以上的通航企业，不能再按市级经济贡献比例领取前三年奖励。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答正确引用废止通告，明确该奖励条款已废止，结论与标准答案一致。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_d9a2bf82c0dfbbceb2529619",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_5b0712af59cfb92ad4e7ae94",
+      "clause_87d16f6eba3f1e8cd28606e3"
+    ],
+    "context_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_d9a2bf82c0dfbbceb2529619",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_5b0712af59cfb92ad4e7ae94",
+      "clause_87d16f6eba3f1e8cd28606e3"
+    ],
+    "true_invalid_retrieved": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_5b0712af59cfb92ad4e7ae94",
+      "clause_87d16f6eba3f1e8cd28606e3"
+    ],
+    "true_invalid_kept": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_5b0712af59cfb92ad4e7ae94",
+      "clause_87d16f6eba3f1e8cd28606e3"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "7808d533436c746e5b3ef40c7bdd27ca2ab955576733a81ba75281c4d7b4bd7e",
+    "judge_key": "defc39512275f6c0f08a7b9928c9455c370678358808cbbaaa58a3ca646ecf0f",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:10:29+08:00"
+}

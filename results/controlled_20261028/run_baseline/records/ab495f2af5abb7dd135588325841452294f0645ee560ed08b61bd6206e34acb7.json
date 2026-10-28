@@ -1,0 +1,119 @@
+{
+  "case_key": "ab495f2af5abb7dd135588325841452294f0645ee560ed08b61bd6206e34acb7",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-028",
+  "item_fingerprint": "d13cf6fae55d38572cdacedf4b1237cac3e7cea471372935043674aa0049b846",
+  "condition": {
+    "suite": "baseline",
+    "method": "llm_gate"
+  },
+  "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_a17c34f10656262c0c024751",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_aba66f43e645d108be585078",
+        "usable": false,
+        "reason": "状态已废止，且失效日2025-06-25早于评估日"
+      },
+      {
+        "id": "clause_cd022a0cc45192920d49ce97",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_8423ab41dad8a9d00f59d92d",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_ef3ae4843a4e5b135215241f",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_b12488a50398dce274e7f153",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_5b4ab64b18e7e50594fcf4b4",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_cd7ceed42ae1ccd56168dc52",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_69c0086ff8bdb550a4d2d634",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      }
+    ],
+    "request_key": "8010b2d4211ff314d8867b87763135fc4d15e823168c5032edf4087ca223db86",
+    "cache_hit": false
+  },
+  "answer": "每家企业每年最高补贴200万元。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新政策，结论200万元与标准答案一致，未受旧条款100万元影响。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_b12488a50398dce274e7f153",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_69c0086ff8bdb550a4d2d634"
+    ],
+    "context_ids": [
+      "clause_ef3ae4843a4e5b135215241f"
+    ],
+    "true_invalid_retrieved": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_b12488a50398dce274e7f153",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_69c0086ff8bdb550a4d2d634"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_b12488a50398dce274e7f153",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_69c0086ff8bdb550a4d2d634"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "2a04a44757f0363c8cc72b6539c17c3a912cedd9b65b828b214c0e79ac65bcb5",
+    "judge_key": "5a82030f3b2ce4d54af4b15ba73dba421ee52ea13a879ac121469cbd63572080",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:04:26+08:00"
+}

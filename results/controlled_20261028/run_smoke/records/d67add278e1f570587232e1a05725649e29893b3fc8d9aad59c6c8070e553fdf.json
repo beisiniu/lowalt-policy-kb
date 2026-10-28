@@ -1,0 +1,68 @@
+{
+  "case_key": "d67add278e1f570587232e1a05725649e29893b3fc8d9aad59c6c8070e553fdf",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-003",
+  "item_fingerprint": "54e906862740da040e03e54f4d4bb732514df6549a467117b4451f50b222e94a",
+  "condition": {
+    "suite": "baseline",
+    "method": "temporal_filter"
+  },
+  "condition_key": "33036e0b968ea44c807ebaff7ef6dc088a365967d9110694f31161005be1fab0",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第五条仅规定对获得空域批复、提供公共服务的低空飞行试验场，按综合低空试飞服务保障成效给予激励，每个低空飞行试验场主体方每年度不超过200万元，未对专业团队人数（包括是否须配备5人以上）作出规定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答指出新政策未规定团队人数，与标准答案一致，未采用旧条款的5人要求。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "context_ids": [
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "true_invalid_retrieved": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "b9c93bbd0775a4707cba4ef7d54e787bda0b50fa7c6486133d2870e0516560e7",
+    "judge_key": "9124341a18209af75e3dbdd3bbda9c47392c8b97b69773a5d38f0b11dd1bf34f",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T15:57:47+08:00"
+}

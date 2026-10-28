@@ -1,0 +1,95 @@
+{
+  "case_key": "b1334d90aa5fde9ca1a9fba3eb80a13e1cbfd1d5244e5321d292561bcc34d88f",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-014",
+  "item_fingerprint": "f1e7b447bb9b868c5bf5f7a84e131b897d8c6a66801cd86c63248bcf83981e14",
+  "condition": {
+    "suite": "noise",
+    "method": "prompt_only",
+    "noise": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "d268fa4344d0edf1f26f5a963baa4079c7330fffb320d648d1b3d833489ad441",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 6
+  },
+  "gate": null,
+  "answer": "根据现有政策资料，黄埔区企业研发的低空航空器电池系统产品申请核心技术产业化扶持，需满足以下条件：\n\n**一、适用政策依据的确定**\n\n评估日2026-10-27时，存在两份名称相近但内容不同的现行政策：\n- 《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》（2023-10-24起有效）第八条及其实施细则第十九条、第二十条；\n- 《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》（2025-06-26起有效）第八条。\n\n后者生效日晚于前者，但资料未载明前者已被废止或失效，两份政策在评估日均显示“现行有效”。以下分别列明各自条件，具体适用哪一份需以主管部门兑现口径为准，根据现有政策资料无法确定。\n\n**二、按《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第八条及《实施细则》第二十条，需满足：**\n\n1. **主体与领域**：本区企业或机构，围绕低空航空器相关的电池系统等核心领域开展技术攻关并实现产业化（《若干措施》第八条；《实施细则》第二十条第一款）。\n2. **产值门槛**：申请扶持的产品在《措施》有效期内，在区内累计产值达到2000万元以上（《实施细则》第二十条第二款；《若干措施》第八条表述为“形成的产品在区内的产值达到2000万元以上”）。\n3. **补助标准**：按产值的2%给予单个产品最高100万元补助（《若干措施》第八条；《实施细则》第十九条）。\n4. **次数限制**：同一产品仅能申请一次补助；同一企业同一系列产品只可享受一次扶持，已获扶持产品后续迭代升级的产品不享受（《若干措施》第八条；《实施细则》第二十条第三款）。\n5. **数量上限**：政策有效期内补助不超过10个产品/项目（《若干措施》第八条；《实施细则》第二十条第四款）。\n6. **兑现部门**：区工业和信息化局（《若干措施》第八条；《实施细则》第二十条第四款）。\n\n**三、按《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第八条，需满足：**\n\n1. **主体与领域**：本区企业或机构，围绕低空航空器相关的电池系统等核心领域开展技术攻关并实现产业化。\n2. **装机量产条件**：形成的产品需在任一正式发布型号的中大型航空器装机量产。\n3. **补助标准**：给予20万元一次性奖励；单个企业最高补贴100万元；政策有效期内累计补助不超过10款产品。\n4. **兑现部门**：区工业和信息化局。\n\n**四、无法确定的事项**\n\n两份政策对同一事项规定了不同的条件与标准（前者以区内产值2000万元为门槛、按产值2%补助；后者以中大型航空器装机量产为条件、给予20万元一次性奖励），资料未说明二者适用顺序或衔接关系，因此具体应适用哪一份、能否同时适用，根据现有政策资料无法确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答同时列出新旧政策条件，未将旧产值门槛作为唯一结论，核心条件包含装机量产，与标准答案一致，并说明适用不确定，无错误结论。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_60e6615403c62d9203762bba",
+      "clause_1425a7b0d7904bfb38761f0b",
+      "clause_b12488a50398dce274e7f153",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_d1d1550af0162daf66000630",
+      "clause_d3a52f5e82bea44896fa3941",
+      "clause_cac2df0975e8e91003a8757a",
+      "clause_b49e76749648682dabe5711f"
+    ],
+    "context_ids": [
+      "clause_60e6615403c62d9203762bba",
+      "clause_1425a7b0d7904bfb38761f0b",
+      "clause_b12488a50398dce274e7f153",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_d1d1550af0162daf66000630",
+      "clause_d3a52f5e82bea44896fa3941",
+      "clause_cac2df0975e8e91003a8757a",
+      "clause_b49e76749648682dabe5711f"
+    ],
+    "true_invalid_retrieved": [
+      "clause_60e6615403c62d9203762bba",
+      "clause_1425a7b0d7904bfb38761f0b",
+      "clause_b12488a50398dce274e7f153",
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_d1d1550af0162daf66000630",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "true_invalid_kept": [
+      "clause_60e6615403c62d9203762bba",
+      "clause_1425a7b0d7904bfb38761f0b",
+      "clause_b12488a50398dce274e7f153",
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_d1d1550af0162daf66000630",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "dbb3c7218cf79eb783c79f657deca3dab884bd7e87853843981b7b80fbcc4c05",
+    "judge_key": "4b8f2698eb853c26a7b199605fb60c2bb89d14e309375225681dd8b3ffd3876e",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:07:13+08:00"
+}

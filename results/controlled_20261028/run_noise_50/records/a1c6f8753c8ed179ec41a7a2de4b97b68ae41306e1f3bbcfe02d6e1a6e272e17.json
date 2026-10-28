@@ -1,0 +1,97 @@
+{
+  "case_key": "a1c6f8753c8ed179ec41a7a2de4b97b68ae41306e1f3bbcfe02d6e1a6e272e17",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-041",
+  "item_fingerprint": "135234d8e987b3a47802926f081e3016a73ac28768b86618d16b040521912fe0",
+  "condition": {
+    "suite": "noise",
+    "method": "prompt_only",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "b7ae1d82985e8aa7ef7533987dd1c2e01bcad9b6ad48f081a678da951b6f5f99",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 1
+  },
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：评估日为2026-10-27。资料中《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条、第九条等条款均标注“已废止”，有效期至2026-10-23，早于评估日，不能作为现行依据；《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第三条虽未标注废止，但其规定“每个中型起降场、大型起降枢纽、eVTOL起降场、直升机起降平台不超过300万元”，并未单独给出中型起降场的补贴上限，且该条与已废止细则第九条“中型起降场补贴额度上限为200万元/个”存在差异，资料不足以确定现行有效的单个中型起降场补贴上限。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型以资料不足为由未给出明确结论，未采用旧条款200万元，也未确认现行300万元，属于拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_5537fcfb8ea1075bc918e14a"
+    ],
+    "context_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_5537fcfb8ea1075bc918e14a"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_5537fcfb8ea1075bc918e14a"
+    ],
+    "true_invalid_kept": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_5537fcfb8ea1075bc918e14a"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": false,
+    "old_in_context": true,
+    "new_in_context": false
+  },
+  "request": {
+    "answer_key": "a56f205db469f6861458b577d7cd90804fff79318e24e0e7ba57e6fdc29eeff1",
+    "judge_key": "4549c631fc0967858b391b573c4da737d34d94253290a640df17d2fdfcbd581a",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:12:52+08:00"
+}

@@ -1,0 +1,140 @@
+{
+  "case_key": "cf7309f2e02a19d4a1dbd708a2140606b6530dfcc625c2846fbf666b8597f9ef",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-026",
+  "item_fingerprint": "5140aac4af55b1276963c6350d7edbe63276e520b4964048ef35acb49890bf06",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "376bfbd4f1606e685aa650193239f4074e8a5aae6d3872aaa1797113a927b6d7",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 3
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_b12488a50398dce274e7f153",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_02f2d8c0e088bc11cc077407",
+        "usable": true,
+        "reason": "现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_9882f14668bb0bac6d3f72bc",
+        "usable": true,
+        "reason": "状态为空，生效日2023-10-24早于评估日，失效日为空不因缺失判过期"
+      },
+      {
+        "id": "clause_de7ab739a99407aeb9ec546e",
+        "usable": true,
+        "reason": "状态为空，生效日2023-10-24早于评估日，失效日为空不因缺失判过期"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_60e6615403c62d9203762bba",
+        "usable": true,
+        "reason": "状态为空，生效日2023-10-24早于评估日，失效日为空不因缺失判过期"
+      },
+      {
+        "id": "clause_10748340be7aa63ef62f0128",
+        "usable": true,
+        "reason": "现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_2c83f7fc311c480f1f0151dc",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_d1d1550af0162daf66000630",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      }
+    ],
+    "request_key": "804b1e14e5800f0255f0f94fce990af877a0cda2a76bbfb09a9c35ec93d3f535",
+    "cache_hit": false
+  },
+  "answer": "根据现有政策资料，黄埔区企业研发的低空航空器核心产品获得奖励存在两套规定，条件不同：\n\n**一、按《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第八条【核心技术产业化扶持】**\n企业或机构须围绕低空航空器相关的电池系统、飞行控制系统、动力系统、航空级碳纤维机体等核心领域开展技术攻关并实现产业化，且形成的产品在区内的产值达到2000万元以上。奖励标准为按产值的2%给予单个产品最高100万元补助，同一产品仅能申请一次补助，政策有效期内补助不超过10个产品。\n\n**二、按《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第八条【核心技术产业化扶持】**\n企业或机构须围绕低空航空器相关的电池系统、飞行控制系统、动力系统、航空级碳纤维机体等核心领域开展技术攻关并实现产业化，且形成的产品在任一正式发布型号的中大型航空器装机量产。奖励标准为给予20万元一次性奖励，单个企业最高补贴100万元，政策有效期内累计补助不超过10款产品。\n\n两份资料对同一事项规定了不同的条件（产值2000万元以上 vs. 在中大型航空器装机量产）和不同的奖励标准，具体适用哪一条，根据现有政策资料无法确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": true,
+    "reason": "答案虽引用旧条款产值条件，但核心结论为两套规定并存、无法确定适用哪条，未给出明确可判错结论，属资料不足拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_60e6615403c62d9203762bba",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_d1d1550af0162daf66000630"
+    ],
+    "context_ids": [
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_60e6615403c62d9203762bba",
+      "clause_10748340be7aa63ef62f0128"
+    ],
+    "true_invalid_retrieved": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_60e6615403c62d9203762bba",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_d1d1550af0162daf66000630"
+    ],
+    "true_invalid_kept": [
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_60e6615403c62d9203762bba"
+    ],
+    "true_invalid_blocked": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_d1d1550af0162daf66000630"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "6ac161fec534e56736ced289e5481e98b69e81868e955437bea4a4737fd8eebb",
+    "judge_key": "8b19b2d77cee800dd2a89a3296de5071ff72e357d13fb758d5021543bd4e27ce",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:15:38+08:00"
+}

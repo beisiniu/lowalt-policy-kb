@@ -1,0 +1,93 @@
+{
+  "case_key": "aa7ac14cb98c5c863c80b343aabec54082977a1734803c8becf4ad442d43fa3f",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-024",
+  "item_fingerprint": "da5274869e58861a16d9968a6fc844fdd8f6d7bc7a9c71fdfa229b934eadef44",
+  "condition": {
+    "suite": "noise",
+    "method": "downweight",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "020fd4ba47e08526c9e8a8199e84c33ce1cd4645fe1794b36c82e33f1127499e",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 2
+  },
+  "gate": null,
+  "answer": "根据现有政策资料，黄埔区载物低空飞行示范项目的年度补贴上限因适用政策不同而不同：\n\n1. 依据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第九条，每家企业每年度该项补贴金额不超过500万元（《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十三条亦明确每家企业每年度该项补贴金额上限为500万元）。\n\n2. 依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，载物飞行服务示范项目每个项目每年最高不超过200万元。\n\n两项政策对上限的规定不一致（分别为每家企业每年500万元和每个项目每年200万元），具体适用哪一上限，根据现有政策资料无法确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": true,
+    "reason": "回答同时列出旧政策500万元和新政策200万元，称无法确定适用上限，未给出明确可判错结论，属资料不足拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_a3fea476991f8ef2ad6b7296"
+    ],
+    "context_ids": [
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_5b4ab64b18e7e50594fcf4b4"
+    ],
+    "true_invalid_retrieved": [
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_de7ab739a99407aeb9ec546e"
+    ],
+    "true_invalid_kept": [
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_5b4ab64b18e7e50594fcf4b4"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "24683999086583afdfe9a253b567bc1014a6b3465366e11d4765ed5ddc3e8bc0",
+    "judge_key": "31119cbe4488e5e97eeb8ca9e17a6e0c966091530cf5e666ab809fb55ac0f770",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:14:17+08:00"
+}

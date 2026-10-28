@@ -1,0 +1,146 @@
+{
+  "case_key": "6ffa188f4ab1c68ab291615e10d318a951864402154f35551d4d56cb80a735fc",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-013",
+  "item_fingerprint": "867ae63ee389745daa340e7f107c8f913f8996970afbb8a52010b5485c8cbcf3",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_missing",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "5060616fef2498b867b560f6550b34154c30630f9933e6031b6e2f91bd1c8197",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_chunks": 6
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_80ff599cde23524519559973",
+        "usable": true,
+        "reason": "生效日2024-01-01早于评估日，无失效日，状态未标明废止或失效"
+      },
+      {
+        "id": "clause_4fc279b910727dd115483a9d",
+        "usable": true,
+        "reason": "现行有效，生效日2025-04-01早于评估日，失效日2028-03-31晚于评估日"
+      },
+      {
+        "id": "clause_7c1a2c2ce2a84c4086a7743d",
+        "usable": true,
+        "reason": "生效日2023-07-29早于评估日，无失效日，状态未标明废止或失效"
+      },
+      {
+        "id": "clause_0d554d0d7cb175f00f560653",
+        "usable": true,
+        "reason": "生效日2024-01-01早于评估日，无失效日，状态未标明废止或失效"
+      },
+      {
+        "id": "clause_54362f901e608fc6feb3d358",
+        "usable": true,
+        "reason": "生效日2024-01-01早于评估日，无失效日，状态未标明废止或失效"
+      },
+      {
+        "id": "clause_69dd10ae1a75cb1554b167ae",
+        "usable": true,
+        "reason": "生效日2023-07-29早于评估日，无失效日，状态未标明废止或失效"
+      },
+      {
+        "id": "clause_55105e7dd46561c5f71d17ce",
+        "usable": true,
+        "reason": "现行有效，生效日2026-04-01早于评估日，失效日2029-03-31晚于评估日"
+      },
+      {
+        "id": "clause_e13a9f1604b71144f25e87df",
+        "usable": true,
+        "reason": "现行有效，生效日2024-07-08早于评估日，无失效日"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": true,
+        "reason": "生效日2023-12-27早于评估日，无失效日，状态未标明废止或失效"
+      }
+    ],
+    "request_key": "09183bfd61cf81ef4fd8cd9310f9b727b371d9ee82a94d17aa563e6fa1ef3016",
+    "cache_hit": false
+  },
+  "answer": "是。依据《龙岗区关于促进低空经济产业发展的若干措施》第（十二）条，申请运营费用补贴的无人机飞行试验场运营企业，必须“经备案”且“提供免费或低收费公共服务”，两个条件同时具备；补贴按年实际运营成本50%计算，年度不超过300万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "答案依据旧条款要求必须经备案并提供免费或低收费公共服务，与现行修订措施及标准答案不符，核心结论错误且明确来自旧文件。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_80ff599cde23524519559973",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_e13a9f1604b71144f25e87df",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_80ff599cde23524519559973",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_e13a9f1604b71144f25e87df",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_80ff599cde23524519559973",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_80ff599cde23524519559973",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "5ae7ef5a8becd5e32ca32b1bab0d6b8d9d89d69b443a4774c208a39a6a0eee55",
+    "judge_key": "b9ee50e67d325c11ac93e089b6fc036ba4a48571008537495b363766db3ddc42",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:09:35+08:00"
+}

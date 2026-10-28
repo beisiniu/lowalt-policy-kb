@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-28T15:56:43+08:00",
+  "elapsed_s": 2.42,
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "info": {
+    "n": 31,
+    "chunks": 3166,
+    "old_recalled": 30,
+    "new_recalled": 28,
+    "regions": [
+      "广州市黄埔区",
+      "张家界市",
+      "深圳市龙岗区"
+    ]
+  },
+  "source_sqlite_sha256": "18db80a58207042ad339101bc211989fcc9958d988bdcbc1e755dbe5968dab58",
+  "temp_dir": "D:\\lowalt-policy-kb_backup_20261028\\data\\_tmp\\chroma_freeze_20261028_155641_154869",
+  "kept_temp": false
+}

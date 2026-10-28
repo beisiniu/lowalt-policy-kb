@@ -1,0 +1,142 @@
+{
+  "case_key": "0032aa0d932f821d3ca9c774bab653d34dd1df57cbc9779339c7c6b3dbd800dd",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-001",
+  "item_fingerprint": "69d2e6ebabcb944d1a74dc2ebfdf170e3ff706621ed65cf728ed744d5921a93f",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "55fc05dd47d917bf65635cc94dab5c5b994d83d092644a6e4fe4fa78edd83c6a",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "b6919dae3085302f"
+    ],
+    "actual_chunks": 5
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_deab65b7bb0fa8bac59f9cde",
+        "usable": false,
+        "reason": "该条款(五)已被2024-09-24通告废止，评估日已失效"
+      },
+      {
+        "id": "clause_fc742e4863fee41a6e3c622d",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，未废止"
+      },
+      {
+        "id": "clause_b8e19c90f082da244d01f627",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，无失效日"
+      },
+      {
+        "id": "clause_2e71fb5e3544815d142e044f",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，未废止"
+      },
+      {
+        "id": "clause_408f3d58cac63ec2a1b232aa",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，无失效日"
+      },
+      {
+        "id": "clause_85aa48df9637f7906651befb",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，无失效日"
+      },
+      {
+        "id": "clause_ea93d2e4f433de0764bffc1d",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，未废止"
+      },
+      {
+        "id": "clause_b9858eb943fd52a844cc95b7",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，未废止"
+      },
+      {
+        "id": "clause_d9a2bf82c0dfbbceb2529619",
+        "usable": true,
+        "reason": "现行有效，生效日早于评估日，无失效日"
+      }
+    ],
+    "request_key": "9fc613fd58b6534d298cffc3e09992b0c6c97f642f155b6d69877973c7a98d2b",
+    "cache_hit": false
+  },
+  "answer": "根据现有政策资料无法申请。依据《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》，原《张家界市加快通用航空产业发展推进方案》中“对开辟省内外短途客运航线（飞机乘客座位不少于8个，年均乘客上座率不低于50%）且单条航线年飞行时间200小时及以上的通用航空企业，按航线给予财政补贴”的规定已被废止，该通告自公布之日起施行。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答明确引用废止通告，结论为不能按航线申请补贴，与标准答案一致，未受旧条款毒化。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_b8e19c90f082da244d01f627",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_408f3d58cac63ec2a1b232aa",
+      "clause_85aa48df9637f7906651befb",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_d9a2bf82c0dfbbceb2529619"
+    ],
+    "context_ids": [
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_b8e19c90f082da244d01f627",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_408f3d58cac63ec2a1b232aa",
+      "clause_85aa48df9637f7906651befb",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_d9a2bf82c0dfbbceb2529619"
+    ],
+    "true_invalid_retrieved": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7"
+    ],
+    "true_invalid_kept": [
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7"
+    ],
+    "true_invalid_blocked": [
+      "clause_deab65b7bb0fa8bac59f9cde"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "337d305e48461d52570a85684c498dba246238cd6dee42f3e88dffc0a7b265d4",
+    "judge_key": "e83f02c972d7953c36137e0a0148b96ed46936d5ed2e8ffb0ea6cba45100d95a",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:10:22+08:00"
+}

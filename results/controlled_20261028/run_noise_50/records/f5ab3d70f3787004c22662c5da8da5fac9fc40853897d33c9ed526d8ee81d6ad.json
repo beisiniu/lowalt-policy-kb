@@ -1,0 +1,139 @@
+{
+  "case_key": "f5ab3d70f3787004c22662c5da8da5fac9fc40853897d33c9ed526d8ee81d6ad",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-027",
+  "item_fingerprint": "aedcbe50ef29752b3299c5a8ce001f0d9fcdb90d7d8a36aae0c70892c65c9c17",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "376bfbd4f1606e685aa650193239f4074e8a5aae6d3872aaa1797113a927b6d7",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 1
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_a17c34f10656262c0c024751",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_aba66f43e645d108be585078",
+        "usable": true,
+        "reason": "状态为空，生效日2023-10-24早于评估日，失效日为空不因缺失判过期"
+      },
+      {
+        "id": "clause_cd022a0cc45192920d49ce97",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_8423ab41dad8a9d00f59d92d",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_ef3ae4843a4e5b135215241f",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_cd7ceed42ae1ccd56168dc52",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_5b4ab64b18e7e50594fcf4b4",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_b12488a50398dce274e7f153",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      }
+    ],
+    "request_key": "4993018bdad2311972b15c8e36361d1e2e10a53f0f97310dd0617ef384d675a1",
+    "cache_hit": false
+  },
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条，对规模以上的低空经济与航空航天企业，在低空经济和航空航天特色产业集聚区内租赁研发、生产、办公用房且自用的，最高给予实际租金费用50%且不超过20元每月每平方米的场地支持。即每平方米每月最高20元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新政策，结论为不超过20元每月每平方米，与标准答案一致，未受旧条款50元影响。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "context_ids": [
+      "clause_aba66f43e645d108be585078",
+      "clause_ef3ae4843a4e5b135215241f"
+    ],
+    "true_invalid_retrieved": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "true_invalid_kept": [
+      "clause_aba66f43e645d108be585078"
+    ],
+    "true_invalid_blocked": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "e1b0cb0fd7566eb9e1bcccb1a6e9b1639f10dde8c237f8c71c6f96339878eb35",
+    "judge_key": "99a1b4b4b45a8e23b8b7aa3a524ffa0b81986f902e3dd01dcf15fe9be93f267e",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:15:42+08:00"
+}

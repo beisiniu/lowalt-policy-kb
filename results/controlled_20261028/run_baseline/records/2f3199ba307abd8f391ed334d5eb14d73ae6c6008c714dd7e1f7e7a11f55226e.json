@@ -1,0 +1,73 @@
+{
+  "case_key": "2f3199ba307abd8f391ed334d5eb14d73ae6c6008c714dd7e1f7e7a11f55226e",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-008",
+  "item_fingerprint": "539456924e01eac7442bffdb78210a16969772019d573d7df764a1a99f996d21",
+  "condition": {
+    "suite": "baseline",
+    "method": "downweight"
+  },
+  "condition_key": "81c1093ef576e3315f2f788fc220f2051857ef75836823416e6e8f2a34c76b8b",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": null,
+  "answer": "根据现有政策资料，龙岗区开设低空载人航线的企业补贴存在两项不同规定，需按适用政策分别确定：\n\n1. **《龙岗区关于促进低空经济产业发展的若干措施》（八）**：对在本区开设**经主管部门审批航线**的低空载人服务企业，按**上年度该企业在本区所开航线实际飞行成本的50%**予以补贴，**每个企业每年度不超过500万元**。同时，对在区内乘用低空载人交通工具的企业和机构，符合一定条件的给予乘用奖励，**年度奖励金额不超过1500万元**。\n\n2. **《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）**：对在龙岗区开设低空载人服务的企业，**根据实际发放的飞行乘用券数量给予相应奖励**（该条未列明具体计算比例或金额上限）。\n\n另需注意，《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（十三）规定，本措施与区内其他同类政策措施按照 **“就高不重复”** 原则由企业自主选择申报，不重复奖励。具体适用及实施细则由深圳市龙岗区发展和改革局另行制定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答同时列出新旧规定，并明确修订版按飞行乘用券数量奖励，与标准答案一致；引用旧条款仅为对比，未作为最终结论。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_41d751b6793451159034ce26",
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_80ff599cde23524519559973",
+      "clause_4a3ed7f972d4f6bc250eca18",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_f7d37763253275726722b169"
+    ],
+    "context_ids": [
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_f7d37763253275726722b169",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_41d751b6793451159034ce26",
+      "clause_80ff599cde23524519559973",
+      "clause_4a3ed7f972d4f6bc250eca18",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_89c65bf2750f554af6725eb6"
+    ],
+    "true_invalid_retrieved": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_41d751b6793451159034ce26",
+      "clause_80ff599cde23524519559973",
+      "clause_4a3ed7f972d4f6bc250eca18",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_89c65bf2750f554af6725eb6"
+    ],
+    "true_invalid_kept": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_41d751b6793451159034ce26",
+      "clause_80ff599cde23524519559973",
+      "clause_4a3ed7f972d4f6bc250eca18",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_89c65bf2750f554af6725eb6"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "993b2f70b69850c0c70dc3b1ac9667cc83adba13cd254c96ad310e861457976b",
+    "judge_key": "ca1a265d563c1ed4dfa69d5b925de8fb3a8b93a223b11d3bdf522bae2cf2c52f",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:02:15+08:00"
+}

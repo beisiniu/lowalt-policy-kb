@@ -1,0 +1,68 @@
+{
+  "case_key": "a376502b24c16ed1ef1891976129cc674f6347a9d08b57fca1f3220795fc6f34",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-029",
+  "item_fingerprint": "8e9537ca5a21616fc005510b23fc65826fc5a1ece25721809b9b268bd236d20b",
+  "condition": {
+    "suite": "baseline",
+    "method": "temporal_filter"
+  },
+  "condition_key": "33036e0b968ea44c807ebaff7ef6dc088a365967d9110694f31161005be1fab0",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条只规定了补贴对象条件（纳入区低空航线和起降点规划且进入常态化运营状态）和补贴标准，未提及“第三方技术团队审查”这一前置要求。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答正确指出新政策未规定第三方审查前置要求，仅要求纳入规划且常态化运营，与标准答案一致，未采用旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "context_ids": [
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "true_invalid_retrieved": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "59c4d690905882615f83ef64a454d9fada7a1119ab2cd51ecf0bb7c426def507",
+    "judge_key": "2f93809d5274ebabefbfad3dc1570c2d3cb1fda603505cec4df8d80fb221bb47",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:05:00+08:00"
+}

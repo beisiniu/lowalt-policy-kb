@@ -1,0 +1,119 @@
+{
+  "case_key": "47be204d23d0f74f3e7b92e6410408a7cafb06ac3d1d765d7af351f65107e182",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-030",
+  "item_fingerprint": "1a39a6138e52d4557248aeb3ea6e96c002f9639df743c2c269bddf97ba7b2e87",
+  "condition": {
+    "suite": "baseline",
+    "method": "llm_gate"
+  },
+  "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_f93dedca806ecf96cf3f2533",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_9b4e6ce113ad95578308de32",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_6e7b0172a8efdcbad81e667b",
+        "usable": false,
+        "reason": "状态已废止，且失效日2025-06-25早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_9ac1885a6de8c9f7d367c21e",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_cd022a0cc45192920d49ce97",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_5b4ab64b18e7e50594fcf4b4",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_f8c8b32ac68b32f94a5ece2b",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_c23de099f06ea304d0c2efaa",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      }
+    ],
+    "request_key": "5b6aad7580b2d9703911134175d08b692c03502dc7420ea9a14b0078364fc9c8",
+    "cache_hit": false
+  },
+  "answer": "根据现有政策资料无法确定。所给资料仅包含《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第六条关于技能人才培训的内容（非载人无人机操作员培训最高20万元奖励、载人eVTOL驾驶员培训最高50万元奖励），未涉及eVTOL载人飞行示范项目的补贴标准。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，未给出可判错结论；实际新规第九条已明确按运营费用50%补贴、年最高300万元，属应判CORRECT但模型拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "context_ids": [
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_f8c8b32ac68b32f94a5ece2b"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_f8c8b32ac68b32f94a5ece2b"
+    ],
+    "old_recalled": true,
+    "new_recalled": false,
+    "old_in_context": false,
+    "new_in_context": false
+  },
+  "request": {
+    "answer_key": "1006dacf8b8292856705a9b978ca615a667371c1a1aeadf112aa76c8232c6a52",
+    "judge_key": "ffd315b35880173bcba9320b8fa7090afd2e62590ebc267ce518778ecba7d50e",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:04:36+08:00"
+}

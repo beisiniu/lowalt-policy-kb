@@ -1,0 +1,75 @@
+{
+  "case_key": "3eac07671a1d7cd09449ca46fd8108be447571fc30081ad915e6877e99efa054",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-039",
+  "item_fingerprint": "51fa5d78218c4585a058cbe0d445aa19714b23da35941cc6e093d6d00d920c52",
+  "condition": {
+    "suite": "baseline",
+    "method": "date_rerank"
+  },
+  "condition_key": "8e1b5ede28fae42d247030cc48dbb7854e7d4c1ac4a6ec41d9f128b052c02352",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": null,
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条，起降点设施点位需经区住房和城乡建设局组织第三方专业技术团队审查通过方可申请该项补贴；同条还要求建设竣工时间应在《措施》有效期内。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答依据旧实施细则第九条，将第三方技术团队审查通过作为申请前提，与现行新措施仅要求纳入规划且常态化运营不符，核心结论错误且源于旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "9a51be68c2e3bafeb93dd696a0576cdf2e5e45825c594a816f0102ac78698602",
+    "judge_key": "92837aa92fa8c305d10acf5210ac444c809c5738c7a273e23f81346cc5c2c302",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:02:04+08:00"
+}

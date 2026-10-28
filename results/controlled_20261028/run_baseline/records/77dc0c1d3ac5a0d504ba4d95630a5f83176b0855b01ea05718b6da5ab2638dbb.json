@@ -1,0 +1,119 @@
+{
+  "case_key": "77dc0c1d3ac5a0d504ba4d95630a5f83176b0855b01ea05718b6da5ab2638dbb",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-016",
+  "item_fingerprint": "603ce2ba5e714360f3042ccea15eea6033b82dfca122208c4f740403f4e46b7c",
+  "condition": {
+    "suite": "baseline",
+    "method": "llm_gate"
+  },
+  "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_a17c34f10656262c0c024751",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_aba66f43e645d108be585078",
+        "usable": false,
+        "reason": "状态已废止，且失效日2025-06-25早于评估日"
+      },
+      {
+        "id": "clause_8423ab41dad8a9d00f59d92d",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_ef3ae4843a4e5b135215241f",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_cd022a0cc45192920d49ce97",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_5b4ab64b18e7e50594fcf4b4",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_f25486df002c9d150a9f34b4",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_cd7ceed42ae1ccd56168dc52",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      }
+    ],
+    "request_key": "ad357aa263e3ecbfb7ca8bfeb8df4ee5740ff700846fd8d970eda4f2c2418acf",
+    "cache_hit": false
+  },
+  "answer": "按《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条，对规模以上的低空经济与航空航天企业，在区内规划打造的低空经济和航空航天特色产业集聚区内租赁研发、生产、办公用房且自用的，在政策有效期内综合企业产值/营收规模，最高给予实际租金费用50%且不超过20元每月每平方米的场地支持；每家企业每年最高补贴200万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新条款，核心标准为实际租金50%且不超过20元/㎡/月，与标准答案一致，未使用旧50元标准。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_f25486df002c9d150a9f34b4",
+      "clause_cd7ceed42ae1ccd56168dc52"
+    ],
+    "context_ids": [
+      "clause_ef3ae4843a4e5b135215241f"
+    ],
+    "true_invalid_retrieved": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_f25486df002c9d150a9f34b4",
+      "clause_cd7ceed42ae1ccd56168dc52"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_f25486df002c9d150a9f34b4",
+      "clause_cd7ceed42ae1ccd56168dc52"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "b1d1bdcfdc39367fc4292af4e89584974a6a055dee650df6bc0304cbe9a2f715",
+    "judge_key": "21471bfbabc83d1278b7485341f510ddd40d154d46034a0192ea6caaa3c8e064",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:03:47+08:00"
+}

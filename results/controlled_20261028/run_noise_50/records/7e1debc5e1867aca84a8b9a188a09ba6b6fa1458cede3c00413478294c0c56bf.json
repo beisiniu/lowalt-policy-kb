@@ -1,0 +1,134 @@
+{
+  "case_key": "7e1debc5e1867aca84a8b9a188a09ba6b6fa1458cede3c00413478294c0c56bf",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-011",
+  "item_fingerprint": "9d42e4ab3533eac64f742c6ec295aba0a5a6caa97301a05ace9a0f3eb1d96dd7",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "376bfbd4f1606e685aa650193239f4074e8a5aae6d3872aaa1797113a927b6d7",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 1
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_9ac1885a6de8c9f7d367c21e",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_2c83f7fc311c480f1f0151dc",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_9882f14668bb0bac6d3f72bc",
+        "usable": true,
+        "reason": "状态为空，生效日2023-10-24早于评估日，失效日为空不因缺失判过期"
+      },
+      {
+        "id": "clause_5301605e260f3f11821b9726",
+        "usable": true,
+        "reason": "状态现行有效，生效日2024-01-01早于评估日，失效日为空"
+      },
+      {
+        "id": "clause_990d77ebf04c0b7ec5f2474c",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-01-01早于评估日，失效日为空"
+      },
+      {
+        "id": "clause_c23de099f06ea304d0c2efaa",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_e9bbb110faf6e09fbbd9ed69",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-01-01早于评估日，失效日为空"
+      },
+      {
+        "id": "clause_c9923301293d6e1187f95956",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-01-01早于评估日，失效日为空"
+      },
+      {
+        "id": "clause_02f2d8c0e088bc11cc077407",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      }
+    ],
+    "request_key": "4cf5ebc296f44306754b8fcd8997479ed029cd4a7366cb1cc046c74ffd760eaf",
+    "cache_hit": false
+  },
+  "answer": "可以申请。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第六条，低空经济企业将总部或研发、生产、制造落户在本区，在获得中国民用航空局颁发的无人驾驶航空器型号合格证（TC）、生产许可证（PC）后，最高分别给予一次性奖励1500万元；其中大型载人无人驾驶航空器每次奖励1500万元。该条以取得型号合格证（TC）、生产许可证（PC）为奖励条件，未将交付作为申请条件，因此刚拿到型号合格证、尚未交付不影响申请；但需同时满足落户本区等条件，且政策有效期内每家企业奖励不超过3000万元，同一企业获得多个产品型号合格证、生产许可证的不重复奖励。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新政策，结论为取得TC即可申请1500万元奖励，不要求交付，与标准答案一致；虽提及旧文件名称，但未采用旧交付条件。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "context_ids": [
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_kept": [
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_blocked": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "9b642b7202e0c6200e81c0afa665412ea56542c0e632d049027f0c31cb3695eb",
+    "judge_key": "1d8cae5e28ff83b0bed75bfc2dae28938d4645bee4e055a0c905a88e9f15cda6",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:14:47+08:00"
+}

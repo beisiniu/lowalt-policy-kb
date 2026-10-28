@@ -1,0 +1,98 @@
+{
+  "case_key": "dc697d4ddd962a6d9a3946b6d13a3a742c9d16ce3b481f2e5f3fa2b79398d1a1",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-036",
+  "item_fingerprint": "1da0f9dbc045abb5c93c9441898de60192ab530c7d5d4a55d4f70f464b839419",
+  "condition": {
+    "suite": "noise",
+    "method": "date_rerank",
+    "noise": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "c16e65751c8e9f28c706c5d266d72f5e4b000a8f3e3272445e0438e33f56f60c",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 7
+  },
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n资料中关于黄埔区载物飞行示范项目的补贴规定均为按飞行架次计算，未规定按实际运营费用比例补贴：\n\n- 《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十二条（二）：年载物飞行服务10000架次以上的示范项目，起飞重量不超过25kg的微轻小型无人机按30元/架次补贴，超过25kg的中大型无人机按90元/架次补贴。\n- 《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第九条：年载物飞行服务10000架次以上的示范项目，按最高90元/架次给予补贴，每家企业每年度不超过500万元。\n\n资料中唯一涉及“实际运营费用比例”的载物条款是《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条（不超过实际运营费用的30%），但该条同时要求取得运营合格证及空域和航线批复，且按小、中、大型载物无人机分别给予最高20元/架次、30元/架次、40元/架次运营补贴，每个项目每年最高不超过200万元——其补贴上限仍以架次标准表述，并非单纯按运营费用比例补贴。该条是否适用于您所述项目，资料不足以确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，未给出可判错的明确结论；虽提及30%但未确认适用，属拒答而非毒化。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "context_ids": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "true_invalid_retrieved": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4"
+    ],
+    "true_invalid_kept": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "c6bdeb9f98ffc7398517b7248b9d60e06afddfb8af7fe9ddded37b087306a8cb",
+    "judge_key": "8d49591ce42528f6b11fa635677c387defa73339c0f449d0fe7cb84a1863ec80",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:09:07+08:00"
+}

@@ -1,0 +1,94 @@
+{
+  "case_key": "396a3c335490e29cf30c9c6875e2b4ff947845210ecc35c9aa3169a08859f796",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-009",
+  "item_fingerprint": "9ecd899964896570d162d1cff639aa31f9d6fa2968a89938942d6aa4eaaba690",
+  "condition": {
+    "suite": "noise",
+    "method": "prompt_only",
+    "noise": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "d268fa4344d0edf1f26f5a963baa4079c7330fffb320d648d1b3d833489ad441",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "37efaf630cf6ee2c"
+    ],
+    "actual_chunks": 6
+  },
+  "gate": null,
+  "answer": "根据现有政策资料，龙岗区低空载人航线企业每年度奖励金额有上限，但需区分两项不同政策：\n\n1. **《龙岗区关于促进低空经济产业发展的若干措施》（八）**：对在本区开设经主管部门审批航线的低空载人服务企业，按上年度该企业在本区所开航线实际飞行成本的50%予以补贴，**每个企业每年度不超过500万元**；对在区内乘用低空载人交通工具的企业和机构，符合一定条件的给予乘用奖励，**年度奖励金额不超过1500万元**。\n\n2. **《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）**：对在龙岗区开设低空载人服务的企业，根据实际发放的飞行乘用券数量给予相应奖励，但该条款**未规定每年度奖励金额上限**。\n\n因此，按《龙岗区关于促进低空经济产业发展的若干措施》（八），低空载人航线服务企业补贴每年度不超过500万元；乘用奖励年度不超过1500万元。修订版政策（七）未设定金额上限，具体上限根据现有政策资料无法确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "标准答案明确未规定每年度奖励金额上限，模型回答引用旧条款称有500万元上限，核心结论错误且源于旧文件。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_647535620ca83fc0482af9e1",
+      "clause_80ff599cde23524519559973"
+    ],
+    "context_ids": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_647535620ca83fc0482af9e1",
+      "clause_80ff599cde23524519559973"
+    ],
+    "true_invalid_retrieved": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_80ff599cde23524519559973"
+    ],
+    "true_invalid_kept": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_80ff599cde23524519559973"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "328d4ba08b787d5fb719657f99b7d4f5334ee673b8be18e31926751f5ce87210",
+    "judge_key": "26cdd731d07ee525e3962904d34f38949276b2a4dce953d3cfd6131850fd75ad",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:07:00+08:00"
+}

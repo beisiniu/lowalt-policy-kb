@@ -1,0 +1,97 @@
+{
+  "case_key": "80c68f44888a6eb725bb38bbc2abac77e94b753a171886d8c4b8a5efcae56a09",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-032",
+  "item_fingerprint": "9651698389b07a8864a0cf3e58335625dd36e0141fdc9f14be8322b01db52592",
+  "condition": {
+    "suite": "noise",
+    "method": "downweight",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "020fd4ba47e08526c9e8a8199e84c33ce1cd4645fe1794b36c82e33f1127499e",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 2
+  },
+  "gate": null,
+  "answer": "根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第二条，对新引进的优质项目，根据贡献情况最高给予3000万元落户奖；《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二条进一步明确，对在《措施》有效期内新引进的优质低空经济项目，经认定给予最高3000万元的落户支持。因此最高为3000万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答引用旧措施及其实施细则，得出最高3000万元，与现行新措施最高1000万元标准冲突，核心数值错误且明确源于旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_5e8d0113c1e96c31306fdcb8",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_3d8b8ba5a6c85e9d80bed9b2",
+      "clause_bc66ec4409344e52ddeec174",
+      "clause_7dcca5bb442085818291d0b6",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_a7eb5a21c85f8b556e5ae5ca",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "context_ids": [
+      "clause_5e8d0113c1e96c31306fdcb8",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_3d8b8ba5a6c85e9d80bed9b2",
+      "clause_bc66ec4409344e52ddeec174",
+      "clause_7dcca5bb442085818291d0b6",
+      "clause_a7eb5a21c85f8b556e5ae5ca",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "true_invalid_retrieved": [
+      "clause_5e8d0113c1e96c31306fdcb8",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_3d8b8ba5a6c85e9d80bed9b2",
+      "clause_bc66ec4409344e52ddeec174",
+      "clause_7dcca5bb442085818291d0b6",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_a7eb5a21c85f8b556e5ae5ca",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "true_invalid_kept": [
+      "clause_5e8d0113c1e96c31306fdcb8",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_3d8b8ba5a6c85e9d80bed9b2",
+      "clause_bc66ec4409344e52ddeec174",
+      "clause_7dcca5bb442085818291d0b6",
+      "clause_a7eb5a21c85f8b556e5ae5ca",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": false,
+    "old_in_context": true,
+    "new_in_context": false
+  },
+  "request": {
+    "answer_key": "705a38744c3d9411a16c62ef86446e19032b64229c1617dbceb3a726d636611c",
+    "judge_key": "46e00e4c765e84a53c02746ec3478bd1d764d30d36fe6338d91b973080b71b80",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:14:20+08:00"
+}

@@ -1,0 +1,147 @@
+{
+  "case_key": "6c2d388077d976072a27d92519222ab90baa56f071ff50e6fe9506ce5a6e4bf6",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-031",
+  "item_fingerprint": "ab139dc42c8b74588478e6de2f2435e085850df1263ff8fe78f39c924647ac23",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "55fc05dd47d917bf65635cc94dab5c5b994d83d092644a6e4fe4fa78edd83c6a",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 7
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_f93dedca806ecf96cf3f2533",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_9ac1885a6de8c9f7d367c21e",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_6e7b0172a8efdcbad81e667b",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-10-24早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_2c83f7fc311c480f1f0151dc",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_9882f14668bb0bac6d3f72bc",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-10-24早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_f8c8b32ac68b32f94a5ece2b",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_c23de099f06ea304d0c2efaa",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_82fa08081d0a1d649a260119",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      }
+    ],
+    "request_key": "a34ddc5a47c7f67f0c44269fc85bd6cdcf8c4746c395c2d305ace1247676fc25",
+    "cache_hit": false
+  },
+  "answer": "根据现有政策资料，黄埔区载物无人机示范项目的补贴标准因适用政策不同而不同：\n\n1. 依据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十二条，年载物飞行服务10000架次以上的示范项目中，起飞重量不超过25kg的微轻小型无人机按30元/架次补贴。\n\n2. 依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，取得运营合格证及空域和航线批复的载物飞行服务示范项目，小中大型载物无人机分别给予最高20元/架次、30元/架次、40元/架次运营补贴，其中小型载物无人机最高20元/架次。\n\n因此，小型载物无人机每架次最高补贴需按所适用政策确定：按实施细则第二十二条为30元/架次；按《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条为最高20元/架次。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "答案同时引用新旧政策，但明确给出小型载物无人机按现行政策最高20元/架次，核心结论与标准答案一致，未将旧标准作为唯一结论。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "172d4e7ac3534151058c08edcd5f352bd3b246a85d4158c26056779b7853977e",
+    "judge_key": "3e20bb30b6db7c5fdd2fc7b717e59d5de709adc68498dc8b83f8f548643cc4bf",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:11:10+08:00"
+}

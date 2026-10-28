@@ -1,0 +1,77 @@
+{
+  "case_key": "ff0559495327d428a62c3bcab1421137966988a2c4f1be335515578afcb15fda",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-017",
+  "item_fingerprint": "a5f9b343df71e0e3daad9343f318cd0a994082f98039badf284b990e59bd8b2e",
+  "condition": {
+    "suite": "baseline",
+    "method": "downweight"
+  },
+  "condition_key": "81c1093ef576e3315f2f788fc220f2051857ef75836823416e6e8f2a34c76b8b",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": null,
+  "answer": "根据现有政策资料，黄埔区规模以上低空企业租赁研发、生产、办公用房自用的租金补贴年度上限存在两套规定，需按适用政策区分：\n\n1. 依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条，对规模以上的低空经济与航空航天企业，在区内规划打造的低空经济和航空航天特色产业集聚区内租赁研发、生产、办公用房且自用的，最高给予实际租金费用50%且不超过20元每月每平方米的场地支持，**每家企业每年最高补贴200万元**。\n\n2. 依据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第四条及《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十一条、第十二条，对新引进落户本区、规模以上的开展低空保障、运营服务、低空零部件及整机研制的低空经济企业或机构，在本区租赁研发、生产和办公用房且自用的，按实际租金给予每月每平方米最高50元的租金补贴，补贴期限最多3年，**每家企业或机构每年最高补贴100万元**（实施细则第十一条另规定每年最高补贴100万元、补贴期限最多3年）。\n\n因此，适用《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条时为**200万元/年**；适用《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第四条及其实施细则第十一条时为**100万元/年**。具体适用哪一上限，取决于企业是否符合相应政策的适用条件（如是否位于特色产业集聚区、是否为新引进落户且实缴注册资本达1000万元以上等），根据现有政策资料无法确定某一企业应适用哪一档。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "答案同时列出新旧政策，明确现行政策上限200万元，并说明适用条件差异，核心结论与标准答案一致，未将旧标准作为唯一结论。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "context_ids": [
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "true_invalid_retrieved": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "true_invalid_kept": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "b4e91cfeecd38a350c75b5996bb39ac6ac3e75142ac552a88606d904ce537c67",
+    "judge_key": "a3c9f6a1ffa0974fa7da6bdbecb9e5c7ae702daec2e6a5c9f27e3dd4aa64316a",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:02:31+08:00"
+}

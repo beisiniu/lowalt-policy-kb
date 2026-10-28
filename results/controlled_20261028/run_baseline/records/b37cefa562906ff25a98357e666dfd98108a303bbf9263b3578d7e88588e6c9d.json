@@ -1,0 +1,75 @@
+{
+  "case_key": "b37cefa562906ff25a98357e666dfd98108a303bbf9263b3578d7e88588e6c9d",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-003",
+  "item_fingerprint": "54e906862740da040e03e54f4d4bb732514df6549a467117b4451f50b222e94a",
+  "condition": {
+    "suite": "baseline",
+    "method": "prompt_only"
+  },
+  "condition_key": "154d9cb44e698119aea0aad1eecd0cd12a083bd974a522b1dba61bcf1717cea3",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：规定“提供试飞验证服务的企业拥有专业的服务团队，团队成员5人以上”的是《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十五条，但该细则状态为“已废止”，有效期至2026-10-23，早于评估日2026-10-27，不能作为现行依据。现行有效的《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第五条仅规定对获得空域批复、提供公共服务的低空飞行试验场给予激励，未提及专业团队人数要求。因此，评估日现行政策中无“5人以上专业团队”的明确规定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "答案指出旧细则已废止，现行政策未规定团队人数，与标准答案一致，且明确否定旧条款，非毒化。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "context_ids": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_retrieved": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_kept": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "856261efbc3730052231eb3e7c368ebac34e94c7e475f338ba0ca31ecab0ffc0",
+    "judge_key": "e4b94f5590c3a878a3cbe04ce890da6d00d7a450d1c0eaa938afbb959ad37e39",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T15:59:22+08:00"
+}

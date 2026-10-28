@@ -1,0 +1,92 @@
+{
+  "case_key": "a89d1f03159ab51caa024c00b4a56f3b1dd1488b643a03ee06a3ab31e156c044",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-013",
+  "item_fingerprint": "867ae63ee389745daa340e7f107c8f913f8996970afbb8a52010b5485c8cbcf3",
+  "condition": {
+    "suite": "noise",
+    "method": "date_rerank",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "e098ad7f19c1d02d1711dc2353c138d330ff1ef8be891ca4f74a2dc2c51d9530",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_chunks": 5
+  },
+  "gate": null,
+  "answer": "是。根据《龙岗区关于促进低空经济产业发展的若干措施》第（十二）条，申请运营费用补贴须同时满足“经备案”和“提供免费或低收费公共服务”两项条件；补贴按年实际运营成本的50%计算，年度不超过300万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "答案依据旧条款将备案和免费/低收费公共服务设为申领条件，与现行修订措施及标准答案不符，核心结论错误。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_80ff599cde23524519559973",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_e13a9f1604b71144f25e87df",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_e13a9f1604b71144f25e87df",
+      "clause_80ff599cde23524519559973",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_80ff599cde23524519559973",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_80ff599cde23524519559973",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "d109a0c65535aea63c2fa8ff3995dd86819ce2a9a6f30a1c45b145816b52ed1e",
+    "judge_key": "cd61bd69ff3ebd8cafe221fa0b008f2072bda8b48711deec2e4eff46edf54884",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:13:03+08:00"
+}

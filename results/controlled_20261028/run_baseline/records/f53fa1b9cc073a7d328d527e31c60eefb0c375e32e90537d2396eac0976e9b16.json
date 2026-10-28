@@ -1,0 +1,118 @@
+{
+  "case_key": "f53fa1b9cc073a7d328d527e31c60eefb0c375e32e90537d2396eac0976e9b16",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-034",
+  "item_fingerprint": "b97803023787443e739af920d6b1383a19089689a50e565b8c5aedaa143ad29f",
+  "condition": {
+    "suite": "baseline",
+    "method": "llm_gate"
+  },
+  "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_7c1a2c2ce2a84c4086a7743d",
+        "usable": false,
+        "reason": "状态已失效，且失效日2026-07-29早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_903d0768cc8318de86574cdf",
+        "usable": false,
+        "reason": "状态已废止，且失效日2025-06-25早于评估日"
+      },
+      {
+        "id": "clause_f8c8b32ac68b32f94a5ece2b",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_fb162157fc33384728ff6e87",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_fdc6b1a5abd107133f6d3edf",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_4fc279b910727dd115483a9d",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-04-01早于评估日，失效日2028-03-31晚于评估日"
+      },
+      {
+        "id": "clause_5b4ab64b18e7e50594fcf4b4",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      },
+      {
+        "id": "clause_69dd10ae1a75cb1554b167ae",
+        "usable": false,
+        "reason": "状态已失效，且失效日2026-07-29早于评估日"
+      },
+      {
+        "id": "clause_4b2b0370fb0c573f14233df2",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日"
+      }
+    ],
+    "request_key": "b5be8e418f8748722a088b33220ba701476300e0c836447622b5e8026cac7dac",
+    "cache_hit": false
+  },
+  "answer": "按建设投入算。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条，对纳入区低空航线和起降点规划且进入常态化运营状态的无人机小型起降点，最高按实际建设投入的50%给予建设补贴，每个不超过10万元，每家企业每年度该项补贴不超过600万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新条款，明确按实际建设投入计算，与标准答案一致，未受旧运营费用条款影响。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "context_ids": [
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_4fc279b910727dd115483a9d"
+    ],
+    "true_invalid_retrieved": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "old_recalled": false,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "1ee85b3972ec91d09589c1480b64fc0b4d8082815105989e677e30491d5fb876",
+    "judge_key": "426cfa5fca965af1033e2faf9b621a801a80fb50d189018783b4096640e6da10",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:04:47+08:00"
+}

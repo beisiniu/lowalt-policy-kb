@@ -1,0 +1,67 @@
+{
+  "case_key": "9a07293bdbd2ef76e0e577dc88038c9e395b0005a0496e1d861d013e97448144",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-011",
+  "item_fingerprint": "9d42e4ab3533eac64f742c6ec295aba0a5a6caa97301a05ace9a0f3eb1d96dd7",
+  "condition": {
+    "suite": "baseline",
+    "method": "date_rerank"
+  },
+  "condition_key": "8e1b5ede28fae42d247030cc48dbb7854e7d4c1ac4a6ec41d9f128b052c02352",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：关于大型载人无人驾驶航空器型号合格证（TC）的奖励，资料中存在两处表述不一致的规定：\n\n- 《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条仅规定“在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，最高分别给予1500万元奖励”，未明确要求完成交付；\n- 《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条则明确要求“在获得中国民用航空局颁发的大型载人无人驾驶航空器型号合格证（TC）后，**并完成首批产品交付的**，给予一次性奖励1500万元”。\n\n由于资料未说明上述规定的适用关系及以何为准，仅凭现有资料无法就“刚拿到型号合格证、尚未交付”能否申请奖励作出确定结论。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型因新旧规定冲突而无法确定，未给出可判错结论，属资料不足拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "context_ids": [
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_5301605e260f3f11821b9726",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_kept": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "7c90a760919c1b346dacfef512d8a3e4bc0c6afb0806519f066b99f395e8f253",
+    "judge_key": "0e1187c1581388d581d1b187db0176e9890df3d938530f2a786540066e5f0085",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:01:09+08:00"
+}

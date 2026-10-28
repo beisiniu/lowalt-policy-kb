@@ -1,0 +1,96 @@
+{
+  "case_key": "32662f307ed4e7c4265519dd86ed18c1d4a314364cb0c276db176f4369bd18c3",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-002",
+  "item_fingerprint": "5c0c532aea958b8ba9c149def13e853d27ba67602ce8b07f606183efffb07ebc",
+  "condition": {
+    "suite": "noise",
+    "method": "prompt_only",
+    "noise": "joint_missing",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "870eeab791bfd88226b7a9e2614f9963847f27d0d01bc433fbe025af2a30d69d",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "b6919dae3085302f"
+    ],
+    "actual_chunks": 7
+  },
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：原《张家界市加快通用航空产业发展推进方案》第（五）项曾规定“对开展低空旅游（含市域内各大景区景点之间的短途客运航线运营）、航空运动等业务的通用航空企业给予财政补贴”，但《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》（2024年9月24日公布施行）已将该第（五）项整条废止。评估日2026年10月27日，该废止通告已生效，被废止的补贴条款不能再作为现行依据；资料中其余条款也未规定低空旅游业务补贴。因此，在张家界开展低空旅游业务的通航企业能否取得财政补贴，根据现有政策资料无法确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "答案指出补贴条款已废止，但以资料不足为由未给出能否获补贴的明确结论，属有依据的无法确定，非毒化。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_b8e19c90f082da244d01f627",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_d9a2bf82c0dfbbceb2529619",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_17ce35d5d5e706c5cb79d0d7",
+      "clause_ea93d2e4f433de0764bffc1d"
+    ],
+    "context_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_b8e19c90f082da244d01f627",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_d9a2bf82c0dfbbceb2529619",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_17ce35d5d5e706c5cb79d0d7",
+      "clause_ea93d2e4f433de0764bffc1d"
+    ],
+    "true_invalid_retrieved": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_17ce35d5d5e706c5cb79d0d7",
+      "clause_ea93d2e4f433de0764bffc1d"
+    ],
+    "true_invalid_kept": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_17ce35d5d5e706c5cb79d0d7",
+      "clause_ea93d2e4f433de0764bffc1d"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "4aa00a2dc42ad27745fd1a9e302fed38e26d2f517537ea95e42a385e5d823f43",
+    "judge_key": "ba6f4f5105d38de5b8394da5e239f7fb34d0033125e0ab281c08d4ea5fcaac94",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:05:32+08:00"
+}

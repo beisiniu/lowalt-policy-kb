@@ -1,0 +1,98 @@
+{
+  "case_key": "4e43ead322bf275982a6ba46264e0f2cd825c2f11596ba8ba37159919e041129",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-034",
+  "item_fingerprint": "b97803023787443e739af920d6b1383a19089689a50e565b8c5aedaa143ad29f",
+  "condition": {
+    "suite": "noise",
+    "method": "naive",
+    "noise": "joint_missing",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "0f2477c9669aeec9e88385ec91fceadc1e224907acb1a576cc142c18ce1bf407",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 7
+  },
+  "gate": null,
+  "answer": "在黄埔区建无人机小型起降点并常态化运营，补贴按**建设投入**计算，不是按运营费用计算。\n\n依据：\n- 《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第三条：对建设无人机小型起降点等低空经济相关基础设施的企业，按照实际建设投入的50%分类别给予一次性补贴，每个小型起降点不超过10万元，每家企业每年度该项补贴金额不超过600万元。\n- 《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条：按实际建设投入的50%分类别给予一次性补贴，由区住房和城乡建设部门联合相关职能部门完成竣工验收并投入使用一年后进行补贴申请。\n- 《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条：无人机小型起降点补贴额度上限为10万元/个，且起降点设施点位需经区住房和城乡建设局组织第三方专业技术团队审查通过方可申请。\n- 《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条：对纳入区低空航线和起降点规划且进入常态化运营状态的无人机小型起降点等，最高按照实际建设投入的50%分类别给予建设补贴，每个中小型起降点、智能起降柜机不超过10万元。\n\n需要说明：资料中“运营费用补贴”条款（《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十四条）针对的是低空飞行试验场，不是无人机小型起降点。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "结论为建设投入，与现行标准答案及新条款一致；引用旧文件但结论正确，且明确区分运营费用条款适用对象，不构成毒化。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "context_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "true_invalid_retrieved": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "true_invalid_kept": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": false,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "232b483fea90798acda8e23251c3aab5f9bae4cfa03e83431a0226b1c398a9b8",
+    "judge_key": "18b34f97fa893bc3916bb02f03d330effbd24319639287c3a0951f0be3ab91df",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:05:25+08:00"
+}

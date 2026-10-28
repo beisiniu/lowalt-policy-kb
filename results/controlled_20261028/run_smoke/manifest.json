@@ -1,0 +1,90 @@
+{
+  "protocol": "controlled-v1",
+  "suite": "baseline",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "benchmark_fingerprint": "445d3860e0ebbee1e3cce89b29fda95cfeffff924efc78d9c331b5cbca6acd5c",
+  "as_of": "2026-10-27",
+  "top_k": 9,
+  "items": [
+    "TQ3-001",
+    "TQ3-008",
+    "TQ3-041",
+    "TQ3-003"
+  ],
+  "conditions": [
+    {
+      "condition": {
+        "suite": "baseline",
+        "method": "naive"
+      },
+      "condition_key": "6c21982695ca508e1afaa141f9a0c1acefa500d99418e9df401fa3f7ebde6078"
+    },
+    {
+      "condition": {
+        "suite": "baseline",
+        "method": "llm_gate"
+      },
+      "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df"
+    },
+    {
+      "condition": {
+        "suite": "baseline",
+        "method": "temporal_filter"
+      },
+      "condition_key": "33036e0b968ea44c807ebaff7ef6dc088a365967d9110694f31161005be1fab0"
+    }
+  ],
+  "method_protocol": "date_rerank: valid_to DESC(null first), valid_from DESC; llm_gate: ID-validated per-clause temporal decisions; temporal_filter: usable() hard filter",
+  "answer": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 1200,
+    "thinking": false
+  },
+  "gate": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 1200,
+    "thinking": false
+  },
+  "judge": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 400,
+    "thinking": false
+  },
+  "noise": {
+    "unit": "policy_id",
+    "modes": [
+      "expiry_missing",
+      "status_missing",
+      "joint_missing",
+      "joint_wrong_future"
+    ],
+    "rates": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "selection": "seeded hash order, nested prefixes"
+  },
+  "code_digest": "0859d00c4614e853966ea88d04041765145988619b6078db0f0acb56ca79bcbc",
+  "git_head": "14bd438784b3092b60d3aca0db8e2321bfa5e207",
+  "created_at": "2026-10-28T15:57:18+08:00"
+}

@@ -1,0 +1,150 @@
+{
+  "case_key": "89fc860dc6d8dad9d0324ad22c4c9bf8a455052addb1a7172d10935c58403c35",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-004",
+  "item_fingerprint": "63a7fb5f7c561597935807f6701f639d6c88329db1da79242a1bf97b11e34780",
+  "condition": {
+    "suite": "noise",
+    "method": "llm_gate",
+    "noise": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17
+  },
+  "condition_key": "55fc05dd47d917bf65635cc94dab5c5b994d83d092644a6e4fe4fa78edd83c6a",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_wrong_future",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "153d6dea833fab42",
+      "da98f894f7142a23",
+      "b6919dae3085302f",
+      "0f38fee3eea24f06",
+      "37efaf630cf6ee2c",
+      "c9f64737577be953"
+    ],
+    "actual_policies": [
+      "153d6dea833fab42",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 8
+  },
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_f8c8b32ac68b32f94a5ece2b",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_fb162157fc33384728ff6e87",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_903d0768cc8318de86574cdf",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-10-24早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_fdc6b1a5abd107133f6d3edf",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_cd7ceed42ae1ccd56168dc52",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_4b2b0370fb0c573f14233df2",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_7c1a2c2ce2a84c4086a7743d",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-07-29早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_f93dedca806ecf96cf3f2533",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      },
+      {
+        "id": "clause_9ac1885a6de8c9f7d367c21e",
+        "usable": true,
+        "reason": "状态现行有效，生效日2023-12-27早于评估日，失效日2099-12-31晚于评估日"
+      }
+    ],
+    "request_key": "d6cb43911fddd2abc84b72bb02d0b0efde08ca177010923d8b4ae7be1a46c6b6",
+    "cache_hit": false
+  },
+  "answer": "不能。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条，需由区住房和城乡建设部门联合相关职能部门完成竣工验收并投入使用一年后，方可进行补贴申请；同时根据第九条，起降点设施点位还需经区住房和城乡建设局组织第三方专业技术团队审查通过，且建设竣工时间应在《措施》有效期内。",
+  "answer_source": "model",
+  "judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": true,
+    "reason": "答案结论正确但依据错误：引用旧细则的竣工验收、投入使用一年等条件，未指出新政策要求的纳入规划和常态化运营，属旧条款导致的条件错误。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "context_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "true_invalid_kept": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "8074e6d443b761344631fcf83ced34919d0c6ca30ee3726478f2929c30359a4c",
+    "judge_key": "d74fa6d7d51aeabad965ad75183a0e7e4b2e4af533d71c7f0a05e1c807563b36",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:10:27+08:00"
+}

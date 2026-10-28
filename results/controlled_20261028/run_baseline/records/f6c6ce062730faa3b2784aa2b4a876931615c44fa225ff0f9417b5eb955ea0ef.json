@@ -1,0 +1,118 @@
+{
+  "case_key": "f6c6ce062730faa3b2784aa2b4a876931615c44fa225ff0f9417b5eb955ea0ef",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-031",
+  "item_fingerprint": "ab139dc42c8b74588478e6de2f2435e085850df1263ff8fe78f39c924647ac23",
+  "condition": {
+    "suite": "baseline",
+    "method": "llm_gate"
+  },
+  "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_f93dedca806ecf96cf3f2533",
+        "usable": false,
+        "reason": "状态为已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_9ac1885a6de8c9f7d367c21e",
+        "usable": false,
+        "reason": "状态为已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_6e7b0172a8efdcbad81e667b",
+        "usable": false,
+        "reason": "状态为已废止，且失效日2025-06-25早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_2c83f7fc311c480f1f0151dc",
+        "usable": false,
+        "reason": "状态为已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_9882f14668bb0bac6d3f72bc",
+        "usable": false,
+        "reason": "状态为已废止，且失效日2025-06-25早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_f8c8b32ac68b32f94a5ece2b",
+        "usable": false,
+        "reason": "状态为已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_c23de099f06ea304d0c2efaa",
+        "usable": true,
+        "reason": "状态为现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_82fa08081d0a1d649a260119",
+        "usable": true,
+        "reason": "状态为现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_ed6e3f69cda5cad69a9b019e",
+        "usable": false,
+        "reason": "状态为已废止，且失效日2026-10-23早于评估日2026-10-27"
+      }
+    ],
+    "request_key": "2282af53bfb24cf6d392545434c9e8b505ede4f9ac15fe77d5a92594a033b622",
+    "cache_hit": false
+  },
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，在黄埔区开展载物无人机示范项目，小型载物无人机每架次最高补贴20元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用现行新政策，小型载物无人机最高20元/架次，与标准答案一致，未使用旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_82fa08081d0a1d649a260119"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "a0ad9d4f64526d8279608be8f403e6e04fa028862084a820a551912ca9d94353",
+    "judge_key": "9b8a560bbd4667a5c002c0f13545972fc5b62dce874614d56864e07833f8adff",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:04:40+08:00"
+}

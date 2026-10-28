@@ -21,6 +21,9 @@ demo/chroma_temporal/
 data/_chroma_test/
 models/
 
+# ===== 实验请求缓存（本地可重建；完整备份/结果包保留）=====
+results/controlled_20261028/**/cache/
+
 # ===== 本地索引（可由 kb_ingest.py --rebuild 重建）=====
 kb/index/
 kb/index_before/

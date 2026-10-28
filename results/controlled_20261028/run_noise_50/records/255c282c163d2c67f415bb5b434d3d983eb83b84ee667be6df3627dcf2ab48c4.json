@@ -1,0 +1,93 @@
+{
+  "case_key": "255c282c163d2c67f415bb5b434d3d983eb83b84ee667be6df3627dcf2ab48c4",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-040",
+  "item_fingerprint": "b1ea4b633eaedacb25ef6664dae43ce7521178a60b36093b64c2e84661939091",
+  "condition": {
+    "suite": "noise",
+    "method": "downweight",
+    "noise": "joint_missing",
+    "rate": 0.5,
+    "seed": 43
+  },
+  "condition_key": "020fd4ba47e08526c9e8a8199e84c33ce1cd4645fe1794b36c82e33f1127499e",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": {
+    "mode": "joint_missing",
+    "rate": 0.5,
+    "seed": 43,
+    "pool_mode": "retrieval",
+    "pool_size": 6,
+    "selected_policies": [
+      "37efaf630cf6ee2c",
+      "c9f64737577be953",
+      "da98f894f7142a23"
+    ],
+    "actual_policies": [
+      "da98f894f7142a23"
+    ],
+    "actual_chunks": 2
+  },
+  "gate": null,
+  "answer": "根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条，高架直升机起降平台补贴额度上限为200万元/个。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答引用旧细则，将高架直升机起降平台补贴上限答为200万元，而现行新规明确直升机起降平台每个不超过300万元，核心数值错误且源于旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_da845f6391edc825033802cc",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_da845f6391edc825033802cc",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_903d0768cc8318de86574cdf",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "490936fe32818e19f38d58fb9bd783e087840d297c5839389a74474a8608f386",
+    "judge_key": "aff41ceefce15ba9b13734fe325e95033df5087886c2d6135508e6167776052d",
+    "answer_cache_hit": false,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T16:14:29+08:00"
+}

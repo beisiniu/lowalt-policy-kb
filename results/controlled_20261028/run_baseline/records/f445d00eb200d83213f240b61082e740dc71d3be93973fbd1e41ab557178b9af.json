@@ -1,0 +1,114 @@
+{
+  "case_key": "f445d00eb200d83213f240b61082e740dc71d3be93973fbd1e41ab557178b9af",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-011",
+  "item_fingerprint": "9d42e4ab3533eac64f742c6ec295aba0a5a6caa97301a05ace9a0f3eb1d96dd7",
+  "condition": {
+    "suite": "baseline",
+    "method": "llm_gate"
+  },
+  "condition_key": "e57cb1ed0e9305c348dfed09ae8cee6808e347e1417fdbc33aa50118e4fc36df",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "gate": {
+    "decisions": [
+      {
+        "id": "clause_9ac1885a6de8c9f7d367c21e",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_2c83f7fc311c480f1f0151dc",
+        "usable": false,
+        "reason": "状态已废止，且失效日2026-10-23早于评估日2026-10-27"
+      },
+      {
+        "id": "clause_9882f14668bb0bac6d3f72bc",
+        "usable": false,
+        "reason": "状态已废止，且失效日2025-06-25早于评估日"
+      },
+      {
+        "id": "clause_5301605e260f3f11821b9726",
+        "usable": true,
+        "reason": "状态现行有效，生效日2024-01-01早于评估日，无失效日"
+      },
+      {
+        "id": "clause_990d77ebf04c0b7ec5f2474c",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-01-01早于评估日，无失效日"
+      },
+      {
+        "id": "clause_c23de099f06ea304d0c2efaa",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      },
+      {
+        "id": "clause_e9bbb110faf6e09fbbd9ed69",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-01-01早于评估日，无失效日"
+      },
+      {
+        "id": "clause_c9923301293d6e1187f95956",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-01-01早于评估日，无失效日"
+      },
+      {
+        "id": "clause_02f2d8c0e088bc11cc077407",
+        "usable": true,
+        "reason": "状态现行有效，生效日2025-06-26早于评估日，失效日2028-06-25晚于评估日"
+      }
+    ],
+    "request_key": "df81b1c5c5638642a9b2009c778f44f781e76a95217d10215497b09da9d21c26",
+    "cache_hit": false
+  },
+  "answer": "根据现有政策资料无法确定。\n\n理由：《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条仅规定，企业获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，大型载人新型航空器每次奖励1500万元，每家企业政策有效期内不超过3000万元，同一企业获得多个产品型号合格证、生产许可证的不重复奖励。该条并未规定“尚未交付”能否申请，也未明确型号合格证与生产许可证是否须同时具备、申请时点等条件，因此仅凭现有资料无法判断该情形能否申请奖励。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，未给出可判错结论；新条款未明确交付要求，拒答有依据。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "context_ids": [
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "5b13f17cd5711553e1b63bf3a86239bf0b8dbfe27ede04a5413efaff80730655",
+    "judge_key": "696d6d9354cc4315935e4a2132e65b25d78a9a9b7e83ba2bfc398c4c88a23219",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T16:03:35+08:00"
+}

@@ -1,0 +1,225 @@
+{
+  "protocol": "controlled-v1",
+  "suite": "noise",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "benchmark_fingerprint": "445d3860e0ebbee1e3cce89b29fda95cfeffff924efc78d9c331b5cbca6acd5c",
+  "as_of": "2026-10-27",
+  "top_k": 9,
+  "items": [
+    "TQ3-001",
+    "TQ3-002",
+    "TQ3-003",
+    "TQ3-004",
+    "TQ3-006",
+    "TQ3-008",
+    "TQ3-009",
+    "TQ3-010",
+    "TQ3-011",
+    "TQ3-013",
+    "TQ3-014",
+    "TQ3-016",
+    "TQ3-017",
+    "TQ3-018",
+    "TQ3-021",
+    "TQ3-022",
+    "TQ3-023",
+    "TQ3-024",
+    "TQ3-025",
+    "TQ3-026",
+    "TQ3-027",
+    "TQ3-028",
+    "TQ3-029",
+    "TQ3-030",
+    "TQ3-031",
+    "TQ3-032",
+    "TQ3-034",
+    "TQ3-036",
+    "TQ3-039",
+    "TQ3-040",
+    "TQ3-041"
+  ],
+  "conditions": [
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "naive",
+        "noise": "joint_missing",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "0f2477c9669aeec9e88385ec91fceadc1e224907acb1a576cc142c18ce1bf407"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "naive",
+        "noise": "joint_wrong_future",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "fbabcf4dcb53f8a867ca96a96c9dece823ae35b3cf4303bd7fa0b77452130081"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "prompt_only",
+        "noise": "joint_missing",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "870eeab791bfd88226b7a9e2614f9963847f27d0d01bc433fbe025af2a30d69d"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "prompt_only",
+        "noise": "joint_wrong_future",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "d268fa4344d0edf1f26f5a963baa4079c7330fffb320d648d1b3d833489ad441"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "date_rerank",
+        "noise": "joint_missing",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "27d2471874360f639b54260d9b40cfd22d79f9dd029cdc415c4c960316f1fd03"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "date_rerank",
+        "noise": "joint_wrong_future",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "c16e65751c8e9f28c706c5d266d72f5e4b000a8f3e3272445e0438e33f56f60c"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "downweight",
+        "noise": "joint_missing",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "73c117d488321e864d2d3097be8eb15da211e40d1eb3e687471d5a45cb625dc2"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "downweight",
+        "noise": "joint_wrong_future",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "ffe0e4b23660850194437abf9baca110d31497d698e95f614ddaaab93c04930d"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "llm_gate",
+        "noise": "joint_missing",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "5060616fef2498b867b560f6550b34154c30630f9933e6031b6e2f91bd1c8197"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "llm_gate",
+        "noise": "joint_wrong_future",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "55fc05dd47d917bf65635cc94dab5c5b994d83d092644a6e4fe4fa78edd83c6a"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "temporal_filter",
+        "noise": "joint_missing",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "a52eab6a8588ad7d74605febb84597562795fd4fef0695dca50662600f2e529d"
+    },
+    {
+      "condition": {
+        "suite": "noise",
+        "method": "temporal_filter",
+        "noise": "joint_wrong_future",
+        "rate": 1.0,
+        "seed": 17
+      },
+      "condition_key": "5d9b3959dc6dbce5fc424bba40e8b7e97d0d5c0fd5db0a75082dce7d04b4f7fe"
+    }
+  ],
+  "method_protocol": "date_rerank: valid_to DESC(null first), valid_from DESC; llm_gate: ID-validated per-clause temporal decisions; temporal_filter: usable() hard filter",
+  "answer": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 1200,
+    "thinking": false
+  },
+  "gate": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 1200,
+    "thinking": false
+  },
+  "judge": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 400,
+    "thinking": false
+  },
+  "noise": {
+    "unit": "policy_id",
+    "modes": [
+      "expiry_missing",
+      "status_missing",
+      "joint_missing",
+      "joint_wrong_future"
+    ],
+    "rates": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "pool_mode": "retrieval",
+    "methods": [
+      "naive",
+      "prompt_only",
+      "date_rerank",
+      "downweight",
+      "llm_gate",
+      "temporal_filter"
+    ],
+    "selection": "seeded hash order, nested prefixes"
+  },
+  "code_digest": "0d3b2461006d04b4b3f634f9bbb9c611cbb855761bb249b1c8ecca62bfe2834b",
+  "git_head": "14bd438784b3092b60d3aca0db8e2321bfa5e207",
+  "created_at": "2026-10-28T16:05:24+08:00"
+}
