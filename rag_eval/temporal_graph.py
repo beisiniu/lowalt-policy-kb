@@ -21,6 +21,7 @@ from langgraph.graph import END, StateGraph
 
 from .models import Clause
 from .temporal import clause_valid_from, clause_valid_to, iso_or_none, parse_date, usable
+from .validity import INVALID, UNCERTAIN, VALID, assess_validity
 
 ANSWER_SYSTEM = """你是低空政策问答助手。只能依据给定的资料回答，不得使用资料之外的知识。
 要求：
@@ -36,6 +37,7 @@ class TemporalState(TypedDict, total=False):
     retrieved_docs: list[Clause]
     filtered_docs: list[Clause]
     dropped: list[dict[str, Any]]
+    uncertain_docs: list[dict[str, Any]]
     route: str
     answer: str
     steps: Annotated[list[str], operator.add]
@@ -83,15 +85,19 @@ class TemporalRAGGraph:
     """只做过滤与生成的时序 RAG 图。"""
 
     def __init__(self, client: Any = None, *, thinking: bool = False,
-                 mode: str = "filter"):
+                 mode: str = "filter", family: Any = None):
         """
-        mode="filter"     过期条款直接剔除（主实验）
-        mode="downweight" 过期条款不剔除，只排到上下文末尾（消融实验：
-                          证明毒化防御来自"剔除"而非"模型自己会纠偏"）
+        mode="filter"       过期条款直接剔除（原主实验，行为不变）
+        mode="downweight"   过期条款不剔除，只排到上下文末尾（原消融）
+        mode="uncertainty"  三态判定：明确失效剔除，无法核实单独标记并拒答
+        family              可选的政策族谱，为缺失字段提供政策级证据
         """
+        if mode not in ("filter", "downweight", "uncertainty"):
+            raise ValueError(f"未知 Temporal 模式：{mode}")
         self.client = client
         self.thinking = thinking
         self.mode = mode
+        self.family = family
         self.graph = self._build()
 
     def _build(self):
@@ -114,8 +120,32 @@ class TemporalRAGGraph:
         as_of = parse_date(state.get("as_of")) or date.today()
         keep: list[Clause] = []
         stale: list[Clause] = []
+        uncertain: list[dict[str, Any]] = []
         dropped: list[dict[str, Any]] = []
         for d in state.get("retrieved_docs") or []:
+            if self.mode == "uncertainty":
+                v = assess_validity(d, as_of, self.family)
+                if v.state == VALID:
+                    keep.append(d)
+                    continue
+                record = {
+                    "id": d.id,
+                    "policy_name": d.policy_name,
+                    "article": d.article,
+                    "reason": v.reason,
+                    "state": v.state,
+                    "confidence": v.confidence,
+                    "basis": list(v.basis),
+                    "valid_from": iso_or_none(clause_valid_from(d)),
+                    "valid_to": iso_or_none(clause_valid_to(d)),
+                }
+                dropped.append(record)
+                if v.state == UNCERTAIN:
+                    uncertain.append(record)
+                else:
+                    stale.append(d)
+                continue
+
             ok, reason = usable(d, as_of)
             if ok:
                 keep.append(d)
@@ -133,12 +163,15 @@ class TemporalRAGGraph:
             # 消融：旧条款保留在上下文里（排在有效条款之后），不剔除
             keep = keep + stale
         route = "generate" if keep else "refuse"
-        tag = "downweight" if self.mode == "downweight" else "filter"
+        tag = {"filter": "filter", "downweight": "downweight",
+               "uncertainty": "uncertainty"}[self.mode]
         return {
             "filtered_docs": keep,
             "dropped": dropped,
+            "uncertain_docs": uncertain,
             "route": route,
-            "steps": [f"temporal_check[{tag}]:keep={len(keep)},drop={len(dropped)}"],
+            "steps": [f"temporal_check[{tag}]:keep={len(keep)},drop={len(dropped)},"
+                      f"uncertain={len(uncertain)}"],
         }
 
     def _generate(self, state: TemporalState) -> dict:
@@ -155,7 +188,15 @@ class TemporalRAGGraph:
     def _refuse(self, state: TemporalState) -> dict:
         n = len(state.get("retrieved_docs") or [])
         dropped = len(state.get("dropped") or [])
-        if dropped:
+        uncertain = len(state.get("uncertain_docs") or [])
+        if uncertain:
+            ans = (
+                f"检索到的 {n} 条政策依据中，有 {uncertain} 条的时效无法核实"
+                f"（评估时点 {state.get('as_of')}）；这些条款不能作为确定依据，"
+                "知识库中也没有可用的确定性现行条款，无法给出确定结论。"
+                "建议以主管部门最新公布的文件为准。"
+            )
+        elif dropped:
             ans = (
                 f"检索到的 {n} 条政策依据在当前时点（{state.get('as_of')}）均已失效，"
                 "不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。"
@@ -180,4 +221,5 @@ class TemporalRAGGraph:
             "steps": out.get("steps", []),
             "filtered_docs": out.get("filtered_docs") or [],
             "dropped": out.get("dropped") or [],
+            "uncertain_docs": out.get("uncertain_docs") or [],
         }

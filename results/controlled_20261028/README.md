@@ -20,9 +20,12 @@
 | `run_baseline/` | 186 | 0 | 31 题 ×6 方法，干净元数据 |
 | `run_noise_100/` | 372 | 0 | 31 题 ×6 方法 ×2 种 100% 联合损坏 |
 | `run_noise_50/` | 186 | 0 | 31 题 ×6 方法 ×50% joint_missing（seed43） |
+| `run_reliability_smoke/` | 12 | 0 | 3 道硬题 ×4 方法：族谱扩展/不确定门禁冒烟 |
+| `reliability_noise_smoke.json` | 3 | 0 | 100% chunk metadata 缺失 + family_uncertainty |
 
 最终合并表：`combined_summary.md` / `combined_summary.json`。
 正式报告：`../../output/控制实验报告_20261028.md`。
+扩展说明：`../../README_时序可靠性扩展.md`；全量离线审计：`audit/audit_reliability.json`。
 
 ## 关键结果（开发轮，单裁判 DeepSeek）
 

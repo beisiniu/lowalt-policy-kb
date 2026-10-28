@@ -35,6 +35,7 @@ from policycrawler.llm import LLMError, extract_json, provider_client  # noqa: E
 from policycrawler.utils import load_env_file  # noqa: E402
 from rag_eval.backends import build_backend  # noqa: E402
 from rag_eval.experiments import (  # noqa: E402
+    EXTENDED_METHODS,
     LABELS,
     METHODS,
     NOISE_MODES,
@@ -58,6 +59,7 @@ from rag_eval.experiments import (  # noqa: E402
     validate_judge,
     validate_snapshot,
 )
+from rag_eval.policy_family import build_policy_family, load_overrides  # noqa: E402
 from rag_eval.temporal import usable  # noqa: E402
 
 EXP_DIR = ROOT / "results" / "controlled_20261028"
@@ -92,8 +94,19 @@ def git_head() -> str:
 
 
 def code_digest() -> str:
-    files = (ROOT / "rag_eval" / "experiments.py", ROOT / "tools" / "run_controlled_experiments.py")
+    files = (
+        ROOT / "rag_eval" / "experiments.py",
+        ROOT / "rag_eval" / "temporal_graph.py",
+        ROOT / "rag_eval" / "validity.py",
+        ROOT / "rag_eval" / "policy_family.py",
+        ROOT / "tools" / "run_controlled_experiments.py",
+    )
     return fingerprint({p.relative_to(ROOT).as_posix(): file_digest(p) for p in files})
+
+
+def family_for(snapshot: dict) -> Any:
+    clauses = [load_clause(r) for r in snapshot["corpus"]]
+    return build_policy_family(clauses, load_overrides(ROOT / "data" / "national" / "validity_overrides.json"))
 
 
 def load_items(path: Path) -> list[dict]:
@@ -138,11 +151,12 @@ def selected_items(snapshot: dict, args: argparse.Namespace) -> list[dict]:
 
 
 def selected_conditions(args: argparse.Namespace) -> list[dict]:
-    if args.suite == "baseline":
+    if args.suite in ("baseline", "reliability"):
         result = conditions(args.suite)
+        allowed = set(METHODS if args.suite == "baseline" else EXTENDED_METHODS)
         if args.methods:
             wanted = {x.strip() for x in args.methods.split(",") if x.strip()}
-            unknown = wanted - set(METHODS)
+            unknown = wanted - allowed
             if unknown:
                 raise ValueError(f"未知方法：{sorted(unknown)}")
             result = [c for c in result if c["method"] in wanted]
@@ -292,7 +306,10 @@ def build_manifest(args: argparse.Namespace, snapshot: dict, items: list[dict],
         "conditions": [{"condition": c, "condition_key": fingerprint(c)} for c in conds],
         "method_protocol": ("date_rerank: valid_to DESC(null first), valid_from DESC; "
                             "llm_gate: ID-validated per-clause temporal decisions; "
-                            "temporal_filter: usable() hard filter"),
+                            "temporal_filter: usable() hard filter; "
+                            "uncertainty_filter: valid/invalid/uncertain gate; "
+                            "family_*: policy-family successor expansion before gate"),
+        "family_extra": getattr(args, "family_extra", 0),
         "answer": {**client_info(clients["answer"]), "temperature": args.temperature,
                    "max_tokens": args.answer_max_tokens, "thinking": False},
         "gate": {**client_info(clients["gate"]), "temperature": args.temperature,
@@ -461,6 +478,7 @@ def audit(args: argparse.Namespace) -> int:
     pool_mode = args.pool_mode
     pool = (eligible_policies_in_retrieval(snapshot) if pool_mode == "retrieval"
             else eligible_policies(snapshot))
+    family = family_for(snapshot) if args.suite == "reliability" else None
     out_cases: list[dict] = []
     summaries: list[dict] = []
     for cond in conds:
@@ -472,21 +490,30 @@ def audit(args: argparse.Namespace) -> int:
         for item in items:
             clean = snapshot_docs(snapshot, item["id"])
             changed = []
+            family_added = []
             if cond["suite"] == "noise":
                 docs, changed = corrupt_docs(clean, cond["noise"], selected, as_of)
             else:
                 docs = clean
+            if cond["suite"] == "reliability" and cond["method"].startswith("family_"):
+                ex = family.expand(clean, item["question"], as_of, max_extra=args.family_extra)
+                family_added = [{"id": x.clause.id, "old_policy_id": x.old_policy_id,
+                                 "new_policy_id": x.new_policy_id, "score": x.score}
+                                for x in ex]
+                docs = clean + [x.clause for x in ex]
+            retrieved_clean = clean if not family_added else docs
             if cond["method"] == "llm_gate":
                 cases.append({
                     "item_id": item["id"], "case_key": case_key(item, cond),
                     "requires_api": True, "noise": None,
                 })
                 continue
-            prep = prepare_answer(cond["method"], item["question"], docs, as_of)
-            audit_info = context_audit(clean, prep["docs"], item, as_of)
+            prep = prepare_answer(cond["method"], item["question"], docs, as_of, family=family)
+            audit_info = context_audit(retrieved_clean, prep["docs"], item, as_of)
             cases.append({
                 "item_id": item["id"], "case_key": case_key(item, cond),
                 "requires_api": False, "method": cond["method"],
+                "family_added": family_added,
                 "noise": ({"mode": cond["noise"], "rate": cond["rate"], "seed": cond["seed"],
                            "pool_size": pool_size, "selected_policies": selected,
                            **changed_summary(changed)} if cond["suite"] == "noise" else None),
@@ -502,6 +529,7 @@ def audit(args: argparse.Namespace) -> int:
             "new_in_context": sum(1 for x in valid if x["audit"]["new_in_context"]),
             "true_invalid_kept": sum(len(x["audit"]["true_invalid_kept"]) for x in valid),
             "true_invalid_blocked": sum(len(x["audit"]["true_invalid_blocked"]) for x in valid),
+            "family_added": sum(len(x.get("family_added") or []) for x in valid),
         })
         out_cases.extend(cases)
         log(f"{cond} -> {len(cases)} 条，离线可知 {len(valid)} 条")
@@ -545,6 +573,7 @@ def run(args: argparse.Namespace) -> int:
     records = read_records(records_dir)
     failures = read_failures(failures_dir)
     as_of = date.fromisoformat(snapshot["as_of"])
+    family = family_for(snapshot) if args.suite == "reliability" else None
     expected: list[tuple[dict, dict, str]] = []
     for cond in conds:
         for item in items:
@@ -570,6 +599,7 @@ def run(args: argparse.Namespace) -> int:
             selected: list[str] = []
             pool_size = 0
             changes: list[dict] = []
+            family_added: list[dict] = []
             if cond["suite"] == "noise":
                 selected, pool_size = noise_for_condition(cond, snapshot, args.pool_mode)
                 docs, changes = corrupt_docs(clean, cond["noise"], selected, as_of)
@@ -578,6 +608,13 @@ def run(args: argparse.Namespace) -> int:
                          "selected_policies": selected, **changed_summary(changes)}
             else:
                 docs, noise = clean, None
+            if cond["suite"] == "reliability" and cond["method"].startswith("family_"):
+                ex = family.expand(clean, item["question"], as_of, max_extra=args.family_extra)
+                family_added = [{"id": x.clause.id, "old_policy_id": x.old_policy_id,
+                                 "new_policy_id": x.new_policy_id, "score": x.score}
+                                for x in ex]
+                docs = clean + [x.clause for x in ex]
+            retrieved_clean = docs if family_added else clean
             stage = "gate"
             try:
                 decisions = None
@@ -597,7 +634,7 @@ def run(args: argparse.Namespace) -> int:
                                  "cache_hit": gate_hit}
                 stage = "prepare"
                 prep = prepare_answer(cond["method"], item["question"], docs, as_of,
-                                      decisions=decisions)
+                                      decisions=decisions, family=family)
                 stage = "answer"
                 if prep["route"] == "refuse":
                     answer = prep["answer"]
@@ -625,13 +662,13 @@ def run(args: argparse.Namespace) -> int:
                     remove_cache_keys(cache_dir, judge_key)
                     raise
                 stage = "audit"
-                audit_info = context_audit(clean, prep["docs"], item, as_of)
+                audit_info = context_audit(retrieved_clean, prep["docs"], item, as_of)
                 record = {
                     "case_key": key, "protocol": PROTOCOL,
                     "item_id": item["id"], "item_fingerprint": fingerprint(item),
                     "condition": cond, "condition_key": fingerprint(cond),
                     "snapshot_fingerprint": snapshot["fingerprint"],
-                    "noise": noise, "gate": gate_info,
+                    "noise": noise, "family_added": family_added, "gate": gate_info,
                     "answer": answer, "answer_source": answer_source,
                     "judge": judged, "audit": audit_info,
                     "request": {"answer_key": answer_key, "judge_key": judge_key,
@@ -698,8 +735,15 @@ def check(args: argparse.Namespace) -> int:
         if not str(record.get("answer") or "").strip():
             problems.append(f"{key}: 回答为空")
         audit_info = record.get("audit") or {}
-        if audit_info.get("retrieved_ids") != [r["id"] for r in snapshot["retrieval"].get(item["id"], [])]:
-            problems.append(f"{key}: 检索快照ID错位")
+        base_ids = [r["id"] for r in snapshot["retrieval"].get(item["id"], [])]
+        added_ids = [str(x.get("id") or "") for x in (record.get("family_added") or [])]
+        expected_ids = base_ids + added_ids
+        if audit_info.get("retrieved_ids") != expected_ids:
+            problems.append(f"{key}: 检索快照/族谱补入ID错位")
+        if len(set(expected_ids)) != len(expected_ids):
+            problems.append(f"{key}: 族谱补入出现重复ID")
+        if added_ids and not set(added_ids) <= set(audit_info.get("context_ids") or []):
+            problems.append(f"{key}: 族谱补入条款未进入上下文")
         if not set(audit_info.get("context_ids") or []) <= set(audit_info.get("retrieved_ids") or []):
             problems.append(f"{key}: 上下文ID越界")
         if audit_info.get("old_in_context") != (item["old_clause_id"] in (audit_info.get("context_ids") or [])):
@@ -726,12 +770,13 @@ def summarize(args: argparse.Namespace) -> int:
     failures = read_failures(run_dir / "failures")
     if not records:
         raise RuntimeError(f"{run_dir} 没有结果，无法汇总")
-    if args.suite == "baseline":
+    if args.suite in ("baseline", "reliability"):
+        methods = METHODS if args.suite == "baseline" else EXTENDED_METHODS
         groups = []
         naive = {r["item_id"]: r["judge"]["status"] for r in records
-                 if r["condition"]["suite"] == "baseline" and r["condition"]["method"] == "naive"}
-        for method in METHODS:
-            rs = [r for r in records if r["condition"]["suite"] == "baseline"
+                 if r["condition"]["suite"] == args.suite and r["condition"]["method"] == "naive"}
+        for method in methods:
+            rs = [r for r in records if r["condition"]["suite"] == args.suite
                   and r["condition"]["method"] == method]
             if not rs:
                 continue
@@ -749,23 +794,25 @@ def summarize(args: argparse.Namespace) -> int:
                 "old_in_context": sum(1 for r in rs if r["audit"]["old_in_context"]),
                 "new_in_context": sum(1 for r in rs if r["audit"]["new_in_context"]),
                 "invalid_kept": sum(len(r["audit"]["true_invalid_kept"]) for r in rs),
+                "family_added": sum(len(r.get("family_added") or []) for r in rs),
                 "strict_rescue": (round(strict / len(poisoned_naive), 4) if poisoned_naive else None),
             })
-        out = {"suite": "baseline", "run_dir": str(run_dir), "records": len(records),
+        out = {"suite": args.suite, "run_dir": str(run_dir), "records": len(records),
                "failures": len(failures), "groups": groups}
         atomic_write_json(run_dir / "summary.json", out)
-        lines = ["# 基线对照汇总", "",
+        title = "# 基线对照汇总" if args.suite == "baseline" else "# 时序可靠性扩展汇总"
+        lines = [title, "",
                  f"记录 {len(records)}，失败 {len(failures)}；开发轮单裁判，未作最终论文主表。", "",
-                 "| 方法 | n | 毒化 | 正确 | 拒答 | 其他 | 加权分 | 旧在上下文 | 无效入上下文 | 严格拯救 |",
-                 "|---|---|---|---|---|---|---|---|---|---|"]
+                 "| 方法 | n | 毒化 | 正确 | 拒答 | 其他 | 加权分 | 旧在上下文 | 无效入上下文 | 族谱补入 | 严格拯救 |",
+                 "|---|---|---|---|---|---|---|---|---|---|---|"]
         for g in groups:
             rescue = ("—" if g["method"] == "naive" or g["strict_rescue"] is None
                       else f"{g['strict_rescue']:.1%}")
             lines.append(f"| {g['method']} | {g['n']} | {g['poison_rate']:.1%} | "
                          f"{g['correct_rate']:.1%} | {g['refuse_rate']:.1%} | "
-                         f"{g['OTHER_ERROR']} | "
-                         f"{g['weighted_score']:+.3f} | {g['old_in_context']} | "
-                         f"{g['invalid_kept']} | {rescue} |")
+                         f"{g['OTHER_ERROR']} | {g['weighted_score']:+.3f} | "
+                         f"{g['old_in_context']} | {g['invalid_kept']} | "
+                         f"{g['family_added']} | {rescue} |")
         (run_dir / "summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
         log(f"汇总写入：{run_dir / 'summary.md'}")
         return 0
@@ -811,7 +858,7 @@ def summarize(args: argparse.Namespace) -> int:
 
 def add_common(parser: argparse.ArgumentParser, *, run: bool = False) -> None:
     parser.add_argument("--snapshot", default=str(DEFAULT_SNAPSHOT))
-    parser.add_argument("--suite", choices=["baseline", "noise"], default="baseline")
+    parser.add_argument("--suite", choices=["baseline", "noise", "reliability"], default="baseline")
     parser.add_argument("--item-ids", default="")
     parser.add_argument("--limit-items", type=int, default=0)
     parser.add_argument("--methods", default="")
@@ -823,6 +870,8 @@ def add_common(parser: argparse.ArgumentParser, *, run: bool = False) -> None:
                              "corpus=库内全部失效政策（敏感性口径）")
     parser.add_argument("--noise-methods", default="temporal_filter",
                         help="噪声实验参与的方法，逗号分隔；默认仅temporal_filter")
+    parser.add_argument("--family-extra", type=int, default=2,
+                        help="reliability 中每条旧政策最多补入的继任条款数")
     if run:
         parser.add_argument("--run-dir", default="")
         parser.add_argument("--provider", default="deepseek")
@@ -865,12 +914,12 @@ def main() -> int:
 
     p = sub.add_parser("check", help="检查结果身份/上下文/覆盖（不调用API）")
     p.add_argument("--snapshot", default=str(DEFAULT_SNAPSHOT))
-    p.add_argument("--suite", choices=["baseline", "noise"], default="baseline")
+    p.add_argument("--suite", choices=["baseline", "noise", "reliability"], default="baseline")
     p.add_argument("--run-dir", default="")
     p.add_argument("--allow-incomplete", action="store_true")
 
     p = sub.add_parser("summarize", help="汇总 baseline/noise")
-    p.add_argument("--suite", choices=["baseline", "noise"], required=True)
+    p.add_argument("--suite", choices=["baseline", "noise", "reliability"], required=True)
     p.add_argument("--run-dir", default="")
 
     args = ap.parse_args()

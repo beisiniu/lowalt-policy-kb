@@ -1,0 +1,1175 @@
+{
+  "created_at": "2026-10-28T20:42:09+08:00",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "as_of": "2026-10-27",
+  "pool_mode": "retrieval",
+  "pool_size": 6,
+  "conditions": [
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "naive"
+      },
+      "condition_key": "6620e02e050f6c054866b8b3ac23b7257804bbc98cf735a12394334758118024",
+      "pool_size": 0,
+      "selected_policies": [],
+      "n_cases": 3,
+      "n_requires_api": 0,
+      "n_valid": 3,
+      "old_in_context": 3,
+      "new_in_context": 0,
+      "true_invalid_kept": 26,
+      "true_invalid_blocked": 0,
+      "family_added": 0
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "prompt_only"
+      },
+      "condition_key": "617121a5ca8f05ece17b35388581fbf62d4a236913a663b2fb56ea7b52deb789",
+      "pool_size": 0,
+      "selected_policies": [],
+      "n_cases": 3,
+      "n_requires_api": 0,
+      "n_valid": 3,
+      "old_in_context": 3,
+      "new_in_context": 0,
+      "true_invalid_kept": 26,
+      "true_invalid_blocked": 0,
+      "family_added": 0
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "temporal_filter"
+      },
+      "condition_key": "a9bf3cc69c96220bd55428ac9e9ea3fbb337b3aee24e2eb99bb81103eda2c285",
+      "pool_size": 0,
+      "selected_policies": [],
+      "n_cases": 3,
+      "n_requires_api": 0,
+      "n_valid": 3,
+      "old_in_context": 0,
+      "new_in_context": 0,
+      "true_invalid_kept": 0,
+      "true_invalid_blocked": 26,
+      "family_added": 0
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "uncertainty_filter"
+      },
+      "condition_key": "d0d51e11c19471eb12c97c8635dac7a093e1dc225da0455fa77dfb33cc807090",
+      "pool_size": 0,
+      "selected_policies": [],
+      "n_cases": 3,
+      "n_requires_api": 0,
+      "n_valid": 3,
+      "old_in_context": 0,
+      "new_in_context": 0,
+      "true_invalid_kept": 0,
+      "true_invalid_blocked": 26,
+      "family_added": 0
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "family_filter"
+      },
+      "condition_key": "b237cdd8954f6f1b03f44e0045dc5b77584f2269b8a2b72f3b99535cee9bc649",
+      "pool_size": 0,
+      "selected_policies": [],
+      "n_cases": 3,
+      "n_requires_api": 0,
+      "n_valid": 3,
+      "old_in_context": 0,
+      "new_in_context": 3,
+      "true_invalid_kept": 0,
+      "true_invalid_blocked": 26,
+      "family_added": 6
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "family_uncertainty"
+      },
+      "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+      "pool_size": 0,
+      "selected_policies": [],
+      "n_cases": 3,
+      "n_requires_api": 0,
+      "n_valid": 3,
+      "old_in_context": 0,
+      "new_in_context": 3,
+      "true_invalid_kept": 0,
+      "true_invalid_blocked": 26,
+      "family_added": 6
+    }
+  ],
+  "cases": [
+    {
+      "item_id": "TQ3-030",
+      "case_key": "bdae1f5e7b9dd0946db89873ed1004d6107f06adeb150a09825a76ca5a646294",
+      "requires_api": false,
+      "method": "naive",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "context_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_kept": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_blocked": [],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": true,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-032",
+      "case_key": "0353d9335630d3a648b5337c096e7f8dc795def37e229316f317a4d547bbe676",
+      "requires_api": false,
+      "method": "naive",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "context_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_retrieved": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_kept": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_blocked": [],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": true,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-041",
+      "case_key": "0e7af184ac6b0fa3a4039c5dc3f735aa087d7fb43fcc95d24a0d3a4e54b0e92b",
+      "requires_api": false,
+      "method": "naive",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "context_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_kept": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_blocked": [],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": true,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-030",
+      "case_key": "51aa4def9efee6279c964f17cfe2e00bcd3cea57889d2c898eb3d79c7afdb328",
+      "requires_api": false,
+      "method": "prompt_only",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "context_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_kept": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_blocked": [],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": true,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-032",
+      "case_key": "892d6ca47fa50c387ac0ff12abf7cf281447dc96f8d2aa1227ad39db35c3e137",
+      "requires_api": false,
+      "method": "prompt_only",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "context_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_retrieved": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_kept": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_blocked": [],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": true,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-041",
+      "case_key": "4887977147ee3f6dbffe0d02936a272612fb4a533c0935adf49c404794d89aff",
+      "requires_api": false,
+      "method": "prompt_only",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "context_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_kept": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_blocked": [],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": true,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-030",
+      "case_key": "fcd5ab9efcd485c8794abf3f761138461e3ca6e717f67ca88e832626cb92d694",
+      "requires_api": false,
+      "method": "temporal_filter",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "context_ids": [
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": false,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-032",
+      "case_key": "dfa801267fda864f41bc53ad18e877e801cb7f11b0c0081a235862db95fabf61",
+      "requires_api": false,
+      "method": "temporal_filter",
+      "family_added": [],
+      "noise": null,
+      "route": "refuse",
+      "audit": {
+        "retrieved_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "context_ids": [],
+        "true_invalid_retrieved": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": false,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-041",
+      "case_key": "9100d69877bca1f82c96a58bef3cdc4c0e39c5e974e58107ac4ee5e008a658ab",
+      "requires_api": false,
+      "method": "temporal_filter",
+      "family_added": [],
+      "noise": null,
+      "route": "refuse",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "context_ids": [],
+        "true_invalid_retrieved": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": false,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-030",
+      "case_key": "9da4d724a39455c0dde416d23d0cfeaee72642667a23d1a0af3198369297a280",
+      "requires_api": false,
+      "method": "uncertainty_filter",
+      "family_added": [],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "context_ids": [
+          "clause_c23de099f06ea304d0c2efaa"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": false,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-032",
+      "case_key": "92e8e15af663fead11042c20f6c4e15f4d1a5d0d8bfe45a90a9c129511dc369c",
+      "requires_api": false,
+      "method": "uncertainty_filter",
+      "family_added": [],
+      "noise": null,
+      "route": "refuse",
+      "audit": {
+        "retrieved_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "context_ids": [],
+        "true_invalid_retrieved": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": false,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-041",
+      "case_key": "1eda221348e690d8ce63c6925d5adeb73d1e4c79c52557247bad6c59641b83fd",
+      "requires_api": false,
+      "method": "uncertainty_filter",
+      "family_added": [],
+      "noise": null,
+      "route": "refuse",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "context_ids": [],
+        "true_invalid_retrieved": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "old_recalled": true,
+        "new_recalled": false,
+        "old_in_context": false,
+        "new_in_context": false
+      }
+    },
+    {
+      "item_id": "TQ3-030",
+      "case_key": "149d8dad26e46d2a3d3d617c8369edbaca73633bcd09d4435338bbad485d7929",
+      "requires_api": false,
+      "method": "family_filter",
+      "family_added": [
+        {
+          "id": "clause_82fa08081d0a1d649a260119",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.4692
+        },
+        {
+          "id": "clause_fdc6b1a5abd107133f6d3edf",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.454
+        }
+      ],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa",
+          "clause_82fa08081d0a1d649a260119",
+          "clause_fdc6b1a5abd107133f6d3edf"
+        ],
+        "context_ids": [
+          "clause_c23de099f06ea304d0c2efaa",
+          "clause_82fa08081d0a1d649a260119",
+          "clause_fdc6b1a5abd107133f6d3edf"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "old_recalled": true,
+        "new_recalled": true,
+        "old_in_context": false,
+        "new_in_context": true
+      }
+    },
+    {
+      "item_id": "TQ3-032",
+      "case_key": "8d6e5d8acbea3ac50f56ee9f6e99a552664931b74dd5fbe432d607122327079a",
+      "requires_api": false,
+      "method": "family_filter",
+      "family_added": [
+        {
+          "id": "clause_b49e76749648682dabe5711f",
+          "old_policy_id": "da98f894f7142a23",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.5472
+        },
+        {
+          "id": "clause_6e2535d0f0dad3b4b1f5f99b",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.4797
+        }
+      ],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941",
+          "clause_b49e76749648682dabe5711f",
+          "clause_6e2535d0f0dad3b4b1f5f99b"
+        ],
+        "context_ids": [
+          "clause_b49e76749648682dabe5711f",
+          "clause_6e2535d0f0dad3b4b1f5f99b"
+        ],
+        "true_invalid_retrieved": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "old_recalled": true,
+        "new_recalled": true,
+        "old_in_context": false,
+        "new_in_context": true
+      }
+    },
+    {
+      "item_id": "TQ3-041",
+      "case_key": "a8e3399c0ad2ec725e20ed7765f8b5bb5d91a4574d3bf062eccca9916c1f9e80",
+      "requires_api": false,
+      "method": "family_filter",
+      "family_added": [
+        {
+          "id": "clause_fdc6b1a5abd107133f6d3edf",
+          "old_policy_id": "da98f894f7142a23",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.6786
+        },
+        {
+          "id": "clause_82fa08081d0a1d649a260119",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.4431
+        }
+      ],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a",
+          "clause_fdc6b1a5abd107133f6d3edf",
+          "clause_82fa08081d0a1d649a260119"
+        ],
+        "context_ids": [
+          "clause_fdc6b1a5abd107133f6d3edf",
+          "clause_82fa08081d0a1d649a260119"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "old_recalled": true,
+        "new_recalled": true,
+        "old_in_context": false,
+        "new_in_context": true
+      }
+    },
+    {
+      "item_id": "TQ3-030",
+      "case_key": "cea1a17e73bf4293d79b3f6b95beba5ca208fff20880ed7c1e67cdbadea242fa",
+      "requires_api": false,
+      "method": "family_uncertainty",
+      "family_added": [
+        {
+          "id": "clause_82fa08081d0a1d649a260119",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.4692
+        },
+        {
+          "id": "clause_fdc6b1a5abd107133f6d3edf",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.454
+        }
+      ],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_c23de099f06ea304d0c2efaa",
+          "clause_82fa08081d0a1d649a260119",
+          "clause_fdc6b1a5abd107133f6d3edf"
+        ],
+        "context_ids": [
+          "clause_c23de099f06ea304d0c2efaa",
+          "clause_82fa08081d0a1d649a260119",
+          "clause_fdc6b1a5abd107133f6d3edf"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f93dedca806ecf96cf3f2533",
+          "clause_9b4e6ce113ad95578308de32",
+          "clause_6e7b0172a8efdcbad81e667b",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_9ac1885a6de8c9f7d367c21e",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_5b4ab64b18e7e50594fcf4b4",
+          "clause_f8c8b32ac68b32f94a5ece2b"
+        ],
+        "old_recalled": true,
+        "new_recalled": true,
+        "old_in_context": false,
+        "new_in_context": true
+      }
+    },
+    {
+      "item_id": "TQ3-032",
+      "case_key": "2f3bf79a63739d9703aac04e7807bc3b7395d8d0a12b7a4716e2b56e1f738b84",
+      "requires_api": false,
+      "method": "family_uncertainty",
+      "family_added": [
+        {
+          "id": "clause_b49e76749648682dabe5711f",
+          "old_policy_id": "da98f894f7142a23",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.5472
+        },
+        {
+          "id": "clause_6e2535d0f0dad3b4b1f5f99b",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.4797
+        }
+      ],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941",
+          "clause_b49e76749648682dabe5711f",
+          "clause_6e2535d0f0dad3b4b1f5f99b"
+        ],
+        "context_ids": [
+          "clause_b49e76749648682dabe5711f",
+          "clause_6e2535d0f0dad3b4b1f5f99b"
+        ],
+        "true_invalid_retrieved": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_5e8d0113c1e96c31306fdcb8",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_3d8b8ba5a6c85e9d80bed9b2",
+          "clause_bc66ec4409344e52ddeec174",
+          "clause_7dcca5bb442085818291d0b6",
+          "clause_de7ab739a99407aeb9ec546e",
+          "clause_a7eb5a21c85f8b556e5ae5ca",
+          "clause_d3a52f5e82bea44896fa3941"
+        ],
+        "old_recalled": true,
+        "new_recalled": true,
+        "old_in_context": false,
+        "new_in_context": true
+      }
+    },
+    {
+      "item_id": "TQ3-041",
+      "case_key": "10491e6754c05ba353110fa025eb5858680d5f721eb05cc00730c595b295de2f",
+      "requires_api": false,
+      "method": "family_uncertainty",
+      "family_added": [
+        {
+          "id": "clause_fdc6b1a5abd107133f6d3edf",
+          "old_policy_id": "da98f894f7142a23",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.6786
+        },
+        {
+          "id": "clause_82fa08081d0a1d649a260119",
+          "old_policy_id": "153d6dea833fab42",
+          "new_policy_id": "7d74983a660ebb85",
+          "score": 0.4431
+        }
+      ],
+      "noise": null,
+      "route": "generate",
+      "audit": {
+        "retrieved_ids": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a",
+          "clause_fdc6b1a5abd107133f6d3edf",
+          "clause_82fa08081d0a1d649a260119"
+        ],
+        "context_ids": [
+          "clause_fdc6b1a5abd107133f6d3edf",
+          "clause_82fa08081d0a1d649a260119"
+        ],
+        "true_invalid_retrieved": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "true_invalid_kept": [],
+        "true_invalid_blocked": [
+          "clause_f8c8b32ac68b32f94a5ece2b",
+          "clause_cd7ceed42ae1ccd56168dc52",
+          "clause_4b2b0370fb0c573f14233df2",
+          "clause_cd022a0cc45192920d49ce97",
+          "clause_fb162157fc33384728ff6e87",
+          "clause_ed6e3f69cda5cad69a9b019e",
+          "clause_903d0768cc8318de86574cdf",
+          "clause_69c0086ff8bdb550a4d2d634",
+          "clause_5537fcfb8ea1075bc918e14a"
+        ],
+        "old_recalled": true,
+        "new_recalled": true,
+        "old_in_context": false,
+        "new_in_context": true
+      }
+    }
+  ]
+}

@@ -13,6 +13,8 @@ from .temporal import clause_valid_from, clause_valid_to, usable
 from .temporal_graph import ANSWER_SYSTEM, TemporalRAGGraph, build_answer_user_prompt
 
 METHODS = ("naive", "prompt_only", "date_rerank", "downweight", "llm_gate", "temporal_filter")
+EXTENDED_METHODS = ("naive", "prompt_only", "temporal_filter", "uncertainty_filter",
+                    "family_filter", "family_uncertainty")
 NOISE_MODES = ("expiry_missing", "status_missing", "joint_missing", "joint_wrong_future")
 END_KEYS = ("valid_to", "expiry_date", "expires_at", "end_date", "invalid_at")
 RATES = (0.0, 0.25, 0.5, 0.75, 1.0)
@@ -207,20 +209,28 @@ def validate_gate(raw: dict, docs: list[Clause]) -> list[dict]:
 
 
 def prepare_answer(method: str, question: str, docs: list[Clause], as_of: date,
-                   decisions: list[dict] | None = None) -> dict:
-    if method not in METHODS:
+                   decisions: list[dict] | None = None, family: Any = None) -> dict:
+    if method not in METHODS + EXTENDED_METHODS:
         raise ValueError(f"未知方法: {method}")
     keep, dropped = list(docs), []
-    if method in ("temporal_filter", "downweight"):
-        graph = TemporalRAGGraph(mode="downweight" if method == "downweight" else "filter")
+    gate_mode = {
+        "temporal_filter": "filter",
+        "downweight": "downweight",
+        "family_filter": "filter",
+        "uncertainty_filter": "uncertainty",
+        "family_uncertainty": "uncertainty",
+    }.get(method)
+    if gate_mode:
+        graph = TemporalRAGGraph(mode=gate_mode, family=family)
         state = {"as_of": as_of.isoformat(), "retrieved_docs": docs}
         checked = graph._temporal_check(state)
         keep = checked["filtered_docs"]
-        if method == "temporal_filter":
+        if method != "downweight":
             dropped = checked["dropped"]
         if not keep:
             answer = graph._refuse({**state, **checked})["answer"]
-            return {"docs": keep, "dropped": dropped, "messages": None, "answer": answer, "route": "refuse"}
+            return {"docs": keep, "dropped": dropped, "messages": None, "answer": answer,
+                    "route": "refuse", "uncertain": checked.get("uncertain_docs", [])}
     elif method == "date_rerank":
         keep = sorted(docs, key=lambda c: (clause_valid_to(c) or date.max,
                                           clause_valid_from(c) or date.min), reverse=True)
@@ -283,6 +293,8 @@ def case_key(item: dict, condition: dict) -> str:
 def conditions(suite: str, noise_methods: tuple[str, ...] = ("temporal_filter",)) -> list[dict]:
     if suite == "baseline":
         return [{"suite": suite, "method": method} for method in METHODS]
+    if suite == "reliability":
+        return [{"suite": suite, "method": method} for method in EXTENDED_METHODS]
     if suite == "noise":
         unknown = set(noise_methods) - set(METHODS)
         if unknown:

@@ -503,17 +503,21 @@ $VENV build_chroma_db.py --extracted-dir data/extracted_national \
 
 > `data/extracted_national/*.json` 的 `_meta.source_file` 记录的是原始绝对路径。`build_chroma_db.py` 与 `kb_ingest.py` 已加“路径失效时按文件名回退到 `data/national_policies/`”的逻辑，换机或迁移后仍可重建。
 
-**推送到 GitHub**（先确认 `.env` 不在 `git ls-files` 中）：
+**GitHub 远程**：已配置 `origin` 并推送 `main` 到私有仓库：
 
-```bash
-git remote add origin https://github.com/<你的账号>/<仓库名>.git
-git push -u origin main
+```text
+https://github.com/beisiniu/lowalt-policy-kb
 ```
 
-当前提交使用了占位作者 `lowalt-policy-kb <lowalt-policy-kb@users.noreply.github.com>`。若要把作者改成你的 GitHub 身份，先设置身份再批量改写（尚未推送，可安全改写）：
+当前提交作者是占位身份 `lowalt-policy-kb <lowalt-policy-kb@users.noreply.github.com>`。仓库已经推送过；若要改写作者历史，需要 force push，不建议在已有远程记录后随意操作。
 
-```bash
-git config user.name  "你的名字"
-git config user.email "你的邮箱"
-git rebase --root --exec "git commit --amend --no-edit --reset-author"
-```
+## 12. 时序可靠性扩展（2026-10-28，开发中）
+
+在原有“过滤 vs Naive”之外，新增两个方向：
+
+1. **不确定性时序门禁**：valid / invalid / uncertain 三态，缺失不再默认有效；
+2. **政策族谱 + 同源扩展**：旧政策命中时按政策身份召回继任条款，解决“过滤后没牌”。
+
+已离线验证：族谱扩展把目标现行条款召回从 **28/31 提升到 31/31**；100% chunk metadata 缺失时，`family_uncertainty` 离线为 31/31 目标召回、0 个真实无效切片进入上下文。3 题 API 冒烟中，`family_filter` / `family_uncertainty` 均 3/3 正确，Temporal 3/3 拒答，Naive 3/3 毒化。
+
+完整设计、命令、边界和待办见 [README_时序可靠性扩展.md](README_时序可靠性扩展.md)。

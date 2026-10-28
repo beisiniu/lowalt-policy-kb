@@ -1,0 +1,56 @@
+[
+  {
+    "id": "TQ3-030",
+    "question": "在黄埔区开展eVTOL载人飞行示范项目，补贴按什么标准计算？",
+    "answer": "在黄埔区开展eVTOL载人飞行示范项目，适用《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条：对提供低空飞行器载人飞行服务的示范项目，取得运营合格证及空域航线批复的，按照不超过实际运营费用的50%，给予每个项目每年最高不超过300万元。",
+    "judge": {
+      "status": "CORRECT",
+      "uses_old_clause": false,
+      "reason": "回答引用现行条款第九条，补贴标准与标准答案一致，未使用旧条款。"
+    },
+    "route": "generate",
+    "family_added": [
+      "clause_82fa08081d0a1d649a260119",
+      "clause_fdc6b1a5abd107133f6d3edf"
+    ],
+    "invalid_kept": [],
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  {
+    "id": "TQ3-032",
+    "question": "在黄埔区新引进低空经济重大项目，落户奖励最高能拿多少万元？",
+    "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第二条，对经综合评定引进的低空上下游重点企业（含智能航空器整机、核心零部件、机载设备、关键原材料等研制企业及数字化建设和运营维护等低空上下游重点企业），按照实缴注册资本和实际固定资产投资，分批次给予被引入企业最高1000万元补助。即落户奖励最高1000万元。",
+    "judge": {
+      "status": "CORRECT",
+      "uses_old_clause": false,
+      "reason": "回答引用现行条款，最高1000万元，与标准答案一致，未使用旧条款3000万元。"
+    },
+    "route": "generate",
+    "family_added": [
+      "clause_b49e76749648682dabe5711f",
+      "clause_6e2535d0f0dad3b4b1f5f99b"
+    ],
+    "invalid_kept": [],
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  {
+    "id": "TQ3-041",
+    "question": "在黄埔区建中型起降场，单个项目补贴上限是多少万元？",
+    "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条，中型起降场单个项目补贴上限为300万元。",
+    "judge": {
+      "status": "CORRECT",
+      "uses_old_clause": false,
+      "reason": "回答引用现行条款，中型起降场上限300万元，与标准答案一致，未使用旧条款。"
+    },
+    "route": "generate",
+    "family_added": [
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_82fa08081d0a1d649a260119"
+    ],
+    "invalid_kept": [],
+    "old_in_context": false,
+    "new_in_context": true
+  }
+]
