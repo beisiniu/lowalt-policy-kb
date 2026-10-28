@@ -1,0 +1,60 @@
+{
+  "theme_name": "business-modern",
+  "genre": "business-report",
+  "theme_file": "skills/design-token/tokens/themes/business-modern.json",
+  "compiled_source": "skills/design-token/tokens/compiled/business-report.json",
+  "typography": {
+    "fontFamily": {
+      "heading": "\"SimHei\", \"黑体\", sans-serif",
+      "body": "\"SimSun\", \"宋体\", serif",
+      "code": "\"Consolas\", \"Courier New\", monospace"
+    },
+    "fontSize": {
+      "cover-category": "11pt",
+      "cover-title": "25pt",
+      "cover-subtitle": "13.5pt",
+      "cover-meta": "10.5pt",
+      "h1": "16pt",
+      "h2": "13pt",
+      "h3": "12pt",
+      "body": "12pt",
+      "table": "10.5pt",
+      "small": "10pt",
+      "code-block": "8.5pt"
+    },
+    "lineHeight": {
+      "body": "1.7",
+      "heading": "1.4"
+    }
+  },
+  "color": {
+    "primary": "#1f3a5f",
+    "accent": "#b3261e",
+    "text": "#1a1a1a",
+    "muted": "#5c6670",
+    "border": "#c9d1d9",
+    "surface": "#fafbfc",
+    "quote-bg": "#fbf3f2",
+    "code-bg": "#f6f8fa",
+    "table-head-text": "#ffffff",
+    "table-alt-bg": "#f7f9fb"
+  },
+  "spacing": {
+    "paragraph": "0.55em",
+    "section": "1.2em",
+    "h1-top": "1.6em",
+    "h2-top": "1.0em",
+    "indent": "2em"
+  },
+  "layout": {
+    "page-size": "A4",
+    "content-width": "15.6cm"
+  },
+  "page_furniture": {
+    "cover": "无页眉页脚（命名页 cover）",
+    "body": "页脚居中页码「第 X 页」",
+    "page_restart": "正文首节 data-page-restart=1"
+  },
+  "constraint_note": "字体与字号按 doc-formatter §2.5 硬约束覆写 token 字面值：正文 SimSun 12pt、首行缩进 2em；token 仅提供配色与间距。",
+  "toc": false
+}

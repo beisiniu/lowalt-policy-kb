@@ -1,0 +1,15 @@
+{
+  "policy_name": "关于加快推动低空经济高质量发展的实施意见",
+  "issue_date": "2024-09-04",
+  "effective_date": "2024-09-04",
+  "expiry_date": "无",
+  "apply_region": "江苏省",
+  "status": "现行有效",
+  "summary": "江苏省属企业开展低空物流、公共服务、文旅等飞行应用须符合安全要求，空域使用需经军民航协同管理，未设重量高度门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-04_省政府办公厅关于加快推动低空经济高质量发展的实施意见.txt",
+    "char_count": 3023,
+    "extracted_at": "2026-10-26T16:47:37+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告",
+  "issue_date": "2024-09-24",
+  "effective_date": "2024-09-24",
+  "expiry_date": "无",
+  "apply_region": "张家界市",
+  "status": "现行有效",
+  "summary": "依据公平竞争审查条例，废止原通用航空产业方案中针对航线运营、低空旅游及纳税企业的财政补贴与奖励条款。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-24_张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告.txt",
+    "char_count": 884,
+    "extracted_at": "2026-10-26T20:59:56+08:00"
+  }
+}

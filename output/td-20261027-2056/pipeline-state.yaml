@@ -1,0 +1,57 @@
+schema_version: 1
+request_id: td-20261027-2056
+created_at: 2026-10-27T20:58:00+08:00
+updated_at: 2026-10-27T21:22:00+08:00
+
+entry_type: full_pipeline
+stage_chain: [1, 2, 3]
+
+output_docx_path: "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\output\\td-20261027-2056\\stage3\\低空政策RAG项目四项技术债说明与整改方案.docx"
+output_docx_user_specified: false
+
+current_stage: completed
+
+stages:
+  stage_0:
+    status: completed
+    completed_at: 2026-10-27T20:58:00+08:00
+    decision: full_pipeline
+  stage_1:
+    status: completed
+    started_at: 2026-10-27T20:58:00+08:00
+    completed_at: 2026-10-27T21:05:00+08:00
+    output_path: "stage1/final_draft.md"
+    genre: science-writing
+    expert_used: science-writing-expert
+    route_tag: expert_science
+  stage_2:
+    status: completed
+    started_at: 2026-10-27T21:05:00+08:00
+    completed_at: 2026-10-27T21:12:00+08:00
+    route: html
+    html_sub: template
+    output_path: "stage2/formatted-低空政策RAG四项技术债.html"
+    output_format: html
+    skills_invoked: [design-token, doc-typeset, html-review]
+    design_tokens_path: null
+    fallback: false
+    fallback_reason: null
+  stage_3:
+    status: completed
+    started_at: 2026-10-27T21:12:00+08:00
+    completed_at: 2026-10-27T21:22:00+08:00
+    executor: doc-converter
+    input_format: html
+    output_path: "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\output\\td-20261027-2056\\stage3\\低空政策RAG项目四项技术债说明与整改方案.docx"
+    skill_used: ["html-to-doc"]
+    present_files_opened: true
+    fallback: false
+    fallback_reason: null
+
+consistency_check:
+  output_files_exist: pass
+  stage_chain_complete: pass
+  last_checked_at: 2026-10-27T21:22:00+08:00
+  errors:
+    - "html-review TQ-04（10 个 h1）：为满足 nav.doc-toc 章节锚点规范而保留，该维度 passed=true"
+    - "html-to-doc 未生成 TOC 域（S-1/S-2 校验失败），改用快通道交付静态目录；封面分节与正文页脚页码正常"

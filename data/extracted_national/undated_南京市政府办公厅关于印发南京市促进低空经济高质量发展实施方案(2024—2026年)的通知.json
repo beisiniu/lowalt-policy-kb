@@ -1,0 +1,15 @@
+{
+  "policy_name": "南京市促进低空经济高质量发展实施方案（2024—2026年）",
+  "issue_date": "2024-05-13",
+  "effective_date": "2024-05-13",
+  "expiry_date": "无",
+  "apply_region": "南京市",
+  "status": "现行有效",
+  "summary": "南京市政府部署低空飞行服务中心与数据平台建设，为各类低空飞行活动提供审批、通信、导航等保障服务，并明确军地民协同管理机制。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\undated_南京市政府办公厅关于印发南京市促进低空经济高质量发展实施方案(2024—2026年)的通知.txt",
+    "char_count": 5985,
+    "extracted_at": "2026-10-26T17:37:08+08:00"
+  }
+}

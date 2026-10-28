@@ -1,0 +1,23 @@
+{
+  "policy_name": "广东省推动低空经济高质量发展行动方案（2024—2026年）",
+  "issue_date": "2024-05-21",
+  "effective_date": "2024-05-21",
+  "expiry_date": "无",
+  "apply_region": "广东省",
+  "status": "现行有效",
+  "summary": "广东省属部门与地市推进低空基建、平台与场景应用，方案为工作指引，未设具体飞行审批门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2024-05-22_广东省人民政府办公厅关于印发广东省推动低空经济高质量发展行动方案（2024—2026年）的通知.txt",
+    "char_count": 7644,
+    "extracted_at": "2026-10-26T03:23:27+08:00"
+  },
+  "_audit": [
+    {
+      "field": "expiry_date",
+      "old": "2026-12-31",
+      "new": "无",
+      "reason": "原文没有明确有效期或失效日期；规划期/目标年份不等于失效期"
+    }
+  ]
+}

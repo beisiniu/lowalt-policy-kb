@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳经济特区低空经济产业促进条例",
+  "issue_date": "2023-12-29",
+  "effective_date": "2024-02-01",
+  "expiry_date": "无",
+  "apply_region": "深圳市",
+  "status": "现行有效",
+  "summary": "深圳经济特区从事低空飞行活动须依法申请飞行计划或备案，经营性通用航空需取得运营合格证、经营许可证等资质，无人驾驶航空器信息须接入监管平台。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-12-29_深圳经济特区低空经济产业促进条例.txt",
+    "char_count": 7314,
+    "extracted_at": "2026-10-26T20:25:56+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "十堰市低空经济基础设施建设三年行动方案（2024-2026年）",
+  "issue_date": "2024-08-29",
+  "effective_date": "2024-08-29",
+  "expiry_date": "无",
+  "apply_region": "十堰市",
+  "status": "现行有效",
+  "summary": "十堰市各县市区及相关部门建设低空起降场、通用机场和飞行服务站，需接入市级平台并按要求对接省级及军民航系统，2026年底前基本完成。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-11_市人民政府办公室关于印发十堰市低空经济基础设施建设三年行动方案(2024-2026年)的通知.txt",
+    "char_count": 10472,
+    "extracted_at": "2026-10-26T16:47:39+08:00"
+  }
+}

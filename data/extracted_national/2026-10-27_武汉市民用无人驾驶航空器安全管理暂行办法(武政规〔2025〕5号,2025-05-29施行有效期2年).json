@@ -1,0 +1,15 @@
+{
+  "policy_name": "武汉市民用无人驾驶航空器安全管理暂行办法",
+  "issue_date": "2025-04-27",
+  "effective_date": "2025-05-29",
+  "expiry_date": "2027-05-28",
+  "apply_region": "武汉市",
+  "status": "现行有效",
+  "summary": "武汉市微型、轻型、小型无人机所有者须实名登记，真高120米以下非管制空域适飞，集群飞行及管制空域飞行须经空中交通管理机构批准。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_武汉市民用无人驾驶航空器安全管理暂行办法(武政规〔2025〕5号,2025-05-29施行有效期2年).txt",
+    "char_count": 7269,
+    "extracted_at": "2026-10-27T22:47:29+08:00"
+  }
+}

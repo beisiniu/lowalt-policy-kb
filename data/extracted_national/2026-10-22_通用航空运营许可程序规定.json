@@ -1,0 +1,15 @@
+{
+  "policy_name": "通用航空运营许可程序规定",
+  "issue_date": "2026-07-01",
+  "effective_date": "2026-07-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "通用航空企业从事经营性通航飞行须取得运营许可，按程序向民航局/地区管理局申请审批并持续符合条件。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-22_通用航空运营许可程序规定.txt",
+    "char_count": 1326,
+    "extracted_at": "2026-10-26T17:37:07+08:00"
+  }
+}

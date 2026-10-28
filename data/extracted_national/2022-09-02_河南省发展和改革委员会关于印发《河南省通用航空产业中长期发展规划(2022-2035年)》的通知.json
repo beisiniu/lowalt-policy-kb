@@ -1,0 +1,16 @@
+{
+  "policy_name": "河南省通用航空产业中长期发展规划（2022-2035年）",
+  "issue_date": "2022-09-02",
+  "effective_date": "2022-09-02",
+  "expiry_date": "无",
+  "apply_region": "河南省",
+  "status": "现行有效",
+  "summary": "河南省通用航空产业中长期发展规划，属产业布局与目标引导性文件，未设通用航空飞行活动审批、备案或重量高度时限门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2022-09-02_河南省发展和改革委员会关于印发《河南省通用航空产业中长期发展规划(2022-2035年)》的通知.txt",
+    "char_count": 762,
+    "extracted_at": "2026-10-26T16:47:12+08:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "policy_name": "关于推动低空保险高质量发展的实施意见",
+  "issue_date": "2026-01-28",
+  "effective_date": "2026-01-28",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "低空企业及无人机运营人：依法应投保的无人驾驶航空器须投保责任险，强制投保将作为飞行审批前置条件，2027年前初步建立。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-01-28_发布丨国家发展改革委 金融监管总局 中国民航局关于推动低空保险高质量发展的实施意见.txt",
+    "char_count": 3055,
+    "extracted_at": "2026-10-27T22:51:15+08:00"
+  }
+}

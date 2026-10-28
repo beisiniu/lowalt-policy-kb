@@ -1,0 +1,16 @@
+{
+  "policy_name": "通用航空装备创新应用实施方案（2024—2030年）",
+  "issue_date": "2024-03-27",
+  "effective_date": "2024-03-27",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "四部门部署通用航空装备创新应用，要求eVTOL等新型航空器适航取证，落实航空项目投资核准程序，无明确审批时限门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_通用航空装备创新应用实施方案(2024—2030年)(工信部联重装〔2024〕52号,工信部科技部财政部民航局).txt",
+    "char_count": 9610,
+    "extracted_at": "2026-10-27T22:51:33+08:00"
+  }
+}

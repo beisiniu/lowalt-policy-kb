@@ -1,0 +1,16 @@
+{
+  "policy_name": "福州市加快推动低空产业发展行动方案（2024—2026年）",
+  "issue_date": "2024-08-28",
+  "effective_date": "2024-08-28",
+  "expiry_date": "无",
+  "apply_region": "福州市",
+  "status": "现行有效",
+  "summary": "福州市开展真高1000米以下低空空域管理改革试点，无人机飞行须经军地民协同监管、发布适飞空域并依法打击黑飞。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-28_福州市加快推动低空产业发展行动方案(2024—2026年).txt",
+    "char_count": 19432,
+    "extracted_at": "2026-10-27T15:38:31+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "促进全省低空经济高质量发展实施方案（2024—2027年）",
+  "issue_date": "2024-08-12",
+  "effective_date": "2024-08-12",
+  "expiry_date": "无",
+  "apply_region": "河南省",
+  "status": "现行有效",
+  "summary": "河南省政府统筹低空经济发展，要求无人驾驶航空器运行须遵守省级安全管理办法，空域使用需军民航协同审批，未设具体重量高度门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-12_河南省人民政府办公厅关于印发促进全省低空经济高质量发展实施方案(2024—2027年)的通知.txt",
+    "char_count": 8163,
+    "extracted_at": "2026-10-26T16:47:31+08:00"
+  }
+}

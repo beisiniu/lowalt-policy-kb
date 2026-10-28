@@ -1,0 +1,16 @@
+{
+  "policy_name": "西藏自治区支持低空经济高质量发展的若干政策（征求意见稿）",
+  "issue_date": "2024-06-12",
+  "effective_date": "2024-06-12",
+  "expiry_date": "无",
+  "apply_region": "西藏自治区",
+  "status": "现行有效",
+  "summary": "西藏对通用机场、无人机物流航线等给予补贴，A/B类机场需军方核准场址和民航批复后审批，无人机航线需行业主管部门审批。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-06-12_关于公开征求《西藏自治区支持低空经济 高质量发展的若干政策(征求意见稿)》 意见建议的公告.txt",
+    "char_count": 5936,
+    "extracted_at": "2026-10-26T17:00:03+08:00"
+  }
+}

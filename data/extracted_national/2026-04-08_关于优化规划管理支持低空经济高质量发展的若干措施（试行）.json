@@ -1,0 +1,15 @@
+{
+  "policy_name": "关于优化规划管理支持低空经济高质量发展的若干措施（试行）",
+  "issue_date": "2026-04-08",
+  "effective_date": "2026-04-08",
+  "expiry_date": "2029-04-07",
+  "apply_region": "珠海市",
+  "status": "现行有效",
+  "summary": "珠海规范低空设施用地与规划，微轻小型无人机起降点免调控规或豁免许可，自有用地增设≤300平米非营利设施凭审核办证。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-04-08_关于优化规划管理支持低空经济高质量发展的若干措施（试行）.txt",
+    "char_count": 2572,
+    "extracted_at": "2026-10-26T22:33:40+08:00"
+  }
+}

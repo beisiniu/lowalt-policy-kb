@@ -1,0 +1,15 @@
+{
+  "policy_name": "苏州市低空空中交通规则（试行）",
+  "issue_date": "2024-07-13",
+  "effective_date": "2024-09-01",
+  "expiry_date": "2026-08-31",
+  "apply_region": "苏州市",
+  "status": "已废止",
+  "summary": "苏州市低空飞行单位或个人须通过市级平台申请飞行计划，真高120米以下非管制空域为微轻小型无人机适飞空域。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_苏州市低空空中交通规则(试行,全国首部,有效期至2026年8月31日已届满失效).txt",
+    "char_count": 2748,
+    "extracted_at": "2026-10-27T22:47:58+08:00"
+  }
+}

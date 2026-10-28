@@ -1,0 +1,15 @@
+{
+  "policy_name": "南昌无人驾驶航空器适飞空域范围公布",
+  "issue_date": "2026-10-27",
+  "effective_date": "2026-05-14",
+  "expiry_date": "无",
+  "apply_region": "南昌市",
+  "status": "现行有效",
+  "summary": "南昌市微型、轻型、小型无人机在真高120米以下非管制空域可飞行，须在UOM平台实名登记并报备飞行计划。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_南昌无人驾驶航空器适飞空域范围公布(2026年5月新版启用,旧版同步废止).txt",
+    "char_count": 2254,
+    "extracted_at": "2026-10-27T22:47:12+08:00"
+  }
+}

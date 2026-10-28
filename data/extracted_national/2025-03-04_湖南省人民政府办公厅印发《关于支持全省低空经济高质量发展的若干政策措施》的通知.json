@@ -1,0 +1,15 @@
+{
+  "policy_name": "关于支持全省低空经济高质量发展的若干政策措施",
+  "issue_date": "2024-06-13",
+  "effective_date": "2024-07-01",
+  "expiry_date": "2027-06-30",
+  "apply_region": "湖南省",
+  "status": "现行有效",
+  "summary": "湖南通航及无人机企业开展低空运营、开通物流航线或建设通用机场，需满足飞行小时、架次门槛，方可申领省级财政补贴，奖补不重复享受。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-03-04_湖南省人民政府办公厅印发《关于支持全省低空经济高质量发展的若干政策措施》的通知.txt",
+    "char_count": 4655,
+    "extracted_at": "2026-10-26T20:25:59+08:00"
+  }
+}

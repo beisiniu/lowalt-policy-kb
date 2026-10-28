@@ -1,0 +1,15 @@
+{
+  "policy_name": "太原市低空经济高质量发展行动方案（2025—2027年）",
+  "issue_date": "2025-11-12",
+  "effective_date": "2025-11-12",
+  "expiry_date": "无",
+  "apply_region": "太原市",
+  "status": "现行有效",
+  "summary": "依托市级管控平台依法报批审批无人机飞行，落实适航、登记及安全监管责任，构建起降设施与协同管理机制。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-11-12_太原市低空经济高质量发展行动方案（2025—2027年）.txt",
+    "char_count": 5197,
+    "extracted_at": "2026-10-26T23:42:28+08:00"
+  }
+}

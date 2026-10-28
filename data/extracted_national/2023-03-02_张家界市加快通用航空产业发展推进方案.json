@@ -1,0 +1,15 @@
+{
+  "policy_name": "张家界市加快通用航空产业发展推进方案",
+  "issue_date": "2023-03-02",
+  "effective_date": "2023-03-02",
+  "expiry_date": "2026-03-01",
+  "apply_region": "张家界市",
+  "status": "已废止",
+  "summary": "明确通航短途运输、低空旅游等场景的财政补贴门槛（如航线年飞行≥200小时），要求配合军民航建立联合监管机制，严防黑飞。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-03-02_张家界市加快通用航空产业发展推进方案.txt",
+    "char_count": 3072,
+    "extracted_at": "2026-10-26T20:59:54+08:00"
+  }
+}

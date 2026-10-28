@@ -1,0 +1,16 @@
+{
+  "policy_name": "合肥低空经济气象保障能力提升行动方案（2025—2027年）",
+  "issue_date": "2025-12-31",
+  "effective_date": "2025-12-31",
+  "expiry_date": "无",
+  "apply_region": "合肥市",
+  "status": "现行有效",
+  "summary": "合肥市气象等部门建设低空气象监测网与服务平台，为低空飞行提供气象保障，不设审批备案门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-12-31_合肥低空经济气象保障能力提升行动方案(2025-2027年).txt",
+    "char_count": 5204,
+    "extracted_at": "2026-10-27T13:15:42+08:00"
+  }
+}

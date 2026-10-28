@@ -1,0 +1,211 @@
+[
+  {
+    "id": "Q01",
+    "question": "现在在深圳市用大疆 Mini 3（249 克）在适飞空域内飞行，需要提前申请飞行计划吗？",
+    "ground_truth": "不需要。按《深圳经济特区低空经济产业促进条例》第九条，最大起飞重量不超过 25 千克的微型、轻型无人驾驶航空器在适飞空域内飞行无需提出飞行计划申请，只需完成实名登记核验，且飞行高度不超过真高 120 米、速度不超过 100 公里/小时。",
+    "answer_type": "审批判定",
+    "expected_status": "无需审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例（2026-05-01 施行）",
+    "trap": "stale"
+  },
+  {
+    "id": "Q02",
+    "question": "在深圳用起飞重量 30 千克的无人机做电力巡检（非经营性），要提前几天申请？",
+    "ground_truth": "需要审批。最大起飞重量超过 25 千克的非经营性飞行，应提前 3 个工作日通过市低空飞行服务保障平台提出飞行计划申请，经批准后方可实施。",
+    "answer_type": "审批判定",
+    "expected_status": "需要审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第八条",
+    "trap": "none"
+  },
+  {
+    "id": "Q03",
+    "question": "深圳的无人机运营企业，需要取得什么证件才能开展经营性飞行？",
+    "ground_truth": "需要资质。在本市从事经营性飞行活动的单位应依法取得民用无人驾驶航空器运营合格证；操控小型以上机型还需操控员执照。",
+    "answer_type": "审批判定",
+    "expected_status": "需要审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第八条",
+    "trap": "none"
+  },
+  {
+    "id": "Q04",
+    "question": "深圳的机场净空保护区内可以飞无人机吗？",
+    "ground_truth": "不可以擅自飞行。机场净空保护区、军事管理区、重点敏感区域上空为管制空域，未经空中交通管理机构批准，任何单位和个人不得飞入。",
+    "answer_type": "审批判定",
+    "expected_status": "需要审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第十条",
+    "trap": "none"
+  },
+  {
+    "id": "Q05",
+    "question": "在深圳操控 4 千克的无人机，需要考操控员执照吗？",
+    "ground_truth": "不需要。4 千克属于轻型无人机（≤4kg 且 ≤100km/h），只有使用小型、中型、大型无人机才需操控员执照。",
+    "answer_type": "审批判定",
+    "expected_status": "无需审批",
+    "expected_region": "深圳市",
+    "policy_ref": "民用无人驾驶航空器运行安全管理规定 第五条、第十二条",
+    "trap": "stale"
+  },
+  {
+    "id": "Q06",
+    "question": "在深圳飞 249 克无人机，飞行高度可以到 200 米吗？",
+    "ground_truth": "不可以。微型、轻型无人机在适飞空域内飞行高度不得超过真高 120 米。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["120米"],
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第九条",
+    "trap": "none"
+  },
+  {
+    "id": "Q07",
+    "question": "在深圳，无人机飞行计划申请要提前几个工作日提交？（2026 年 9 月后）",
+    "ground_truth": "使用小型、中型、大型民用无人驾驶航空器飞行的，应提前 1 个工作日通过市低空飞行服务保障平台提出申请（2026 年修订办法第六条）。",
+    "answer_type": "审批判定",
+    "expected_status": "需要审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳市低空飞行活动管理办法（2026 年修订）第六条",
+    "trap": "stale"
+  },
+  {
+    "id": "Q08",
+    "question": "深圳的无人机表演活动（夜间编队飞行）需要申请吗？",
+    "ground_truth": "需要。编队表演属于多架无人机同时飞行，涉及空域使用与公共安全，应提前提出飞行计划申请并获得批准，同时遵守管制空域规定。",
+    "answer_type": "审批判定",
+    "expected_status": "需要审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第八条、第十条",
+    "trap": "none"
+  },
+  {
+    "id": "Q09",
+    "question": "在管制空域内飞行，最晚什么时候提交飞行活动申请？",
+    "ground_truth": "应在拟飞行前 1 日 15 时前通过民用无人驾驶航空器综合管理平台提出申请，空中交通管理机构在拟飞行前 1 日 21 时前作出决定。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["15时"],
+    "expected_region": "全国",
+    "policy_ref": "民用无人驾驶航空器运行安全管理规定 第十八条",
+    "trap": "none"
+  },
+  {
+    "id": "Q10",
+    "question": "未取得操控员执照操控小型无人机飞行，会有什么处罚？",
+    "ground_truth": "由民航管理部门责令改正，处 5000 元以上 5 万元以下罚款。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["5000元"],
+    "expected_region": "全国",
+    "policy_ref": "民用无人驾驶航空器运行安全管理规定 第二十三条",
+    "trap": "none"
+  },
+  {
+    "id": "Q11",
+    "question": "在上海用 249 克无人机在适飞空域飞行，需要提前申请吗？",
+    "ground_truth": "不需要。按国家层面规定，微型无人机在适飞空域内飞行无需提出飞行计划申请，完成实名登记即可；深圳的地方条例不适用于上海。",
+    "answer_type": "审批判定",
+    "expected_status": "无需审批",
+    "expected_region": "全国",
+    "policy_ref": "民用无人驾驶航空器运行安全管理规定",
+    "trap": "stale"
+  },
+  {
+    "id": "Q12",
+    "question": "深圳的低空飞行活动管理办法现在还有效吗？",
+    "ground_truth": "2025 年 6 月 1 日施行的《深圳市低空飞行活动管理办法》已被 2026 年 9 月 1 日施行的《深圳市低空飞行活动管理办法（2026 年修订）》取代，应适用修订后的办法。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["修订"],
+    "expected_region": "深圳市",
+    "policy_ref": "深圳市低空飞行活动管理办法（2026 年修订）",
+    "trap": "stale"
+  },
+  {
+    "id": "Q13",
+    "question": "深圳企业做无人机物流配送（载货），航线需要审批吗？",
+    "ground_truth": "需要。从事经营性飞行须取得运营合格证；使用小型以上机型还需按飞行计划申请流程报批航线与时刻，涉及管制空域须经空中交通管理机构批准。",
+    "answer_type": "审批判定",
+    "expected_status": "需要审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第八条",
+    "trap": "none"
+  },
+  {
+    "id": "Q14",
+    "question": "民用无人驾驶航空器运行安全管理规定的有效期到什么时候？",
+    "ground_truth": "该规定自 2026 年 7 月 1 日起施行，有效期 5 年，即 2031 年 6 月 30 日到期。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["5年"],
+    "expected_region": "全国",
+    "policy_ref": "民用无人驾驶航空器运行安全管理规定 第三十条",
+    "trap": "none"
+  },
+  {
+    "id": "Q15",
+    "question": "深圳的微型无人机需要实名登记吗？",
+    "ground_truth": "需要。即便无需飞行计划申请，也应在飞行前通过市低空飞行服务保障平台完成实名登记信息核验。",
+    "answer_type": "审批判定",
+    "expected_status": "需要审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第九条",
+    "trap": "stale"
+  },
+  {
+    "id": "Q16",
+    "question": "在深圳真高 1500 米的高度飞无人机，适用低空管理规定吗？",
+    "ground_truth": "适用。条例所称低空为真高 1000 米以下，根据实际需要可延伸至 3000 米，1500 米仍在管理范围内。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["1000米", "3000米"],
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第二条",
+    "trap": "none"
+  },
+  {
+    "id": "Q17",
+    "question": "深圳的无人机飞行违规了，第一次会被罚款吗？",
+    "ground_truth": "以适用条款为准：修订后条例对轻微违规首次可予警告；但未经批准擅自飞行仍按相关规定责令停止飞行并可处罚款，具体依机型与空域判定。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["警告", "罚款"],
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例；深圳市低空飞行活动管理办法（2026 年修订）",
+    "trap": "none"
+  },
+  {
+    "id": "Q18",
+    "question": "在深圳飞 25 千克整的无人机，属于需要申请的范围吗？",
+    "ground_truth": "不需要。「不超过 25 千克」包含 25 千克，属于免申请范围；超过 25 千克才需提前 3 个工作日申请。",
+    "answer_type": "审批判定",
+    "expected_status": "无需审批",
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第八条、第九条",
+    "trap": "stale"
+  },
+  {
+    "id": "Q19",
+    "question": "深圳低空经济产业促进条例是什么时候开始施行的？",
+    "ground_truth": "2026 年 3 月 15 日公布，自 2026 年 5 月 1 日起施行。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["2026年5月1日"],
+    "expected_region": "深圳市",
+    "policy_ref": "深圳经济特区低空经济产业促进条例 第二十条",
+    "trap": "none"
+  },
+  {
+    "id": "Q20",
+    "question": "深圳和国家的规定冲突时，以哪个为准？",
+    "ground_truth": "国家层面的民用无人驾驶航空器管理规定是上位依据；深圳经济特区法规可在特区范围内作出更具体要求，但不得与国家规定冲突，冲突时以国家规定为准。",
+    "answer_type": "信息查询",
+    "expected_status": "",
+    "key_facts": ["国家"],
+    "expected_region": "深圳市",
+    "policy_ref": "立法法；民用无人驾驶航空器运行安全管理规定",
+    "trap": "none"
+  }
+]

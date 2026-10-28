@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市光明区促进低空经济高质量发展若干措施",
+  "issue_date": "2025-12-27",
+  "effective_date": "2026-01-09",
+  "expiry_date": "2029-01-08",
+  "apply_region": "深圳市光明区",
+  "status": "现行有效",
+  "summary": "光明区低空经济企业开展无人机/eVTOL适航取证、航线运营及起降设施建设，航线须取得主管部门审批并达年度架次门槛方可获资助。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_深圳市光明区促进低空经济高质量发展若干措施(原文).txt",
+    "char_count": 4334,
+    "extracted_at": "2026-10-27T22:47:39+08:00"
+  }
+}

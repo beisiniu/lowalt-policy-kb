@@ -1,0 +1,15 @@
+{
+  "policy_name": "杭州市支持低空经济高质量发展的若干措施",
+  "issue_date": "2024-09-06",
+  "effective_date": "2024-10-08",
+  "expiry_date": "2027-12-31",
+  "apply_region": "杭州市",
+  "status": "现行有效",
+  "summary": "杭州低空企业获适航证或开通航线需行业审批，轻型/中型/大型无人机及载人eVTOL运营分别设架次门槛，最高奖励1500万元。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-06_杭州市支持低空经济高质量发展的若干措施.txt",
+    "char_count": 5905,
+    "extracted_at": "2026-10-27T01:26:44+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "中山市低空经济高质量发展行动方案（2024-2027年）",
+  "issue_date": "2024-07-01",
+  "effective_date": "2024-07-01",
+  "expiry_date": "无",
+  "apply_region": "中山市",
+  "status": "现行有效",
+  "summary": "中山市各部门推进低空基础设施、应用场景与产业培育，鼓励企业申报无人机、直升机航线，无明确审批门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_中山市人民政府办公室关于印发中山市低空经济高质量发展行动方案(2024-2027年)的通知(中府办〔2024〕22号).txt",
+    "char_count": 9990,
+    "extracted_at": "2026-10-27T15:34:38+08:00"
+  }
+}

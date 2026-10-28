@@ -1,0 +1,16 @@
+{
+  "policy_name": "福建省低空旅游产业发展规划纲要（2021-2035年）",
+  "issue_date": "2021-03-09",
+  "effective_date": "2021-03-09",
+  "expiry_date": "无",
+  "apply_region": "福建省",
+  "status": "现行有效",
+  "summary": "福建省文旅厅印发低空旅游产业发展规划纲要，指导各设区市文旅部门组织实施，未设具体审批或备案门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2021-03-09_福建省文化和旅游厅关于印发《福建省低空旅游产业发展规划纲要(2021-2035年)》的通知.txt",
+    "char_count": 719,
+    "extracted_at": "2026-10-26T16:47:11+08:00"
+  }
+}

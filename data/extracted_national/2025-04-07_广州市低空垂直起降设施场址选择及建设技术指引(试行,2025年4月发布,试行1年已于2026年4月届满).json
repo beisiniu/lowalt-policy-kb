@@ -1,0 +1,23 @@
+{
+  "policy_name": "广州市低空垂直起降设施场址选择及建设技术指引（试行）",
+  "issue_date": "2025-04-07",
+  "effective_date": "2025-04-07",
+  "expiry_date": "无",
+  "apply_region": "广州市",
+  "status": "已废止",
+  "summary": "广州最大起飞重量150kg以上载人/货运垂直起降设施场址选择与建设须按本指引执行，含场址论证、场地特性及消防等要求，试行1年已届满。",
+  "_engine": "llm:deepseek-flash",
+  "_audit": [
+    {
+      "field": "expiry_date",
+      "old": "2026-04-06",
+      "new": "无",
+      "reason": "原文没有明确有效期或失效日期；规划期/目标年份不等于失效期"
+    }
+  ],
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-04-07_广州市低空垂直起降设施场址选择及建设技术指引(试行,2025年4月发布,试行1年已于2026年4月届满).txt",
+    "char_count": 49118,
+    "extracted_at": "2026-10-27T22:51:00+08:00"
+  }
+}

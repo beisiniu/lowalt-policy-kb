@@ -1,0 +1,15 @@
+{
+  "policy_name": "合肥市支持低空经济发展若干政策",
+  "issue_date": "2024-06-20",
+  "effective_date": "2024-06-20",
+  "expiry_date": "2025-06-19",
+  "apply_region": "合肥市",
+  "status": "已废止",
+  "summary": "合肥市低空经济企业开展eVTOL及无人机航线运营须经民航部门审批，按机型重量和飞行架次给予补贴，政策有效期1年已届满。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-06-20_合肥市人民政府办公室关于印发合肥市支持低空经济发展若干政策的通知(合政办秘〔2024〕19号,有效期1年已届满失效).txt",
+    "char_count": 3654,
+    "extracted_at": "2026-10-27T14:27:43+08:00"
+  }
+}

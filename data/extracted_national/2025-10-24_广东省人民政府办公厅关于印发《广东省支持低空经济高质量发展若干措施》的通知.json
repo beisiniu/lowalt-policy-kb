@@ -1,0 +1,15 @@
+{
+  "policy_name": "广东省支持低空经济高质量发展若干措施",
+  "issue_date": "2025-10-13",
+  "effective_date": "2025-10-13",
+  "expiry_date": "2028-10-12",
+  "apply_region": "广东省",
+  "status": "现行有效",
+  "summary": "广东省内低空经济企业和机构开展低空业务，需按各责任部门实施细则申请资金奖励与政策支持，措施自发布起施行有效期3年。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-10-24_广东省人民政府办公厅关于印发《广东省支持低空经济高质量发展若干措施》的通知.txt",
+    "char_count": 4084,
+    "extracted_at": "2026-10-27T22:51:23+08:00"
+  }
+}

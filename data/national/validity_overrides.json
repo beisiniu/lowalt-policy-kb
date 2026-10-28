@@ -1,0 +1,733 @@
+{
+  "https://www.hp.gov.cn/gkmlpt/content/9/9280/post_9280468.html": {
+    "status": "已废止",
+    "expiry_date": "2025-06-25",
+    "superseded_by": "广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施（2025-06-26施行）",
+    "evidence": "新措施附则明确：原《广州开发区（黄埔区）促进低空经济高质量发展的若干措施的通知》（穗埔发改规字〔2023〕2号）及其实施细则同时废止。",
+    "evidence_url": "https://www.gd.gov.cn/gdywdt/zwzt/dkjj/zcwj/content/post_4740631.html"
+  },
+  "https://www.sz.gov.cn/attachment/1/1396/1396486/11903358.doc": {
+    "status": "已废止",
+    "expiry_date": "2026-04-01",
+    "superseded_by": "深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）（深龙发改规〔2026〕1号，2026-04-01施行）",
+    "evidence": "新版附则：原《龙岗区关于促进低空经济产业发展的若干措施》（深龙工信规〔2023〕14号）同时废止。",
+    "evidence_url": "https://www.lg.gov.cn/gkmlpt/content/12/12691/post_12691499.html"
+  },
+  "https://www.wuhu.gov.cn/openness/public/6596211/38731262.html": {
+    "status": "已失效",
+    "expiry_date": "2025-12-31",
+    "superseded_by": "无后续文件（规划期结束）",
+    "evidence": "《芜湖市低空经济高质量发展行动方案（2023—2025年）》规划期至2025年底，期后无延续文件。",
+    "evidence_url": "https://www.wuhu.gov.cn/openness/public/6596211/38731262.html"
+  },
+  "https://www.yn.gov.cn/zcwjk/html/2023/zszcwjk_1028/47443.html": {
+    "status": "已失效",
+    "expiry_date": "2025-12-31",
+    "superseded_by": "无后续文件（规划期结束）",
+    "evidence": "《大理州无人机产业发展规划（2023—2025年）》规划期至2025年底。",
+    "evidence_url": "https://www.yn.gov.cn/zcwjk/html/2023/zszcwjk_1028/47443.html"
+  },
+  "https://www.wuxi.gov.cn/doc/2024/04/17/4293319.shtml": {
+    "expiry_date": "2026-12-31",
+    "evidence": "文件名规划期（2024—2026年）推算，未到期。"
+  },
+  "https://www.huizhou.gov.cn/zwzt/rdgz/zxwj/content/post_5271586.html": {
+    "expiry_date": "2026-12-31",
+    "evidence": "文件名规划期（2024-2026年）推算，未到期。"
+  },
+  "http://www.gxzf.gov.cn/zfwj/zzqrmzfbgtwj_34828/2022ngzbwj_205637/t1907": {
+    "expiry_date": "2026-12-31",
+    "evidence": "文件名规划期（2024—2026年）推算，未到期。"
+  },
+  "https://plan.hainan.gov.cn/sfgw/0400/202409/0e95d2ecc41b4a909dbd8a4988": {
+    "expiry_date": "2026-12-31",
+    "evidence": "文件名规划期（2024-2026年）推算，未到期。"
+  },
+  "https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/gfxwj/202406/P020240607556739900153.pdf": {
+    "expiry_date": "2027-06-27",
+    "evidence": "武政规〔2024〕8号正文：本措施自2024年6月28日起施行，有效期为3年。"
+  },
+  "https://www.nanjing.gov.cn/zt/njtdjjyxsxzthz/ywjj/202405/t20240521_4671137.html": {
+    "expiry_date": "2026-12-31",
+    "evidence": "《实施方案（2024—2026年）》规划期至2026年底。"
+  },
+  "https://mp.weixin.qq.com/s?__biz=MzA5MTIxMTM0NA==&mid=2650544765&idx=2&sn=50dfb46db58c0bdad2bbfd06cfab6f0a": {
+    "status": "已失效",
+    "expiry_date": "2025-12-31",
+    "superseded_by": "无后续文件（规划期结束）",
+    "evidence": "《合肥市低空经济发展行动计划（2023—2025年）》规划期至2025年底。",
+    "evidence_url": "https://mp.weixin.qq.com/s?__biz=MzA5MTIxMTM0NA==&mid=2650544765&idx=2&sn=50dfb46db58c0bdad2bbfd06cfab6f0a"
+  },
+  "https://www.dpxq.gov.cn/xxgk/wgk/jcgk/jcygk_143170/zdxzjcsxfb/content/post_12098258.html": {
+    "expiry_date": "2028-03-31",
+    "evidence": "深鹏办规〔2025〕1号：本措施自2025年4月1日起施行，有效期为三年。"
+  },
+  "https://www.shqp.gov.cn/shqp/zwgk/zfwj/qfb/20250109/1224034.html": {
+    "expiry_date": "2027-12-31",
+    "evidence": "《青浦区行动方案（2024—2027年）》规划期至2027年底。"
+  },
+  "https://www.ndrctc.org.cn/c/15/15410.shtml": {
+    "expiry_date": "2027-12-31",
+    "evidence": "《金山区行动方案（2024-2027年）》规划期至2027年底。"
+  },
+  "https://www.suzhou.gov.cn/szsrmzf/zfbgswj/202402/1ea65ae34733413ba188c04f8690267a.shtml": {
+    "expiry_date": "2026-12-31",
+    "evidence": "《苏州市实施方案（2024~2026年）》规划期至2026年底。"
+  },
+  "https://www.changsha.gov.cn/zfxxgk/zfwjk/gdwxtwj/202407/P020240718409675245441.pdf": {
+    "expiry_date": "2026-12-31",
+    "evidence": "《长沙市实施方案（2024—2026年）》规划期至2026年底。"
+  },
+  "http://fgw.shandong.gov.cn/art/2024/11/11/art_91485_10451042.html": {
+    "expiry_date": "2027-12-31",
+    "evidence": "《山东省三年行动方案（2025-2027年）》规划期至2027年底。"
+  },
+  "https://sjt.guizhou.gov.cn/zwgk/zdlyxx/ghjh/202508/t20250815_88471500.html": {
+    "expiry_date": "2027-12-31",
+    "evidence": "《贵州省行动方案（2025—2027年）》规划期至2027年底。"
+  },
+  "https://www.dl.gov.cn/art/2025/1/17/art_1170_1605.html": {
+    "expiry_date": "2026-12-31",
+    "evidence": "《大连市行动方案（2024-2026年）》规划期至2026年底。"
+  },
+  "https://www.chaoyang.gov.cn/html/CYSZF/202502/0174044958456799.html": {
+    "expiry_date": "2027-12-31",
+    "evidence": "《朝阳市行动方案（2025—2027年）》规划期至2027年底。"
+  },
+  "https://fgw.lf.gov.cn/Item/6898.aspx": {
+    "expiry_date": "2027-12-31",
+    "evidence": "《廊坊市行动方案（2024-2027年）》规划期至2027年底。"
+  },
+  "https://www.jiaxing.gov.cn/art/2024/11/9/art_1229782154_2069.html": {
+    "expiry_date": "2027-09-05",
+    "evidence": "嘉兴市实施方案自2024年9月6日起施行，有效期3年。"
+  },
+  "https://www.foshan.gov.cn/gkmlpt/content/6/6078/post_6078028.html": {
+    "expiry_date": "2026-12-31",
+    "evidence": "《佛山市实施方案（2024—2026年）》规划期至2026年底。"
+  },
+  "https://www.taiyuan.gov.cn/fgfxwj2/20251121/30268392.html": {
+    "expiry_date": "2027-12-31",
+    "evidence": "《太原市行动方案（2025—2027年）》规划期至2027年底。"
+  },
+  "https://www.zhanjiang.gov.cn/attachment/0/255/255220/1981685.pdf": {
+    "expiry_date": "2026-12-31",
+    "evidence": "《湛江市行动方案（2024-2026年）》规划期至2026年底。"
+  },
+  "https://www.gd.gov.cn/gdywdt/zwzt/dkjj/zcwj/content/post_4457692.html": {
+    "status": "现行有效",
+    "valid_from": "2024-06-12",
+    "expiry_date": "2026-12-31",
+    "evidence": "珠府〔2024〕45号;珠海政企通平台政策档案标注:有效期至2026-12-31——2027年起将失效,届时珠海形成市级失效对。",
+    "note": "文号确认:珠府〔2024〕45号,2024-06-12印发。"
+  },
+  "https://zfgb.hangzhou.gov.cn/upload/default/bigfile/2025/06/12/20250612_325c4ebba143aa36874fc473b3cfddd4.pdf": {
+    "status": "现行有效",
+    "expiry_date": "",
+    "superseded_by": "",
+    "evidence": "杭州市财政局2026-09-08至10-07就《关于废止〈杭州市支持低空经济高质量发展的若干措施〉的通知》公开征求意见,拟提前终止(原有效期至2027-12-31)。",
+    "evidence_url": "https://www.thepaper.cn/newsDetail_forward_34103463",
+    "note": "【待废止】2026-09-08 杭州市财政局就废止本措施公开征求意见(10-07截止),理由为规范性文件定期清理+公平竞争审查;截至 2026-10-27 正式废止通知尚未发布,文件仍在执行。正式废止通知发布后应改标\"已废止\"。"
+  },
+  "https://www.gz.gov.cn/gzzcwjk/gzdata/content/post_10498399.html": {
+    "status": "已失效",
+    "expiry_date": "2026-09-23",
+    "superseded_by": "修订程序启动中",
+    "evidence": "广州市天河区发展和改革局2026-09-23发布通知,决定暂停实施穗天发改规字〔2025〕3号(落实公平竞争审查要求)。",
+    "evidence_url": "https://www.thnet.gov.cn/"
+  },
+  "https://www.sx.gov.cn/art/2024/8/14/art_1229265242_1904714.html": {
+    "clause_notes": "2026-02-02 绍兴市政府发布四份专项政策,同时调整本意见中'支持低空企业落户''支持重大项目落户'两项条款(删除直接奖补表述,落实公平竞争审查要求);文件整体未废止,其余条款继续有效(绍兴市交通运输局 2026-10-09 确认)。",
+    "evidence": "南方周末 2026-10 报道《去低空泡沫:多地政府踩刹车》;绍兴市政府 2026-02-02 政策发布。",
+    "evidence_url": "https://xapp.southcn.com/node_fb07388412?k=099e1f85de"
+  },
+  "https://www.shanghai.gov.cn/nw12344/20260120/0b3a334bf5544c0da648fe73b8feef13.html": {
+    "status": "已废止",
+    "expiry_date": "2026-07-29",
+    "superseded_by": "上海市人民政府关于公布微型轻型小型无人驾驶航空器适飞空域范围的通告(2026版,沪府发〔2026〕12号)",
+    "evidence": "2026版通告明确:2025年12月市政府印发的《关于公布微型轻型小型无人驾驶航空器适飞空域范围的通告》(沪府发〔2025〕14号)同时废止。",
+    "evidence_url": "https://www.shanghai.gov.cn/nw12344/20260807/30c537712f1448ed9181320820ffa0cb.html"
+  },
+  "https://www.shanghai.gov.cn/nw12344/20260807/30c537712f1448ed9181320820ffa0cb.html": {
+    "status": "现行有效",
+    "valid_from": "2026-07-29",
+    "evidence": "沪府发〔2026〕12号,2026年7月29日发布,现行适飞空域依据文件。"
+  },
+  "https://sf.sz.gov.cn/gfxwjcx/qjgfxwj/gmq/qzfbmgfxwj/qzbm/qfzggj/content/post_12582312.html": {
+    "status": "现行有效",
+    "valid_from": "2026-01-09",
+    "note": "第三条(增资扩产)、第四条(空间保障)、第五条(交流活动)自2026-09-28起暂停实施,其余条款继续有效。",
+    "evidence_url": "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/gzgg/content/post_13001299.html"
+  },
+  "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/gzgg/content/post_13001299.html": {
+    "status": "现行有效",
+    "valid_from": "2026-09-28",
+    "evidence": "因上级政策调整,暂停实施《深圳市光明区促进低空经济高质量发展若干措施》第三条、第四条、第五条。"
+  },
+  "https://www.thnet.gov.cn/thdt/tzgg/qtgg/content/post_11019713.html": {
+    "status": "现行有效",
+    "valid_from": "2026-09-23",
+    "evidence": "为落实公平竞争审查要求,暂停实施穗天发改规字〔2025〕3号,后续启动修订程序。"
+  },
+  "https://www.sx.gov.cn/col/col1229265242/art/2026/art_95c22fd2182a4cbbaf1c78535a63a569.html": {
+    "status": "现行有效",
+    "valid_from": "2026-01-27",
+    "note": "同时废止《绍兴市人民政府关于推进低空经济高质量发展的实施意见》(绍政发〔2024〕10号)附件2中支持低空企业落户、支持重大项目落户两项条款。"
+  },
+  "http://www.qianwei.gov.cn/qwx/qfbf/78739199/845324022272069.html": {
+    "status": "现行有效",
+    "valid_from": "2026-08-07",
+    "evidence": "因文件内容与国家最新政策冲突,废止《犍为县支持低空经济产业高质量发展若干措施(试行)》(犍府办发〔2025〕15号)。"
+  },
+  "https://www.km.gov.cn/c/2026-06-30/5093290.shtml": {
+    "status": "现行有效",
+    "valid_from": "2026-06-15",
+    "evidence": "昆政发〔2026〕10号;新版适飞空域正式启用,原版同步停用。"
+  },
+  "https://www.nc.gov.cn/ncszf/tzgg/202605/d28f8b20a98b4244bcd5b37e1bb32640.shtml": {
+    "status": "现行有效",
+    "valid_from": "2026-05-14",
+    "evidence": "新版适飞空域2026-05-14启用,旧版同步废止。"
+  },
+  "http://www.caac.gov.cn/XXGK/XXGK/ZCFB/202602/t20260212_230056.html": {
+    "status": "现行有效",
+    "valid_from": "2026-02-12",
+    "note": "三模型投票判定为长期有效（一致采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.hefei.gov.cn/xxgk/szfgb/2024/dseh/bmwj/110845128.html": {
+    "status": "已失效",
+    "expiry_date": "2025-06-20",
+    "evidence": "细则附则:本实施细则自2024年6月20日起施行,有效期1年。现已到期失效。"
+  },
+  "https://cms.gz.gov.cn/gzzcwjk/storage/material/2025/04/07/c4c3795eeaf4d738d1ef95d846e34cad.pdf": {
+    "status": "已失效",
+    "expiry_date": "2026-04-30",
+    "evidence": "指引自2025年4月起试行1年。广州空港委官方答复确认:试行期已于2026年4月届满,正按程序修订,新指引未印发期间原指引不再执行。",
+    "evidence_url": "https://kgw.gz.gov.cn/hdjlpt/detail?pid=3442119&via=pc"
+  },
+  "https://www.suzhou.gov.cn/szsrmzf/dstx/202407/6f61c1792d9646f1ac12396fe2668a1c.shtml": {
+    "status": "已失效",
+    "expiry_date": "2026-08-31",
+    "evidence": "规则附则:本规则自2024年9月1日起施行,有效期至2026年8月31日。现已届满失效。"
+  },
+  "https://www.wuhu.gov.cn/openness/public/6596211/40511251.html": {
+    "status": "现行有效",
+    "valid_from": "2026-03-01",
+    "evidence": "芜湖市人民政府令第75号,2026年1月27日公布,2026年3月1日施行,安徽省首部低空经济地方政府规章。"
+  },
+  "https://www.hefei.gov.cn/public/5911/111537388.html": {
+    "status": "现行有效",
+    "evidence": "合肥低空经济气象保障能力提升行动方案（2025—2027年）",
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://zccx.qingdao.gov.cn/pcSite/policy/fileDetail.html?id=a64073d2095f186c3b0b09f0a77dc4df": {
+    "status": "已失效",
+    "expiry_date": "2025-12-31",
+    "evidence": "青岛政策通官方标注:是否长期有效-否,失效时间2025-12-31;政策起止2022-09-16至2025-12-31。",
+    "scope_note": "口径说明(2026-10-27):该细则含135部通航短途运输运营资质奖励、通用机场飞行保障费补助等低空飞行运营扶持条款,按\"低空经济=以低空飞行活动为牵引\"口径计入低空政策;无人机被排除仅指不补贴无人机,不影响其低空属性。"
+  },
+  "https://www.beijing.gov.cn/zhengce/zhengcefagui/202609/t20260917_4868420.html": {
+    "status": "现行有效",
+    "valid_from": "2026-09-15",
+    "evidence": "京公无人机发〔2026〕287号;同时废止2026年3月28日印发的特殊保障规定(试行)、存储场所管理规定(试行)、信息核实办法(试行)等3部文件。"
+  },
+  "https://www.beijing.gov.cn/zhengce/zhengcefagui/202606/W020260623629051187559.pdf": {
+    "status": "已废止",
+    "expiry_date": "2026-09-15",
+    "superseded_by": "北京市无人驾驶航空器特殊保障规定(试行)(2026版,京公无人机发〔2026〕287号)",
+    "evidence": "2026-09-15新通知明确:2026年3月28日印发的3部试行文件同步废止;政府网文件页已标注(失效)。",
+    "evidence_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202609/t20260917_4868420.html"
+  },
+  "https://www.beijing.gov.cn/zhengce/zhengcefagui/202606/t20260622_4709336.html": {
+    "status": "已废止",
+    "expiry_date": "2026-09-15",
+    "superseded_by": "北京市无人驾驶航空器特殊保障规定(试行)(2026版)",
+    "evidence": "政府网文件页头部标注(失效);新通知宣布3部试行文件同步废止。",
+    "evidence_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202609/t20260917_4868420.html"
+  },
+  "https://www.wuhan.gov.cn/zwgk/tzgg//202105/t20210510_1682244.shtml": {
+    "status": "已失效",
+    "expiry_date": "2023-05-09",
+    "superseded_by": "武汉市民用无人驾驶航空器安全管理暂行办法(武政规〔2025〕5号)",
+    "evidence": "市经信局提案答复明确:该通告2021-05-10由市政府、95028部队、民航湖北局联合发布,有效期2年;2025年新暂行办法施行后由其承接管理职责。",
+    "evidence_url": "https://jxj.wuhan.gov.cn/xxgk_9/fdzdgknr/ygzdgk/jytabl_01/202309/t20230920_2267208.html"
+  },
+  "https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/gfxwj/202504/t20250427_2574109.shtml": {
+    "status": "现行有效",
+    "valid_from": "2025-05-29",
+    "evidence": "武政规〔2025〕5号,自2025年5月29日起施行,有效期2年。"
+  },
+  "https://www.qionglai.gov.cn/gkml/qlsjjkjhxxhj/qtwj/1248574157680017408.shtml": {
+    "status": "现行有效",
+    "valid_from": "2024-04-28",
+    "expiry_date": "2026-11-16",
+    "evidence": "市经信局现行有效文件目录:成经信发〔2023〕11号专项政策有效期至2026年11月,实施细则有效期与之一致——2026年11月中旬到期后将自动失效。",
+    "evidence_url": "https://cdjx.chengdu.gov.cn/gkml/uploadfiles/1607625235320909827/1192765232833888256%E5%B8%82%E7%BB%8F%E4%BF%A1%E5%B1%80%E5%B8%82%E6%96%B0%E7%BB%8F%E6%B5%8E%E5%A7%94%E7%8E%B0%E8%A1%8C%E6%9C%89%E6%95%88%E7%9A%84%E8%A1%8C%E6%94%BF%E8%A7%84%E8%8C%83%E6%80%A7%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.docx"
+  },
+  "https://www.hefei.gov.cn/public/1741/110301000.html": {
+    "status": "已失效",
+    "expiry_date": "2025-06-19",
+    "evidence": "政策附则:本政策自印发之日起施行,有效期1年(2024-06-20至2025-06-19)。现已到期失效;其下位《实施细则》同步失效。"
+  },
+  "https://sf.sz.gov.cn/gfxwjcx/qjgfxwj/ftq/qzfbmgfxwj/qgqtdw/sjtysjftglj/content/post_11705745.html": {
+    "status": "现行有效",
+    "valid_from": "2024-11-01",
+    "expiry_date": "2027-12-31",
+    "evidence": "深交福田规〔2024〕1号,试行,有效期至2027-12-31。"
+  },
+  "https://www.yixing.gov.cn/doc/2023/12/12/1198766.shtml": {
+    "status": "已失效",
+    "expiry_date": "2025-12-31",
+    "evidence": "规划期(2023-2025年)已届满,按三年行动计划惯例到期自动失效。"
+  },
+  "https://js.cnr.cn/yw/20230930/t20230930_526437891.shtml": {
+    "status": "已失效",
+    "expiry_date": "2025-12-31",
+    "superseded_by": "南京市促进低空经济高质量发展实施方案(2024—2026年)",
+    "evidence": "实施方案(2023—2025)规划期已届满;2024年5月南京市发布《促进低空经济高质量发展实施方案(2024—2026年)》承接其目标。"
+  },
+  "https://www.wuxi.gov.cn/doc/2017/08/01/1458827.shtml": {
+    "status": "已废止",
+    "expiry_date": "2026-02-27",
+    "superseded_by": "《无人驾驶航空器飞行管理暂行条例》(国务院、中央军委令第761号,2024-01-01施行)承接管理职责",
+    "evidence": "《无锡市人民政府关于修改和废止部分政府规章的决定》(2026-02-27发布):决定废止《无锡市民用无人驾驶航空器管理办法》(市政府令第162号)。废止理由:贯彻落实国令761号。该办法2017-09-01施行,是全国首部规范民用无人机管理的地方政府规章。",
+    "evidence_url": "https://www.wuxi.gov.cn/doc/2026/02/27/4737782.shtml"
+  },
+  "https://www.wuxi.gov.cn/doc/2026/02/27/4737782.shtml": {
+    "status": "现行有效",
+    "valid_from": "2026-02-27",
+    "evidence": "无锡市人民政府令,修改部分规章并废止《无锡市民用无人驾驶航空器管理办法》(市政府令第162号)。"
+  },
+  "https://www.wenzhou.gov.cn/col/col1229117830/art/2026/art_6c976cf1020a408fbb5b8fbb83f1ff47.html": {
+    "status": "现行有效",
+    "evidence": "温州市政府办公室印发,含《温州市支持低空经济高质量发展的若干措施》与《温州市低空飞行服务保障办法(试行)》两份文件。"
+  },
+  "https://drc.sz.gov.cn/zcwj/zcfg/content/post_11119156.html": {
+    "expiry_date": "2026-12-31",
+    "evidence": "市交通运输局等七部门2023-12-27联合印发;官方报道明确:本措施自印发之日起实施,有效期至2026年12月31日——2027年起失效,深圳市级失效对自动形成。"
+  },
+  "https://jtys.sz.gov.cn/zwgk/xxgkml/zcfgjjd/zcfg/dlys_122196/hkysgl_1/content/post_12422358.html": {
+    "expiry_date": "2026-12-31",
+    "evidence": "官方公报:本细则自2025年10月9日起施行,有效期至2026年12月31日。",
+    "evidence_url": "https://www.sz.gov.cn/zfgb/2025/gb1387/content/post_12422358.html",
+    "status": "现行有效"
+  },
+  "https://www.baoan.gov.cn/bafgj/gkmlpt/content/10/10764/post_10764685.html": {
+    "status": "已失效",
+    "expiry_date": "2026-07-29",
+    "evidence": "措施第十一条:本措施自印发之日起实施,有效期3年(2023-07-29印发,2026-07-29届满)。官方页面无废止标注;2026年度申报通知(2026-04-20至05-19)仍在有效期内按本措施执行。有效期届满后新版措施尚未检索到。",
+    "note": "2026-10-27 核查:原文此前被误标为已废止,实际是有效期届满失效;宝安区发改局2026年度申报通知可佐证措施在有效期内持续执行。"
+  },
+  "https://bjrb-app.bjd.com.cn/content/s6aa5e760e4b039a8e2f101cc.html": {
+    "status": "现行有效",
+    "valid_from": "2026-11-15",
+    "evidence": "北京市人大常委会公告〔十六届〕第61号,2026-09-11修订通过,2026-11-15起施行。全域禁飞+禁止持有存放+禁止运输携带入京+禁止销售出租——全国最严低空管控。施行前(至2026-11-14)原版《北京市无人驾驶航空器管理规定》(2026-05-01施行)仍有效;11-15起原版失效、《北京无人驾驶航空器信息核实办法》同步停止执行。",
+    "note": "公布未施行状态(2026-10-27):已通过修订但尚未生效,时序检索在11-15前不应召回本文件作为现行依据。"
+  },
+  "https://www.hunan.gov.cn/hnszf/hnyw/zwdt/202208/t20220818_27586998.html": {
+    "status": "现行有效",
+    "valid_from": "2022-10-01",
+    "evidence": "湖南省人大常委会公告第94号,2022-07-28通过,2022-10-01施行——全国第一部通用航空地方性法规。2026-07-31省十四届人大常委会第二十四次会议通过修改决定,2026-08-15起施行修改版;库中为2022原文,修订条目待官方全文发布后入库。",
+    "note": "状态时效性示例:法规本身已进入修订周期,2026-08-15起执行修改版。"
+  },
+  "http://mp.weixin.qq.com/s?__biz=MzA4NTkyODA1Ng==&mid=2650581969&idx=1&sn=047937e7eb5a26c39a9ff9640a2247b0&chksm=867fff80aff7b5f5619303aeca6ee5c34cc9b0d5bbf7f8d6120e820d5a2590b51e479a5b5e3f#rd": {
+    "status": "现行有效",
+    "valid_from": "2026-02-03",
+    "evidence": "工信厅联通信〔2026〕4号,工信部/中央网信办/中央空管办/国家发改委/民航局五部门2026-02-03印发;到2027年全国低空公共航路地面移动通信网络覆盖率不低于90%。",
+    "note": "三模型投票判定为长期有效（一致采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.lg.gov.cn/gkmlpt/content/12/12691/post_12691499.html": {
+    "status": "现行有效",
+    "valid_from": "2026-04-01",
+    "evidence": "有效期3年;原《龙岗区关于促进低空经济产业发展的若干措施》(深龙工信规〔2023〕14号)同时废止。"
+  },
+  "https://www.lg.gov.cn/xxgk/zwgk/flfg/bmgfxwj/content/post_12691499.html#alias-旧转载页": {
+    "status": "现行有效",
+    "note": "别名条目:该文件在库中的实际source_url为 https://www.lg.gov.cn/gkmlpt/content/12/12691/post_12691499.html"
+  },
+  "https://www.hp.gov.cn/gkmlpt/content/10/10329/post_10329316.html": {
+    "status": "现行有效",
+    "evidence": "有效期三年;原穗埔发改规字〔2023〕2号及3号同时废止。"
+  },
+  "https://www.gd.gov.cn/gdywdt/zwzt/dkjj/zcwj/content/post_4740631.html#alias-旧转载页": {
+    "status": "现行有效",
+    "note": "别名条目:该文件在库中的实际source_url为 https://www.hp.gov.cn/gkmlpt/content/10/10329/post_10329316.html"
+  },
+  "https://www.yn.gov.cn/zwgk/zcwj/zxwj/202508/t20250814_316526.html": {
+    "status": "现行有效",
+    "valid_from": "2025-08-03",
+    "expiry_date": "2028-12-31",
+    "evidence": "云南省政府办公厅印发;措施末条:本措施自印发之日起施行,有效期至2028年12月31日。"
+  },
+  "https://swt.yn.gov.cn/gzdt/zwwj/szfwj/202508/t20250821_1939013.html#alias-旧转载页": {
+    "status": "现行有效",
+    "note": "别名条目:该文件在库中的实际source_url为 https://www.yn.gov.cn/zwgk/zcwj/zxwj/202508/t20250814_316526.html"
+  },
+  "https://www.changzhou.gov.cn/gi_news/262172100969582": {
+    "expiry_date": "2026-12-31",
+    "evidence": "文件名规划期（2024—2026年）推算，未到期。"
+  },
+  "https://www.changzhou.gov.cn/ns_news/154172102640840#alias-旧转载页": {
+    "status": "",
+    "note": "别名条目:该文件在库中的实际source_url为 https://www.changzhou.gov.cn/gi_news/262172100969582"
+  },
+  "http://www.lichuan.gov.cn/xxgk/dfbmptlj/sz/sgaj/zdgk/gh_57018/202505/t20250515_1698240.shtml": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "湖北省加快低空经济高质量发展行动方案（2024—2027年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.chaoyang.gov.cn/html/CYSZF/202104/0162934113932728.html": {
+    "expiry_date": "2030-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "近期：2021—2025年\n中远期：2026—2030年",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.gd.gov.cn/gdywdt/zwzt/dkjj/zcwj/content/post_4457715.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "中山市低空经济高质量发展行动方案（2024-2027年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://public.zhengzhou.gov.cn/D0104X/8579508.jhtml": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "郑州市加快培育低空经济产业创新发展行动方案（2024—2026年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.henan.gov.cn/2024/08-12/3034467.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "促进全省低空经济高质量发展实施方案（2024—2027年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.shanghai.gov.cn/nw12344/20240816/da714ee861614ef2abae9a2b7ca317b6.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "上海市低空经济产业高质量发展行动方案（2024-2027年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://zqztc.fujian.gov.cn/zcy/policy/policy/content.html?uniqid=66e165603a121": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "福州市加快推动低空产业发展行动方案（2024—2026）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.nantong.gov.cn/ntsrmzf/szfbwj/content/f6d67b3b-25c0-4b89-83f1-3794a28f3812.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "《南通市低空经济高质量发展行动方案（2024—2027年）》",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.shiyan.gov.cn/xxgk/zc_67263/qt/202409/t20240911_4597791.shtml": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "十堰市低空经济基础设施建设三年行动方案（2024-2026年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202409/t20240919_2577276.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "内蒙古自治区低空经济高质量发展实施方案（2024—2027年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://plan.hainan.gov.cn/sfgw/0400/202409/0e95d2ecc41b4a909dbd8a498890f352.shtml": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "海南省低空经济发展三年行动计划（2024-2026年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.yixing.gov.cn/doc/2025/02/18/1296058.shtml": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "宜兴市低空经济高质量发展三年行动方案（2024—2026年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://qf.ningbo.gov.cn/qykj/easy-public/1150": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_explicit_expiry",
+    "evidence": "发文有效期\n2025-07-21~2027-12-31",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.dg.gov.cn/gkmlpt/content/4/4257/post_4257794.html": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "东莞市推动低空经济高质量发展实施方案（2024-2026年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.gd.gov.cn/gdywdt/zwzt/dkjj/zcwj/content/post_4457582.html": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "广东省推动低空经济高质量发展行动方案（2024—2026年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://gxt.fujian.gov.cn/zwgk/xw/hydt/snhydt/202409/t20240912_6517230.htm": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "《福州市加快推动低空产业发展行动方案（2024-2026）》近日印发",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "http://gxj.zaozhuang.gov.cn/zcfg/202403/t20240329_1867257.html": {
+    "expiry_date": "2030-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "通用航空装备创新应用实施方案（2024—2030年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.cq.gov.cn/zwgk/zfxxgkml/szfwj/qtgw/202409/W020240926581386047214.pdf": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "促进低空经济高质量发展行动方案\n（2024—2027 年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.shaanxi.gov.cn/xw/sxyw/202407/t20240713_2348891_wap.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "《推动低空制造产业高质量发展工作方案（2024—2027年）》",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "https://www.nanjing.gov.cn/zzb/zfxxgk/fdzdgknr/szfjbgtwj/202405/t20240514_4666425.html": {
+    "expiry_date": "2026-12-31",
+    "inference": "llm_plan_period",
+    "evidence": "南京市促进低空经济高质量发展实施方案（2024—2026年）",
+    "note": "失效日为规划期末推算（大模型判定，未经人工逐条复核）；若该文件已被新版替代，请以带 evidence_url 的人工条目为准。",
+    "inferred_at": "2026-10-27"
+  },
+  "http://www.caac.gov.cn/XXGK/XXGK/TZTG/202312/t20231231_222550.html": {
+    "expiry_date": "2026-11-26",
+    "inference": "3model_vote",
+    "vote_verdict": "多数采纳",
+    "votes": {
+      "deepseek": "explicit_expiry/2026-11-26",
+      "qwen": "open_ended/None",
+      "glm": "explicit_expiry/2026-11-26"
+    },
+    "vote_at": "2026-10-27",
+    "note": "三模型投票判定：多数采纳；失效日 2026-11-26（explicit_expiry）。仅供时效检索参考，不改 status。"
+  },
+  "http://gxt.shandong.gov.cn/art/2024/1/29/art_103863_10340128.html": {
+    "note": "三模型判定分歧（判定分歧），不采纳日期，按长期有效处理，待人工复核。",
+    "vote_verdict": "判定分歧",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "plan_period/2025-12-31",
+      "glm": "unclear/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.yangzhou.gov.cn/xwzx/ztzl/zxzt/yzsyhyshjzt/yszc/art/2024/art_691959db23b348d18c19d2de53c63f69.html": {
+    "note": "三模型投票判定为长期有效（一致采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.changsha.gov.cn/zfxxgk/zfwjk/gdwxtwj/202407/t20240717_11498681.html": {
+    "expiry_date": "2026-12-31",
+    "inference": "3model_vote",
+    "vote_verdict": "多数采纳",
+    "votes": {
+      "deepseek": "explicit_expiry/2026-12-31",
+      "qwen": "explicit_expiry/2026-12-31",
+      "glm": "plan_period/2026-12-31"
+    },
+    "vote_at": "2026-10-27",
+    "note": "三模型投票判定：多数采纳；失效日 2026-12-31（explicit_expiry）。仅供时效检索参考，不改 status。"
+  },
+  "https://www.sc.gov.cn/10462/zfwjts/2024/6/4/c881971dfb524140861701724c4e276e.shtml": {
+    "note": "三模型投票判定为长期有效（一致采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.zj.gov.cn/art/2024/8/7/art_1229017138_2526807.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "3model_vote",
+    "vote_verdict": "多数采纳",
+    "votes": {
+      "deepseek": "plan_period/2027-12-31",
+      "qwen": "plan_period/2027-12-31",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27",
+    "note": "三模型投票判定：多数采纳；失效日 2027-12-31（plan_period）。仅供时效检索参考，不改 status。"
+  },
+  "https://www.haizhu.gov.cn/gkmlpt/content/9/9827/post_9827366.html": {
+    "note": "三模型判定分歧（判定分歧），不采纳日期，按长期有效处理，待人工复核。",
+    "vote_verdict": "判定分歧",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "plan_period/2027-12-31",
+      "glm": "unclear/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.tj.gov.cn/sy/tjxw/202408/t20240823_6705321.html": {
+    "note": "三模型投票判定为长期有效（多数采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "多数采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "unclear/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.jiangsu.gov.cn/art/2024/9/4/art_46144_11344149.html": {
+    "note": "三模型投票判定为长期有效（一致采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.qingdao.gov.cn/zwgk/zdgk/fgwj/zcwj/szfgw/gw_2024/qzbz/202410/t20241010_8405739.shtml": {
+    "expiry_date": "2026-12-31",
+    "inference": "3model_vote",
+    "vote_verdict": "多数采纳",
+    "votes": {
+      "deepseek": "plan_period/2026-12-31",
+      "qwen": "plan_period/2026-12-31",
+      "glm": "unclear/None"
+    },
+    "vote_at": "2026-10-27",
+    "note": "三模型投票判定：多数采纳；失效日 2026-12-31（plan_period）。仅供时效检索参考，不改 status。"
+  },
+  "https://www.xz.gov.cn/govxxgk/014051247/2024-12-20/6411859e-5471-43ea-8ada-0c8a85250dc0.html": {
+    "expiry_date": "2026-12-31",
+    "inference": "3model_vote",
+    "vote_verdict": "多数采纳",
+    "votes": {
+      "deepseek": "plan_period/2026-12-31",
+      "qwen": "plan_period/2026-12-31",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27",
+    "note": "三模型投票判定：多数采纳；失效日 2026-12-31（plan_period）。仅供时效检索参考，不改 status。"
+  },
+  "https://gxt.jiangsu.gov.cn/art/2025/1/7/art_6278_11465484.html": {
+    "expiry_date": "2027-12-31",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "plan_period/2027-12-31",
+      "qwen": "plan_period/2027-12-31",
+      "glm": "plan_period/2027-12-31"
+    },
+    "vote_at": "2026-10-27",
+    "note": "三模型投票判定：一致采纳；失效日 2027-12-31（plan_period）。仅供时效检索参考，不改 status。"
+  },
+  "https://www.yn.gov.cn/zzms/zxwj/202606/t20260610_327716.html": {
+    "note": "三模型投票判定为长期有效（多数采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "多数采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "unclear/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.21jingji.com/article/20260203/herald/567d4c33fe60455a2f0deddb2eee955d.html": {
+    "note": "三模型投票判定为长期有效（一致采纳），不设失效日。如需时效提醒，请在规划期结束后复核。",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "open_ended/None",
+      "glm": "open_ended/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.jinan.gov.cn/col123498/art/2024/art_123498_4991278.html": {
+    "note": "三模型判定分歧（判定分歧），不采纳日期，按长期有效处理，待人工复核。",
+    "vote_verdict": "判定分歧",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "plan_period/2027-12-31",
+      "glm": "unclear/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://www.ln.gov.cn/web/zwgkx/zcjd/mtjd/2025101408594423618/index.shtml": {
+    "expiry_date": "2027-12-31",
+    "inference": "3model_vote",
+    "vote_verdict": "一致采纳",
+    "votes": {
+      "deepseek": "plan_period/2027-12-31",
+      "qwen": "plan_period/2027-12-31",
+      "glm": "plan_period/2027-12-31"
+    },
+    "vote_at": "2026-10-27",
+    "note": "三模型投票判定：一致采纳；失效日 2027-12-31（plan_period）。仅供时效检索参考，不改 status。"
+  },
+  "https://www.changzhi.gov.cn/xxgkml/zfxxgkml/szfgzbm/srmzfbgt/czsrmzf/zbwj/202406/t20240613_2912265.shtml": {
+    "note": "三模型判定分歧（判定分歧），不采纳日期，按长期有效处理，待人工复核。",
+    "vote_verdict": "判定分歧",
+    "votes": {
+      "deepseek": "open_ended/None",
+      "qwen": "plan_period/2026-12-31",
+      "glm": "unclear/None"
+    },
+    "vote_at": "2026-10-27"
+  },
+  "https://wlt.fujian.gov.cn/zfxxgkzl/zfxxgkml/30qtyzdgkdzfxx/05cyfz/202103/t20210309_5546054.htm": {
+    "status": "现行有效",
+    "note": "正文仅为省文旅厅通知页（约 340 字），规划纲要全文以附件形式发布、未单独采集；用于检索时只能回答该规划已印发类问题，不能回答具体指标。规划期 2021—2035 年，未设失效日。",
+    "inference": "notice_only"
+  },
+  "https://fgw.henan.gov.cn/2022/09-07/2603148.html": {
+    "status": "现行有效",
+    "note": "正文仅为省发改委印发通知（约 370 字），规划全文在 docx 附件、未采集；页面官方字段标注有效性：有效。规划期 2022—2035 年，未设失效日。",
+    "inference": "notice_only"
+  }
+}

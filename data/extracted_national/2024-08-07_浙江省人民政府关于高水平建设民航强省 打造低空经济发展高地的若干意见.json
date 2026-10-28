@@ -1,0 +1,16 @@
+{
+  "policy_name": "浙江省人民政府关于高水平建设民航强省 打造低空经济发展高地的若干意见",
+  "issue_date": "2024-08-07",
+  "effective_date": "2024-08-07",
+  "expiry_date": "无",
+  "apply_region": "浙江省",
+  "status": "现行有效",
+  "summary": "浙江省统筹推进低空新基建与场景应用，建立低空空域协同管理和低空运行监管服务机制，开展省级低空经济试点，未设具体审批门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-07_浙江省人民政府关于高水平建设民航强省 打造低空经济发展高地的若干意见.txt",
+    "char_count": 14929,
+    "extracted_at": "2026-10-26T16:47:30+08:00"
+  }
+}

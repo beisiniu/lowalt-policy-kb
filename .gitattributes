@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.docx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.onnx binary
+*.sqlite3 binary

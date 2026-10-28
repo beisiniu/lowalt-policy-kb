@@ -1,0 +1,15 @@
+{
+  "policy_name": "海南省低空经济发展三年行动计划（2024-2026年）",
+  "issue_date": "2024-09-20",
+  "effective_date": "2024-09-20",
+  "expiry_date": "无",
+  "apply_region": "海南省",
+  "status": "现行有效",
+  "summary": "海南省统筹低空经济发展，要求通用机场场址经军方核准、低空空域协同审批简化飞行程序，2026年建成通用机场9个、起降场超500个。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-20_海南省发展和改革委员会 中共海南省委军民融合发展委员会办公室 海南省交通运输厅 海南省工业和信息化厅 海南省国有资产.txt",
+    "char_count": 5804,
+    "extracted_at": "2026-10-26T16:47:42+08:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "policy_name": "四川省人民政府办公厅关于促进低空经济发展的指导意见",
+  "issue_date": "2024-07-08",
+  "effective_date": "2024-07-08",
+  "expiry_date": "无",
+  "apply_region": "四川省",
+  "status": "现行有效",
+  "summary": "四川省低空飞行活动须遵守空域分类划设与飞行计划申报流程，试点城市试行一网审批，非管制空域简化申报，并联合查处黑飞。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-07-08_四川省人民政府办公厅关于促进低空经济发展的指导意见.txt",
+    "char_count": 3815,
+    "extracted_at": "2026-10-26T16:47:21+08:00"
+  }
+}

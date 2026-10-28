@@ -1,0 +1,15 @@
+{
+  "policy_name": "珠海市支持低空经济高质量发展的若干措施",
+  "issue_date": "2024-06-12",
+  "effective_date": "2024-06-12",
+  "expiry_date": "2026-12-31",
+  "apply_region": "珠海市",
+  "status": "现行有效",
+  "summary": "珠海低空经济企业开展无人机货运/载人航线须经审批，年度执行不少于500/100架次方可获补贴，政策有效期至2026年底。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2024-07-19_珠海市人民政府关于印发支持低空经济高质量发展若干措施的通知.txt",
+    "char_count": 3366,
+    "extracted_at": "2026-10-26T03:23:33+08:00"
+  }
+}

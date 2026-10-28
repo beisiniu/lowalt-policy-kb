@@ -1,0 +1,15 @@
+{
+  "policy_name": "通用航空飞行管制条例",
+  "issue_date": "2003-01-10",
+  "effective_date": "2003-05-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "通用航空单位或个人飞行前须向飞行管制部门申请飞行计划并获批准，划设临时空域须提前7个工作日申请，升放气球须经气象机构批准。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2008-03-28_通用航空飞行管制条例(国务院、中央军委令第371号,2003年5月1日施行,现行有效).txt",
+    "char_count": 6291,
+    "extracted_at": "2026-10-27T22:46:01+08:00"
+  }
+}

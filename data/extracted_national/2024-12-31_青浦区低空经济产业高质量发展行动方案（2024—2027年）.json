@@ -1,0 +1,15 @@
+{
+  "policy_name": "青浦区低空经济产业高质量发展行动方案（2024—2027年）",
+  "issue_date": "2024-12-31",
+  "effective_date": "2024-12-31",
+  "expiry_date": "无",
+  "apply_region": "上海市青浦区",
+  "status": "现行有效",
+  "summary": "支持企业申请民用无人驾驶航空器运营合格证及通用航空经营许可，开展物流、载人等场景试点，需配合市级部门进行航路划设与起降设施规划。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-12-31_青浦区低空经济产业高质量发展行动方案（2024—2027年）.txt",
+    "char_count": 4841,
+    "extracted_at": "2026-10-26T22:33:47+08:00"
+  }
+}

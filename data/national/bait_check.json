@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "checked": 2,
+    "bait_effective": 0,
+    "bait_ineffective": 2,
+    "effective_rate": 0.0,
+    "by_conflict_type": {
+      "eligibility_changed": {
+        "n": 2,
+        "effective": 0
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "TQ2-011",
+      "region": "广州市黄埔区",
+      "conflict_type": "eligibility_changed",
+      "answer_type": "boolean",
+      "question": "在黄埔区建设无人机小型起降点，是否只要建成就能申请补贴？",
+      "ground_truth": "不能，必须纳入区低空航线和起降点规划且进入常态化运营状态。",
+      "old_policy": "广州开发区（黄埔区）促进低空经济高质量发展的若干措施",
+      "a_only_answer": "不是，需按实际建设投入的50%分类别给予一次性补贴，且每个小型起降点不超过10万元、每家企业每年度该项补贴不超过600万元。",
+      "relation": "SAME",
+      "reason": "均否定建成即补贴，回答补充补贴标准，核心结论一致",
+      "bait_effective": false
+    },
+    {
+      "id": "TQ2-007",
+      "region": "武汉市",
+      "conflict_type": "eligibility_changed",
+      "answer_type": "boolean",
+      "question": "在武汉市，民用无人驾驶航空器没有依法完成实名登记，可以起飞吗？",
+      "ground_truth": "不可以，未依法登记不得从事飞行及相关活动。",
+      "old_policy": "关于加强武汉市民用无人驾驶航空器安全管理的通告",
+      "a_only_answer": "不可以。该条款明确规定飞行前必须完成实名登记，未登记不得擅自组织飞行活动。",
+      "relation": "SAME",
+      "reason": "结论一致，均为未登记不可飞行",
+      "bait_effective": false
+    }
+  ]
+}

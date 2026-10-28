@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-10-27T18:19:48+08:00",
+  "as_of": "2026-10-27",
+  "backend": {
+    "backend": "chroma",
+    "collection": "lowalt_policy",
+    "persist_dir": "./chroma_lowalt",
+    "embedding_function": "bge-zh",
+    "count": 6106
+  },
+  "model": "deepseek-flash",
+  "pair_stats": {
+    "clauses_total": 6106,
+    "old_clauses": 606,
+    "current_clauses": 5466,
+    "candidate_pairs": 49,
+    "topics": 15,
+    "skipped": {
+      "no_new_counterpart": 63,
+      "same_text": 0,
+      "low_similarity": 544
+    }
+  },
+  "attempted_pairs": 49,
+  "accepted": 19,
+  "skipped_by_llm": 30,
+  "skipped_by_retrieval": 0,
+  "failed_calls": 0,
+  "params": {
+    "min_similarity": 0.12,
+    "max_pairs": 240,
+    "max_pairs_per_topic": 1,
+    "require_old_in_topk": 0
+  }
+}

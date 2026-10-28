@@ -1,0 +1,15 @@
+{
+  "policy_name": "上海市关于链接长三角加快建设低空经济先进制造业集群的若干措施",
+  "issue_date": "2025-12-26",
+  "effective_date": "2025-12-26",
+  "expiry_date": "2028-12-31",
+  "apply_region": "上海市",
+  "status": "现行有效",
+  "summary": "支持eVTOL等整机制造及适航取证，对获TC/PC企业给予奖励；推动低空物流等场景应用，需确保安全并有序示范。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-12-26_上海市关于链接长三角加快建设低空经济先进制造业集群的若干措施.txt",
+    "char_count": 4358,
+    "extracted_at": "2026-10-27T00:27:29+08:00"
+  }
+}

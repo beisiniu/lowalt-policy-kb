@@ -1,0 +1,15 @@
+{
+  "policy_name": "低空经济领域强制性国家标准要点(GB 42590-2023、GB 46750-2025、GB 46761-2025、GB 46860-2025)",
+  "issue_date": "2026-05-01",
+  "effective_date": "2026-05-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "民用无人机须符合整机安全、运行广播识别、实名登记激活及唯一产品识别码等强制性国标，未实名登记激活不得飞行。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-05-01_低空经济领域强制性国家标准要点(GB 42590-2023GB 46750-2025GB 46761-2025GB 46860-2025).txt",
+    "char_count": 947,
+    "extracted_at": "2026-10-27T17:29:54+08:00"
+  }
+}

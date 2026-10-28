@@ -1,0 +1,15 @@
+{
+  "policy_name": "苏州市低空经济高质量发展实施方案（2024~2026年）",
+  "issue_date": "2024-02-06",
+  "effective_date": "2024-02-06",
+  "expiry_date": "无",
+  "apply_region": "苏州市",
+  "status": "现行有效",
+  "summary": "苏州推动低空经济发展，需依托监管服务平台进行飞行申请与过程监管，协调军方及民航划设航线，简化审批流程。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-02-06_苏州市低空经济高质量发展实施方案（2024~2026年）.txt",
+    "char_count": 4535,
+    "extracted_at": "2026-10-26T22:33:52+08:00"
+  }
+}

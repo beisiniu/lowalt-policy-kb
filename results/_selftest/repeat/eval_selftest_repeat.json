@@ -1,0 +1,140 @@
+{
+  "tag": "selftest_repeat",
+  "run_at": "2026-10-26T03:15:25",
+  "backend": "local",
+  "answer_mode": "extractive",
+  "judge": "llm",
+  "simulated": false,
+  "metrics": {
+    "total": 2,
+    "Correct": 2,
+    "Stale_Fact_Error": 0,
+    "Refusal": 0,
+    "Incorrect_Other": 0,
+    "accuracy": 1.0,
+    "answered": 2,
+    "effective_accuracy": 1.0,
+    "by_type": {
+      "审批判定": {
+        "n": 2,
+        "correct": 2,
+        "accuracy": 1.0
+      }
+    },
+    "judge_agreement": 1.0,
+    "stale_rate": 0.0,
+    "refusal_rate": 0.0,
+    "incorrect_rate": 0.0,
+    "status_detected_rate": 1.0,
+    "status_accuracy": 1.0,
+    "stale_blocked": 0,
+    "stale_trap_total": 1,
+    "stale_trap_hit": 0
+  },
+  "items": [
+    {
+      "id": "Q01",
+      "question": "现在在深圳市用大疆 Mini 3（249 克）在适飞空域内飞行，需要提前申请飞行计划吗？",
+      "expected_status": "无需审批",
+      "ground_truth": "不需要。按《深圳经济特区低空经济产业促进条例》第九条，最大起飞重量不超过 25 千克的微型、轻型无人驾驶航空器在适飞空域内飞行无需提出飞行计划申请，只需完成实名登记核验，且飞行高度不超过真高 120 米、速度不超过 100 公里/小时。",
+      "policy_ref": "深圳经济特区低空经济产业促进条例（2026-05-01 施行）",
+      "trap": "stale",
+      "answer_type": "审批判定",
+      "answer": "根据《深圳市低空飞行活动管理办法（2026年修订）》第五条（2026-09-01）：使用微型、轻型民用无人驾驶航空器在适飞空域内飞行的，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式。\n另可参考《深圳经济特区低空经济产业促进条例》第八条（2026-05-01）。",
+      "status_detected": "无需审批",
+      "status_match": true,
+      "verdict": "Correct",
+      "reason": "回答与标准答案一致，引用了现行有效的条例。",
+      "judge_agreement": 1.0,
+      "route": "answer",
+      "steps": [
+        "parse",
+        "retrieve:3",
+        "gate>answer",
+        "answer"
+      ],
+      "cited": [
+        {
+          "policy_name": "深圳市低空飞行活动管理办法（2026年修订）",
+          "article": "第五条",
+          "effective_date": "2026-09-01",
+          "expiry_date": "2031-08-31",
+          "status": "现行有效",
+          "apply_region": "深圳市",
+          "score": 9.0825
+        },
+        {
+          "policy_name": "深圳经济特区低空经济产业促进条例",
+          "article": "第八条",
+          "effective_date": "2026-05-01",
+          "expiry_date": "无",
+          "status": "现行有效",
+          "apply_region": "深圳市",
+          "score": 7.6077
+        },
+        {
+          "policy_name": "民用无人驾驶航空器运行安全管理规定",
+          "article": "第十八条",
+          "effective_date": "2026-07-01",
+          "expiry_date": "2031-06-30",
+          "status": "现行有效",
+          "apply_region": "全国",
+          "score": 3.3872
+        }
+      ],
+      "blocked_stale": []
+    },
+    {
+      "id": "Q02",
+      "question": "在深圳用起飞重量 30 千克的无人机做电力巡检（非经营性），要提前几天申请？",
+      "expected_status": "需要审批",
+      "ground_truth": "需要审批。最大起飞重量超过 25 千克的非经营性飞行，应提前 3 个工作日通过市低空飞行服务保障平台提出飞行计划申请，经批准后方可实施。",
+      "policy_ref": "深圳经济特区低空经济产业促进条例 第八条",
+      "trap": "none",
+      "answer_type": "审批判定",
+      "answer": "根据《深圳经济特区低空经济产业促进条例》第八条（2026-05-01）：使用最大起飞重量超过25千克的无人驾驶航空器从事非经营性飞行活动的，应当提前3个工作日通过市低空飞行服务保障平台提出飞行计划申请，经批准后方可实施。\n另可参考《民用无人驾驶航空器运行安全管理规定》第五条（2026-07-01）。",
+      "status_detected": "需要审批",
+      "status_match": true,
+      "verdict": "Correct",
+      "reason": "回答与标准答案一致，引用了现行有效的条例。",
+      "judge_agreement": 1.0,
+      "route": "answer",
+      "steps": [
+        "parse",
+        "retrieve:3",
+        "gate>answer",
+        "answer"
+      ],
+      "cited": [
+        {
+          "policy_name": "深圳经济特区低空经济产业促进条例",
+          "article": "第八条",
+          "effective_date": "2026-05-01",
+          "expiry_date": "无",
+          "status": "现行有效",
+          "apply_region": "深圳市",
+          "score": 12.3486
+        },
+        {
+          "policy_name": "民用无人驾驶航空器运行安全管理规定",
+          "article": "第五条",
+          "effective_date": "2026-07-01",
+          "expiry_date": "2031-06-30",
+          "status": "现行有效",
+          "apply_region": "全国",
+          "score": 9.4589
+        },
+        {
+          "policy_name": "深圳市低空飞行活动管理办法（2026年修订）",
+          "article": "第六条",
+          "effective_date": "2026-09-01",
+          "expiry_date": "2031-08-31",
+          "status": "现行有效",
+          "apply_region": "深圳市",
+          "score": 4.3058
+        }
+      ],
+      "blocked_stale": []
+    }
+  ]
+}

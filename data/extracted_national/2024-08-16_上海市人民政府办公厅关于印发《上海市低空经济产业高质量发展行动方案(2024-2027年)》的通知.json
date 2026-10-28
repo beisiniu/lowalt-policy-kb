@@ -1,0 +1,15 @@
+{
+  "policy_name": "上海市低空经济产业高质量发展行动方案（2024-2027年）",
+  "issue_date": "2024-08-16",
+  "effective_date": "2024-08-16",
+  "expiry_date": "无",
+  "apply_region": "上海市",
+  "status": "现行有效",
+  "summary": "上海市推动低空经济产业发展的行动方案，要求企业申请民用无人驾驶航空器运营合格证，并开展适航取证、飞行运营及安全监管。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-16_上海市人民政府办公厅关于印发《上海市低空经济产业高质量发展行动方案(2024-2027年)》的通知.txt",
+    "char_count": 5147,
+    "extracted_at": "2026-10-26T16:47:34+08:00"
+  }
+}

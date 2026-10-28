@@ -1,0 +1,15 @@
+{
+  "policy_name": "广西低空经济高质量发展行动方案（2024—2026年）",
+  "issue_date": "2024-10-09",
+  "effective_date": "2024-10-09",
+  "expiry_date": "2026-12-31",
+  "apply_region": "广西壮族自治区",
+  "status": "现行有效",
+  "summary": "广西各级政府推进低空场景应用与飞行服务保障，需建设自治区级综合监管平台实现飞行计划申请审批，未设具体重量高度门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-10-09_广西低空经济高质量发展行动方案(2024—2026年).txt",
+    "char_count": 6123,
+    "extracted_at": "2026-10-26T16:47:44+08:00"
+  }
+}

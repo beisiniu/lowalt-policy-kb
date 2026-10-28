@@ -1,0 +1,47 @@
+# ===== 密钥与本地环境 =====
+.env
+*.key
+.venv/
+venv/
+env/
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 向量库 / 模型（体积大；从快照复制或按 README §6 重建）=====
+chroma_lowalt/
+chroma_db/
+demo/chroma_temporal/
+data/_chroma_test/
+models/
+
+# ===== 本地索引（可由 kb_ingest.py --rebuild 重建）=====
+kb/index/
+kb/index_before/
+kb/index_gd/
+
+# ===== 运行日志 / 临时目录 =====
+*.log
+data/logs/
+data/gd_logs/
+data/beijing_logs/
+data/_tmp/
+data/_new_list.txt
+data/manual_inbox/*
+region_counts_tmp.json
+
+# ===== 自动备份 / 临时文件 =====
+*_backup_*.json
+*.bak*
+*.tmp
+*.part
+*.broken
+
+# ===== 旧抓取目录（保留原始忽略策略）=====
+data/policies/

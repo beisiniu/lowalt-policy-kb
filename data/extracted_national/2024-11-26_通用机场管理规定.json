@@ -1,0 +1,15 @@
+{
+  "policy_name": "通用机场管理规定",
+  "issue_date": "2024-11-26",
+  "effective_date": "2025-04-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "A类通用机场需向民航地区管理局申请使用许可，B类实行备案管理；明确跑道型、水上及直升机场分类标准与建设运营合规要求。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-11-26_通用机场管理规定.txt",
+    "char_count": 8686,
+    "extracted_at": "2026-10-26T23:02:20+08:00"
+  }
+}

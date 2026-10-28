@@ -1,0 +1,30 @@
+# ===== 阶段一：增量爬虫 =====
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0          # bs4 的解析器，比 html.parser 宽容、快
+# 动态渲染页面才需要（本项目静态页优先，默认不启用）：
+# playwright>=1.44.0
+
+# ===== 阶段二：大模型结构化抽取 =====
+openai>=1.30.0       # 兼容 DeepSeek 的 OpenAI 协议
+
+# ===== 阶段三：本地知识库（LangGraph 编排 + LangChain 组件）=====
+# 实测版本：langgraph 1.2.17 / langchain-core 1.7.0 / text-splitters 1.1.3
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-text-splitters>=0.3.0
+rank-bm25>=0.2.2     # BM25 关键词召回，纯 Python
+jieba>=0.42.1        # 中文分词
+
+# ===== 阶段四：评估与出图 =====
+matplotlib>=3.8.0
+
+# ===== 时序 RAG 对抗评估 =====
+# 生产向量库；不装也能用 --backend local 跑通现有本地索引
+chromadb>=1.0.0
+# 中文 BGE 本地嵌入（Chroma 默认 MiniLM 是英文，中文排序不可用）
+onnxruntime>=1.17
+tokenizers>=0.15
+numpy>=1.26
+# PDF 政策（北京等）直接抽文本
+pypdf>=4.0

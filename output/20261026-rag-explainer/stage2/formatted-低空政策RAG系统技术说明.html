@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="docx-page-size" content="A4">
+  <title>低空政策问答系统是怎么工作的</title>
+  <style>
+  @page { @bottom-center { content: counter(page); } }
+  @page cover { @bottom-center { content: none; } }
+  section[role="cover"] { page: cover; }
+
+  :root {
+    --fs-cover-eyebrow: 11pt;
+    --fs-cover-title: 26pt;
+    --fs-cover-subtitle: 13pt;
+    --fs-cover-note: 10.5pt;
+    --fs-toc-title: 15pt;
+    --fs-toc-1: 11pt;
+    --fs-toc-2: 10.5pt;
+    --fs-h1: 18pt;
+    --fs-h2: 14pt;
+    --fs-body: 12pt;
+    --fs-table: 10.5pt;
+    --fs-code: 10.5pt;
+    --fs-small: 10pt;
+    --ff-heading: "SimHei", "黑体", sans-serif;
+    --ff-body: "SimSun", "宋体", serif;
+    --ff-code: "Consolas", monospace;
+    --spacing-xs: 0.28em;
+    --spacing-sm: 0.45em;
+    --spacing-md: 0.62em;
+    --spacing-lg: 1em;
+    --spacing-xl: 1.5em;
+    --spacing-cover-top: 4.5cm;
+    --spacing-cover-note: 0 1.2cm 2.4em 1.2cm;
+    --spacing-cell: 0.36em 0.5em;
+    --spacing-callout: 0.5em 0.8em;
+    --spacing-callout-box: 0.6em 0 1em 0;
+    --spacing-list: 0.2em 0 0.8em 2.2em;
+    --spacing-toc-item: 0.28em;
+    --spacing-toc-indent: 1.6em;
+    --spacing-list-indent: 2.2em;
+    --color-primary: #1F4E79;
+    --color-text: #1a1a1a;
+    --color-muted: #666666;
+    --color-border: #d0d7de;
+    --color-highlight: #f3f6fa;
+    --color-subheading: #14395c;
+    --color-code-bg: #f2f2f2;
+    --color-toc-2: #333333;
+    --border-chapter: 2px solid var(--color-primary);
+    --border-callout: 3px solid var(--color-primary);
+    --border-cell: 1px solid var(--color-border);
+    --margin-page: 2.4cm;
+    --page-content-width: 15.6cm;
+  }
+
+  body { font-family: var(--ff-body); font-size: var(--fs-body); line-height: 1.7;
+         color: var(--color-text); max-width: var(--page-content-width);
+         margin-left: auto; margin-right: auto; }
+
+  section[role="cover"] { text-align: center; padding-top: var(--spacing-cover-top); }
+  .cover-eyebrow { text-align: center; font-family: var(--ff-heading); font-size: var(--fs-cover-eyebrow);
+                   letter-spacing: 0.16em; color: var(--color-primary); margin-bottom: var(--spacing-lg); }
+  .cover-title { text-align: center; font-family: var(--ff-heading); font-size: var(--fs-cover-title);
+                 font-weight: 700; color: var(--color-primary); line-height: 1.4;
+                 margin-bottom: var(--spacing-md); }
+  .cover-subtitle { text-align: center; font-size: var(--fs-cover-subtitle); color: var(--color-muted);
+                    margin-bottom: var(--spacing-xl); }
+  .cover-note { text-align: center; font-size: var(--fs-cover-note); color: var(--color-muted);
+                line-height: 1.9; margin: var(--spacing-cover-note); }
+  .cover-meta { text-align: center; font-size: var(--fs-small); color: var(--color-muted); }
+
+  nav.doc-toc { padding: var(--spacing-sm) 0; }
+  .toc-title { font-family: var(--ff-heading); font-size: var(--fs-toc-title); font-weight: 700;
+               color: var(--color-primary); text-align: center; margin-bottom: var(--spacing-lg); }
+  .toc-list, .toc-list ol, .toc-list ul { list-style: none; padding-left: 0; margin: 0; }
+  .toc-list li { margin-bottom: var(--spacing-toc-item); text-indent: 0; font-size: var(--fs-toc-1); }
+  .toc-l1 { font-weight: 700; margin-top: var(--spacing-xs); }
+  .toc-l2 { padding-left: var(--spacing-toc-indent); font-weight: 400; font-size: var(--fs-toc-2); color: var(--color-toc-2); }
+  .toc-list a { color: var(--color-text); text-decoration: none; }
+
+  h1.chapter { font-family: var(--ff-heading); font-size: var(--fs-h1); font-weight: 700;
+               color: var(--color-primary); margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+               padding-bottom: var(--spacing-xs); border-bottom: var(--border-chapter); text-indent: 0; }
+  h2.sub { font-family: var(--ff-heading); font-size: var(--fs-h2); font-weight: 700;
+           color: var(--color-subheading); margin: var(--spacing-lg) 0 var(--spacing-sm) 0; text-indent: 0; }
+  p.body-p { text-indent: 2em; margin: 0 0 var(--spacing-md) 0; text-align: justify; }
+  ul.doc-list, ol.doc-list { margin: var(--spacing-list); padding-left: var(--spacing-list-indent); }
+  ul.doc-list li, ol.doc-list li { margin-bottom: var(--spacing-toc-item); text-align: justify; }
+
+  p.callout { text-indent: 0; margin: var(--spacing-callout-box); padding: var(--spacing-callout);
+              border-left: var(--border-callout); background: var(--color-highlight);
+              font-size: var(--fs-small); }
+
+  table.doc-table { width: 100%; border-collapse: collapse; margin: var(--spacing-callout-box);
+                    font-size: var(--fs-table); }
+  table.doc-table th, table.doc-table td { border: var(--border-cell);
+              padding: var(--spacing-cell); text-align: left; vertical-align: top; }
+  table.doc-table th { background: var(--color-highlight); font-family: var(--ff-heading);
+              font-weight: 700; }
+  code { font-family: var(--ff-code); font-size: var(--fs-code); background: var(--color-code-bg); }
+  strong { font-weight: 700; }
+</style>
+</head>
+<body>
+  <section role="cover">
+    <p class="cover-eyebrow">技术说明 · 内部汇报材料</p>
+    <h1 class="cover-title">低空政策问答系统是怎么工作的</h1>
+    <p class="cover-subtitle">一份写给零基础同事的流程说明</p>
+    <p class="cover-note">本文不假设你了解检索、向量或大模型。名词第一次出现时都会用一句话解释，文末附名词表。所有数字都来自当前系统真实运行结果，不是估算。</p>
+    <p class="cover-meta">低空政策知识库项目 · 2026 年 10 月</p>
+  </section>
+
+  <section role="cover">
+    <nav class="doc-toc" aria-label="文档目录">
+      <p class="toc-title">目 录</p>
+      <ol class="toc-list">
+        <li class="toc-l1"><a href="#section-1">一、先建立一个直觉：图书馆比喻</a></li>
+        <li class="toc-l1"><a href="#section-2">二、第一步：为什么要切块（chunk）</a></li>
+        <li class="toc-l2"><a href="#section-2-1">2.1 不切行不行</a></li>
+        <li class="toc-l2"><a href="#section-2-2">2.2 具体怎么切</a></li>
+        <li class="toc-l2"><a href="#section-2-3">2.3 切坏了会怎样（真实案例）</a></li>
+        <li class="toc-l2"><a href="#section-2-4">2.4 当前规模</a></li>
+        <li class="toc-l1"><a href="#section-3">三、第二步：怎么让计算机"按意思"找段落</a></li>
+        <li class="toc-l2"><a href="#section-3-1">3.1 关键词搜索不够用</a></li>
+        <li class="toc-l2"><a href="#section-3-2">3.2 向量：把一段话变成一个坐标</a></li>
+        <li class="toc-l2"><a href="#section-3-3">3.3 相似度怎么算</a></li>
+        <li class="toc-l1"><a href="#section-4">四、第三步：Top-K 检索到底做了什么</a></li>
+        <li class="toc-l2"><a href="#section-4-1">4.1 一句话定义</a></li>
+        <li class="toc-l2"><a href="#section-4-2">4.2 为什么是 5</a></li>
+        <li class="toc-l2"><a href="#section-4-3">4.3 还会加一层硬过滤</a></li>
+        <li class="toc-l2"><a href="#section-4-4">4.4 一个真实的失败案例</a></li>
+        <li class="toc-l1"><a href="#section-5">五、第四步：5 个块怎么变成答案</a></li>
+        <li class="toc-l2"><a href="#section-5-1">5.1 两条分支，唯一的差别是"过不过滤"</a></li>
+        <li class="toc-l2"><a href="#section-5-2">5.2 怎么判断一段是不是"过期"</a></li>
+        <li class="toc-l2"><a href="#section-5-3">5.3 一个具体例子</a></li>
+        <li class="toc-l1"><a href="#section-6">六、第五步：怎么判断"答得对不对"</a></li>
+        <li class="toc-l2"><a href="#section-6-1">6.1 用另一个大模型当裁判</a></li>
+        <li class="toc-l2"><a href="#section-6-2">6.2 四个指标怎么算</a></li>
+        <li class="toc-l2"><a href="#section-6-3">6.3 为什么要同时看"消除率"和"拯救率"</a></li>
+        <li class="toc-l2"><a href="#section-6-4">6.4 裁判本身也会判错</a></li>
+        <li class="toc-l2"><a href="#section-6-5">6.5 三个裁判投票</a></li>
+        <li class="toc-l1"><a href="#section-7">七、现在到哪一步了</a></li>
+        <li class="toc-l2"><a href="#section-7-1">7.1 已经跑通的部分</a></li>
+        <li class="toc-l2"><a href="#section-7-2">7.2 三条必须说清的局限</a></li>
+        <li class="toc-l1"><a href="#section-8">八、上轮计划的完成情况与下一步</a></li>
+        <li class="toc-l2"><a href="#section-8-1">8.1 扩充"已失效政策"——部分完成</a></li>
+        <li class="toc-l2"><a href="#section-8-2">8.2 提高新条款召回率——超额完成</a></li>
+        <li class="toc-l2"><a href="#section-8-3">8.3 人工抽检标准答案——待做</a></li>
+        <li class="toc-l2"><a href="#section-8-4">8.4 裁判多模型——已完成（升级为三裁判）</a></li>
+        <li class="toc-l2"><a href="#section-8-5">8.5 消融实验——已完成（关键结果）</a></li>
+        <li class="toc-l2"><a href="#section-8-6">8.6 地域扩展——部分完成</a></li>
+        <li class="toc-l1"><a href="#section-9">九、常见误解</a></li>
+        <li class="toc-l1"><a href="#section-10">十、名词表</a></li>
+        <li class="toc-l1"><a href="#section-11">附：一句话总结</a></li>
+      </ol>
+    </nav>
+  </section>
+
+  <section role="body" data-page-restart="1">
+      <p class="callout">&nbsp;&nbsp;本文不假设你了解检索、向量或大模型。名词第一次出现时都会用一句话解释，文末附名词表。所有数字都来自当前系统真实运行结果，不是估算。</p>
+      <h2 class="sub">TL;DR</h2>
+      <p class="body-p">系统把政策文件切成小段存进"可按意思搜索"的库；用户提问时先捞出最相关的 5 段，再让大模型只依据这 5 段回答。我们的研究点是：<strong>如果这 5 段里混进了已经作废的旧政策，系统会不会给出错误建议，以及在把旧政策过滤掉之后，这个错误能减少多少。</strong></p>
+      <h1 id="section-1" class="chapter">一、先建立一个直觉：图书馆比喻</h1>
+      <p class="body-p">把整套系统想成一座图书馆：</p>
+      <table class="doc-table">
+        <thead><tr><th>系统里的东西</th><th>图书馆里的对应物</th></tr></thead>
+        <tbody>
+          <tr><td>政策原文（66 篇）</td><td>66 本书</td></tr>
+          <tr><td>切块（1294 段）</td><td>把每本书拆成一页页卡片</td></tr>
+          <tr><td>向量</td><td>给每张卡片标一个"意思坐标"</td></tr>
+          <tr><td>Top-5 检索</td><td>按坐标找出离问题最近的 5 张卡片</td></tr>
+          <tr><td>大模型</td><td>拿着这 5 张卡片回答问题的人</td></tr>
+        </tbody>
+      </table>
+      <p class="body-p">理解这五层，后面的所有术语都能对上号。</p>
+      <h1 id="section-2" class="chapter">二、第一步：为什么要切块（chunk）</h1>
+      <h2 id="section-2-1" class="sub">2.1 不切行不行</h2>
+      <p class="body-p">不行，有两个硬原因。</p>
+      <p class="body-p">第一，<strong>大模型一次能读的字数有限</strong>。把 66 篇政策（约 35 万字）全塞进去，既放不下，也贵得离谱。</p>
+      <p class="body-p">第二，<strong>检索需要精度</strong>。用户问"深圳 249 克无人机要不要申请"，我们只想给它"微型轻型的飞行计划条款"，不想把整部条例一起给它。整篇给，模型会抓不住重点。</p>
+      <p class="body-p">所以要把长文档切成"语义完整的小段"，每段叫一个 <strong>chunk（块）</strong>。</p>
+      <h2 id="section-2-2" class="sub">2.2 具体怎么切</h2>
+      <p class="body-p">政策文件有很强的结构，切块就顺着它的结构走，而不是按字数硬切。</p>
+      <p class="body-p"><strong>第一步，按"第X条"切。</strong> 政策条文天然以"第五条""第十二条"为单位，一条就是一个完整规则，切开不会切断语义。</p>
+      <p class="body-p"><strong>第二步，没有条号的按小节切。</strong> 通知、方案类文件常常写成"一、总体要求""（一）加强组织领导"。这类文件先按小节分组，再在组内按字数装包。</p>
+      <p class="body-p"><strong>第三步，单条太长的按句子切。</strong> 一条超过 450 字时，退到句号处切开，并让相邻两段重叠 50 字，避免一句话被劈成两半、两边都读不懂。</p>
+      <p class="body-p"><strong>第四步，给每块加上"身份标签"。</strong> 每段开头拼上《政策名》和条号，例如：</p>
+      <p class="callout">&nbsp;&nbsp;《广东省支持低空经济高质量发展若干措施》第八条 支持广州、深圳、珠海先行先试……</p>
+      <p class="body-p">这一步很关键。因为用户问"广东"，如果块里只有"支持广州、深圳、珠海先行先试"，检索程序根本不知道这段属于广东。加上政策名，命中率立刻上来。</p>
+      <h2 id="section-2-3" class="sub">2.3 切坏了会怎样（真实案例）</h2>
+      <p class="body-p">早期版本把没有条号的文件整篇当一个块，结果东莞的"市内无人机物流航线补贴"和上一条"信息基础设施"被粘在同一段里。</p>
+      <p class="body-p">后果是：用户问"东莞物流航线补多少"，这段的"意思"被稀释成了"基础设施 + 补贴"的混合物，在 1294 个块里只排到第 3 名以外，检索不到。</p>
+      <p class="body-p">改成按小节切之后，这段自己独立成块，同样的问题直接排第 1。</p>
+      <p class="body-p"><strong>这就是切块的价值：切块不是搬运文字，而是在决定"检索的最小单位"。单位选错了，后面再好的模型也救不回来。</strong></p>
+      <h2 id="section-2-4" class="sub">2.4 当前规模</h2>
+      <table class="doc-table">
+        <thead><tr><th>项目</th><th>数字</th></tr></thead>
+        <tbody>
+          <tr><td>政策</td><td>66 篇</td></tr>
+          <tr><td>切出的块</td><td>1545 段</td></tr>
+          <tr><td>平均每篇</td><td>约 23 段</td></tr>
+          <tr><td>覆盖地域</td><td>39 个（国家 / 省 / 市三级）</td></tr>
+        </tbody>
+      </table>
+      <h1 id="section-3" class="chapter">三、第二步：怎么让计算机"按意思"找段落</h1>
+      <h2 id="section-3-1" class="sub">3.1 关键词搜索不够用</h2>
+      <p class="body-p">用户问"249 克的无人机要不要报备"，政策原文写的是"微型无人驾驶航空器无需提出飞行计划申请"。</p>
+      <p class="body-p">两句话没有一个共同的关键词，靠"字面匹配"永远搜不到。我们需要"按意思找"。</p>
+      <h2 id="section-3-2" class="sub">3.2 向量：把一段话变成一个坐标</h2>
+      <p class="body-p">做法是让一个专门的模型（叫 <strong>embedding 模型</strong>）把每段文字读一遍，输出一串数字，比如 512 个小数。这串数字就是这段话的"意思坐标"，术语叫 <strong>向量</strong>。</p>
+      <p class="body-p">意思相近的两段话，坐标距离就近；意思无关的，距离就远。</p>
+      <p class="callout">&nbsp;&nbsp;打个比方：把每段话放到一个 512 维的地图上，聊"审批"的聚在一块，聊"补贴"的聚在另一块。</p>
+      <p class="body-p">本系统用的是中文专用模型 <strong>BGE-small-zh</strong>（512 维）。<strong>不能用英文模型</strong>：实测用 Chroma 自带的英文模型时，"中山 2028 年产业目标"这种问题会被排到第 3 名，因为英文模型对中文语义几乎无感。</p>
+      <h2 id="section-3-3" class="sub">3.3 相似度怎么算</h2>
+      <p class="body-p">两段话的向量夹角越小，说明意思越接近。数学上叫 <strong>余弦相似度</strong>，取值 0 到 1，越接近 1 越像。检索程序就是把问题的向量和库里每段的向量都算一遍，然后从大到小排序。</p>
+      <h1 id="section-4" class="chapter">四、第三步：Top-K 检索到底做了什么</h1>
+      <h2 id="section-4-1" class="sub">4.1 一句话定义</h2>
+      <p class="body-p"><strong>Top-K 检索 = 把问题也变成向量，和库里所有块算相似度，取分数最高的前 K 个。</strong></p>
+      <p class="body-p">本系统 K=5，即每次只取最相关的 5 段。</p>
+      <h2 id="section-4-2" class="sub">4.2 为什么是 5</h2>
+      <p class="body-p">这是个权衡：</p>
+      <ul class="doc-list">
+        <li>K 太小（比如 2）：可能漏掉关键条款。政策问题常常需要"总则 + 例外条款"两条一起看。</li>
+        <li>K 太大（比如 20）：会把不相干的段落塞进上下文，模型容易被带偏，也更贵。</li>
+      </ul>
+      <p class="body-p">我们用两个指标衡量这个取舍：</p>
+      <table class="doc-table">
+        <thead><tr><th>指标</th><th>含义</th><th>当前值</th></tr></thead>
+        <tbody>
+          <tr><td>Recall@1</td><td>正确答案排在第 1 名的比例</td><td>70.0%</td></tr>
+          <tr><td>Recall@5</td><td>正确答案落在前 5 名里的比例</td><td><strong>96.7%</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="body-p"><strong>Recall（召回率）</strong> 的意思是"该找到的，实际找到了多少"。Recall@5 = 96.7% 说明：30 道测试题里有 29 道，正确条款确实进了前 5 名。</p>
+      <p class="body-p">从 70% 到 96.7% 的差距，正是"取 5 条而不是 1 条"的价值。</p>
+      <h2 id="section-4-3" class="sub">4.3 还会加一层硬过滤</h2>
+      <p class="body-p">检索时还会按地域过滤：问深圳的问题，不会把上海的政策捞进来；但"全国"性文件对任何地方都适用。</p>
+      <p class="body-p">这一步是<strong>硬性排除</strong>，不是"降低权重"。原因在第五章会讲：旧政策在字面上往往比新政策更像问题，光靠打分排序，它一定排在前面。</p>
+      <h2 id="section-4-4" class="sub">4.4 一个真实的失败案例</h2>
+      <p class="body-p">30 道覆盖测试里唯一答错的一题：</p>
+      <p class="callout">&nbsp;&nbsp;问：朝阳市到 2030 年通用航空产业直接产值目标是多少？</p>
+      <p class="body-p">标准答案是"200 亿元，拉动相关产业 1000 亿元"。这两个数字<strong>确实在库里</strong>，原文一句不差。但包含这句话的那一段没有进前 5 名，模型手里没有这条信息，只能回答"资料不足，无法确定"。</p>
+      <p class="body-p"><strong>这不是模型笨，是检索没捞到。</strong> 它说明 Recall@5 的 3.3% 缺口是真会掉分的，后续要靠重排序（rerank）或把 K 调大来补。</p>
+      <h1 id="section-5" class="chapter">五、第四步：5 个块怎么变成答案</h1>
+      <h2 id="section-5-1" class="sub">5.1 两条分支，唯一的差别是"过不过滤"</h2>
+      <p class="body-p">拿到同样 5 个块之后，系统分两条路走：</p>
+      <table class="doc-table">
+        <thead><tr><th>分支</th><th>拿到什么</th><th>做什么</th></tr></thead>
+        <tbody>
+          <tr><td><strong>朴素 RAG（Naive）</strong></td><td>原封不动的 5 段，含过期条款</td><td>直接交给大模型回答</td></tr>
+          <tr><td><strong>时序 RAG（Temporal）</strong></td><td>同样 5 段</td><td>先剔除已失效的条款，剩下的再交给模型</td></tr>
+        </tbody>
+      </table>
+      <p class="body-p">两条路用的是<strong>同一个模型、同一段提示词、同样的温度参数</strong>。唯一的变量就是"有没有过滤"。</p>
+      <p class="body-p">这一点很重要：如果两条路的提示词不一样，就无法判断差异是过滤带来的，还是提示词带来的。</p>
+      <h2 id="section-5-2" class="sub">5.2 怎么判断一段是不是"过期"</h2>
+      <p class="body-p">每个块在入库时都带了两个日期：</p>
+      <ul class="doc-list">
+        <li><code>valid_from</code>：从哪天开始生效</li>
+        <li><code>valid_to</code>：到哪天失效；空值表示目前仍有效</li>
+      </ul>
+      <p class="body-p">过滤逻辑只有一句：<strong><code>valid_to</code> 早于评估基准日（2026-10-26）的，剔除。</strong></p>
+      <p class="body-p">如果 5 段全被剔除，系统不会硬答，而是明确回复"检索到的依据在当前时点均已失效，无法给出确定结论"。这叫<strong>安全拒答</strong>。</p>
+      <h2 id="section-5-3" class="sub">5.3 一个具体例子</h2>
+      <p class="callout">&nbsp;&nbsp;问：我们想在黄埔区落户一个低空整机制造项目，听说以前最高能拿 3000 万元落户奖，现在还能拿到这个数吗？</p>
+      <p class="body-p"><strong>朴素分支的回答</strong>：依据黄埔 2023 年措施第二条，"最高给予 3000 万元落户奖"。</p>
+      <p class="body-p">问题在于：这份 2023 年的文件已经在 2025 年被新措施取代。现行标准是"按实缴注册资本和固定资产投资，最高 1000 万元"。所以这个回答<strong>金额错了 2000 万</strong>，术语叫"被旧政策毒化"。</p>
+      <p class="body-p"><strong>时序分支的回答</strong>：2023 年条款被剔除；剩下的段落里没有落户奖励的具体标准，于是回答"资料不足，无法确定"。</p>
+      <p class="body-p">它没答对，但<strong>也没有给出错误金额</strong>。这就是当前系统的基本取舍：<strong>宁可说不知道，也不给错数。</strong></p>
+      <h1 id="section-6" class="chapter">六、第五步：怎么判断"答得对不对"</h1>
+      <h2 id="section-6-1" class="sub">6.1 用另一个大模型当裁判</h2>
+      <p class="body-p">让同一个模型给自己打分不可靠，所以我们用另一个模型当裁判（术语叫 <strong>LLM-as-a-Judge</strong>）。裁判拿到三样东西：问题、标准答案、待判回答，然后把回答归入四类之一：</p>
+      <table class="doc-table">
+        <thead><tr><th>判定</th><th>含义</th></tr></thead>
+        <tbody>
+          <tr><td><strong>毒化（POISONED）</strong></td><td>结论错了，而且错因是用了过期条款</td></tr>
+          <tr><td><strong>正确（CORRECT）</strong></td><td>结论与标准答案一致</td></tr>
+          <tr><td><strong>拒答（REFUSED）</strong></td><td>没给结论，说"无法确定""资料不足"</td></tr>
+          <tr><td><strong>其他错误（OTHER_ERROR）</strong></td><td>错了，但不是旧政策导致（算错、跑题、编造）</td></tr>
+        </tbody>
+      </table>
+      <p class="body-p">四类是互斥的，一段回答只能落进一个格子。</p>
+      <h2 id="section-6-2" class="sub">6.2 四个指标怎么算</h2>
+      <p class="body-p">下面先用第一轮的 7 道题演示每个指标是怎么算出来的（题少，方便逐题对账）；扩到 12 题之后的正式结果在本节末尾和第七章。</p>
+      <p class="body-p">以 7 道时序测试题为例，判决结果如下：</p>
+      <table class="doc-table">
+        <thead><tr><th>编号</th><th>场景</th><th>朴素分支</th><th>时序分支</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>起降点建设补贴</td><td>拒答</td><td>正确</td></tr>
+          <tr><td>2</td><td>电池产值按 2% 补贴</td><td>毒化</td><td>拒答</td></tr>
+          <tr><td>3</td><td>福州示范工程 10 家 × 20 万</td><td>正确（规则延续）</td><td>正确</td></tr>
+          <tr><td>4</td><td>租金补贴 50 元 → 20 元/㎡</td><td>毒化</td><td>正确</td></tr>
+          <tr><td>5</td><td>载人 300 元/架次</td><td>毒化</td><td>正确</td></tr>
+          <tr><td>6</td><td>落户奖 3000 万</td><td>毒化</td><td>拒答</td></tr>
+          <tr><td>7</td><td>"一企一策"</td><td>拒答</td><td>拒答</td></tr>
+        </tbody>
+      </table>
+      <p class="body-p">计数：朴素分支毒化 4、正确 1、拒答 2；时序分支毒化 0、正确 4、拒答 3。</p>
+      <p class="body-p">四个指标由此得出：</p>
+      <p class="body-p"><strong>毒化率 = 毒化题数 ÷ 总题数。</strong> 朴素 4/7 = 57.1%，时序 0/7 = 0%。</p>
+      <p class="body-p"><strong>正确率 = 正确题数 ÷ 总题数。</strong> 朴素 1/7 = 14.3%，时序 4/7 = 57.1%。注意拒答不算正确。</p>
+      <p class="body-p"><strong>拒答率 = 拒答题数 ÷ 总题数。</strong> 朴素 2/7 = 28.6%，时序 3/7 = 42.9%。这是过滤的代价：为了不出错，牺牲了一部分可答性。</p>
+      <p class="body-p"><strong>严格拯救率 = 朴素毒化且时序答对的题数 ÷ 朴素毒化题数。</strong> 第 4、5 题被救回，第 2、6 题只做到拒答，所以是 2/4 = 50%。</p>
+      <p class="body-p">还有一个配套指标：</p>
+      <p class="body-p"><strong>毒化消除率 = 朴素毒化且时序不再毒化的题数 ÷ 朴素毒化题数。</strong> 四个毒化题全部脱离了毒化（两题答对、两题拒答），所以是 4/4 = 100%。</p>
+      <p class="body-p">研究线推进后，题库从 7 道扩到 <strong>49 道</strong>，失效/废止文件 13 份、失效条款块 202 个（黄埔 2023 版实施细则 60 余条旧条款被 2025 新版整体替代后入库，失效条款占比从 7% 升到 12%）。用三家厂商模型三裁判多数票评估：</p>
+      <table class="doc-table">
+        <thead><tr><th>指标</th><th>第一轮（7 题）</th><th>第五轮（49 题）</th></tr></thead>
+        <tbody>
+          <tr><td>朴素分支毒化率</td><td>57.1%</td><td><strong>55.1%</strong></td></tr>
+          <tr><td>时序分支毒化率</td><td><strong>0%</strong></td><td><strong>0%</strong></td></tr>
+          <tr><td>时序分支正确率</td><td>57.1%</td><td>34.7%</td></tr>
+          <tr><td>时序分支拒答率</td><td>28.6%</td><td>65.3%</td></tr>
+          <tr><td>严格拯救率</td><td>50%（2/4）</td><td>29.6%（8/27）</td></tr>
+          <tr><td>毒化消除率</td><td>100%</td><td><strong>100%</strong></td></tr>
+          <tr><td>三裁判一致性</td><td>—</td><td>99.0%（κ = 0.9843，98 对判决）</td></tr>
+        </tbody>
+      </table>
+      <p class="body-p">三点解读：</p>
+      <ol class="doc-list">
+        <li><strong>这轮给出了最有说服力的数字：朴素分支毒化 55.1%（27/49），时序分支仍然 0%。</strong> 失效条款块从 37 个涨到 202 个后，朴素分支"踩雷"机会大增，毒化率随数据量上升——这验证了当初的预判（数据少时 0% 毒化率不代表防御好）。27 次踩雷全部被架构拦截，零泄漏。</li>
+        <li><strong>拯救率降到 29.6% 是"宁可不答、不能答错"的设计取向使然。</strong> 时序分支拒答率 65.3%：大量失效条款（如黄埔旧细则的量化奖励标准）在 2025 新版里没有一一对应的现行条款，过滤后手里没牌，系统选择拒答而不是拿不确定的信息硬答。要在保持 0% 毒化的前提下提升拯救率，方向仍是补齐"新版对照文件"。</li>
+        <li><strong>三裁判 98 对判决一致性 99.0%（κ=0.9843）。</strong> 题量翻两番后评估依然稳定。</li>
+      </ol>
+      <h2 id="section-6-3" class="sub">6.3 为什么要同时看"消除率"和"拯救率"</h2>
+      <p class="body-p">这两个指标看起来矛盾，其实说的是两件事：</p>
+      <ul class="doc-list">
+        <li><strong>消除率 100%</strong> 说明：系统再也不会告诉你"3000 万"这种错数，安全性达标。</li>
+        <li><strong>拯救率 50%</strong> 说明：有一半的题它只能说"不确定"，没能真正答对。</li>
+      </ul>
+      <p class="body-p">差距的来源是<strong>检索</strong>：第 6、7 题的新条款根本没进前 5 名，过滤后手里没牌可打。所以下一阶段的重点不是改流程图，而是提高新条款的召回率。</p>
+      <h2 id="section-6-4" class="sub">6.4 裁判本身也会判错</h2>
+      <p class="body-p">最初用一次判决时，第 3 题被判成了"毒化"。复核发现：模型答的是"仍有 10 家、每家 20 万"，与标准答案一致，只是引用了过期文件。按定义，"引用过期但结论正确"应算正确。</p>
+      <p class="body-p">改成<strong>同一份回答让裁判判 3 次、取多数</strong>之后，这道题被纠正。指标也随之变化：朴素正确率从 0% 变成 14.3%，严格拯救率从 75% 降到 50%（因为分母里少了一道被误判的题）。</p>
+      <p class="body-p"><strong>教训：单次大模型判决不能直接写进论文，必须多票 + 报告一致性。</strong></p>
+      <h2 id="section-6-5" class="sub">6.5 三个裁判投票</h2>
+      <p class="body-p">现在有三家不同厂商的模型，评估改用<strong>三裁判多数票</strong>：每份回答让 DeepSeek、Qwen、GLM 各判一次，三票取多数作为最终判决；两票相同即生效，三票全不同（极罕见）才交人工。</p>
+      <p class="body-p">12 题共 72 次判决、24 组两两配对，<strong>全部一致，κ = 1.0</strong>。仅有的 2 处单票分歧都来自 GLM（把一道"拒答"看成"答对"），被多数票正确消解，没有影响任何最终判决。这说明四类判定标准足够清晰，多数票机制是保险而不是依赖。</p>
+      <h1 id="section-7" class="chapter">七、现在到哪一步了</h1>
+      <h2 id="section-7-1" class="sub">7.1 已经跑通的部分</h2>
+      <table class="doc-table">
+        <thead><tr><th>环节</th><th>状态</th><th>关键数字</th></tr></thead>
+        <tbody>
+          <tr><td>政策采集与入库</td><td>已完成</td><td>采集池 140 篇(低空相关入库 110) / 67 个地域;失效/废止文件 13 份+条款级调整记录 1 份(绍兴);题库 49 题</td></tr>
+          <tr><td>覆盖性问答测试</td><td>已完成</td><td>30 题，Recall@5 96.7%，答对 96.7%</td></tr>
+          <tr><td>新旧冲突题自动构建</td><td>已完成</td><td>题库 7 道 → 15 道，全部来自真实废止/到期关系</td></tr>
+          <tr><td>双分支对比评估</td><td>已完成</td><td>毒化 25% → 0%，严格拯救率 66.7%（见 6.2）</td></tr>
+          <tr><td>失效标注正规化</td><td>已完成</td><td>废止/失效文件 12 份、失效 chunk 124 个，overrides 23 条全部带证据</td></tr>
+          <tr><td>三裁判多数票</td><td>已完成</td><td>72 次判决仅 2 处单票分歧，κ = 1.0</td></tr>
+          <tr><td>消融实验</td><td>已完成</td><td>降权组毒化率回升到 16.7%（见 8.5）</td></tr>
+          <tr><td>一键回归测试</td><td>已完成</td><td>6 个测试套件全部通过</td></tr>
+        </tbody>
+      </table>
+      <h2 id="section-7-2" class="sub">7.2 三条必须说清的局限</h2>
+      <p class="body-p"><strong>第一，样本量已不再是主要限制。</strong> 49 道题、朴素分支毒化 27/49 的置信区间约 41%-69%，时序分支 0/49 的统计学上界约 7.4%。研究结论在更大题量上得到复现。</p>
+      <p class="body-p"><strong>第二，题目来源仍然集中。</strong> 15 道里黄埔 8 道、福州 4 道。数据库已扩到 104 篇低空政策(采集池 111 篇) / 67 个地域，但题库的增长滞后于语料的增长——多数新增文件（山东、贵州、重庆、大连、嘉兴等）是现行有效文件，没有"对照物"就造不出冲突题。</p>
+      <p class="body-p"><strong>第三，"毒化 0%" 要正确解读。</strong> 朴素分支毒化稳定在 3 题左右（20%~25%），失效条款从 37 → 124 个的多轮扩充中，时序分支始终 0 题——不是防御 100% 完美的证明，而是当前题库里旧条款占比仍低（124/2259）。随着失效数据继续扩充，朴素分支的毒化率只会上升，届时 0% 的防御成绩才更有分量。换句话说：<strong>0% 是"没踩到雷 + 踩到的都拦住了"的合称，不是"没有雷"。</strong></p>
+      <p class="body-p"><strong>第四，标准答案是模型写的。</strong> 出题时由大模型依据新条款撰写标准答案，虽有两道自动审核（是否同一事项、答案能否由原文推出），但没有人工复核，仍可能有转述偏差。</p>
+      <h1 id="section-8" class="chapter">八、上轮计划的完成情况与下一步</h1>
+      <p class="body-p">上一轮列了 6 件事，4 件已完成或超额完成，1 件部分完成，1 件需要人工参与。</p>
+      <h2 id="section-8-1" class="sub">8.1 扩充"已失效政策"——部分完成</h2>
+      <p class="body-p">两条路径并行推进：</p>
+      <ol class="doc-list">
+        <li><strong>"新版文件里找废止依据"</strong>：黄埔 2025 新版、龙岗 2026 修订版、张家界废止通告，三组真实替代关系入库。</li>
+        <li><strong>"政策清理潮"跟踪</strong>：多地因公平竞争审查要求清理奖补政策——杭州市《支持低空经济高质量发展的若干措施》（杭财建〔2024〕7号）2026 年 9 月公告提前废止（原有效期至 2027 年底）、广州市天河区《低空经济与航空航天若干政策措施》（穗天发改规字〔2025〕3号）9 月 23 日暂停实施、安阳北关区《支持无人机产业若干政策》整体废止、绍兴实施意见部分条款废止。这类"整份失效"文件入库后，现行对照召回变好，直接把严格拯救率从 33.3% 拉到 83.3%。</li>
+        <li><strong>"规划期推算"</strong>：芜湖、大理（2023—2025 年方案已到期）、南京（2026 年底到期）等按文件名规划期补失效日，全部走 <code>validity_overrides.json</code> 机制并附证据链接。</li>
+      </ol>
+      <p class="body-p">失效/废止文件从 3 份涨到 12 份（杭州、天河区两份整份失效文件本轮入库），失效条款块从 37 个涨到 124 个。两条扩充路径都在起作用：</p>
+      <ol class="doc-list">
+        <li><strong>"新版文件里找废止依据"</strong>：黄埔 2025 新版、龙岗 2026 修订版、张家界废止通告，三组真实替代关系入库。</li>
+        <li><strong>"政策清理潮"跟踪</strong>：多地因公平竞争审查要求清理奖补政策——杭州市《支持低空经济高质量发展的若干措施》（杭财建〔2024〕7号）2026 年 9 月公告提前废止（原有效期至 2027 年底）、广州市天河区《低空经济与航空航天若干政策措施》（穗天发改规字〔2025〕3号）9 月 23 日暂停实施、安阳北关区《支持无人机产业若干政策》整体废止、绍兴实施意见部分条款废止。这类"整份失效"文件入库后，现行对照召回变好，直接把严格拯救率从 33.3% 拉到 83.3%。</li>
+        <li><strong>"规划期推算"</strong>：芜湖、大理、合肥（2023—2025 年规划期已结束）标失效；无锡、常州、惠州、广西、海南、南京按规划期补录失效日。</li>
+      </ol>
+      <p class="body-p">大城市同步加密（本轮 +10 篇，URL 全部记入 sources/lowalt_policy_urls.json）：深圳 8 篇（市级三件套+龙岗新旧+宝安"低空十条"（已到期）+南山+大鹏）、广州 6 篇（含条例与海珠工作方案）、上海 4 篇（市级 2 + 青浦 + 金山）、杭州 1、武汉 1、南京 1、合肥 2（行动计划已失效+实施细则已到期）、苏州 1、东莞 1（"低空经济14条"）、珠海 2。</p>
+      <p class="body-p"><strong>未达验收线：</strong> 目标是 15 篇旧政策、25 道题，当前 12 份、15 道。多数地方政策不写失效日，只能靠"找到替代文件"逐对确认，速度受限。</p>
+      <h2 id="section-8-2" class="sub">8.2 提高新条款召回率——超额完成</h2>
+      <p class="body-p">原计划上混合检索加重排序，结果<strong>靠数据扩充就达标了</strong>：新条款 Recall@5 从 71.4% 升到 100%，严格拯救率从 50% 升到 66.7%。原因很直觉——把新旧两版文件都放进库后，两版条款字面相似，向量检索会一起召回，新条款自然进了前 5。</p>
+      <p class="body-p"><strong>验收标准部分回落：</strong> 数据扩充后 Recall@5 在已召回题上保持 100%，但出现 3 道"新条款根本没被检索到"的题（均为黄埔新版里的短条款），把严格拯救率拉低到 33.3%。下一步抓手明确：对短条款加强召回（混合检索或按小节冗余切块），这正是原计划的混合检索要用武之地。</p>
+      <h2 id="section-8-3" class="sub">8.3 人工抽检标准答案——待做</h2>
+      <p class="body-p">需要人对照原文核对，机器替代不了。<strong>验收标准：</strong> 抽 20%，一致率 ≥90%。</p>
+      <h2 id="section-8-4" class="sub">8.4 裁判多模型——已完成（升级为三裁判）</h2>
+      <p class="body-p">DeepSeek 答题并主判，Qwen、GLM 各自独立复核，三票取多数。72 次判决仅 2 处单票分歧（均来自 GLM），<strong>κ = 1.0</strong>（验收线 0.7）。工程上顺手修了两个真问题：GLM 的思考模式会吃掉全部输出预算（1200 token 全花在推理、正文为空，预算提到 3000 解决）；部分裁判会输出中文判定（加了中英文枚举归一化）。三裁判投票从此作为常态配置。</p>
+      <h2 id="section-8-5" class="sub">8.5 消融实验——已完成（关键结果）</h2>
+      <p class="body-p">把"过滤"换成"只降权不过滤"（旧条款仍放进上下文、只是排在后面），同一套题、同一个模型重跑：</p>
+      <table class="doc-table">
+        <thead><tr><th>指标</th><th>过滤组（现行架构）</th><th>降权组（消融对照）</th></tr></thead>
+        <tbody>
+          <tr><td>时序分支毒化率</td><td><strong>0%</strong></td><td><strong>16.7%</strong></td></tr>
+          <tr><td>毒化消除率</td><td>100%</td><td>33.3%</td></tr>
+          <tr><td>严格拯救率</td><td>66.7%</td><td>33.3%</td></tr>
+          <tr><td>正确率</td><td>58.3%</td><td>50.0%</td></tr>
+        </tbody>
+      </table>
+      <p class="body-p"><strong>结论：</strong> 一旦旧条款留在上下文里，2 道题重新被带偏（给了已废止的旧标准）。这证明"不毒化"靠的是<strong>架构层的硬剔除</strong>，不是大模型自己会看日期。上轮验收标准"降权组毒化率显著高于过滤组"达成。</p>
+      <h2 id="section-8-6" class="sub">8.6 地域扩展——部分完成</h2>
+      <p class="body-p">深圳核心三件套与龙岗新旧两版已入库；广州补入《广州市低空经济发展条例》（2025-02-28 施行的地方性法规）；武汉补入武政规〔2024〕8号措施（有效期 3 年）；南京补入实施方案与若干措施发布稿；上海 2 篇在库。省份/城市覆盖（66 个地域、24 个省级行政区）：广东 24 篇（深圳 9 含前海金融十二条、广州 6、珠海 3 含特区条例）、上海 5 篇（新增《链接长三角加快建设低空经济先进制造业集群的若干措施》）、江苏 12 篇（新增 2025-10-01 施行的《无锡市低空经济发展促进条例》，为入库的第三部地方性法规，另有珠海条例、广州条例）、浙江 7（杭州/温州×2/绍兴/嘉兴）、辽宁 4，湖南、安徽、山东、上海各 4，四川 3 篇（成都 14 条正式版经浏览器渲染入库，打通 JS 渲染站点通道）、重庆、贵州、山西、河北、广西、海南、黑龙江、内蒙古、西藏等。分布地图见 output/china_map/低空政策采集分布地图.html。采集已升级为三段式收割管线(tools/harvest_pipeline.py):discover 从官方列表页批量找种子(仅收 *.gov.cn,整页/关键词两种模式)、harvest 对种子表批量爬(requests→系统 curl→CDP 浏览器渲染三级兜底,1200 字+条款结构质量校验,低质自动标记不污染语料)、retry 对失败条目浏览器定向重试;全部状态写在种子表,断点可续。</p>
+      <p class="body-p"><strong>验收标准：</strong> 每个新增地域至少 8 篇政策、5 道题——城市篇数尚不够，上海、武汉、南京的区级配套文件是下一轮抓取重点。</p>
+      <h1 id="section-9" class="chapter">九、常见误解</h1>
+      <p class="body-p"><strong>"既然大模型很聪明，让它自己判断新旧不就行了？"</strong></p>
+      <p class="body-p">实测不行。第 6 题里，旧条款就排在第 1 名，新条款压根没被检索到，模型再聪明也无从判断。而且已有研究指出，即使正确信息就在检索结果里，模型仍可能被过期信息带偏。</p>
+      <p class="body-p">现在的消融实验（8.5）把这一点做实了：<strong>同一批题、同一个模型</strong>，只是不再剔除旧条款、改为排在后面，毒化率立刻从 0% 回升到 16.7%。模型不是不会看日期，而是当旧条款字面上更像答案时，它就是会抄近路。<strong>硬过滤不是保险带，是刹车。</strong></p>
+      <p class="body-p"><strong>"过滤掉旧政策，不就等于把知识删了吗？"</strong></p>
+      <p class="body-p">不是删除，是"在当前时点不把它当依据"。旧条款仍在库里，只是回答"现在怎么办"时不予采用。历史问题（"2024 年当时的规则是什么"）仍然可以查。</p>
+      <p class="body-p"><strong>"Recall@5 96.7% 已经很高了，还改什么？"</strong></p>
+      <p class="body-p">96.7% 是"条款有没有进前 5"，不是"第 1 名对不对"。Recall@1 只有 70%，意味着三成问题里，最相关的那一条并不在第一位。对于需要精确引用的政策问答，这个差距会直接影响答案质量。</p>
+      <h1 id="section-10" class="chapter">十、名词表</h1>
+      <table class="doc-table">
+        <thead><tr><th>名词</th><th>一句话解释</th></tr></thead>
+        <tbody>
+          <tr><td><strong>RAG</strong></td><td>检索增强生成。先从资料库找依据，再让大模型依据这些依据回答，而不是凭记忆答</td></tr>
+          <tr><td><strong>chunk（块）</strong></td><td>把长文档切开后的一小段，是检索的最小单位</td></tr>
+          <tr><td><strong>embedding（向量化）</strong></td><td>把一段文字变成一串数字，使"意思相近"可以用"距离近"来计算</td></tr>
+          <tr><td><strong>向量</strong></td><td>上述那串数字，本系统是 512 个小数</td></tr>
+          <tr><td><strong>余弦相似度</strong></td><td>两个向量夹角的余弦值，0 到 1，越大越相似</td></tr>
+          <tr><td><strong>Top-K</strong></td><td>按相似度排序后取前 K 个，本系统 K=5</td></tr>
+          <tr><td><strong>Recall@K</strong></td><td>正确答案落在前 K 名里的比例</td></tr>
+          <tr><td><strong>valid_from / valid_to</strong></td><td>条款的生效日 / 失效日，空值表示仍有效</td></tr>
+          <tr><td><strong>毒化（poisoning）</strong></td><td>因为用了过期资料而给出错误结论</td></tr>
+          <tr><td><strong>安全拒答</strong></td><td>资料不足时明确说"无法确定"，而不是猜测</td></tr>
+          <tr><td><strong>LLM-as-a-Judge</strong></td><td>用大模型充当裁判，给回答分类打分</td></tr>
+          <tr><td><strong>消融实验</strong></td><td>去掉某个模块再跑一遍，看指标变化，用来证明该模块确实有用</td></tr>
+          <tr><td><strong>三裁判多数票</strong></td><td>三家不同厂商的模型各判一次，三票取多数；防止单个裁判的口味影响结论</td></tr>
+          <tr><td><strong>Cohen's κ</strong></td><td>两个裁判意见一致程度的统计量，1.0 表示完全一致，0.7 以上通常算可靠</td></tr>
+        </tbody>
+      </table>
+      <h1 id="section-11" class="chapter">附：一句话总结</h1>
+      <p class="body-p"><strong>这套系统的价值不在于"能回答政策问题"，而在于它能在旧政策仍然存在、且字面上更相似的情况下，稳定地不给出错误建议——代价是有时会说"不确定"。消融实验证明这份"稳定"来自架构而非模型自觉；三裁判投票 κ=1.0 说明评测本身站得住。要清醒的是：题库里旧条款占比还低，朴素分支的 25% 毒化率会随失效数据扩充而上升，防御的价值会在更大的题库上更充分地显现。下一轮主线：继续抓大城市失效政策、把题库做厚。</strong></p>
+  </section>
+</body>
+</html>

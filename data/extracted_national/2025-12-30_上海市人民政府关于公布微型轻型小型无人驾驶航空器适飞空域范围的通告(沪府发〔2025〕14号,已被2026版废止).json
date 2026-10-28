@@ -1,0 +1,15 @@
+{
+  "policy_name": "上海市人民政府关于公布微型轻型小型无人驾驶航空器适飞空域范围的通告",
+  "issue_date": "2025-12-30",
+  "effective_date": "2025-12-30",
+  "expiry_date": "无",
+  "apply_region": "上海市",
+  "status": "已废止",
+  "summary": "上海市微型、轻型、小型无人驾驶航空器在真高120米以下绿色适飞空域内飞行无需审批，空域外属管制空域。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-12-30_上海市人民政府关于公布微型轻型小型无人驾驶航空器适飞空域范围的通告(沪府发〔2025〕14号,已被2026版废止).txt",
+    "char_count": 980,
+    "extracted_at": "2026-10-27T22:46:30+08:00"
+  }
+}

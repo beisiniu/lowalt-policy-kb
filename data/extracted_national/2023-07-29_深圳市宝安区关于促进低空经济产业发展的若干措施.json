@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市宝安区关于促进低空经济产业发展的若干措施",
+  "issue_date": "2023-07-29",
+  "effective_date": "2023-07-29",
+  "expiry_date": "2026-07-28",
+  "apply_region": "深圳市宝安区",
+  "status": "已废止",
+  "summary": "对落户宝安的低空企业给予补贴，无人机货运航线需经审批并按重量分档补助，eVTOL载人航线需审定，适航审定及基建有资金门槛。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-07-29_深圳市宝安区关于促进低空经济产业发展的若干措施.txt",
+    "char_count": 2766,
+    "extracted_at": "2026-10-26T22:33:31+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "通用航空经营许可管理规定",
+  "issue_date": "2020-07-29",
+  "effective_date": "2021-01-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "境内经营性通航企业须取得通用航空经营许可，载客类需至少2架航空器，审批20日内决定，其他类实行告知承诺制。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2020-07-29_通用航空经营许可管理规定.txt",
+    "char_count": 5952,
+    "extracted_at": "2026-10-26T17:36:50+08:00"
+  }
+}

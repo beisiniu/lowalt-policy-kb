@@ -1,0 +1,1499 @@
+{
+ "at": "2026-10-27T23:34:25",
+ "dry_run": false,
+ "files": 149,
+ "changed": 7,
+ "skipped": 0,
+ "items": [
+  {
+   "policy_name": "通用航空飞行管制条例",
+   "region": "全国",
+   "before": 5211,
+   "after": 5078,
+   "cjk_before": 4250,
+   "cjk_after": 4183,
+   "ratio": 0.974,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "无锡市民用无人驾驶航空器管理办法",
+   "region": "无锡市",
+   "before": 4094,
+   "after": 3182,
+   "cjk_before": 3077,
+   "cjk_after": 2426,
+   "ratio": 0.777,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "湖北省加快低空经济高质量发展行动方案（2024—2027年）",
+   "region": "湖北省",
+   "before": 5865,
+   "after": 5857,
+   "cjk_before": 4877,
+   "cjk_after": 4873,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "通用航空经营许可管理规定",
+   "region": "全国",
+   "before": 5649,
+   "after": 5647,
+   "cjk_before": 4931,
+   "cjk_after": 4931,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "朝阳市通用航空产业发展规划（2021-2030年）",
+   "region": "朝阳市",
+   "before": 12930,
+   "after": 12916,
+   "cjk_before": 11196,
+   "cjk_after": 11187,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "福州市人民政府关于推进民用无人驾驶航空器产业高质量发展的若干意见",
+   "region": "福州市",
+   "before": 2879,
+   "after": 2877,
+   "cjk_before": 2524,
+   "cjk_after": 2524,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "张家界市加快通用航空产业发展推进方案",
+   "region": "张家界市",
+   "before": 2778,
+   "after": 2717,
+   "cjk_before": 2357,
+   "cjk_after": 2328,
+   "ratio": 0.978,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "无人驾驶航空器飞行管理暂行条例",
+   "region": "全国",
+   "before": 12123,
+   "after": 12094,
+   "cjk_before": 10623,
+   "cjk_after": 10598,
+   "ratio": 0.998,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳市宝安区关于促进低空经济产业发展的若干措施",
+   "region": "深圳市宝安区",
+   "before": 2440,
+   "after": 2423,
+   "cjk_before": 2031,
+   "cjk_after": 2019,
+   "ratio": 0.993,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "南京市民用无人驾驶航空试验区核心区无人机产业高质量发展实施方案(2023—2025)",
+   "region": "南京市",
+   "before": 1034,
+   "after": 1033,
+   "cjk_before": 773,
+   "cjk_after": 773,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "亿航EH216-S型载人无人驾驶航空器系统适航审定",
+   "region": "全国",
+   "before": 790,
+   "after": 788,
+   "cjk_before": 530,
+   "cjk_after": 530,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "芜湖市低空经济高质量发展行动方案（2023—2025年）",
+   "region": "芜湖市",
+   "before": 5380,
+   "after": 5378,
+   "cjk_before": 4391,
+   "cjk_after": 4391,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州开发区（黄埔区）促进低空经济高质量发展的若干措施",
+   "region": "广州市黄埔区",
+   "before": 2822,
+   "after": 2805,
+   "cjk_before": 2396,
+   "cjk_after": 2389,
+   "ratio": 0.994,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "大理州无人机产业发展规划（2023—2025年）",
+   "region": "大理白族自治州",
+   "before": 698,
+   "after": 680,
+   "cjk_before": 552,
+   "cjk_after": 544,
+   "ratio": 0.974,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "龙岗区关于促进低空经济产业发展的若干措施",
+   "region": "深圳市龙岗区",
+   "before": 3823,
+   "after": 3791,
+   "cjk_before": 3089,
+   "cjk_after": 3067,
+   "ratio": 0.992,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳市支持低空经济高质量发展的若干措施",
+   "region": "深圳市",
+   "before": 4864,
+   "after": 4862,
+   "cjk_before": 4105,
+   "cjk_after": 4105,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "宜兴市通用航空产业集群发展三年行动计划（2023-2025年）",
+   "region": "宜兴市",
+   "before": 1419,
+   "after": 1413,
+   "cjk_before": 1095,
+   "cjk_after": 1091,
+   "ratio": 0.996,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "民用无人驾驶航空器生产管理若干规定",
+   "region": "全国",
+   "before": 1517,
+   "after": 1497,
+   "cjk_before": 1362,
+   "cjk_after": 1345,
+   "ratio": 0.987,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "国家空域基础分类方法",
+   "region": "全国",
+   "before": 4262,
+   "after": 4261,
+   "cjk_before": 3112,
+   "cjk_after": 3112,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "通用航空短途运输运营服务管理办法",
+   "region": "全国",
+   "before": 6042,
+   "after": 5887,
+   "cjk_before": 5328,
+   "cjk_after": 5193,
+   "ratio": 0.974,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则",
+   "region": "广州市黄埔区",
+   "before": 8300,
+   "after": 8298,
+   "cjk_before": 7009,
+   "cjk_after": 7009,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "合肥市低空经济发展行动计划（2023—2025年）",
+   "region": "合肥市",
+   "before": 3145,
+   "after": 3143,
+   "cjk_before": 2477,
+   "cjk_after": 2477,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳经济特区低空经济产业促进条例",
+   "region": "深圳市",
+   "before": 6996,
+   "after": 6994,
+   "cjk_before": 6207,
+   "cjk_after": 6207,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "中国民用航空局关于民用无人驾驶航空器监管服务有关事宜的公告",
+   "region": "全国",
+   "before": 1404,
+   "after": 1402,
+   "cjk_before": 1153,
+   "cjk_after": 1153,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "民用无人驾驶航空器运行安全管理规则",
+   "region": "全国",
+   "before": 44969,
+   "after": 44944,
+   "cjk_before": 36917,
+   "cjk_after": 36901,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "山东省无人机产业高质量发展实施方案",
+   "region": "山东省",
+   "before": 3631,
+   "after": 3629,
+   "cjk_before": 3190,
+   "cjk_after": 3190,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "苏州市低空经济高质量发展实施方案（2024~2026年）",
+   "region": "苏州市",
+   "before": 4196,
+   "after": 4194,
+   "cjk_before": 3541,
+   "cjk_after": 3541,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "安徽省加快培育发展低空经济实施方案（2024—2027年）及若干措施",
+   "region": "安徽省",
+   "before": 14809,
+   "after": 14787,
+   "cjk_before": 12208,
+   "cjk_after": 12189,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "南山区促进低空经济发展专项扶持措施",
+   "region": "深圳市南山区",
+   "before": 6626,
+   "after": 6625,
+   "cjk_before": 5590,
+   "cjk_after": 5590,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "无锡市低空经济高质量发展三年行动方案（2024—2026年）",
+   "region": "无锡市",
+   "before": 8547,
+   "after": 8545,
+   "cjk_before": 7296,
+   "cjk_after": 7296,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "佛山市推动低空经济高质量发展实施方案（2024—2026年）",
+   "region": "佛山市",
+   "before": 4810,
+   "after": 4758,
+   "cjk_before": 4116,
+   "cjk_after": 4080,
+   "ratio": 0.989,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "南京市促进低空经济高质量发展实施方案（2024—2026年）与支持低空经济高质量发展的若干措施（试行）",
+   "region": "南京市",
+   "before": 1734,
+   "after": 1732,
+   "cjk_before": 1482,
+   "cjk_after": 1482,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "扬州市低空经济高质量发展实施意见",
+   "region": "扬州市",
+   "before": 5005,
+   "after": 5003,
+   "cjk_before": 4460,
+   "cjk_after": 4460,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "武汉市支持低空经济高质量发展的若干措施",
+   "region": "武汉市",
+   "before": 3591,
+   "after": 3120,
+   "cjk_before": 2466,
+   "cjk_after": 2121,
+   "ratio": 0.869,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "惠州市推动低空经济高质量发展行动方案（2024-2026年）",
+   "region": "惠州市",
+   "before": 5737,
+   "after": 5717,
+   "cjk_before": 4949,
+   "cjk_after": 4932,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "合肥市支持低空经济发展若干政策",
+   "region": "合肥市",
+   "before": 3325,
+   "after": 3310,
+   "cjk_before": 2699,
+   "cjk_after": 2699,
+   "ratio": 0.995,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "长沙市推动低空经济高质量发展实施方案（2024—2026年）",
+   "region": "长沙市",
+   "before": 6315,
+   "after": 6314,
+   "cjk_before": 4738,
+   "cjk_after": 4738,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "杭州市低空经济高质量发展实施方案（2024—2027年）",
+   "region": "杭州市",
+   "before": 3381,
+   "after": 3379,
+   "cjk_before": 2731,
+   "cjk_after": 2731,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "四川省人民政府办公厅关于促进低空经济发展的指导意见",
+   "region": "四川省",
+   "before": 3472,
+   "after": 3430,
+   "cjk_before": 3053,
+   "cjk_after": 3024,
+   "ratio": 0.988,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "中山市低空经济高质量发展行动方案（2024-2027年）",
+   "region": "中山市",
+   "before": 5488,
+   "after": 5486,
+   "cjk_before": 4765,
+   "cjk_after": 4765,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州市推动低空经济高质量发展若干措施",
+   "region": "广州市",
+   "before": 3896,
+   "after": 3894,
+   "cjk_before": 3308,
+   "cjk_after": 3308,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "珠海市支持低空经济高质量发展的若干措施",
+   "region": "珠海市",
+   "before": 3052,
+   "after": 3050,
+   "cjk_before": 2541,
+   "cjk_after": 2541,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州南沙海陆空全空间无人体系建设和低空经济高质量发展行动计划",
+   "region": "广州市南沙区",
+   "before": 5761,
+   "after": 5759,
+   "cjk_before": 5039,
+   "cjk_after": 5039,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "郑州市加快培育低空经济产业创新发展行动方案（2024—2026年）",
+   "region": "郑州市",
+   "before": 5418,
+   "after": 5416,
+   "cjk_before": 4640,
+   "cjk_after": 4640,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "浙江省人民政府关于高水平建设民航强省 打造低空经济发展高地的若干意见",
+   "region": "浙江省",
+   "before": 14597,
+   "after": 14595,
+   "cjk_before": 12335,
+   "cjk_after": 12335,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "促进全省低空经济高质量发展实施方案（2024—2027年）",
+   "region": "河南省",
+   "before": 7833,
+   "after": 7831,
+   "cjk_before": 6822,
+   "cjk_after": 6822,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "绍兴市人民政府关于推进低空经济高质量发展的实施意见",
+   "region": "绍兴市",
+   "before": 23948,
+   "after": 23919,
+   "cjk_before": 19797,
+   "cjk_after": 19787,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "上海市低空经济产业高质量发展行动方案（2024-2027年）",
+   "region": "上海市",
+   "before": 4780,
+   "after": 4732,
+   "cjk_before": 4051,
+   "cjk_after": 4038,
+   "ratio": 0.99,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "海珠区低空经济发展工作方案",
+   "region": "广州市海珠区",
+   "before": 7338,
+   "after": 7318,
+   "cjk_before": 6253,
+   "cjk_after": 6239,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "天津港保税区推进低空经济高质量发展行动方案",
+   "region": "天津港保税区",
+   "before": 2321,
+   "after": 2319,
+   "cjk_before": 2035,
+   "cjk_after": 2035,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "福州市加快推动低空产业发展行动方案（2024—2026年）",
+   "region": "福州市",
+   "before": 19098,
+   "after": 18813,
+   "cjk_before": 16160,
+   "cjk_after": 15941,
+   "ratio": 0.985,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "南通市低空经济高质量发展行动方案（2024—2027年）",
+   "region": "南通市",
+   "before": 5640,
+   "after": 5638,
+   "cjk_before": 4780,
+   "cjk_after": 4780,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "廊坊市低空经济赋能产业高质量发展行动方案（2024-2027年）（试行）",
+   "region": "廊坊市",
+   "before": 4241,
+   "after": 4239,
+   "cjk_before": 3613,
+   "cjk_after": 3613,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "关于加快推动低空经济高质量发展的实施意见",
+   "region": "江苏省",
+   "before": 2698,
+   "after": 2652,
+   "cjk_before": 2276,
+   "cjk_after": 2245,
+   "ratio": 0.983,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "嘉兴市推动低空经济高质量发展实施方案（2024—2027年）",
+   "region": "嘉兴市",
+   "before": 4380,
+   "after": 4378,
+   "cjk_before": 3659,
+   "cjk_after": 3659,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "杭州市支持低空经济高质量发展的若干措施",
+   "region": "杭州市",
+   "before": 5523,
+   "after": 5448,
+   "cjk_before": 4496,
+   "cjk_after": 4440,
+   "ratio": 0.986,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "十堰市低空经济基础设施建设三年行动方案（2024-2026年）",
+   "region": "十堰市",
+   "before": 10116,
+   "after": 10100,
+   "cjk_before": 8630,
+   "cjk_after": 8625,
+   "ratio": 0.998,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "内蒙古自治区低空经济高质量发展实施方案（2024—2027年）",
+   "region": "内蒙古自治区",
+   "before": 5262,
+   "after": 5260,
+   "cjk_before": 4549,
+   "cjk_after": 4549,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "海南省低空经济发展三年行动计划（2024-2026年）",
+   "region": "海南省",
+   "before": 5385,
+   "after": 5383,
+   "cjk_before": 4457,
+   "cjk_after": 4457,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "湛江市推动低空经济高质量发展行动方案（2024—2026年）",
+   "region": "湛江市",
+   "before": 6260,
+   "after": 6187,
+   "cjk_before": 5146,
+   "cjk_after": 5106,
+   "ratio": 0.988,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告",
+   "region": "张家界市",
+   "before": 575,
+   "after": 561,
+   "cjk_before": 413,
+   "cjk_after": 403,
+   "ratio": 0.976,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "沈阳市促进低空经济高质量发展若干政策措施",
+   "region": "辽宁省沈阳市",
+   "before": 2613,
+   "after": 2562,
+   "cjk_before": 2182,
+   "cjk_after": 2161,
+   "ratio": 0.98,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "青岛市促进低空经济高质量发展实施方案",
+   "region": "青岛市",
+   "before": 6141,
+   "after": 6139,
+   "cjk_before": 5291,
+   "cjk_after": 5291,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广西低空经济高质量发展行动方案（2024—2026年）",
+   "region": "广西壮族自治区",
+   "before": 5776,
+   "after": 5774,
+   "cjk_before": 4922,
+   "cjk_after": 4922,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "山东省低空经济高质量发展三年行动方案（2025-2027年）",
+   "region": "山东省",
+   "before": 5732,
+   "after": 5730,
+   "cjk_before": 4855,
+   "cjk_after": 4855,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "珠海经济特区低空交通建设管理条例",
+   "region": "珠海市",
+   "before": 8004,
+   "after": 7989,
+   "cjk_before": 7136,
+   "cjk_after": 7127,
+   "ratio": 0.998,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "通用机场管理规定",
+   "region": "全国",
+   "before": 8380,
+   "after": 8357,
+   "cjk_before": 7389,
+   "cjk_after": 7372,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "大连市低空经济高质量发展行动方案（2024-2026年）",
+   "region": "大连市",
+   "before": 5986,
+   "after": 5970,
+   "cjk_before": 5138,
+   "cjk_after": 5133,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "徐州市加快推进“低空+”场景应用创新行动方案",
+   "region": "徐州市",
+   "before": 4776,
+   "after": 4774,
+   "cjk_before": 4075,
+   "cjk_after": 4075,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "金山区建设低空经济产业综合承载区行动方案（2024-2027年）",
+   "region": "上海市金山区",
+   "before": 4112,
+   "after": 4110,
+   "cjk_before": 3430,
+   "cjk_after": 3430,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "关于发布民用无人驾驶航空器飞行动态数据报送要求的公告",
+   "region": "全国",
+   "before": 514,
+   "after": 513,
+   "cjk_before": 427,
+   "cjk_after": 427,
+   "ratio": 0.998,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "青浦区低空经济产业高质量发展行动方案（2024—2027年）",
+   "region": "上海市青浦区",
+   "before": 4518,
+   "after": 4516,
+   "cjk_before": 3877,
+   "cjk_after": 3877,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "加快推进低空制造产业高质量发展行动方案",
+   "region": "江苏省",
+   "before": 4944,
+   "after": 4913,
+   "cjk_before": 4289,
+   "cjk_after": 4272,
+   "ratio": 0.994,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "合肥市支持低空经济发展若干政策实施细则",
+   "region": "合肥市",
+   "before": 1577,
+   "after": 1571,
+   "cjk_before": 1202,
+   "cjk_after": 1200,
+   "ratio": 0.996,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州市低空经济发展条例",
+   "region": "广州市",
+   "before": 6985,
+   "after": 6919,
+   "cjk_before": 6211,
+   "cjk_after": 6151,
+   "ratio": 0.991,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "城阳区促进低空经济产业发展的若干措施",
+   "region": "青岛市城阳区",
+   "before": 2209,
+   "after": 2207,
+   "cjk_before": 1909,
+   "cjk_after": 1909,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "宜兴市低空经济高质量发展三年行动方案（2024—2026年）",
+   "region": "宜兴市",
+   "before": 6823,
+   "after": 6822,
+   "cjk_before": 5508,
+   "cjk_after": 5508,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "关于支持全省低空经济高质量发展的若干政策措施",
+   "region": "湖南省",
+   "before": 4187,
+   "after": 4174,
+   "cjk_before": 3373,
+   "cjk_after": 3363,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳市大鹏新区关于促进低空经济产业高质量发展的若干措施",
+   "region": "深圳市大鹏新区",
+   "before": 3336,
+   "after": 3320,
+   "cjk_before": 2652,
+   "cjk_after": 2647,
+   "ratio": 0.995,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州市低空垂直起降设施场址选择及建设技术指引（试行）",
+   "region": "广州市",
+   "before": 48751,
+   "after": 48386,
+   "cjk_before": 27675,
+   "cjk_after": 27598,
+   "ratio": 0.993,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "支持低空经济发展的若干政策措施",
+   "region": "四川省",
+   "before": 2497,
+   "after": 2495,
+   "cjk_before": 2023,
+   "cjk_after": 2023,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "成都市促进工业无人机产业高质量发展的专项政策实施细则",
+   "region": "成都市",
+   "before": 5293,
+   "after": 5269,
+   "cjk_before": 4032,
+   "cjk_after": 4013,
+   "ratio": 0.995,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "成都市加快提升低空飞行能力培育低空经济市场的若干政策措施",
+   "region": "成都市",
+   "before": 3105,
+   "after": 3104,
+   "cjk_before": 2519,
+   "cjk_after": 2519,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "宁波市低空经济高质量发展实施方案（2025—2027年）",
+   "region": "宁波市",
+   "before": 4714,
+   "after": 4594,
+   "cjk_before": 3837,
+   "cjk_after": 3783,
+   "ratio": 0.975,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "无锡市低空经济发展促进条例",
+   "region": "无锡市",
+   "before": 6235,
+   "after": 6233,
+   "cjk_before": 5551,
+   "cjk_after": 5551,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "贵州省低空经济高质量发展三年行动方案（2025—2027年）",
+   "region": "贵州省",
+   "before": 5101,
+   "after": 5086,
+   "cjk_before": 4349,
+   "cjk_after": 4337,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "云南省支持低空经济健康发展的若干措施",
+   "region": "云南省",
+   "before": 3695,
+   "after": 3671,
+   "cjk_before": 3156,
+   "cjk_after": 3142,
+   "ratio": 0.994,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "东莞市支持低空经济高质量发展的若干措施",
+   "region": "东莞市",
+   "before": 3231,
+   "after": 3229,
+   "cjk_before": 2667,
+   "cjk_after": 2667,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳市交通运输局《深圳市支持低空经济高质量发展的若干措施》实施细则",
+   "region": "深圳市",
+   "before": 3696,
+   "after": 3661,
+   "cjk_before": 3068,
+   "cjk_after": 3050,
+   "ratio": 0.991,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施",
+   "region": "广州市黄埔区",
+   "before": 3385,
+   "after": 3368,
+   "cjk_before": 2898,
+   "cjk_after": 2891,
+   "ratio": 0.995,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州市天河区加快推动低空经济与航空航天高质量发展的若干政策措施",
+   "region": "广州市天河区",
+   "before": 3262,
+   "after": 3260,
+   "cjk_before": 2702,
+   "cjk_after": 2702,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广东省支持低空经济高质量发展若干措施",
+   "region": "广东省",
+   "before": 3746,
+   "after": 3744,
+   "cjk_before": 3324,
+   "cjk_after": 3324,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "太原市低空经济高质量发展行动方案（2025—2027年）",
+   "region": "太原市",
+   "before": 4885,
+   "after": 4835,
+   "cjk_before": 4096,
+   "cjk_after": 4062,
+   "ratio": 0.99,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "重庆市推动低空经济高质量发展若干政策措施",
+   "region": "重庆市",
+   "before": 4699,
+   "after": 4679,
+   "cjk_before": 3657,
+   "cjk_after": 3657,
+   "ratio": 0.996,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "朝阳市低空经济高质量发展行动方案（2025—2027年）",
+   "region": "朝阳市",
+   "before": 5127,
+   "after": 5125,
+   "cjk_before": 4175,
+   "cjk_after": 4175,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "上海市关于链接长三角加快建设低空经济先进制造业集群的若干措施",
+   "region": "上海市",
+   "before": 3983,
+   "after": 3954,
+   "cjk_before": 3253,
+   "cjk_after": 3241,
+   "ratio": 0.993,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "上海市民用无人驾驶航空器飞行安全管理暂行办法",
+   "region": "上海市",
+   "before": 5248,
+   "after": 5200,
+   "cjk_before": 4618,
+   "cjk_after": 4605,
+   "ratio": 0.991,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "合肥低空经济气象保障能力提升行动方案（2025—2027年）",
+   "region": "合肥市",
+   "before": 4904,
+   "after": 4885,
+   "cjk_before": 4233,
+   "cjk_after": 4218,
+   "ratio": 0.996,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "中华人民共和国民用航空法",
+   "region": "全国",
+   "before": 1341,
+   "after": 1301,
+   "cjk_before": 1170,
+   "cjk_after": 1164,
+   "ratio": 0.97,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "温州市低空飞行服务保障办法（试行）",
+   "region": "温州市",
+   "before": 4836,
+   "after": 4834,
+   "cjk_before": 4262,
+   "cjk_after": 4262,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "温州市支持低空经济高质量发展的若干措施",
+   "region": "温州市",
+   "before": 4634,
+   "after": 4612,
+   "cjk_before": 3789,
+   "cjk_after": 3770,
+   "ratio": 0.995,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "关于推动低空保险高质量发展的实施意见",
+   "region": "全国",
+   "before": 2723,
+   "after": 2721,
+   "cjk_before": 2431,
+   "cjk_after": 2431,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "无锡市人民政府关于修改和废止部分政府规章的决定",
+   "region": "无锡市",
+   "before": 2657,
+   "after": 1745,
+   "cjk_before": 1864,
+   "cjk_after": 1213,
+   "ratio": 0.657,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）",
+   "region": "深圳市龙岗区",
+   "before": 2742,
+   "after": 2740,
+   "cjk_before": 2357,
+   "cjk_after": 2357,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "关于优化规划管理支持低空经济高质量发展的若干措施（试行）",
+   "region": "珠海市",
+   "before": 2256,
+   "after": 2241,
+   "cjk_before": 1982,
+   "cjk_after": 1982,
+   "ratio": 0.993,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "低空经济领域强制性国家标准要点(GB 42590-2023、GB 46750-2025、GB 46761-2025、GB 46860-2025)",
+   "region": "全国",
+   "before": 630,
+   "after": 628,
+   "cjk_before": 446,
+   "cjk_after": 446,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "北京市无人驾驶航空器特殊保障规定（试行）",
+   "region": "北京市",
+   "before": 5750,
+   "after": 5692,
+   "cjk_before": 4438,
+   "cjk_after": 4414,
+   "ratio": 0.99,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "昆明市人民政府关于更新公布市域微型、轻型、小型无人驾驶航空器适飞空域范围的通告",
+   "region": "昆明市",
+   "before": 1974,
+   "after": 1973,
+   "cjk_before": 1420,
+   "cjk_after": 1420,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "前海深港现代服务业合作区金融赋能低空经济产业高质量发展的十二条措施",
+   "region": "深圳市前海深港现代服务业合作区",
+   "before": 2309,
+   "after": 2294,
+   "cjk_before": 1987,
+   "cjk_after": 1982,
+   "ratio": 0.994,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "绍兴市人民代表大会常务委员会关于加快促进低空经济高质量发展的决定",
+   "region": "绍兴市",
+   "before": 1681,
+   "after": 1645,
+   "cjk_before": 1482,
+   "cjk_after": 1450,
+   "ratio": 0.979,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "北京市无人驾驶航空器管理规定",
+   "region": "北京市",
+   "before": 1405,
+   "after": 1404,
+   "cjk_before": 1216,
+   "cjk_after": 1216,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "正常类旋翼航空器适航规定",
+   "region": "全国",
+   "before": 974,
+   "after": 973,
+   "cjk_before": 724,
+   "cjk_after": 724,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "民用无人驾驶航空器实名登记数据交换接口规范",
+   "region": "全国",
+   "before": 914,
+   "after": 913,
+   "cjk_before": 712,
+   "cjk_after": 712,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "运输类旋翼航空器适航规定",
+   "region": "全国",
+   "before": 974,
+   "after": 973,
+   "cjk_before": 724,
+   "cjk_after": 724,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "通用航空经营管理规定",
+   "region": "全国",
+   "before": 893,
+   "after": 892,
+   "cjk_before": 671,
+   "cjk_after": 671,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "通用航空运营许可程序规定",
+   "region": "全国",
+   "before": 899,
+   "after": 898,
+   "cjk_before": 677,
+   "cjk_after": 677,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "苏州市低空经济促进条例",
+   "region": "苏州市",
+   "before": 2029,
+   "after": 2028,
+   "cjk_before": 1572,
+   "cjk_after": 1572,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "陕西省培育壮大千亿级航空制造与低空产业创新集群行动计划",
+   "region": "陕西省",
+   "before": 1108,
+   "after": 1107,
+   "cjk_before": 952,
+   "cjk_after": 952,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "东莞市推动低空经济高质量发展实施方案（2024-2026年）",
+   "region": "东莞市",
+   "before": 8464,
+   "after": 8463,
+   "cjk_before": 6785,
+   "cjk_after": 6785,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "云南省有序拓展低空经济应用场景实施方案",
+   "region": "云南省",
+   "before": 6412,
+   "after": 6411,
+   "cjk_before": 5241,
+   "cjk_after": 5241,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "低空经济标准体系建设指南(2025年版)",
+   "region": "全国",
+   "before": 985,
+   "after": 983,
+   "cjk_before": 782,
+   "cjk_after": 782,
+   "ratio": 0.998,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "关于加强武汉市民用无人驾驶航空器安全管理的通告",
+   "region": "武汉市",
+   "before": 4854,
+   "after": 4716,
+   "cjk_before": 3462,
+   "cjk_after": 3369,
+   "ratio": 0.972,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "南昌无人驾驶航空器适飞空域范围公布",
+   "region": "南昌市",
+   "before": 1417,
+   "after": 1409,
+   "cjk_before": 1123,
+   "cjk_after": 1118,
+   "ratio": 0.994,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "宜兴市关于支持低空经济高质量发展的若干政策(试行)",
+   "region": "宜兴市",
+   "before": 2633,
+   "after": 2631,
+   "cjk_before": 2147,
+   "cjk_after": 2147,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "关于加强信息通信业能力建设 支撑低空基础设施发展的实施意见",
+   "region": "全国",
+   "before": 2815,
+   "after": 2813,
+   "cjk_before": 2489,
+   "cjk_after": 2489,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "常州市低空经济高质量发展三年行动方案（2024—2026年）",
+   "region": "常州市",
+   "before": 6111,
+   "after": 6104,
+   "cjk_before": 4949,
+   "cjk_after": 4945,
+   "ratio": 0.999,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "温州市支持低空经济高质量发展的若干措施和温州市低空飞行服务保障办法（试行）",
+   "region": "温州市",
+   "before": 10367,
+   "after": 10110,
+   "cjk_before": 8279,
+   "cjk_after": 8207,
+   "ratio": 0.975,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广东省推动低空经济高质量发展行动方案（2024—2026年）",
+   "region": "广东省",
+   "before": 11290,
+   "after": 11017,
+   "cjk_before": 9669,
+   "cjk_after": 9517,
+   "ratio": 0.976,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州市天河区发展和改革局关于暂停实施《广州市天河区加快推动低空经济与航空航天高质量发展的若干政策措施》的通知(穗天发改规字〔2025〕3号暂停实施)",
+   "region": "广州市天河区",
+   "before": 536,
+   "after": 332,
+   "cjk_before": 405,
+   "cjk_after": 262,
+   "ratio": 0.619,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "广州市海珠区推动前沿产业创新发展若干措施",
+   "region": "广州市海珠区",
+   "before": 5065,
+   "after": 5064,
+   "cjk_before": 4203,
+   "cjk_after": 4203,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "武汉市民用无人驾驶航空器安全管理暂行办法",
+   "region": "武汉市",
+   "before": 6681,
+   "after": 6660,
+   "cjk_before": 5159,
+   "cjk_after": 5143,
+   "ratio": 0.997,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "济南市低空经济高质量发展实施方案",
+   "region": "济南市",
+   "before": 5928,
+   "after": 5805,
+   "cjk_before": 4785,
+   "cjk_after": 4714,
+   "ratio": 0.979,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳市福田区支持低空经济高质量发展若干措施（试行）",
+   "region": "深圳市福田区",
+   "before": 2700,
+   "after": 2699,
+   "cjk_before": 1647,
+   "cjk_after": 1647,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "深圳市光明区促进低空经济高质量发展若干措施",
+   "region": "深圳市光明区",
+   "before": 3835,
+   "after": 3834,
+   "cjk_before": 2597,
+   "cjk_after": 2597,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "湖南省通用航空条例",
+   "region": "湖南省",
+   "before": 6184,
+   "after": 6183,
+   "cjk_before": 5350,
+   "cjk_after": 5350,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "福州市加快推动低空产业发展行动方案（2024-2026年）",
+   "region": "福州市",
+   "before": 3986,
+   "after": 2643,
+   "cjk_before": 2669,
+   "cjk_after": 2047,
+   "ratio": 0.663,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "绍兴市人民政府办公室关于印发先进制造业强市建设4151计划专项政策等四个政策的通知",
+   "region": "绍兴市",
+   "before": 1648,
+   "after": 1425,
+   "cjk_before": 1165,
+   "cjk_after": 1089,
+   "ratio": 0.865,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "绿色航空制造业发展纲要(2023—2035年)",
+   "region": "全国",
+   "before": 7370,
+   "after": 7312,
+   "cjk_before": 6212,
+   "cjk_after": 6200,
+   "ratio": 0.992,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "芜湖市低空经济健康发展促进办法",
+   "region": "芜湖市",
+   "before": 5191,
+   "after": 5157,
+   "cjk_before": 4433,
+   "cjk_after": 4406,
+   "ratio": 0.993,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "苏州市低空空中交通规则（试行）",
+   "region": "苏州市",
+   "before": 2216,
+   "after": 2215,
+   "cjk_before": 1746,
+   "cjk_after": 1746,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "辽宁省低空经济制造业高质量发展三年行动计划(2025—2027年)",
+   "region": "辽宁省",
+   "before": 1018,
+   "after": 1008,
+   "cjk_before": 846,
+   "cjk_after": 840,
+   "ratio": 0.99,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "通用航空装备创新应用实施方案（2024—2030年）",
+   "region": "全国",
+   "before": 6998,
+   "after": 6997,
+   "cjk_before": 5256,
+   "cjk_after": 5256,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "重庆市推动低空空域管理改革促进低空经济高质量发展行动方案（2024—2027年）",
+   "region": "重庆市",
+   "before": 7566,
+   "after": 7565,
+   "cjk_before": 6006,
+   "cjk_after": 6006,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "推动低空制造产业高质量发展工作方案（2024—2027年）",
+   "region": "陕西省",
+   "before": 658,
+   "after": 635,
+   "cjk_before": 542,
+   "cjk_after": 522,
+   "ratio": 0.965,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "青岛市支持通航重点领域发展财政若干政策实施细则",
+   "region": "青岛市",
+   "before": 2311,
+   "after": 2310,
+   "cjk_before": 1769,
+   "cjk_after": 1769,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "南京市促进低空经济高质量发展实施方案（2024—2026年）",
+   "region": "南京市",
+   "before": 5626,
+   "after": 5624,
+   "cjk_before": 4798,
+   "cjk_after": 4798,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "江苏省航空航天产业发展三年行动计划（2023—2025年）",
+   "region": "江苏省",
+   "before": 5408,
+   "after": 5406,
+   "cjk_before": 4721,
+   "cjk_after": 4721,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "通用航空安全保卫规则",
+   "region": "全国",
+   "before": 4507,
+   "after": 4505,
+   "cjk_before": 3973,
+   "cjk_after": 3973,
+   "ratio": 1.0,
+   "verdict": "keep"
+  },
+  {
+   "policy_name": "长治市加快推进低空经济和通用航空业高质量发展工作方案",
+   "region": "长治市",
+   "before": 3983,
+   "after": 3981,
+   "cjk_before": 3404,
+   "cjk_after": 3404,
+   "ratio": 0.999,
+   "verdict": "keep"
+  }
+ ]
+}

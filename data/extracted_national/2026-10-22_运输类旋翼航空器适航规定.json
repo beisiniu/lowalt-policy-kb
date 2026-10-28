@@ -1,0 +1,15 @@
+{
+  "policy_name": "运输类旋翼航空器适航规定",
+  "issue_date": "2025-11-27",
+  "effective_date": "2026-01-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "运输类旋翼航空器型号须经民航局适航审定并取得型号合格证方可投入运营，规章规定适航标准与审定要求。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-22_运输类旋翼航空器适航规定.txt",
+    "char_count": 1379,
+    "extracted_at": "2026-10-26T17:37:05+08:00"
+  }
+}

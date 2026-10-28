@@ -1,0 +1,15 @@
+{
+  "policy_name": "广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施",
+  "issue_date": "2025-06-26",
+  "effective_date": "2025-06-26",
+  "expiry_date": "2028-06-25",
+  "apply_region": "广州市黄埔区",
+  "status": "现行有效",
+  "summary": "黄埔区低空与航空航天企业开展起降点建设、试飞、培训、适航取证及场景运营，须取得空域航线批复、运营合格证或民航局执照方可获补贴。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-10-01_广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施.txt",
+    "char_count": 3710,
+    "extracted_at": "2026-10-27T22:51:27+08:00"
+  }
+}

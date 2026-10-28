@@ -1,0 +1,978 @@
+{
+ "generated_at": "2026-10-27T23:02:18",
+ "results": [
+  {
+   "policy_id": "3aac507801a5246d",
+   "policy_name": "中国民用航空局关于民用无人驾驶航空器监管服务有关事宜的公告",
+   "region": "全国",
+   "level": "national",
+   "status": "现行有效",
+   "issue_date": "2023-12-31",
+   "kind": "explicit_expiry",
+   "inferred_expiry": "2026-11-26",
+   "confidence": "medium",
+   "evidence": "该过渡政策在2026年11月26日（国际民航公约对无人驾驶航空器适航管理要求生效日）之前有效。",
+   "reasoning": "正文明确过渡政策有效至2026-11-26，作为时效终点",
+   "checked_at": "2026-10-27T22:19:24",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 1404,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-01-01_中国民用航空局关于民用无人驾驶航空器监管服务有关事宜的公告.txt",
+   "chunks": 7,
+   "verdict": "多数采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "explicit_expiry": 2,
+    "open_ended": 1
+   },
+   "vote_date": {
+    "2026-11-26": 2,
+    "None": 1
+   },
+   "final_kind": "explicit_expiry",
+   "final_expiry": "2026-11-26",
+   "per_model": {
+    "deepseek": {
+     "kind": "explicit_expiry",
+     "expiry": "2026-11-26",
+     "conf": "high",
+     "evidence": "该过渡政策在2026年11月26日（国际民航公约对无人驾驶航空器适航管理要求生效日）之前有效。"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "该过渡政策在2026年11月26日（国际民航公约对无人驾驶航空器适航管理要求生效日）之前有效。"
+    },
+    "glm": {
+     "kind": "explicit_expiry",
+     "expiry": "2026-11-26",
+     "conf": "medium",
+     "evidence": "该过渡政策在2026年11月26日（国际民航公约对无人驾驶航空器适航管理要求生效日）之前有效"
+    }
+   }
+  },
+  {
+   "policy_id": "d5100b3cda14d545",
+   "policy_name": "山东省无人机产业高质量发展实施方案",
+   "region": "山东省",
+   "level": "province",
+   "status": "现行有效",
+   "issue_date": "2024-01-26",
+   "kind": "plan_period",
+   "inferred_expiry": "2025-12-31",
+   "confidence": "high",
+   "evidence": "力争到2025年，全省无人机产业生态不断完善",
+   "reasoning": "正文仅给出到2025年的目标期，无有效期条款，取该年年底",
+   "checked_at": "2026-10-27T22:19:27",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 3631,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-01-29_关于印发《山东省无人机产业高质量发展实施方案》的通知.txt",
+   "chunks": 12,
+   "verdict": "判定分歧",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 1,
+    "plan_period": 1,
+    "unclear": 1
+   },
+   "vote_date": {
+    "None": 2,
+    "2025-12-31": 1
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "力争到2025年，全省无人机产业生态不断完善，具备山东特色的无人机产业体系基本建立。"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2025-12-31",
+     "conf": "high",
+     "evidence": "力争到2025年，全省无人机产业生态不断完善，具备山东特色的无人机产业体系基本建立。"
+    },
+    "glm": {
+     "kind": "unclear",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "力争到2025年，全省无人机产业生态不断完善，具备山东特色的无人机产业体系基本建立。"
+    }
+   }
+  },
+  {
+   "policy_id": "afa81e03eb99e580",
+   "policy_name": "扬州市低空经济高质量发展实施意见",
+   "region": "扬州市",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "2024-05-20",
+   "kind": "plan_period",
+   "inferred_expiry": "2026-12-31",
+   "confidence": "high",
+   "evidence": "力争到2026年，全市形成以低空科创制造为核心、以低空检验测试为特色的低空经济产业体系",
+   "reasoning": "正文仅给出到2026年的目标期，无有效期条款，按规划期取2026年末",
+   "checked_at": "2026-10-27T22:19:28",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 5005,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-05-20_扬州市低空经济高质量发展实施意见.txt",
+   "chunks": 16,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 3
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "力争到2026年，全市形成以低空科创制造为核心、以低空检验测试为特色的低空经济产业体系"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "力争到2026年，全市形成以低空科创制造为核心、以低空检验测试为特色的低空经济产业体系"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "力争到2026年，全市形成以低空科创制造为核心、以低空检验测试为特色的低空经济产业体系"
+    }
+   }
+  },
+  {
+   "policy_id": "159c80f67d0cc1b5",
+   "policy_name": "长沙市推动低空经济高质量发展实施方案（2024—2026年）",
+   "region": "长沙市",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "2024-06-25",
+   "kind": "explicit_expiry",
+   "inferred_expiry": "2026-12-31",
+   "confidence": "high",
+   "evidence": "信息时效期：2026-12-31",
+   "reasoning": "正文明确标注信息时效期，直接采用该日期",
+   "checked_at": "2026-10-27T22:19:29",
+   "evidence_verified": true,
+   "rule_class": "plan_period",
+   "date_ok": true,
+   "body_len": 9180,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-06-25_长沙市发展和改革委员会关于印发《长沙市推动低空经济高质量发展实施方案(2024—2026年)》的通知.txt",
+   "chunks": 20,
+   "verdict": "多数采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "explicit_expiry": 2,
+    "plan_period": 1
+   },
+   "vote_date": {
+    "2026-12-31": 3
+   },
+   "final_kind": "explicit_expiry",
+   "final_expiry": "2026-12-31",
+   "per_model": {
+    "deepseek": {
+     "kind": "explicit_expiry",
+     "expiry": "2026-12-31",
+     "conf": "high",
+     "evidence": "信息时效期：2026-12-31"
+    },
+    "qwen": {
+     "kind": "explicit_expiry",
+     "expiry": "2026-12-31",
+     "conf": "high",
+     "evidence": "信息时效期：2026-12-31"
+    },
+    "glm": {
+     "kind": "plan_period",
+     "expiry": "2026-12-31",
+     "conf": "high",
+     "evidence": "关于印发《长沙市推动低空经济高质量发展实施方案（2024—2026年）》的通知"
+    }
+   }
+  },
+  {
+   "policy_id": "e008fb96a88697d3",
+   "policy_name": "四川省人民政府办公厅关于促进低空经济发展的指导意见",
+   "region": "四川省",
+   "level": "province",
+   "status": "现行有效",
+   "issue_date": "2024-07-08",
+   "kind": "plan_period",
+   "inferred_expiry": "2030-12-31",
+   "confidence": "medium",
+   "evidence": "到2030年，全面建成布局合理、功能完善、覆盖广泛的飞行起降基础设施网络",
+   "reasoning": "正文仅给出到2027年、2030年的目标期，无有效期条款，取最远期2030年末",
+   "checked_at": "2026-10-27T22:19:30",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 3472,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-07-08_四川省人民政府办公厅关于促进低空经济发展的指导意见.txt",
+   "chunks": 12,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 3
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年，建成20个通用机场和100个以上垂直起降点"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2030年，全面建成布局合理、功能完善、覆盖广泛的飞行起降基础设施网络"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2030年，全面建成布局合理、功能完善、覆盖广泛的飞行起降基础设施网络"
+    }
+   }
+  },
+  {
+   "policy_id": "bd2c0f9899f83c33",
+   "policy_name": "浙江省人民政府关于高水平建设民航强省 打造低空经济发展高地的若干意见",
+   "region": "浙江省",
+   "level": "province",
+   "status": "现行有效",
+   "issue_date": "2024-08-07",
+   "kind": "plan_period",
+   "inferred_expiry": "2027-12-31",
+   "confidence": "high",
+   "evidence": "到2027年，基本建成航空服务全省覆盖、航线网络全球通达、空港枢纽多式便捷、航空产业高能集聚、低空经济先行引领、行业治理顺畅高效的高水平民航强省和低空经济发展高地。",
+   "reasoning": "正文仅给出到2027年的目标期，无有效期条款，按规划期取2027-12-31。",
+   "checked_at": "2026-10-27T22:19:36",
+   "evidence_verified": true,
+   "rule_class": "plan_period",
+   "date_ok": true,
+   "body_len": 14597,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-07_浙江省人民政府关于高水平建设民航强省 打造低空经济发展高地的若干意见.txt",
+   "chunks": 42,
+   "verdict": "多数采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "plan_period": 2,
+    "open_ended": 1
+   },
+   "vote_date": {
+    "2027-12-31": 2,
+    "None": 1
+   },
+   "final_kind": "plan_period",
+   "final_expiry": "2027-12-31",
+   "per_model": {
+    "deepseek": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "medium",
+     "evidence": "高水平建设民航强省 打造低空经济发展高地行动方案（2024—2027年）"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "高水平建设民航强省 打造低空经济发展高地行动方案（2024—2027年）"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2035年，全面建成高水平民航强省和低空经济发展高地。"
+    }
+   }
+  },
+  {
+   "policy_id": "46ba89f8e992c446",
+   "policy_name": "海珠区低空经济发展工作方案",
+   "region": "广州市海珠区",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "2024-08-22",
+   "kind": "plan_period",
+   "inferred_expiry": "2027-12-31",
+   "confidence": "high",
+   "evidence": "到2027年，海珠区低空管理机制运转顺畅、基础设施基本完备",
+   "reasoning": "正文仅给出到2027年的目标期，无有效期条款，取该年12月31日",
+   "checked_at": "2026-10-27T22:19:42",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 7338,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-22_海珠区低空经济发展工作方案.txt",
+   "chunks": 21,
+   "verdict": "判定分歧",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 1,
+    "plan_period": 1,
+    "unclear": 1
+   },
+   "vote_date": {
+    "None": 2,
+    "2027-12-31": 1
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年，海珠区低空管理机制运转顺畅、基础设施基本完备"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "到2027年，海珠区低空管理机制运转顺畅、基础设施基本完备……打造基于人工智能的低空经济示范区。"
+    },
+    "glm": {
+     "kind": "unclear",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2027年，海珠区低空管理机制运转顺畅、基础设施基本完备、应用场景加快拓展"
+    }
+   }
+  },
+  {
+   "policy_id": "8a1d29176777eaa0",
+   "policy_name": "天津港保税区推进低空经济高质量发展行动方案",
+   "region": "天津港保税区",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "2024-08-22",
+   "kind": "plan_period",
+   "inferred_expiry": "2030-12-31",
+   "confidence": "medium",
+   "evidence": "到2030年，基本建成较为完善的低空经济体系",
+   "reasoning": "仅给出阶段性目标年份，无有效期条款，取最远目标年年底",
+   "checked_at": "2026-10-27T22:19:44",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 2321,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-23_助力低空经济加速“起飞”.txt",
+   "chunks": 6,
+   "verdict": "多数采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 2,
+    "unclear": 1
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "《方案》提出了两个阶段性目标：到2027年，保税区低空经济发展要素和基础条件基本完备"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2030年，基本建成较为完善的低空经济体系"
+    },
+    "glm": {
+     "kind": "unclear",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2030年，基本建成较为完善的低空经济体系"
+    }
+   }
+  },
+  {
+   "policy_id": "da037fa281ee44c0",
+   "policy_name": "关于加快推动低空经济高质量发展的实施意见",
+   "region": "江苏省",
+   "level": "province",
+   "status": "现行有效",
+   "issue_date": "2024-09-04",
+   "kind": "plan_period",
+   "inferred_expiry": "2030-12-31",
+   "confidence": "medium",
+   "evidence": "到2030年，智能互联、功能完善、安全高效的低空设施网基本建成",
+   "reasoning": "仅给出到2030年的目标期，无有效期条款，取该期最后一年末",
+   "checked_at": "2026-10-27T22:19:48",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 2698,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-04_省政府办公厅关于加快推动低空经济高质量发展的实施意见.txt",
+   "chunks": 9,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 3
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年，低空空域协同管理机制运转高效，低空经济发展规模全国领先。到2030年，智能互联、功能完善、安全高效的低空设施网基本建成"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2030年，智能互联、功能完善、安全高效的低空设施网基本建成"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2030年，智能互联、功能完善、安全高效的低空设施网基本建成，覆盖上中下游的特色产业链基本形成"
+    }
+   }
+  },
+  {
+   "policy_id": "a6353369f584647a",
+   "policy_name": "青岛市促进低空经济高质量发展实施方案",
+   "region": "青岛市",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "2024-10-08",
+   "kind": "plan_period",
+   "inferred_expiry": "2026-12-31",
+   "confidence": "high",
+   "evidence": "到2026年，低空经济产业生态不断完善",
+   "reasoning": "正文仅给出到2026年的目标期，无有效期条款，取该年末",
+   "checked_at": "2026-10-27T22:19:54",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 6141,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-10-08_青岛市促进低空经济高质量发展实施方案.txt",
+   "chunks": 20,
+   "verdict": "多数采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "plan_period": 2,
+    "unclear": 1
+   },
+   "vote_date": {
+    "2026-12-31": 2,
+    "None": 1
+   },
+   "final_kind": "plan_period",
+   "final_expiry": "2026-12-31",
+   "per_model": {
+    "deepseek": {
+     "kind": "plan_period",
+     "expiry": "2026-12-31",
+     "conf": "high",
+     "evidence": "到2026年，低空经济产业生态不断完善，发展规模不断壮大，服务保障达到国内先进水平"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2026-12-31",
+     "conf": "high",
+     "evidence": "到2026年，低空经济产业生态不断完善，发展规模不断壮大"
+    },
+    "glm": {
+     "kind": "unclear",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2026年，低空经济产业生态不断完善，发展规模不断壮大"
+    }
+   }
+  },
+  {
+   "policy_id": "3236bed43ba172a5",
+   "policy_name": "徐州市加快推进“低空+”场景应用创新行动方案",
+   "region": "徐州市",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "2024-12-19",
+   "kind": "plan_period",
+   "inferred_expiry": "2026-12-31",
+   "confidence": "medium",
+   "evidence": "到2026年，推进新增“低空+”场景应用8个",
+   "reasoning": "正文仅给出到2026年的目标期，无有效期条款，取该年末",
+   "checked_at": "2026-10-27T22:19:58",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 4776,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-12-20_徐州市加快推进“低空+”场景应用创新行动方案.txt",
+   "chunks": 16,
+   "verdict": "多数采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "plan_period": 2,
+    "open_ended": 1
+   },
+   "vote_date": {
+    "2026-12-31": 2,
+    "None": 1
+   },
+   "final_kind": "plan_period",
+   "final_expiry": "2026-12-31",
+   "per_model": {
+    "deepseek": {
+     "kind": "plan_period",
+     "expiry": "2026-12-31",
+     "conf": "medium",
+     "evidence": "到2026年，推进新增“低空+”场景应用8个"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2026-12-31",
+     "conf": "high",
+     "evidence": "到2026年，推进新增“低空+”场景应用8个"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2026年，推进新增“低空+”场景应用8个，打造一批低空应用示范基地"
+    }
+   }
+  },
+  {
+   "policy_id": "60eeff33a50346cc",
+   "policy_name": "加快推进低空制造产业高质量发展行动方案",
+   "region": "江苏省",
+   "level": "province",
+   "status": "现行有效",
+   "issue_date": "2024-12-23",
+   "kind": "plan_period",
+   "inferred_expiry": "2027-12-31",
+   "confidence": "high",
+   "evidence": "制定本行动方案，实施期为2025年至2027年。",
+   "reasoning": "正文明确实施期为2025至2027年，无更明确失效条款，取期末年末",
+   "checked_at": "2026-10-27T22:20:01",
+   "evidence_verified": true,
+   "rule_class": "plan_period",
+   "date_ok": true,
+   "body_len": 4944,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-01-07_省工业和信息化厅关于印发加快推进低空制造产业高质量发展行动方案的通知.txt",
+   "chunks": 16,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "plan_period": 3
+   },
+   "vote_date": {
+    "2027-12-31": 3
+   },
+   "final_kind": "plan_period",
+   "final_expiry": "2027-12-31",
+   "per_model": {
+    "deepseek": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "制定本行动方案，实施期为2025年至2027年。"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "制定本行动方案，实施期为2025年至2027年。"
+    },
+    "glm": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "制定本行动方案，实施期为2025年至2027年"
+    }
+   }
+  },
+  {
+   "policy_id": "6c0f342d0bd00dca",
+   "policy_name": "关于推动低空保险高质量发展的实施意见",
+   "region": "全国",
+   "level": "national",
+   "status": "现行有效",
+   "issue_date": "2026-01-28",
+   "kind": "plan_period",
+   "inferred_expiry": "2030-12-31",
+   "confidence": "medium",
+   "evidence": "到2027年，无人驾驶航空器责任保险强制投保制度初步建立",
+   "reasoning": "仅给出到2027年、2030年的阶段性目标，无有效期条款，取最远目标年年底",
+   "checked_at": "2026-10-27T22:20:09",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 2723,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-01-28_发布丨国家发展改革委 金融监管总局 中国民航局关于推动低空保险高质量发展的实施意见.txt",
+   "chunks": 9,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 3
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年，无人驾驶航空器责任保险强制投保制度初步建立"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2030年，低空保险政策框架基本形成，对低空经济安全健康发展的保障作用持续增强。"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2030年，低空保险政策框架基本形成，对低空经济安全健康发展的保障作用持续增强。"
+    }
+   }
+  },
+  {
+   "policy_id": "7a11e75ff94972f8",
+   "policy_name": "云南省有序拓展低空经济应用场景实施方案",
+   "region": "云南省",
+   "level": "province",
+   "status": "现行有效",
+   "issue_date": "2026-06-08",
+   "kind": "plan_period",
+   "inferred_expiry": "2027-12-31",
+   "confidence": "high",
+   "evidence": "到2027年底，实现政务服务“一网统飞”的州（市）达到5个。",
+   "reasoning": "正文仅给出到2027年底的目标期，无有效期条款，取2027-12-31。",
+   "checked_at": "2026-10-27T22:20:30",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 28781,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_云南省人民政府办公厅关于印发《云南省有序拓展低空经济应用场景实施方案》的通知(2026-06-08印发).txt",
+   "chunks": 66,
+   "verdict": "多数采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 2,
+    "unclear": 1
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2027年底，实现政务服务“一网统飞”的州（市）达到5个。"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年底，实现政务服务“一网统飞”的州（市）达到5个。"
+    },
+    "glm": {
+     "kind": "unclear",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2027年底，实现政务服务“一网统飞”的州（市）达到5个"
+    }
+   }
+  },
+  {
+   "policy_id": "02424a63e63c885b",
+   "policy_name": "低空经济标准体系建设指南(2025年版)",
+   "region": "全国",
+   "level": "national",
+   "status": "现行有效",
+   "issue_date": "2026-10-27",
+   "kind": "plan_period",
+   "inferred_expiry": "2030-12-31",
+   "confidence": "medium",
+   "evidence": "到2030年,低空经济领域标准超过300项,结构优化、先进合理、国际兼容的低空经济标准体系基本形成",
+   "reasoning": "仅给出到2030年的建设目标，无有效期条款，取目标末年年底",
+   "checked_at": "2026-10-27T22:20:31",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 985,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_低空经济标准体系建设指南(2025年版)(市场监管总局会同中央空管办、国家发展改革委等十部门联合发布).txt",
+   "chunks": 5,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 3
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年,低空经济标准体系基本建立"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2030年,低空经济领域标准超过300项...基本形成"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2030年,低空经济领域标准超过300项,结构优化、先进合理、国际兼容的低空经济标准体系基本形成"
+    }
+   }
+  },
+  {
+   "policy_id": "3bb068aad134ef0e",
+   "policy_name": "关于加强信息通信业能力建设 支撑低空基础设施发展的实施意见",
+   "region": "全国",
+   "level": "national",
+   "status": "现行有效",
+   "issue_date": "2026-10-27",
+   "kind": "plan_period",
+   "inferred_expiry": "2027-12-31",
+   "confidence": "high",
+   "evidence": "到2027年,全国低空公共航路地面移动通信网络覆盖率不低于90%",
+   "reasoning": "仅给出到2027年的目标期，无有效期条款，取2027-12-31",
+   "checked_at": "2026-10-27T22:20:35",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 2815,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_工业和信息化部等五部门办公厅(秘书局、综合局、综合司)关于加强信息通信业能力建设 支撑低空基础设施发展的实施意见(工信厅联通信〔2026〕4号).txt",
+   "chunks": 8,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 3
+   },
+   "vote_date": {
+    "None": 3
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年,全国低空公共航路地面移动通信网络覆盖率不低于90%"
+    },
+    "qwen": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "high",
+     "evidence": "到2027年,全国低空公共航路地面移动通信网络覆盖率不低于90%"
+    },
+    "glm": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2027年,全国低空公共航路地面移动通信网络覆盖率不低于90%"
+    }
+   }
+  },
+  {
+   "policy_id": "15faf0fb5138d37e",
+   "policy_name": "济南市低空经济高质量发展实施方案",
+   "region": "济南市",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "2024-10-25",
+   "kind": "plan_period",
+   "inferred_expiry": "2027-12-31",
+   "confidence": "high",
+   "evidence": "到2027年，引育低空产业链相关企业200家以上，产业规模达到200亿元",
+   "reasoning": "正文仅给出到2027年的工作目标，无有效期条款，按规划期取2027-12-31",
+   "checked_at": "2026-10-27T22:20:40",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 9049,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_济南市人民政府办公厅关于印发济南市低空经济高质量发展实施方案的通知(济政办字〔2024〕31号).txt",
+   "chunks": 25,
+   "verdict": "判定分歧",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 1,
+    "plan_period": 1,
+    "unclear": 1
+   },
+   "vote_date": {
+    "None": 2,
+    "2027-12-31": 1
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2027年，引育低空产业链相关企业200家以上，产业规模达到200亿元"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "到2027年，引育低空产业链相关企业200家以上，产业规模达到200亿元。"
+    },
+    "glm": {
+     "kind": "unclear",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "到2027年，引育低空产业链相关企业200家以上，产业规模达到200亿元"
+    }
+   }
+  },
+  {
+   "policy_id": "aaedcd689f8576ac",
+   "policy_name": "辽宁省低空经济制造业高质量发展三年行动计划(2025—2027年)",
+   "region": "辽宁省",
+   "level": "province",
+   "status": "现行有效",
+   "issue_date": "2026-10-27",
+   "kind": "plan_period",
+   "inferred_expiry": "2027-12-31",
+   "confidence": "high",
+   "evidence": "辽宁省低空经济制造业高质量发展三年行动计划(2025—2027年)",
+   "reasoning": "标题仅给出规划期2025—2027年，无更明确失效条款，取期末年12月31日",
+   "checked_at": "2026-10-27T22:20:50",
+   "evidence_verified": false,
+   "rule_class": "plan_period",
+   "date_ok": true,
+   "body_len": 15152,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_辽宁省低空经济制造业高质量发展三年行动计划(2025—2027年).txt",
+   "chunks": 26,
+   "verdict": "一致采纳",
+   "n_votes": 3,
+   "vote_kind": {
+    "plan_period": 3
+   },
+   "vote_date": {
+    "2027-12-31": 3
+   },
+   "final_kind": "plan_period",
+   "final_expiry": "2027-12-31",
+   "per_model": {
+    "deepseek": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "《辽宁省低空经济制造业高质量发展三年行动计划（2025—2027年）》"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "《辽宁省低空经济制造业高质量发展三年行动计划（2025—2027年）》"
+    },
+    "glm": {
+     "kind": "plan_period",
+     "expiry": "2027-12-31",
+     "conf": "high",
+     "evidence": "《辽宁省低空经济制造业高质量发展三年行动计划（2025—2027年）》"
+    }
+   }
+  },
+  {
+   "policy_id": "82c929c5cee57d6a",
+   "policy_name": "长治市加快推进低空经济和通用航空业高质量发展工作方案",
+   "region": "长治市",
+   "level": "city",
+   "status": "现行有效",
+   "issue_date": "无",
+   "kind": "plan_period",
+   "inferred_expiry": "2026-12-31",
+   "confidence": "medium",
+   "evidence": "2024年启动研究工作，2026年开工建设",
+   "reasoning": "全文任务节点集中于2024—2026年，无有效期条款，按规划期取2026年末",
+   "checked_at": "2026-10-27T22:20:58",
+   "evidence_verified": true,
+   "rule_class": "no_clause",
+   "date_ok": true,
+   "body_len": 3983,
+   "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\undated_长治市人民政府办公室关于印发长治市加快推进低空经济和通用航空业高质量发展工作方案的通知.txt",
+   "chunks": 12,
+   "verdict": "判定分歧",
+   "n_votes": 3,
+   "vote_kind": {
+    "open_ended": 1,
+    "plan_period": 1,
+    "unclear": 1
+   },
+   "vote_date": {
+    "None": 2,
+    "2026-12-31": 1
+   },
+   "final_kind": "open_ended",
+   "final_expiry": null,
+   "per_model": {
+    "deepseek": {
+     "kind": "open_ended",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "特制定本方案"
+    },
+    "qwen": {
+     "kind": "plan_period",
+     "expiry": "2026-12-31",
+     "conf": "high",
+     "evidence": "2024年启动前期工作，2026年建成投入使用"
+    },
+    "glm": {
+     "kind": "unclear",
+     "expiry": null,
+     "conf": "medium",
+     "evidence": "2024年启动前期工作，2026年建成投入使用"
+    }
+   }
+  }
+ ]
+}

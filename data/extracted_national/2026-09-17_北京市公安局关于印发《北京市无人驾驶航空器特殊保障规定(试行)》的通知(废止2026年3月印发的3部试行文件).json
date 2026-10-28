@@ -1,0 +1,15 @@
+{
+  "policy_name": "北京市无人驾驶航空器特殊保障规定（试行）",
+  "issue_date": "2026-09-15",
+  "effective_date": "2026-11-15",
+  "expiry_date": "无",
+  "apply_region": "北京市",
+  "status": "现行有效",
+  "summary": "北京市特殊用途无人机购买、运输、存放须经上级主管部门审核并函商市公安局，经安全评估批准后方可实施，存放场所须满足防盗监控及台账要求。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-09-17_北京市公安局关于印发《北京市无人驾驶航空器特殊保障规定(试行)》的通知(废止2026年3月印发的3部试行文件).txt",
+    "char_count": 3030,
+    "extracted_at": "2026-10-27T22:46:49+08:00"
+  }
+}

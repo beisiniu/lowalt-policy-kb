@@ -1,0 +1,16 @@
+{
+  "policy_name": "常州市低空经济高质量发展三年行动方案（2024—2026年）",
+  "issue_date": "2024-07-15",
+  "effective_date": "2024-07-15",
+  "expiry_date": "2026-12-31",
+  "apply_region": "常州市",
+  "status": "现行有效",
+  "summary": "常州市发改委会同相关部门制定，面向低空制造、起降设施与飞行服务，提出建设通用机场、起降场点及低空智联网等任务，未设审批或备案门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-07-15_《常州市低空经济高质量发展三年行动方案 (2024—2026年)》政策解读.txt",
+    "char_count": 1873,
+    "extracted_at": "2026-10-26T16:47:22+08:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "policy_name": "福州市加快推动低空产业发展行动方案（2024-2026年）",
+  "issue_date": "2024-09-12",
+  "effective_date": "2024-09-12",
+  "expiry_date": "无",
+  "apply_region": "福州市",
+  "status": "现行有效",
+  "summary": "福州市布局低空产业，2024年底在鼓楼区试点低空空域管理改革，经军方同意由地方政府发布无人机适飞空域，争创民用无人驾驶航空试验区。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_福州市加快推动低空产业发展行动方案(2024-2026年)(2024年9月印发).txt",
+    "char_count": 4569,
+    "extracted_at": "2026-10-27T22:47:48+08:00"
+  }
+}

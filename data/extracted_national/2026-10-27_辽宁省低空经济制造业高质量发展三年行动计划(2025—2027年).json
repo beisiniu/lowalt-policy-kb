@@ -1,0 +1,16 @@
+{
+  "policy_name": "辽宁省低空经济制造业高质量发展三年行动计划(2025—2027年)",
+  "issue_date": "2025-10-14",
+  "effective_date": "2025-10-14",
+  "expiry_date": "无",
+  "apply_region": "辽宁省",
+  "status": "现行有效",
+  "summary": "辽宁省布局大型无人货运飞机、民用低空飞行器、军用无人机研发制造，以项目化清单化管理推进，未设审批备案门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_辽宁省低空经济制造业高质量发展三年行动计划(2025—2027年).txt",
+    "char_count": 2795,
+    "extracted_at": "2026-10-27T22:48:01+08:00"
+  }
+}

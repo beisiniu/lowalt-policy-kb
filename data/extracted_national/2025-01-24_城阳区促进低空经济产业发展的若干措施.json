@@ -1,0 +1,15 @@
+{
+  "policy_name": "城阳区促进低空经济产业发展的若干措施",
+  "issue_date": "2025-01-24",
+  "effective_date": "2025-01-24",
+  "expiry_date": "2028-01-23",
+  "apply_region": "青岛市城阳区",
+  "status": "现行有效",
+  "summary": "面向城阳区低空企业，提供试飞空域协调、场景开放及人才安居等服务，无强制审批门槛，自公布起施行有效期三年。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-01-24_城阳区促进低空经济产业发展的若干措施.txt",
+    "char_count": 2566,
+    "extracted_at": "2026-10-26T22:56:54+08:00"
+  }
+}

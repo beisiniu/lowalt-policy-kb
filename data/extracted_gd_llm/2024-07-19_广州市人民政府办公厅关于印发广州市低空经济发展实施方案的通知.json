@@ -1,0 +1,15 @@
+{
+  "policy_name": "广州市低空经济发展实施方案",
+  "issue_date": "2024-07-19",
+  "effective_date": "2024-07-19",
+  "expiry_date": "无",
+  "apply_region": "广州市",
+  "status": "现行有效",
+  "summary": "广州市各部门推进低空经济，飞行运营须取得运营许可并接入A类飞行服务站，起降点与航线按空域方案管理。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2024-07-19_广州市人民政府办公厅关于印发广州市低空经济发展实施方案的通知.txt",
+    "char_count": 5544,
+    "extracted_at": "2026-10-26T03:23:30+08:00"
+  }
+}

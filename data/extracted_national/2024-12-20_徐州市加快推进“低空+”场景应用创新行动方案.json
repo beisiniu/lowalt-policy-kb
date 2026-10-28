@@ -1,0 +1,15 @@
+{
+  "policy_name": "徐州市加快推进“低空+”场景应用创新行动方案",
+  "issue_date": "2024-12-19",
+  "effective_date": "2024-12-19",
+  "expiry_date": "无",
+  "apply_region": "徐州市",
+  "status": "现行有效",
+  "summary": "规范物流、医疗等12类低空场景，载人飞行需履行报批程序，强化黑飞管控与联合监管。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-12-20_徐州市加快推进“低空+”场景应用创新行动方案.txt",
+    "char_count": 5113,
+    "extracted_at": "2026-10-26T22:56:51+08:00"
+  }
+}

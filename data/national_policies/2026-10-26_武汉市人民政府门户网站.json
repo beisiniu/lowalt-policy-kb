@@ -1,0 +1,16 @@
+{
+  "title": "武汉市人民政府门户网站",
+  "url": "https://www.wuhan.gov.cn/gwfbpt/szf/whsrmzf/202406/t20240607_2413734.shtml",
+  "final_url": "https://www.wuhan.gov.cn/",
+  "publish_date": "2026-10-26",
+  "fetched_at": "2026-10-26T16:41:57+08:00",
+  "content_hash": "sha256:b417b44d46aa492ac6c749c4f804c2068a37b176028d7e0bcb52392254b258eb",
+  "txt_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-26_武汉市人民政府门户网站.txt",
+  "seed_id": "URL-0038",
+  "level": "city",
+  "region_hint": "武汉市",
+  "source_name": "人民网低空经济产业数据库-地方级政策",
+  "source_page": "http://828.people.com.cn/GB/459707/459834/459837/index.html",
+  "doc_type": "政策文件",
+  "content_type": "text/html"
+}

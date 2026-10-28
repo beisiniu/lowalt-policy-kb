@@ -1,0 +1,15 @@
+{
+  "policy_name": "广州市海珠区推动前沿产业创新发展若干措施",
+  "issue_date": "2026-03-30",
+  "effective_date": "2026-03-30",
+  "expiry_date": "2029-03-29",
+  "apply_region": "广州市海珠区",
+  "status": "现行有效",
+  "summary": "海珠区低空经济等前沿产业企业须获民航局TC/PC/AC/OC及主管部门航线审批，方可按投入比例申领最高500万元支持",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_广州市海珠区推动前沿产业创新发展若干措施(含低空经济产业支持,海珠发改局等三部门).txt",
+    "char_count": 7390,
+    "extracted_at": "2026-10-27T22:47:26+08:00"
+  }
+}

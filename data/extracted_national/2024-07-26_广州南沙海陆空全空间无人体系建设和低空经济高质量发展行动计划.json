@@ -1,0 +1,16 @@
+{
+  "policy_name": "广州南沙海陆空全空间无人体系建设和低空经济高质量发展行动计划",
+  "issue_date": "2024-07-26",
+  "effective_date": "2024-07-26",
+  "expiry_date": "无",
+  "apply_region": "广州市南沙区",
+  "status": "现行有效",
+  "summary": "南沙区属部门推进无人体系与低空经济，企业参与标准制定、试飞检测需对接区主管部门，未设重量高度时限门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-07-26_广州南沙海陆空全空间无人体系建设和低空经济高质量发展行动计划.txt",
+    "char_count": 6095,
+    "extracted_at": "2026-10-26T16:47:27+08:00"
+  }
+}

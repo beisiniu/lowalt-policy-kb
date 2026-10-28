@@ -1,0 +1,15 @@
+{
+  "policy_name": "广州开发区（黄埔区）促进低空经济高质量发展的若干措施",
+  "issue_date": "2023-10-24",
+  "effective_date": "2023-10-24",
+  "expiry_date": "无",
+  "apply_region": "广州市黄埔区",
+  "status": "现行有效",
+  "summary": "黄埔区低空经济企业须注册纳税在本区，飞行服务补贴需飞行报批报备记录，适航奖励需民航局TC/PC证，有效期三年。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-10-24_广州开发区(黄埔区)促进低空经济高质量发展的若干措施(2023年).txt",
+    "char_count": 3148,
+    "extracted_at": "2026-10-26T17:04:58+08:00"
+  }
+}

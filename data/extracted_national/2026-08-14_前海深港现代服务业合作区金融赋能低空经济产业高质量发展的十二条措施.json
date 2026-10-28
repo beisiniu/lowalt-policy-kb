@@ -1,0 +1,15 @@
+{
+  "policy_name": "前海深港现代服务业合作区金融赋能低空经济产业高质量发展的十二条措施",
+  "issue_date": "2026-08-14",
+  "effective_date": "2026-09-01",
+  "expiry_date": "2028-12-31",
+  "apply_region": "深圳市前海深港现代服务业合作区",
+  "status": "现行有效",
+  "summary": "在前海实际经营的低空企业申请保险、信贷等金融支持需经备案或审批，首飞/首航项目须获行业主管部门批准并符合监管要求。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-08-14_前海深港现代服务业合作区金融赋能低空经济产业高质量发展的十二条措施.txt",
+    "char_count": 2685,
+    "extracted_at": "2026-10-27T00:27:32+08:00"
+  }
+}

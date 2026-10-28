@@ -1,0 +1,15 @@
+{
+  "policy_name": "民用无人驾驶航空器生产管理若干规定",
+  "issue_date": "2023-12-18",
+  "effective_date": "2024-01-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "民用无人机生产者须设置唯一产品识别码，名称代码和型号代码报工信部审核确认，投放市场前或首次飞行前报工信部备案，无线电和电信设备须取得型号核准或进网许可。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-12-18_民用无人驾驶航空器生产管理若干规定(工业和信息化部令第66号,2024-01-01施行).txt",
+    "char_count": 1859,
+    "extracted_at": "2026-10-27T17:26:25+08:00"
+  }
+}

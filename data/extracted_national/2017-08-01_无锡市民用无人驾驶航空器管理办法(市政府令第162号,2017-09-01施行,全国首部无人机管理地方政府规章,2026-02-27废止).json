@@ -1,0 +1,23 @@
+{
+  "policy_name": "无锡市民用无人驾驶航空器管理办法",
+  "issue_date": "2017-08-01",
+  "effective_date": "2017-09-01",
+  "expiry_date": "无",
+  "apply_region": "无锡市",
+  "status": "已废止",
+  "summary": "无锡市民用无人机须实名登记、飞行前报告起飞位置，半径500米、高度120米内飞行，禁飞区及大型活动飞行需公安审批。",
+  "_engine": "llm:deepseek-flash",
+  "_audit": [
+    {
+      "field": "expiry_date",
+      "old": "2026-02-27",
+      "new": "无",
+      "reason": "原文没有明确有效期或失效日期；规划期/目标年份不等于失效期"
+    }
+  ],
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2017-08-01_无锡市民用无人驾驶航空器管理办法(市政府令第162号,2017-09-01施行,全国首部无人机管理地方政府规章,2026-02-27废止).txt",
+    "char_count": 4576,
+    "extracted_at": "2026-10-27T22:46:05+08:00"
+  }
+}

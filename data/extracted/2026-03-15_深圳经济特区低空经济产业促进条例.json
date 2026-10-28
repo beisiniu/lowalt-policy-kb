@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳经济特区低空经济产业促进条例",
+  "issue_date": "2026-03-15",
+  "effective_date": "2026-05-01",
+  "expiry_date": "无",
+  "apply_region": "深圳市",
+  "status": "现行有效",
+  "summary": "使用最大起飞重量超过25千克的无人驾驶航空器从事非经营性飞行活动的，应当提前3个工作日通过市低空飞行服务保障平台提出飞行计划申请，经批准后方可实施",
+  "_engine": "rules",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\pp\\2026-03-15_深圳经济特区低空经济产业促进条例.txt",
+    "char_count": 936,
+    "extracted_at": "2026-10-26T02:52:54+08:00"
+  }
+}

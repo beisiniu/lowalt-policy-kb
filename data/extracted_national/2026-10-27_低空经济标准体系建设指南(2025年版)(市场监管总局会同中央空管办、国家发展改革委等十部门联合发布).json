@@ -1,0 +1,15 @@
+{
+  "policy_name": "低空经济标准体系建设指南(2025年版)",
+  "issue_date": "2026-10-27",
+  "effective_date": "2026-10-27",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "十部门发布低空经济标准体系建设指南，明确无人机安全、实名登记、唯一产品识别码等强制性国标要求，企业须按标准合规。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_低空经济标准体系建设指南(2025年版)(市场监管总局会同中央空管办、国家发展改革委等十部门联合发布).txt",
+    "char_count": 1353,
+    "extracted_at": "2026-10-27T14:13:42+08:00"
+  }
+}

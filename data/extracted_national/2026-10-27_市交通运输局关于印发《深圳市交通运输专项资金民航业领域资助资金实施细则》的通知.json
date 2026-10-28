@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市交通运输专项资金民航业领域资助资金实施细则",
+  "issue_date": "2026-10-27",
+  "effective_date": "2025-07-15",
+  "expiry_date": "2026-04-30",
+  "apply_region": "深圳市",
+  "status": "已废止",
+  "summary": "深圳航空/包机人申请全货机航线资助需满足班次、载运率及持续运营条件，经申报公示后拨付，有效期至2026年4月30日。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_市交通运输局关于印发《深圳市交通运输专项资金民航业领域资助资金实施细则》的通知.txt",
+    "char_count": 4275,
+    "extracted_at": "2026-10-27T00:55:29+08:00"
+  }
+}

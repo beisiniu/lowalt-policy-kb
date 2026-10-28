@@ -1,0 +1,15 @@
+{
+  "policy_name": "朝阳市低空经济高质量发展行动方案（2025—2027年）",
+  "issue_date": "2025-02-16",
+  "effective_date": "2025-02-16",
+  "expiry_date": "无",
+  "apply_region": "朝阳市",
+  "status": "现行有效",
+  "summary": "该方案为产业促进规划，未设定具体审批门槛；要求建立A类飞行服务站实现一网通办，并构建军地民协同监管机制以保障低空飞行安全。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-12-24_朝阳市低空经济高质量发展行动方案（2025—2027年）.txt",
+    "char_count": 5445,
+    "extracted_at": "2026-10-26T22:54:24+08:00"
+  }
+}

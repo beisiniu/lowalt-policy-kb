@@ -1,0 +1,15 @@
+{
+  "policy_name": "长治市加快推进低空经济和通用航空业高质量发展工作方案",
+  "issue_date": "无",
+  "effective_date": "无",
+  "expiry_date": "无",
+  "apply_region": "长治市",
+  "status": "现行有效",
+  "summary": "长治市各部门推进通航基础设施与低空应用场景建设，属工作部署，未设通用航空器飞行审批或备案门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\undated_长治市人民政府办公室关于印发长治市加快推进低空经济和通用航空业高质量发展工作方案的通知.txt",
+    "char_count": 4358,
+    "extracted_at": "2026-10-26T16:47:51+08:00"
+  }
+}

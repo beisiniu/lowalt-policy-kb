@@ -1,0 +1,16 @@
+{
+  "policy_name": "关于推动低空保险高质量发展的实施意见",
+  "issue_date": "2026-02-12",
+  "effective_date": "2026-02-12",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "面向低空飞行活动，推动低空保险产品与服务体系建设，明确保险保障与合规要求，未设具体审批门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_发布丨国家发展改革委 金融监管总局 中国民航局关于推动低空保险高质量发展的实施意见.txt",
+    "char_count": 17478,
+    "extracted_at": "2026-10-27T03:14:12+08:00"
+  }
+}

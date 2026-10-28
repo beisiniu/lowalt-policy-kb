@@ -1,0 +1,15 @@
+{
+  "policy_name": "关于发布民用无人驾驶航空器飞行动态数据报送要求的公告",
+  "issue_date": "2024-12-31",
+  "effective_date": "2024-12-31",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "轻型及以上无人机运行人飞行须向UOM联网报送飞行动态且不得关闭，制造方须保证轻型小型机具备报送能力，接口按MH/T 4053执行。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-12-31_关于发布民用无人驾驶航空器飞行动态数据报送要求的公告.txt",
+    "char_count": 906,
+    "extracted_at": "2026-10-26T17:36:59+08:00"
+  }
+}

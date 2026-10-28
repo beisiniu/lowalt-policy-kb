@@ -1,0 +1,23 @@
+{
+  "policy_name": "加快推进低空制造产业高质量发展行动方案",
+  "issue_date": "2024-12-23",
+  "effective_date": "2025-01-01",
+  "expiry_date": "无",
+  "apply_region": "江苏省",
+  "status": "现行有效",
+  "summary": "江苏省工信厅面向低空制造企业，实施期为2025至2027年，无审批备案要求，以研发创新、适航取证、企业培育等支持措施为主。",
+  "_engine": "llm:deepseek-flash",
+  "_audit": [
+    {
+      "field": "expiry_date",
+      "old": "2027-12-31",
+      "new": "无",
+      "reason": "原文没有明确有效期或失效日期；规划期/目标年份不等于失效期"
+    }
+  ],
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-01-07_省工业和信息化厅关于印发加快推进低空制造产业高质量发展行动方案的通知.txt",
+    "char_count": 5276,
+    "extracted_at": "2026-10-26T16:47:45+08:00"
+  }
+}

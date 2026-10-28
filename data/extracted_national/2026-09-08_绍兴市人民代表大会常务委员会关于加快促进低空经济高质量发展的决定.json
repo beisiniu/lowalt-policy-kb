@@ -1,0 +1,15 @@
+{
+  "policy_name": "绍兴市人民代表大会常务委员会关于加快促进低空经济高质量发展的决定",
+  "issue_date": "2026-09-08",
+  "effective_date": "2026-09-08",
+  "expiry_date": "无",
+  "apply_region": "绍兴市",
+  "status": "现行有效",
+  "summary": "该决定为宏观指导性文件，未设定具体审批门槛或备案流程，主要确立规划引领、产业扶持及安全管理原则。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-09-08_绍兴市人民代表大会常务委员会关于加快促进低空经济高质量发展的决定.txt",
+    "char_count": 2042,
+    "extracted_at": "2026-10-27T02:50:40+08:00"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_comment": "广东省人民政府「广东部署低空经济高质量发展」专题 · 政策文件栏目。省级+地市低空政策，2026-10 实测静态可解析。",
+  "source": {
+    "name": "广东省人民政府-低空经济政策文件",
+    "list_url": "https://www.gd.gov.cn/gdywdt/zwzt/dkjj/zcwj/",
+    "base_url": "https://www.gd.gov.cn/gdywdt/zwzt/dkjj/zcwj/",
+    "charset": ""
+  },
+  "list_selectors": {
+    "item": [
+      "div.viewList ul li"
+    ],
+    "title": [
+      "span.til a",
+      "a"
+    ],
+    "link": [
+      "a"
+    ],
+    "date": [
+      "span.time"
+    ]
+  },
+  "detail_selectors": {
+    "title": [
+      "h1",
+      "div.zw h1"
+    ],
+    "publish_date": [
+      "div.zw-info span.time"
+    ],
+    "content": [
+      "div.zw",
+      "div.viewList div.zw"
+    ]
+  },
+  "crawl": {
+    "timeout": 20,
+    "retries": 3,
+    "retry_backoff": 2.0,
+    "delay_seconds": 1.5,
+    "max_items_per_run": 20,
+    "check_content_update": true,
+    "verify_ssl": false
+  },
+  "storage": {
+    "history_file": "data/gd_history.json",
+    "policy_dir": "data/gd_policies",
+    "log_dir": "data/gd_logs"
+  },
+  "politeness": {
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    ]
+  },
+  "filter": {
+    "include_any": [
+      "低空",
+      "无人机",
+      "无人驾驶航空器",
+      "eVTOL",
+      "飞行汽车",
+      "通用航空",
+      "空域管理",
+      "民用航空器"
+    ]
+  }
+}

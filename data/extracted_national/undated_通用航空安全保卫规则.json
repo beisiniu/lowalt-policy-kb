@@ -1,0 +1,15 @@
+{
+  "policy_name": "通用航空安全保卫规则",
+  "issue_date": "无",
+  "effective_date": "2022-07-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "境内通用航空运营人（不含无人机）须制定安保方案、设安保机构或负责人，经营性运营人另需背景调查、乘机人身份核验与安检，违规最高罚3万元。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\undated_通用航空安全保卫规则.txt",
+    "char_count": 4799,
+    "extracted_at": "2026-10-26T17:37:11+08:00"
+  }
+}

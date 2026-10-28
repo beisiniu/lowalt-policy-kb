@@ -1,0 +1,15 @@
+{
+  "policy_name": "云南省支持低空经济健康发展的若干措施",
+  "issue_date": "2025-08-03",
+  "effective_date": "2025-08-03",
+  "expiry_date": "2028-12-31",
+  "apply_region": "云南省",
+  "status": "现行有效",
+  "summary": "云南省支持低空经济健康发展，涉及低空飞行活动需按规定审批或备案，具体门槛以措施条款为准。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_云南省人民政府办公厅关于印发《云南省支持低空经济健康发展的若干措施》的通知(2025-08-03印发,有效期至2028-12-31).txt",
+    "char_count": 20589,
+    "extracted_at": "2026-10-27T16:06:38+08:00"
+  }
+}

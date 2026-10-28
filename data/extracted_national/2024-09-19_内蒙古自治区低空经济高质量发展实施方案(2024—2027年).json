@@ -1,0 +1,16 @@
+{
+  "policy_name": "内蒙古自治区低空经济高质量发展实施方案（2024—2027年）",
+  "issue_date": "2024-09-19",
+  "effective_date": "2024-09-19",
+  "expiry_date": "无",
+  "apply_region": "内蒙古自治区",
+  "status": "现行有效",
+  "summary": "自治区各盟市推进低空经济，需建通用机场、起降场及飞行服务与监管平台，实现飞行服务一站办理、一网通管，无明确审批门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-19_内蒙古自治区低空经济高质量发展实施方案(2024—2027年).txt",
+    "char_count": 5605,
+    "extracted_at": "2026-10-26T16:47:40+08:00"
+  }
+}

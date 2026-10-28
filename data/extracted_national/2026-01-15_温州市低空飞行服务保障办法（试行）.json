@@ -1,0 +1,15 @@
+{
+  "policy_name": "温州市低空飞行服务保障办法（试行）",
+  "issue_date": "2026-01-15",
+  "effective_date": "2026-02-14",
+  "expiry_date": "2027-12-31",
+  "apply_region": "温州市",
+  "status": "现行有效",
+  "summary": "温州市内低空飞行需通过市级平台申报，起飞前1小时报告并经空管确认；经营性或大中型无人机非经营性飞行须投保责任险。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-01-15_温州市低空飞行服务保障办法（试行）.txt",
+    "char_count": 5175,
+    "extracted_at": "2026-10-26T23:42:23+08:00"
+  }
+}

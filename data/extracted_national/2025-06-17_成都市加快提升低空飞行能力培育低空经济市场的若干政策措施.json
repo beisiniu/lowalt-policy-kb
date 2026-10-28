@@ -1,0 +1,15 @@
+{
+  "policy_name": "成都市加快提升低空飞行能力培育低空经济市场的若干政策措施",
+  "issue_date": "2025-06-17",
+  "effective_date": "2025-07-17",
+  "expiry_date": "2028-07-16",
+  "apply_region": "成都市",
+  "status": "现行有效",
+  "summary": "支持低空基建、载人物流运营及适航取证，对取得航线审批或民航局TC/AC/PC证书的企业给予资金补贴，需符合公共服务或特定销售额门槛。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-06-17_成都市加快提升低空飞行能力培育低空经济市场的若干政策措施.txt",
+    "char_count": 3649,
+    "extracted_at": "2026-10-27T00:40:22+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "贵州省低空经济高质量发展三年行动方案（2025—2027年）",
+  "issue_date": "2025-08-06",
+  "effective_date": "2025-08-06",
+  "expiry_date": "无",
+  "apply_region": "贵州省",
+  "status": "现行有效",
+  "summary": "构建省级低空智能网联平台，实施飞行准入与监管标准，推进空域划设及航线审批报备，培育整机制造、物流及应急等应用场景。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-08-06_贵州省低空经济高质量发展三年行动方案（2025—2027年）.txt",
+    "char_count": 5443,
+    "extracted_at": "2026-10-26T22:54:14+08:00"
+  }
+}

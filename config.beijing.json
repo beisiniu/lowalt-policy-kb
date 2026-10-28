@@ -1,0 +1,69 @@
+{
+  "_comment": "真实站点示例：北京市人民政府「政策文件」栏目（静态 HTML，可直接解析，2026-10 实测可用）。",
+  "source": {
+    "name": "北京市人民政府-政策文件",
+    "list_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/",
+    "base_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/",
+    "charset": ""
+  },
+  "list_selectors": {
+    "item": [
+      "ul.default_news li"
+    ],
+    "title": [
+      "a"
+    ],
+    "link": [
+      "a"
+    ],
+    "date": [
+      "span"
+    ]
+  },
+  "detail_selectors": {
+    "title": [
+      "h1",
+      "div.doc-title"
+    ],
+    "publish_date": [
+      "ol.doc-info span"
+    ],
+    "content": [
+      "div.view.TRS_UEDITOR",
+      "div.TRS_UEDITOR",
+      "div.view"
+    ]
+  },
+  "crawl": {
+    "timeout": 20,
+    "retries": 3,
+    "retry_backoff": 2.0,
+    "delay_seconds": 1.5,
+    "max_items_per_run": 5,
+    "check_content_update": true,
+    "verify_ssl": false
+  },
+  "storage": {
+    "history_file": "data/beijing_history.json",
+    "policy_dir": "data/beijing_policies",
+    "log_dir": "data/beijing_logs"
+  },
+  "politeness": {
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+    ]
+  },
+  "filter": {
+    "include_any": [
+      "低空",
+      "无人机",
+      "无人驾驶航空器",
+      "eVTOL",
+      "飞行汽车",
+      "通用航空",
+      "空域管理",
+      "民用航空器"
+    ]
+  }
+}

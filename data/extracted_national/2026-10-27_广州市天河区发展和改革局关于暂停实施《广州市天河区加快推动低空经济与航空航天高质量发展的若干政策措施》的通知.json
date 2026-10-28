@@ -1,0 +1,16 @@
+{
+  "policy_name": "广州市天河区发展和改革局关于暂停实施《广州市天河区加快推动低空经济与航空航天高质量发展的若干政策措施》的通知(穗天发改规字〔2025〕3号暂停实施)",
+  "issue_date": "2026-09-23",
+  "effective_date": "2026-09-23",
+  "expiry_date": "无",
+  "apply_region": "广州市天河区",
+  "status": "已废止",
+  "summary": "天河区暂停实施低空经济与航空航天产业扶持措施，相关企业暂不能按原政策申请奖励或补贴。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_广州市天河区发展和改革局关于暂停实施《广州市天河区加快推动低空经济与航空航天高质量发展的若干政策措施》的通知.txt",
+    "char_count": 1063,
+    "extracted_at": "2026-10-27T22:47:22+08:00"
+  }
+}

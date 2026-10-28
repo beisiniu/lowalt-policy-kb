@@ -1,0 +1,16 @@
+{
+  "policy_name": "黑龙江省加快推动低空经济发展实施方案（2024—2027年）",
+  "issue_date": "2024-09-30",
+  "effective_date": "2024-09-30",
+  "expiry_date": "无",
+  "apply_region": "黑龙江省",
+  "status": "现行有效",
+  "summary": "黑龙江省各市地及中省直单位推进低空经济发展，方案为规划性文件，未设具体审批备案门槛与时限。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-30_关于印发《黑龙江省加快推动低空经济发展实施方案(2024—2027年)》的通知.txt",
+    "char_count": 754,
+    "extracted_at": "2026-10-26T16:47:43+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "合肥市支持低空经济发展若干政策实施细则",
+  "issue_date": "2024-11-27",
+  "effective_date": "2024-11-27",
+  "expiry_date": "2025-11-26",
+  "apply_region": "合肥市",
+  "status": "已废止",
+  "summary": "合肥市注册企业申报低空经济奖补须经平台申报、部门初审、联合审核、公示及政府审批；适航取证奖补免申即享，试飞场地按场次补贴。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-01-10_关于印发《合肥市支持低空经济发展若干政策实施细则》的通知(2024年版,有效期1年).txt",
+    "char_count": 1906,
+    "extracted_at": "2026-10-27T03:22:01+08:00"
+  }
+}

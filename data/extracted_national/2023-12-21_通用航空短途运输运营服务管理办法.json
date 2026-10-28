@@ -1,0 +1,15 @@
+{
+  "policy_name": "通用航空短途运输运营服务管理办法",
+  "issue_date": "2023-12-21",
+  "effective_date": "2024-05-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "规范30座以下通航短途运输，需取得经营许可及运行种类，航线航班实行备案管理，明确旅客服务、锂电池携带限制及应急处置要求。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-12-21_通用航空短途运输运营服务管理办法.txt",
+    "char_count": 7620,
+    "extracted_at": "2026-10-26T20:46:22+08:00"
+  }
+}

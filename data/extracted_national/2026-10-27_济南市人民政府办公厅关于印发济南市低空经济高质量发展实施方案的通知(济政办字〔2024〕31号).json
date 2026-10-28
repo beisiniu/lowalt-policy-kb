@@ -1,0 +1,15 @@
+{
+  "policy_name": "济南市低空经济高质量发展实施方案",
+  "issue_date": "2024-10-25",
+  "effective_date": "2024-10-25",
+  "expiry_date": "无",
+  "apply_region": "济南市",
+  "status": "现行有效",
+  "summary": "济南市建设低空飞行服务站及管理平台，实现飞行计划一窗口申请、一站式审批，2027年前建成300处起降设施、开通100条以上低空航线。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_济南市人民政府办公厅关于印发济南市低空经济高质量发展实施方案的通知(济政办字〔2024〕31号).txt",
+    "char_count": 6262,
+    "extracted_at": "2026-10-27T22:47:32+08:00"
+  }
+}

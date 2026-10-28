@@ -1,0 +1,15 @@
+{
+  "policy_name": "惠州市推动低空经济高质量发展行动方案（2024-2026年）",
+  "issue_date": "2024-07-19",
+  "effective_date": "2024-07-19",
+  "expiry_date": "无",
+  "apply_region": "惠州市",
+  "status": "现行有效",
+  "summary": "惠州市各部门推进低空制造、起降设施与智联网建设，企业开展无人机物流、观光等应用需接入市低空管理服务平台申请飞行审核。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2024-07-19_惠州市人民政府办公室关于印发惠州市推动低空经济高质量发展行动方案（2024-2026年）的通知.txt",
+    "char_count": 5999,
+    "extracted_at": "2026-10-26T03:23:32+08:00"
+  }
+}

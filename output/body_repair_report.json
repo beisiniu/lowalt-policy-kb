@@ -1,0 +1,375 @@
+{
+ "generated_at": "2026-10-27T22:50:40",
+ "dry_run": false,
+ "fixed": 11,
+ "pending": [
+  "福建省低空旅游产业发展规划纲要（2021-2035年）",
+  "河南省通用航空产业中长期发展规划（2022-2035年）"
+ ],
+ "items": [
+  {
+   "policy_name": "福建省低空旅游产业发展规划纲要（2021-2035年）",
+   "region": "福建省",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 344,
+    "cjk": 201,
+    "cjk_ratio": 0.584,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "raw",
+   "after": {
+    "chars": 344,
+    "cjk": 201,
+    "cjk_ratio": 0.584,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": false
+   },
+   "action": "pending_refetch"
+  },
+  {
+   "policy_name": "河南省通用航空产业中长期发展规划（2022-2035年）",
+   "region": "河南省",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 430,
+    "cjk": 242,
+    "cjk_ratio": 0.563,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "raw",
+   "after": {
+    "chars": 430,
+    "cjk": 242,
+    "cjk_ratio": 0.563,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": false
+   },
+   "action": "pending_refetch"
+  },
+  {
+   "policy_name": "广州市低空垂直起降设施场址选择及建设技术指引（试行）",
+   "region": "广州市",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 48750,
+    "cjk": 27675,
+    "cjk_ratio": 0.568,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "raw",
+   "after": {
+    "chars": 48750,
+    "cjk": 27675,
+    "cjk_ratio": 0.568,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "昆明市人民政府关于公布微型、轻型、小型无人驾驶航空器适飞空域范围的通告",
+   "region": "昆明市",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 6702,
+    "cjk": 2195,
+    "cjk_ratio": 0.328,
+    "js_kw": 1,
+    "js_per_10k": 1,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 2966,
+    "cjk": 2195,
+    "cjk_ratio": 0.74,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "中山市低空经济高质量发展行动方案（2024-2027年）",
+   "region": "中山市",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 9647,
+    "cjk": 5221,
+    "cjk_ratio": 0.541,
+    "js_kw": 22,
+    "js_per_10k": 23,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 6300,
+    "cjk": 5165,
+    "cjk_ratio": 0.82,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "云南省支持低空经济健康发展的若干措施",
+   "region": "云南省",
+   "chunks_before": 0,
+   "verdict_before": "reject",
+   "before": {
+    "chars": 20236,
+    "cjk": 4700,
+    "cjk_ratio": 0.232,
+    "js_kw": 96,
+    "js_per_10k": 47,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比过低，正文实质为源码"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 5742,
+    "cjk": 4407,
+    "cjk_ratio": 0.768,
+    "js_kw": 1,
+    "js_per_10k": 2,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "佛山市推动低空经济高质量发展实施方案（2024—2026年）",
+   "region": "佛山市",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 8835,
+    "cjk": 4448,
+    "cjk_ratio": 0.503,
+    "js_kw": 29,
+    "js_per_10k": 33,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 5393,
+    "cjk": 4412,
+    "cjk_ratio": 0.818,
+    "js_kw": 1,
+    "js_per_10k": 2,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "关于推动低空保险高质量发展的实施意见",
+   "region": "全国",
+   "chunks_before": 0,
+   "verdict_before": "reject",
+   "before": {
+    "chars": 17152,
+    "cjk": 3788,
+    "cjk_ratio": 0.221,
+    "js_kw": 56,
+    "js_per_10k": 33,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比过低，正文实质为源码"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 4611,
+    "cjk": 3655,
+    "cjk_ratio": 0.793,
+    "js_kw": 7,
+    "js_per_10k": 15,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "天津港保税区推进低空经济高质量发展行动方案",
+   "region": "天津港保税区",
+   "chunks_before": 0,
+   "verdict_before": "reject",
+   "before": {
+    "chars": 27035,
+    "cjk": 3531,
+    "cjk_ratio": 0.131,
+    "js_kw": 38,
+    "js_per_10k": 14,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比过低，正文实质为源码"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 4609,
+    "cjk": 3516,
+    "cjk_ratio": 0.763,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "广东省支持低空经济高质量发展若干措施",
+   "region": "广东省",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 8088,
+    "cjk": 4042,
+    "cjk_ratio": 0.5,
+    "js_kw": 26,
+    "js_per_10k": 32,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 4898,
+    "cjk": 4021,
+    "cjk_ratio": 0.821,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施",
+   "region": "广州市黄埔区",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 20804,
+    "cjk": 6336,
+    "cjk_ratio": 0.305,
+    "js_kw": 105,
+    "js_per_10k": 50,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 7241,
+    "cjk": 6129,
+    "cjk_ratio": 0.846,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）",
+   "region": "深圳市龙岗区",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 10385,
+    "cjk": 3117,
+    "cjk_ratio": 0.3,
+    "js_kw": 60,
+    "js_per_10k": 58,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "strip_html",
+   "after": {
+    "chars": 3729,
+    "cjk": 2989,
+    "cjk_ratio": 0.802,
+    "js_kw": 0,
+    "js_per_10k": 0,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  },
+  {
+   "policy_name": "通用航空装备创新应用实施方案（2024—2030年）",
+   "region": "全国",
+   "chunks_before": 0,
+   "verdict_before": "suspect",
+   "before": {
+    "chars": 9270,
+    "cjk": 5346,
+    "cjk_ratio": 0.577,
+    "js_kw": 8,
+    "js_per_10k": 9,
+    "tags": 0,
+    "pdf_cid": 0,
+    "reason": "汉字占比偏低或 JS 关键词密集"
+   },
+   "chosen": "raw",
+   "after": {
+    "chars": 9270,
+    "cjk": 5346,
+    "cjk_ratio": 0.577,
+    "js_kw": 8,
+    "js_per_10k": 9,
+    "tags": 0,
+    "pdf_cid": 0,
+    "ok": true
+   },
+   "action": "repair"
+  }
+ ]
+}

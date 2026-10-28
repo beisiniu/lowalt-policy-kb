@@ -1,0 +1,15 @@
+{
+  "policy_name": "江苏省航空航天产业发展三年行动计划（2023—2025年）",
+  "issue_date": "无",
+  "effective_date": "无",
+  "expiry_date": "2025-12-31",
+  "apply_region": "江苏省",
+  "status": "已废止",
+  "summary": "江苏省航空航天企业开展技术攻关、平台建设、智能化改造等可获省级专项资金补助，需符合条件并纳入重点企业白名单，未特别注明时限的政策有效期至2025年底。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\undated_江苏省航空航天产业发展三年行动计划(2023—2025年).txt",
+    "char_count": 5767,
+    "extracted_at": "2026-10-26T17:00:07+08:00"
+  }
+}

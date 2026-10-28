@@ -1,0 +1,36 @@
+{
+  "_comment": "本地演示站配置：由 tests/verify_phase1.py 启动 http.server 后使用，不需要联网。",
+  "source": {
+    "name": "低空经济政策专栏（本地演示站）",
+    "list_url": "http://127.0.0.1:8765/list.html",
+    "base_url": "http://127.0.0.1:8765/",
+    "charset": "utf-8"
+  },
+  "list_selectors": {
+    "item": ["div.list ul li"],
+    "title": ["a"],
+    "link": ["a"],
+    "date": ["span.date"]
+  },
+  "detail_selectors": {
+    "title": ["h1"],
+    "publish_date": ["div.info span.date"],
+    "content": ["div.article-content"]
+  },
+  "crawl": {
+    "timeout": 10,
+    "retries": 2,
+    "retry_backoff": 1.0,
+    "delay_seconds": 0.05,
+    "max_items_per_run": 50,
+    "check_content_update": true
+  },
+  "storage": {
+    "history_file": "data/crawled_history.json",
+    "policy_dir": "data/policies",
+    "log_dir": "data/logs"
+  },
+  "politeness": {
+    "user_agents": ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) LowAltDemo/1.0"]
+  }
+}

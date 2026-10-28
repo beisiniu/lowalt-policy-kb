@@ -1,0 +1,16 @@
+{
+  "policy_name": "朝阳市通用航空产业发展规划（2021-2030年）",
+  "issue_date": "2021-04-30",
+  "effective_date": "2021-04-30",
+  "expiry_date": "无",
+  "apply_region": "朝阳市",
+  "status": "现行有效",
+  "summary": "朝阳市发改委编制通航产业规划，覆盖机场建设、飞行培训、维修制造等，属指导性规划，未设具体审批门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2021-04-30_朝阳市通用航空产业发展规划 (2021-2030年).txt",
+    "char_count": 13260,
+    "extracted_at": "2026-10-26T17:36:51+08:00"
+  }
+}

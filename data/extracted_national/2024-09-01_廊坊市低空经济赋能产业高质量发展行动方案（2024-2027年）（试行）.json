@@ -1,0 +1,15 @@
+{
+  "policy_name": "廊坊市低空经济赋能产业高质量发展行动方案（2024-2027年）（试行）",
+  "issue_date": "2024-12-16",
+  "effective_date": "2024-12-16",
+  "expiry_date": "无",
+  "apply_region": "廊坊市",
+  "status": "现行有效",
+  "summary": "规划廊坊低空基建与场景，依托国家UOM平台监管飞行，需建立军地民协同机制及地方标准，未设具体审批门槛。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-01_廊坊市低空经济赋能产业高质量发展行动方案（2024-2027年）（试行）.txt",
+    "char_count": 4537,
+    "extracted_at": "2026-10-26T22:54:26+08:00"
+  }
+}

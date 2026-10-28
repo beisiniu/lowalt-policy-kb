@@ -1,0 +1,15 @@
+{
+  "policy_name": "青岛市促进低空经济高质量发展实施方案",
+  "issue_date": "2024-10-08",
+  "effective_date": "2024-10-08",
+  "expiry_date": "无",
+  "apply_region": "青岛市",
+  "status": "现行有效",
+  "summary": "该方案为产业规划，未设定具体审批门槛；要求通过市级平台实现飞行计划申报与空域申请“一窗口”办理，推动无人机物流及eVTOL商业化运行。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-10-08_青岛市促进低空经济高质量发展实施方案.txt",
+    "char_count": 6488,
+    "extracted_at": "2026-10-26T22:56:56+08:00"
+  }
+}

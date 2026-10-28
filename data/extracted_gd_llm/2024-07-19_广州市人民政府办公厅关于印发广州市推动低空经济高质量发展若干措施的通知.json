@@ -1,0 +1,15 @@
+{
+  "policy_name": "广州市推动低空经济高质量发展若干措施",
+  "issue_date": "2024-07-03",
+  "effective_date": "2024-07-03",
+  "expiry_date": "2026-12-31",
+  "apply_region": "广州市",
+  "status": "现行有效",
+  "summary": "广州市低空经济企业开展整机研发制造、适航取证及载人载货航线运营，需取得主管部门审批，大型无人机按重量分档资助。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2024-07-19_广州市人民政府办公厅关于印发广州市推动低空经济高质量发展若干措施的通知.txt",
+    "char_count": 4218,
+    "extracted_at": "2026-10-26T03:23:31+08:00"
+  }
+}

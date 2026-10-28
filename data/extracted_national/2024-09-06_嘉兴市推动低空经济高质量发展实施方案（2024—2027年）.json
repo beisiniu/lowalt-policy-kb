@@ -1,0 +1,15 @@
+{
+  "policy_name": "嘉兴市推动低空经济高质量发展实施方案（2024—2027年）",
+  "issue_date": "2024-09-06",
+  "effective_date": "2024-09-06",
+  "expiry_date": "无",
+  "apply_region": "嘉兴市",
+  "status": "现行有效",
+  "summary": "该方案为产业促进规划，未设定具体审批门槛；要求依托统一平台实现低空飞行审批与监管，重点推进基础设施网、航路航线网及飞行服务网建设。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-06_嘉兴市推动低空经济高质量发展实施方案（2024—2027年）.txt",
+    "char_count": 4699,
+    "extracted_at": "2026-10-26T23:03:19+08:00"
+  }
+}

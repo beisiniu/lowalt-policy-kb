@@ -1,0 +1,15 @@
+{
+  "policy_name": "关于加强武汉市民用无人驾驶航空器安全管理的通告",
+  "issue_date": "2021-04-29",
+  "effective_date": "2021-04-29",
+  "expiry_date": "2023-04-28",
+  "apply_region": "武汉市",
+  "status": "已废止",
+  "summary": "武汉市单位和个人飞行民用无人机须实名登记并向公安机关报备，飞行前须取得资质、向军民航空管部门申请空域和飞行计划，未经批准严禁飞行。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_关于加强武汉市民用无人驾驶航空器安全管理的通告(2021-05-10发布,有效期2年已届满失效).txt",
+    "char_count": 5192,
+    "extracted_at": "2026-10-27T22:47:06+08:00"
+  }
+}

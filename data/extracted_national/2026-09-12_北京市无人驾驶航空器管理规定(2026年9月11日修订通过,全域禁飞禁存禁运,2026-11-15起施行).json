@@ -1,0 +1,15 @@
+{
+  "policy_name": "北京市无人驾驶航空器管理规定",
+  "issue_date": "2026-09-11",
+  "effective_date": "2026-11-15",
+  "expiry_date": "无",
+  "apply_region": "北京市",
+  "status": "现行有效",
+  "summary": "北京市全域禁飞、禁存、禁运无人机及核心部件，仅反恐救灾、教学研发、农林生产等经市公安安全评估并清单化管理后可特殊保障。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-09-12_北京市无人驾驶航空器管理规定(2026年9月11日修订通过,全域禁飞禁存禁运,2026-11-15起施行).txt",
+    "char_count": 1867,
+    "extracted_at": "2026-10-27T22:46:46+08:00"
+  }
+}

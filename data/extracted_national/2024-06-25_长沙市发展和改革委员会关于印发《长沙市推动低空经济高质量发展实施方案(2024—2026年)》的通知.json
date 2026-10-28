@@ -1,0 +1,23 @@
+{
+  "policy_name": "长沙市推动低空经济高质量发展实施方案（2024—2026年）",
+  "issue_date": "2024-06-25",
+  "effective_date": "2024-06-25",
+  "expiry_date": "无",
+  "apply_region": "长沙市",
+  "status": "现行有效",
+  "summary": "长沙市各部门推进低空经济，无人机实名登记、飞行空域申请和飞行计划报备须经便民渠道办理，真高300米以下试飞区需接入运行平台。",
+  "_engine": "llm:deepseek-flash",
+  "_audit": [
+    {
+      "field": "expiry_date",
+      "old": "2026-12-31",
+      "new": "无",
+      "reason": "原文没有明确有效期或失效日期；规划期/目标年份不等于失效期"
+    }
+  ],
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-06-25_长沙市发展和改革委员会关于印发《长沙市推动低空经济高质量发展实施方案(2024—2026年)》的通知.txt",
+    "char_count": 6890,
+    "extracted_at": "2026-10-27T22:46:19+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "民用无人驾驶航空器运行安全管理规则",
+  "issue_date": "2024-01-01",
+  "effective_date": "2024-01-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "在中国境内运行民用无人机须按开放类、特定类、审定类分级管理；微型、轻型免执照，小型及以上须持操控员执照，特定类须运行前制定风险缓解措施。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-01-01_民用无人驾驶航空器运行安全管理规则.txt",
+    "char_count": 45282,
+    "extracted_at": "2026-10-26T16:47:15+08:00"
+  }
+}

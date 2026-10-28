@@ -1,0 +1,15 @@
+{
+  "policy_name": "无锡市低空经济高质量发展三年行动方案（2024—2026年）",
+  "issue_date": "2024-04-17",
+  "effective_date": "2024-04-17",
+  "expiry_date": "2026-12-31",
+  "apply_region": "无锡市",
+  "status": "现行有效",
+  "summary": "无锡市推进低空经济产业布局与场景应用，企业需申报试验区、试飞基地及适航取证，并遵守无人机管理办法与空域划设要求。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-04-17_无锡市政府办公室关于印发无锡市低空经济高质量发展三年行动方案(2024—2026年)的通知.txt",
+    "char_count": 8881,
+    "extracted_at": "2026-10-26T17:36:56+08:00"
+  }
+}

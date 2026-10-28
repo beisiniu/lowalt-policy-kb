@@ -1,0 +1,15 @@
+{
+  "policy_name": "云南省支持低空经济健康发展的若干措施",
+  "issue_date": "2025-08-14",
+  "effective_date": "2025-08-14",
+  "expiry_date": "2028-12-31",
+  "apply_region": "云南省",
+  "status": "现行有效",
+  "summary": "云南省对低空飞行运营机构实行资质与执业管理，要求低空智能网联系统关联一机一码、电子围栏、禁飞区数据，飞行一站办理、一键申报、随报随批。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-08-14_云南省人民政府办公厅关于印发《云南省支持低空经济 健康发展的若干措施》的通知.txt",
+    "char_count": 4034,
+    "extracted_at": "2026-10-27T22:51:08+08:00"
+  }
+}

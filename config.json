@@ -1,0 +1,68 @@
+{
+  "_comment": "示例配置：民航局信息公开栏目已改为前端渲染（静态 HTML 里没有条目），本文件仅作字段说明。可直接运行的真实示例见 config.beijing.json，换站点前先用 tools/inspect_site.py 探测选择器。",
+  "source": {
+    "name": "中国民用航空局-政策法规",
+    "list_url": "https://www.caac.gov.cn/XXGK/XXGK/ZCFG/",
+    "base_url": "https://www.caac.gov.cn",
+    "charset": ""
+  },
+  "list_selectors": {
+    "item": [
+      "div.list ul li",
+      "ul.list li",
+      "table.list tr",
+      "div.news-list li"
+    ],
+    "title": [
+      "a"
+    ],
+    "link": [
+      "a"
+    ],
+    "date": [
+      "span.date",
+      "span.time",
+      "td.date",
+      "em"
+    ]
+  },
+  "detail_selectors": {
+    "title": [
+      "h1",
+      "div.title h1",
+      "div.article-title"
+    ],
+    "publish_date": [
+      "div.info span.date",
+      "div.article-info",
+      "span.pubtime",
+      "div.source"
+    ],
+    "content": [
+      "div.article-content",
+      "div.TRS_Editor",
+      "div.content",
+      "article"
+    ]
+  },
+  "crawl": {
+    "timeout": 15,
+    "retries": 3,
+    "retry_backoff": 2.0,
+    "delay_seconds": 1.2,
+    "max_items_per_run": 50,
+    "check_content_update": true
+  },
+  "storage": {
+    "history_file": "data/crawled_history.json",
+    "policy_dir": "data/policies",
+    "log_dir": "data/logs"
+  },
+  "politeness": {
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0"
+    ]
+  }
+}

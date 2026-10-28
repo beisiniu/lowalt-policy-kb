@@ -1,0 +1,15 @@
+{
+  "policy_name": "绍兴市人民政府关于推进低空经济高质量发展的实施意见",
+  "issue_date": "2024-08-14",
+  "effective_date": "2024-08-14",
+  "expiry_date": "无",
+  "apply_region": "绍兴市",
+  "status": "现行有效",
+  "summary": "规范绍兴市低空飞行活动，要求建立军地民协同管理机制，落实无人机全生命周期监管及适航审定，强化公共安全管理与应急处置。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-14_绍兴市人民政府关于推进低空经济高质量发展的实施意见.txt",
+    "char_count": 24277,
+    "extracted_at": "2026-10-27T02:50:38+08:00"
+  }
+}

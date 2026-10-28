@@ -1,0 +1,15 @@
+{
+  "policy_name": "南山区促进低空经济发展专项扶持措施",
+  "issue_date": "2024-04-08",
+  "effective_date": "2024-04-08",
+  "expiry_date": "2027-04-07",
+  "apply_region": "深圳市南山区",
+  "status": "现行有效",
+  "summary": "低空经济企业需经主管部门备案认定，涉及航线运营、基础设施建设及适航认证等场景，依据规模、架次或投资额申请资金补贴。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-04-08_南山区促进低空经济发展专项扶持措施.txt",
+    "char_count": 7396,
+    "extracted_at": "2026-10-26T22:10:20+08:00"
+  }
+}

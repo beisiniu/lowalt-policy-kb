@@ -1,0 +1,15 @@
+{
+  "policy_name": "郑州市加快培育低空经济产业创新发展行动方案（2024—2026年）",
+  "issue_date": "2024-07-26",
+  "effective_date": "2024-07-26",
+  "expiry_date": "无",
+  "apply_region": "郑州市",
+  "status": "现行有效",
+  "summary": "郑州市低空经济企业开展无人机物流、观光等场景需配合空域协同与航线审批，2026年建成通用机场3个、起降点50个以上。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-07-26_郑州市人民政府办公室关于印发郑州市加快培育低空经济产业创新发展行动方案(2024—2026年)的通知.txt",
+    "char_count": 5757,
+    "extracted_at": "2026-10-27T14:01:48+08:00"
+  }
+}

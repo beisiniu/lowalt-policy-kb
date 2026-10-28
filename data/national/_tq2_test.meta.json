@@ -1,0 +1,26 @@
+{
+  "built_at": "2026-10-27T23:33:58+0800",
+  "as_of": "2026-10-27",
+  "pairs_used": 4,
+  "items": 2,
+  "by_region": {
+    "无锡市": 1,
+    "张家界市": 1
+  },
+  "by_type": {
+    "repeal_recognition": 2
+  },
+  "rejected": 0,
+  "pair_stats": {
+    "clauses_total": 3173,
+    "old_clauses": 422,
+    "current_clauses": 2738,
+    "candidate_pairs": 65,
+    "topics": 13,
+    "skipped": {
+      "no_new_counterpart": 63,
+      "same_text": 0,
+      "low_similarity": 523
+    }
+  }
+}

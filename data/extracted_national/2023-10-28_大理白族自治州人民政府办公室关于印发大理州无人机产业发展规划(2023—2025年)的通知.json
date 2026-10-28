@@ -1,0 +1,16 @@
+{
+  "policy_name": "大理州无人机产业发展规划（2023—2025年）",
+  "issue_date": "2023-10-28",
+  "effective_date": "2023-10-28",
+  "expiry_date": "2025-12-31",
+  "apply_region": "大理白族自治州",
+  "status": "已失效",
+  "summary": "大理州政府发布无人机产业发展规划，明确空间布局、基础设施、场景应用等任务，未设具体审批或备案门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-10-28_大理白族自治州人民政府办公室关于印发大理州无人机产业发展规划(2023—2025年)的通知.txt",
+    "char_count": 1041,
+    "extracted_at": "2026-10-26T17:36:54+08:00"
+  }
+}

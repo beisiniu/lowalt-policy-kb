@@ -1,0 +1,23 @@
+{
+  "policy_name": "犍为县支持低空经济产业高质量发展若干措施(试行)",
+  "issue_date": "2026-08-07",
+  "effective_date": "2026-08-07",
+  "expiry_date": "无",
+  "apply_region": "犍为县",
+  "status": "已废止",
+  "summary": "犍为县废止原低空经济产业支持措施，自2026-08-07起停止执行，相关企业不再适用该扶持政策。",
+  "_engine": "llm:deepseek-flash",
+  "_audit": [
+    {
+      "field": "expiry_date",
+      "old": "2026-08-07",
+      "new": "无",
+      "reason": "原文没有明确有效期或失效日期；规划期/目标年份不等于失效期"
+    }
+  ],
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-08-07_犍为县人民政府办公室关于废止《犍为县支持低空经济产业高质量发展若干措施(试行)》的通知.txt",
+    "char_count": 467,
+    "extracted_at": "2026-10-27T03:13:50+08:00"
+  }
+}

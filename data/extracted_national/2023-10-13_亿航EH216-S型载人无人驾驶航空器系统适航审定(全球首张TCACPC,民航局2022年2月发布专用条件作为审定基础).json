@@ -1,0 +1,15 @@
+{
+  "policy_name": "亿航EH216-S型载人无人驾驶航空器系统适航审定",
+  "issue_date": "2023-10-13",
+  "effective_date": "2023-10-13",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "亿航EH216-S载人无人驾驶航空器须经民航局型号合格审定，取得TC、AC、PC三证方可量产运营。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-10-13_亿航EH216-S型载人无人驾驶航空器系统适航审定(全球首张TCACPC,民航局2022年2月发布专用条件作为审定基础).txt",
+    "char_count": 1147,
+    "extracted_at": "2026-10-27T17:18:32+08:00"
+  }
+}

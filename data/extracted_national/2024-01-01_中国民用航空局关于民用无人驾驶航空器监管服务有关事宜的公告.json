@@ -1,0 +1,15 @@
+{
+  "policy_name": "中国民用航空局关于民用无人驾驶航空器监管服务有关事宜的公告",
+  "issue_date": "2023-12-31",
+  "effective_date": "2024-01-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "所有民用无人机所有人须在UOM平台实名登记；飞行活动一般需提前1日12时前申请，微型轻型小型在适飞空域飞行等情形免申请。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-01-01_中国民用航空局关于民用无人驾驶航空器监管服务有关事宜的公告.txt",
+    "char_count": 1724,
+    "extracted_at": "2026-10-26T17:36:55+08:00"
+  }
+}

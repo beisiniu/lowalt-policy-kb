@@ -1,0 +1,932 @@
+{
+ "rows": [
+  {
+   "id": "TQ-001",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "REFUSED",
+   "reason": "命中现行值 [(8.0, 'count'), (50.0, 'pct'), (200.0, 'count')]"
+  },
+  {
+   "id": "TQ-001",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "REFUSED",
+   "reason": "命中现行值 [(8.0, 'count'), (50.0, 'pct'), (200.0, 'count')]"
+  },
+  {
+   "id": "TQ-002",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "POISONED",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money')]"
+  },
+  {
+   "id": "TQ-002",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (6000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-003",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(50.0, 'pct'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-003",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(50.0, 'pct'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-004",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-004",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(20000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-005",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-005",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(20.0, 'money'), (50.0, 'pct'), (2000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-006",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(9.0, 'count'), (30.0, 'pct'), (40.0, 'pct')]"
+  },
+  {
+   "id": "TQ-006",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(9.0, 'count'), (30.0, 'pct'), (40.0, 'pct')]"
+  },
+  {
+   "id": "TQ-007",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-007",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-008",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(30000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-008",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-025",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "REFUSED",
+   "reason": "命中现行值 [(8.0, 'count'), (50.0, 'pct'), (200.0, 'count')]"
+  },
+  {
+   "id": "TQ-025",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "REFUSED",
+   "reason": "命中现行值 [(8.0, 'count'), (50.0, 'pct'), (200.0, 'count')]"
+  },
+  {
+   "id": "TQ-026",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-026",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-027",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(60.0, 'money'), (100.0, 'money'), (2026.0, 'year')]"
+  },
+  {
+   "id": "TQ-027",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(60.0, 'money'), (100.0, 'money'), (2026.0, 'year')]"
+  },
+  {
+   "id": "TQ-028",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "POISONED",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money')]"
+  },
+  {
+   "id": "TQ-028",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (6000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-029",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(50.0, 'pct'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-029",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(50.0, 'pct'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-030",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-030",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-031",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "POISONED",
+   "reason": "命中现行值 [(2026.0, 'year'), (200000.0, 'money'), (1000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-031",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-032",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-032",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-033",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-033",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(50.0, 'count')]"
+  },
+  {
+   "id": "TQ-034",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-034",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(20.0, 'money'), (50.0, 'pct'), (2000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-035",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "POISONED",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money')]"
+  },
+  {
+   "id": "TQ-035",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-036",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(300.0, 'money'), (1000.0, 'count'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-036",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-037",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-037",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-039",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-039",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-040",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-040",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-041",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(300.0, 'money'), (1000.0, 'count')]"
+  },
+  {
+   "id": "TQ-041",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-042",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(30000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-042",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-043",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (3000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-043",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (3000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-044",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-044",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(50.0, 'pct'), (3000000.0, 'money'), (6000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-045",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(10000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-045",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-048",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-048",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0001",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "REFUSED",
+   "reason": "命中现行值 [(8.0, 'count'), (50.0, 'pct'), (200.0, 'count')]"
+  },
+  {
+   "id": "TQ-0001",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "REFUSED",
+   "reason": "命中现行值 [(8.0, 'count'), (50.0, 'pct'), (200.0, 'count')]"
+  },
+  {
+   "id": "TQ-0002",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(5.0, 'count')]"
+  },
+  {
+   "id": "TQ-0002",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0003",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(60.0, 'money'), (100.0, 'money'), (2026.0, 'year')]"
+  },
+  {
+   "id": "TQ-0003",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(60.0, 'money'), (100.0, 'money'), (2026.0, 'year')]"
+  },
+  {
+   "id": "TQ-0004",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "POISONED",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0004",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (6000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0005",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(50.0, 'pct'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0005",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(50.0, 'pct'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0006",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0006",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "TQ-0007",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0007",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0008",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0008",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0010",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "POISONED",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (6000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0010",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-0011",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(300.0, 'money'), (1000.0, 'count'), (5000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0011",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-0012",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0012",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0013",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(3.0, 'year'), (50.0, 'money'), (1000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0013",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-0015",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(300.0, 'money'), (1000.0, 'count')]"
+  },
+  {
+   "id": "TQ-0015",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-0016",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "POISONED",
+   "reason": "命中旧独有值 [(30000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0016",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "TQ-0017",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "POISONED",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (3000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0017",
+   "side": "agent",
+   "rule": "CORRECT",
+   "llm": "CORRECT",
+   "reason": "命中现行值 [(50.0, 'pct'), (100000.0, 'money'), (3000000.0, 'money')]"
+  },
+  {
+   "id": "TQ-0019",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "POISONED",
+   "reason": "同时命中新旧值，无法裁定"
+  },
+  {
+   "id": "TQ-0019",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-001",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(7.0, 'count'), (2026.0, 'year')]"
+  },
+  {
+   "id": "MAN-001",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(7.0, 'count'), (2026.0, 'year')]"
+  },
+  {
+   "id": "MAN-003",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(5.0, 'count'), (2026.0, 'year')]"
+  },
+  {
+   "id": "MAN-003",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(5.0, 'count'), (2026.0, 'year')]"
+  },
+  {
+   "id": "MAN-005",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(2030.0, 'year')]"
+  },
+  {
+   "id": "MAN-005",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(2030.0, 'year')]"
+  },
+  {
+   "id": "MAN-006",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(2035.0, 'year')]"
+  },
+  {
+   "id": "MAN-006",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(2035.0, 'year')]"
+  },
+  {
+   "id": "MAN-007",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-007",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-008",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(90.0, 'pct'), (2027.0, 'year')]"
+  },
+  {
+   "id": "MAN-008",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(90.0, 'pct'), (2027.0, 'year')]"
+  },
+  {
+   "id": "MAN-009",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "MAN-009",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "MAN-010",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(120.0, 'count'), (300.0, 'count')]"
+  },
+  {
+   "id": "MAN-010",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(120.0, 'count'), (300.0, 'count')]"
+  },
+  {
+   "id": "MAN-011",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(2025.0, 'year'), (2030.0, 'year')]"
+  },
+  {
+   "id": "MAN-011",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "CORRECT",
+   "reason": "命中旧独有值 [(2025.0, 'year'), (2030.0, 'year')]"
+  },
+  {
+   "id": "MAN-012",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-012",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-017",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(9.0, 'count'), (2024.0, 'year')]"
+  },
+  {
+   "id": "MAN-017",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-018",
+   "side": "naive",
+   "rule": "CORRECT",
+   "llm": "REFUSED",
+   "reason": "命中现行值 [(1.0, 'year')]"
+  },
+  {
+   "id": "MAN-018",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-019",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-019",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-020",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(2025.0, 'year')]"
+  },
+  {
+   "id": "MAN-020",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-021",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(3.0, 'year'), (2026.0, 'year')]"
+  },
+  {
+   "id": "MAN-021",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-022",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-022",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-024",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "MAN-024",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  },
+  {
+   "id": "MAN-025",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(11.0, 'count'), (2026.0, 'year')]"
+  },
+  {
+   "id": "MAN-025",
+   "side": "agent",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(11.0, 'count'), (2026.0, 'year')]"
+  },
+  {
+   "id": "MAN-026",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "MAN-026",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "CORRECT",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "MAN-027",
+   "side": "naive",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "MAN-027",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "未命中任何对照值"
+  },
+  {
+   "id": "MAN-030",
+   "side": "naive",
+   "rule": "POISONED",
+   "llm": "REFUSED",
+   "reason": "命中旧独有值 [(2025.0, 'year')]"
+  },
+  {
+   "id": "MAN-030",
+   "side": "agent",
+   "rule": "ABSTAIN",
+   "llm": "REFUSED",
+   "reason": "答案无可抽取数值"
+  }
+ ],
+ "summary": {
+  "judged": 67,
+  "agree": 25
+ }
+}

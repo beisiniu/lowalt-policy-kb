@@ -1,0 +1,23 @@
+{
+  "policy_name": "深圳市大鹏新区关于促进低空经济产业高质量发展的若干措施",
+  "issue_date": "2025-03-20",
+  "effective_date": "2025-04-01",
+  "expiry_date": "无",
+  "apply_region": "深圳市大鹏新区",
+  "status": "现行有效",
+  "summary": "适用于新区低空企业，对依法取得审批的无人机货运及载人航线、基础设施建设和适航取证给予资金补贴，需满足重量、里程及资质门槛。",
+  "_engine": "llm:qwen3.8-flash",
+  "_audit": [
+    {
+      "field": "expiry_date",
+      "old": "2028-03-31",
+      "new": "无",
+      "reason": "原文没有明确有效期或失效日期；规划期/目标年份不等于失效期"
+    }
+  ],
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-03-20_深圳市大鹏新区关于促进低空经济产业高质量发展的若干措施.txt",
+    "char_count": 3693,
+    "extracted_at": "2026-10-26T22:33:45+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "无锡市人民政府关于修改和废止部分政府规章的决定",
+  "issue_date": "2026-02-27",
+  "effective_date": "2026-02-27",
+  "expiry_date": "无",
+  "apply_region": "无锡市",
+  "status": "现行有效",
+  "summary": "无锡市政府废止《无锡市民用无人驾驶航空器管理办法》，此后该市民用无人机相关活动不再适用原规章的备案与飞行管理要求。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-02-27_无锡市人民政府关于修改和废止部分政府规章的决定(废止《无锡市民用无人驾驶航空器管理办法》市政府令第162号).txt",
+    "char_count": 3165,
+    "extracted_at": "2026-10-27T22:46:33+08:00"
+  }
+}

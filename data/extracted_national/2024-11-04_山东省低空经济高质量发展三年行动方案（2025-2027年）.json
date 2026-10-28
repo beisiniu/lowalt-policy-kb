@@ -1,0 +1,15 @@
+{
+  "policy_name": "山东省低空经济高质量发展三年行动方案（2025-2027年）",
+  "issue_date": "2024-11-02",
+  "effective_date": "2024-11-02",
+  "expiry_date": "无",
+  "apply_region": "山东省",
+  "status": "现行有效",
+  "summary": "该方案为产业规划，未设定具体审批门槛；要求构建省级飞行服务站实现“一窗口申请、一站式审批”，推动低空空域分类划设与动态使用。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-11-04_山东省低空经济高质量发展三年行动方案（2025-2027年）.txt",
+    "char_count": 6065,
+    "extracted_at": "2026-10-26T22:54:11+08:00"
+  }
+}

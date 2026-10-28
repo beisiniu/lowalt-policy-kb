@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市光明区促进低空经济高质量发展若干措施",
+  "issue_date": "无",
+  "effective_date": "无",
+  "expiry_date": "无",
+  "apply_region": "深圳市光明区",
+  "status": "现行有效",
+  "summary": "光明区低空经济扶持措施第三条至第五条自2026-09-28起暂停实施，相关企业暂不能按原条款申请资助。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_深圳市光明区发展和改革局关于暂停实施《深圳市光明区促进低空经济高质量发展若干措施》的公告.txt",
+    "char_count": 825,
+    "extracted_at": "2026-10-27T22:47:42+08:00"
+  }
+}

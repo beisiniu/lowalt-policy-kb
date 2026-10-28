@@ -1,0 +1,15 @@
+{
+  "policy_name": "东莞市推动低空经济高质量发展实施方案（2024-2026年）",
+  "issue_date": "2024-07-24",
+  "effective_date": "2024-07-24",
+  "expiry_date": "无",
+  "apply_region": "东莞市",
+  "status": "现行有效",
+  "summary": "东莞市各镇街及部门推进低空经济，探索固定航线备案制管理，提高低空飞行活动审批效率，未设具体重量高度门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_东莞市人民政府办公室关于印发《东莞市推动低空经济高质量发展实施方案(2024-2026年)》的通知(东府办〔2024〕16号).txt",
+    "char_count": 20087,
+    "extracted_at": "2026-10-27T22:46:59+08:00"
+  }
+}

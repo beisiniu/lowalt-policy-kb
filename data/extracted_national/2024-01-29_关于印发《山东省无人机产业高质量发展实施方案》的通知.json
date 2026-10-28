@@ -1,0 +1,16 @@
+{
+  "policy_name": "山东省无人机产业高质量发展实施方案",
+  "issue_date": "2024-01-26",
+  "effective_date": "2024-01-26",
+  "expiry_date": "无",
+  "apply_region": "山东省",
+  "status": "现行有效",
+  "summary": "山东省无人机企业及植保作业组织，涉及制造、应用推广与检测标准，无新增审批备案要求，仅落实农机购置补贴与首台套保险补偿。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-01-29_关于印发《山东省无人机产业高质量发展实施方案》的通知.txt",
+    "char_count": 3958,
+    "extracted_at": "2026-10-26T16:47:16+08:00"
+  }
+}

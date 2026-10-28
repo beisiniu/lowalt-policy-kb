@@ -1,0 +1,16 @@
+{
+  "policy_name": "天津港保税区推进低空经济高质量发展行动方案",
+  "issue_date": "2024-08-22",
+  "effective_date": "2024-08-22",
+  "expiry_date": "无",
+  "apply_region": "天津港保税区",
+  "status": "现行有效",
+  "summary": "保税区低空经济行动方案，聚焦直升机、无人机、新型航空器制造运营，支持企业获取适航型号合格证和生产许可证，未设具体审批门槛。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_天津市保税区发布行动方案 打造全国一流低空产业聚集区和低空经济发展先行区.txt",
+    "char_count": 27361,
+    "extracted_at": "2026-10-27T14:01:45+08:00"
+  }
+}

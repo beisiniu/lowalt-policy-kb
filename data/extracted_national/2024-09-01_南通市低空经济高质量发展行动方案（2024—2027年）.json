@@ -1,0 +1,15 @@
+{
+  "policy_name": "南通市低空经济高质量发展行动方案（2024—2027年）",
+  "issue_date": "2024-10-10",
+  "effective_date": "2024-10-10",
+  "expiry_date": "无",
+  "apply_region": "南通市",
+  "status": "现行有效",
+  "summary": "该方案为产业促进类政策，未设定具体审批门槛；要求简化低空飞行活动审批流程，建立军地民协同机制及一站式服务平台，落实安全主体责任。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-01_南通市低空经济高质量发展行动方案（2024—2027年）.txt",
+    "char_count": 5982,
+    "extracted_at": "2026-10-26T22:56:49+08:00"
+  }
+}

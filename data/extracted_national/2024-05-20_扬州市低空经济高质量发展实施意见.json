@@ -1,0 +1,15 @@
+{
+  "policy_name": "扬州市低空经济高质量发展实施意见",
+  "issue_date": "2024-05-20",
+  "effective_date": "2024-05-20",
+  "expiry_date": "无",
+  "apply_region": "扬州市",
+  "status": "现行有效",
+  "summary": "扬州市政府统筹低空经济产业与基础设施发展，要求飞行活动遵守无人驾驶航空器飞行管理暂行条例，空域航路需协调军方民航，建设市级监管平台实现飞行计划申报与实时监管。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-05-20_扬州市低空经济高质量发展实施意见.txt",
+    "char_count": 5368,
+    "extracted_at": "2026-10-26T17:36:58+08:00"
+  }
+}

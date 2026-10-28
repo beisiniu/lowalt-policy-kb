@@ -1,0 +1,15 @@
+{
+  "policy_name": "云南省有序拓展低空经济应用场景实施方案",
+  "issue_date": "2026-06-08",
+  "effective_date": "2026-06-08",
+  "expiry_date": "无",
+  "apply_region": "云南省",
+  "status": "现行有效",
+  "summary": "云南省各州市推进政务一网统飞、低空物流、农林植保、巡检等场景，需军地民协同审批并优化飞行审批时效，2027年底前完成航线与机队目标。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_云南省人民政府办公厅关于印发《云南省有序拓展低空经济应用场景实施方案》的通知(2026-06-08印发).txt",
+    "char_count": 8871,
+    "extracted_at": "2026-10-27T22:47:02+08:00"
+  }
+}

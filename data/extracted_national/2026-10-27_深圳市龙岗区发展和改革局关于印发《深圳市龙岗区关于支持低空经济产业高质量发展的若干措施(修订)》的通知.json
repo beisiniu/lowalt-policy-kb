@@ -1,0 +1,16 @@
+{
+  "policy_name": "深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）",
+  "issue_date": "2026-03-19",
+  "effective_date": "2026-03-19",
+  "expiry_date": "无",
+  "apply_region": "深圳市龙岗区",
+  "status": "现行有效",
+  "summary": "龙岗区低空经济企业开展技改、基建、研发及标准制订可获补贴，测试基地按运营费50%补贴、单个项目年最高300万元。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_深圳市龙岗区发展和改革局关于印发《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施(修订)》的通知.txt",
+    "char_count": 10729,
+    "extracted_at": "2026-10-27T03:14:09+08:00"
+  }
+}

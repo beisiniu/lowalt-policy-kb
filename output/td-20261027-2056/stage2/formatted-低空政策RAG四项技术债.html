@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="docx-page-size" content="A4">
+<title>低空政策 RAG 项目的四项技术债</title>
+<style>
+  @page { @bottom-center { content: "第 " counter(page) " 页"; } }
+  @page cover { @bottom-center { content: none; } }
+  section[role="cover"] { page: cover; }
+
+  :root {
+    --fs-cover-category: 11pt;
+    --fs-cover-title: 25pt;
+    --fs-cover-subtitle: 14pt;
+    --fs-cover-meta: 10.5pt;
+    --fs-toc-title: 15pt;
+    --fs-toc-1: 11.5pt;
+    --fs-toc-2: 10.5pt;
+    --fs-h1: 16pt;
+    --fs-h2: 13pt;
+    --fs-body: 12pt;
+    --fs-small: 10.5pt;
+    --fs-code-block: 8.5pt;
+    --fs-code-inline: 9.5pt;
+    --fs-summary-title: 13pt;
+    --fs-badge: 9pt;
+
+    --ff-body: "SimSun", "宋体", serif;
+    --ff-head: "SimHei", "黑体", sans-serif;
+    --ff-code: "Consolas", "Courier New", monospace;
+
+    --color-text: #1a1a1a;
+    --color-primary: #1f3a5f;
+    --color-accent: #b3261e;
+    --color-muted: #5c6670;
+    --color-border: #c9d1d9;
+    --color-bg: #f4f6f9;
+    --color-surface: #fafbfc;
+    --color-quote-bg: #fbf3f2;
+    --color-code-bg: #f6f8fa;
+
+    --spacing-paragraph: 0.55em;
+    --spacing-section: 1.2em;
+    --spacing-none: 0;
+    --spacing-hair: 0.1em;
+    --spacing-xs: 0.2em;
+    --spacing-sm: 0.35em;
+    --spacing-md: 0.5em;
+    --spacing-lg: 0.7em;
+    --spacing-xl: 1.0em;
+    --spacing-2xl: 1.6em;
+    --spacing-3xl: 2.2em;
+    --spacing-4xl: 2.6em;
+    --spacing-5xl: 3.4em;
+    --spacing-6xl: 5.2em;
+    --spacing-indent: 1.6em;
+    --spacing-indent-sm: 1.0em;
+    --spacing-tight: 0.18em;
+    --spacing-rule: 0.25em;
+    --spacing-card: 0.9em;
+    --spacing-list: 0.7em;
+
+    --page-content-width: 15.6cm;
+  }
+
+  body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    line-height: 1.7;
+    color: var(--color-text);
+    max-width: var(--page-content-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section[role="cover"] { text-align: center; }
+  .cover-category { font-family: var(--ff-head); font-size: var(--fs-cover-category); color: var(--color-muted); letter-spacing: 0.18em; text-align: center; margin-top: var(--spacing-6xl); margin-bottom: var(--spacing-md); }
+  .cover-rule-text { font-family: var(--ff-head); font-size: var(--fs-badge); color: var(--color-muted); text-align: center; margin-bottom: var(--spacing-3xl); }
+  .cover-title { font-family: var(--ff-head); font-size: var(--fs-cover-title); font-weight: bold; color: var(--color-primary); text-align: center; line-height: 1.35; margin-bottom: var(--spacing-md); }
+  .cover-subtitle { font-family: var(--ff-head); font-size: var(--fs-cover-subtitle); color: var(--color-muted); text-align: center; margin-bottom: var(--spacing-4xl); }
+  .cover-meta { font-size: var(--fs-cover-meta); color: var(--color-muted); text-align: center; line-height: 2.0; }
+  .cover-warn { font-size: var(--fs-badge); color: var(--color-muted); text-align: center; margin-top: var(--spacing-5xl); }
+
+  .toc-title { font-family: var(--ff-head); font-size: var(--fs-toc-title); font-weight: bold; color: var(--color-primary); text-align: center; margin-bottom: var(--spacing-xl); letter-spacing: 0.1em; }
+  .toc-list, .toc-list ol, .toc-list ul { list-style: none; list-style-type: none; padding-left: var(--spacing-none); }
+  .toc-list > li { margin-bottom: var(--spacing-sm); text-indent: var(--spacing-none); font-family: var(--ff-head); font-size: var(--fs-toc-1); }
+  .toc-list a { color: var(--color-text); text-decoration: none; }
+  .toc-sublist { padding-left: var(--spacing-indent); margin-top: var(--spacing-xs); }
+  .toc-sublist li.toc-sub { font-family: var(--ff-body); font-size: var(--fs-toc-2); color: var(--color-muted); margin-bottom: var(--spacing-hair); text-indent: var(--spacing-none); }
+  .toc-sublist a { color: var(--color-muted); }
+
+  h1.chapter {
+    font-family: var(--ff-head); font-size: var(--fs-h1); font-weight: bold;
+    color: var(--color-primary); margin-top: var(--spacing-section); margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-rule); border-bottom: 2px solid var(--color-primary);
+    text-indent: var(--spacing-none); text-align: left;
+  }
+  h2.section {
+    font-family: var(--ff-head); font-size: var(--fs-h2); font-weight: bold;
+    color: var(--color-primary); margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md);
+    text-indent: var(--spacing-none); text-align: left;
+  }
+  p { text-indent: 2em; margin-bottom: var(--spacing-paragraph); text-align: justify; }
+  p.quote { border-left: 3px solid var(--color-accent); background: var(--color-quote-bg); padding: var(--spacing-md) var(--spacing-lg); text-indent: var(--spacing-none); color: var(--color-text); }
+  p.divider { border-bottom: 1px solid var(--color-border); text-indent: var(--spacing-none); margin-top: var(--spacing-md); margin-bottom: var(--spacing-md); }
+
+  ul.bullet, ol.num { margin-top: var(--spacing-xs); margin-bottom: var(--spacing-list); margin-left: var(--spacing-indent); padding-left: var(--spacing-indent-sm); }
+  ul.bullet li, ol.num li { margin-bottom: var(--spacing-tight); text-indent: var(--spacing-none); text-align: justify; }
+
+  table.data-table {
+    width: 100%; border-collapse: collapse; margin-top: var(--spacing-md); margin-bottom: var(--spacing-card);
+    font-size: var(--fs-small); font-family: var(--ff-body);
+  }
+  table.data-table th {
+    background: var(--color-bg); font-family: var(--ff-head); font-weight: bold;
+    border: 1px solid var(--color-border); padding: var(--spacing-sm) var(--spacing-md); text-align: left;
+  }
+  table.data-table td { border: 1px solid var(--color-border); padding: var(--spacing-sm) var(--spacing-md); text-indent: var(--spacing-none); vertical-align: top; }
+  table.data-table tr:nth-child(even) td { background: var(--color-surface); }
+
+  pre.code {
+    font-family: var(--ff-code); font-size: var(--fs-code-block); line-height: 1.35;
+    background: var(--color-code-bg); border: 1px solid var(--color-border);
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin-top: var(--spacing-sm); margin-bottom: var(--spacing-card);
+    white-space: pre-wrap; text-indent: var(--spacing-none);
+  }
+  code { font-family: var(--ff-code); font-size: var(--fs-code-inline); }
+
+  .executive-summary { border-left: 4px solid var(--color-primary); background: var(--color-bg); padding: var(--spacing-lg) var(--spacing-card); margin-bottom: var(--spacing-section); }
+  .summary-title { font-family: var(--ff-head); font-size: var(--fs-summary-title); font-weight: bold; color: var(--color-primary); text-indent: var(--spacing-none); margin-bottom: var(--spacing-md); }
+  .summary-badge { font-size: var(--fs-badge); color: var(--color-muted); text-indent: var(--spacing-none); margin-bottom: var(--spacing-md); }
+</style>
+</head>
+<body>
+
+<section role="cover">
+  <p class="cover-category">技术评审 · TECHNICAL REVIEW</p>
+  <p class="cover-rule-text">内部交接文档</p>
+  <p class="cover-title">低空政策 RAG 项目的四项技术债</p>
+  <p class="cover-subtitle">给非本专业读者的完整说明与整改方案</p>
+  <p class="cover-meta">低空政策 RAG 项目组　|　2026 年 10 月 27 日　|　版本 v1.0</p>
+  <p class="cover-warn">核对基准：语料库 154 篇 / 6106 个切片　·　题库 96 题　·　v9 评估结果</p>
+</section>
+
+<section role="cover">
+  <p class="toc-title">目　录</p>
+  <ol class="toc-list">
+    <li><a href="#section-1">第一章 先把四个词说清楚</a><ol class="toc-sublist"><li class="toc-sub"><a href="#section-1-1">1.1 切片（chunk）：把政策文件剪成卡片</a></li><li class="toc-sub"><a href="#section-1-2">1.2 检索（Top-5）：只准带五张卡片进考场</a></li><li class="toc-sub"><a href="#section-1-3">1.3 金标（ground truth）：标准答案和"标准条款"</a></li><li class="toc-sub"><a href="#section-1-4">1.4 毒化（poisoning）与门禁（gate）</a></li></ol></li><li><a href="#section-2">第二章 技术债一：三个指标名不副实，还有一个算错了</a><ol class="toc-sublist"><li class="toc-sub"><a href="#section-2-1">2.1 先看这三个数字原本想说什么</a></li><li class="toc-sub"><a href="#section-2-2">2.2 问题一：分母里混进了 30 道"永远不可能穿透"的题</a></li><li class="toc-sub"><a href="#section-2-3">2.3 问题二："拦截率 100%"的分母太小，掩盖了真实的污染规模</a></li><li class="toc-sub"><a href="#section-2-4">2.4 问题三（真正的 Bug）：94.9% 是错的，正确值是 71.8%</a></li><li class="toc-sub"><a href="#section-2-5">2.5 我需要更正上一轮的一个说法</a></li><li class="toc-sub"><a href="#section-2-6">2.6 影响边界：哪些结论不受影响</a></li><li class="toc-sub"><a href="#section-2-7">2.7 怎么修（4 步，均不需要重跑评估）</a></li></ol></li><li><a href="#section-3">第三章 技术债三：27 道题"五条证据全被枪毙"，只能拒答</a><ol class="toc-sublist"><li class="toc-sub"><a href="#section-3-1">3.1 场景还原</a></li><li class="toc-sub"><a href="#section-3-2">3.2 为什么会这样：检索本身就严重偏旧</a></li><li class="toc-sub"><a href="#section-3-3">3.3 这不是"答错"，是"没答"，但它压住了正确率的天花板</a></li><li class="toc-sub"><a href="#section-3-4">3.4 一个实验：多看 15 张卡片，就能救回 25 道</a></li><li class="toc-sub"><a href="#section-3-5">3.5 剩下 2 道救不回来：那是数据缺失，不是策略问题</a></li><li class="toc-sub"><a href="#section-3-6">3.6 怎么修（三档，按性价比排序）</a></li></ol></li><li><a href="#section-4">第四章 技术债四：一道题半个黄埔</a><ol class="toc-sublist"><li class="toc-sub"><a href="#section-4-1">4.1 题目分布：一半集中在同一个区</a></li><li class="toc-sub"><a href="#section-4-2">4.2 一个必须知道的对比</a></li><li class="toc-sub"><a href="#section-4-3">4.3 这直接决定了"38.5%"能被怎么用</a></li><li class="toc-sub"><a href="#section-4-4">4.4 审稿人一定会问的三个问题</a></li><li class="toc-sub"><a href="#section-4-5">4.5 怎么修</a></li></ol></li><li><a href="#section-5">第五章 技术债五：状态只有两档，而且写完就不再变</a><ol class="toc-sublist"><li class="toc-sub"><a href="#section-5-1">5.1 打标流水线的三个卡点</a></li><li class="toc-sub"><a href="#section-5-2">5.2 三种"失效"混成一种，答案就会错</a></li><li class="toc-sub"><a href="#section-5-3">5.3 更麻烦的是：83 份文件没有到期日</a></li><li class="toc-sub"><a href="#section-5-4">5.4 2026 年 12 月 31 日：13 份文件同一天到期</a></li><li class="toc-sub"><a href="#section-5-5">5.5 怎么修：把"状态"从存储字段改成计算字段</a></li></ol></li><li><a href="#section-6">第六章 执行顺序建议</a></li><li><a href="#section-7">附录 A 数据核对表</a></li><li><a href="#section-8">附录 B 术语对照表</a></li><li><a href="#section-9">附录 C 复现命令</a></li><li><a href="#section-10">结语</a></li>
+  </ol>
+</section>
+
+<section role="body" data-page-restart="1">
+  <div class="executive-summary">
+    <p class="summary-title">一页速览：四件事</p>
+    <p class="summary-badge">Executive Summary</p>
+    <p>这份文档解释四件事，每一件都是我在通读项目时发现的"账没算清"的地方。它们不影响项目最核心的结论（新旧政策并存时，不做时间过滤的问答系统会照抄已作废的条款，而做了过滤的系统一次都没抄错），但会影响<strong>你在论文、答辩、汇报里写下的每一个具体数字</strong>。</p>
+<p>四件事按"会不会被人当场问倒"排序：</p>
+<table class="data-table"><thead><tr><th>编号</th><th>问题一句话</th><th>严重程度</th><th>是否影响主结论</th><th>修复成本</th></tr></thead><tbody><tr><td>技术债一</td><td>三个指标的分子分母不是同一批题，其中一个还算错了</td><td><strong>高</strong>：直接写进论文会被审稿人抓</td><td>不影响方向，影响具体数字</td><td>低（改几十行代码，不用重跑）</td></tr><tr><td>技术债三</td><td>96 道题里有 27 道"证据全被收走"，系统只能拒答</td><td>中：拉低正确率，但属于"安全失败"</td><td>不影响方向，压低上限</td><td>中（要改检索策略并重跑）</td></tr><tr><td>技术债四</td><td>96 道题里 48 道是广州黄埔一个区</td><td><strong>高</strong>：结论外推会被质疑</td><td>影响"普适性"这一层结论</td><td>中（补题，不用重跑已有题）</td></tr><tr><td>技术债五</td><td>政策状态只有"现行/废止"两档，而且写完就不会变</td><td>中高：随时间推移会自己变错</td><td>不影响方向，影响数据可靠性</td><td>中（改打标规范 + 补数据）</td></tr></tbody></table>
+<p>读法建议：如果只有 10 分钟，读每章开头的"一句话"和结尾的"怎么修"；如果有半小时，按顺序读；第六章是可以直接照着派活的执行清单。</p>
+<p class="quote">&nbsp;&nbsp;说明：技术债二（没有 git 仓库）与技术债六（时间敏感点）你已经清楚，本文不再展开，只讲其余四项，因此章节编号会从"第二章"直接接到"第三章 技术债三"。</p>
+<p class="divider"></p>
+  </div>
+  <p class="divider"></p>
+<h1 id="section-1" class="chapter">第一章 先把四个词说清楚</h1>
+<p>这一章只用四个比喻，看完就能读懂后面所有内容。</p>
+<h2 id="section-1-1" class="section">1.1 切片（chunk）：把政策文件剪成卡片</h2>
+<p>一份政策文件动辄几千上万字。计算机不擅长"读一整本"，擅长"查卡片"。所以建库时会先把文件剪成一段一段，每段四五百字，像把一本书剪成几百张索引卡片。</p>
+<p>本项目 154 篇政策被剪成了 <strong>6106 张卡片</strong>。</p>
+<h2 id="section-1-2" class="section">1.2 检索（Top-5）：只准带五张卡片进考场</h2>
+<p>用户问一个问题，系统不能把 6106 张卡片全塞给大模型（太贵、太慢、也超出长度限制）。常规做法是先用"语义相似度"挑出最相关的几张——本项目是 <strong>5 张</strong>，业界叫 Top-5。</p>
+<p>这一步有个关键特性，后面所有问题都源于它：<strong>相似度只看"字面意思像不像"，不看"这张卡片是不是还有效"</strong>。一份 2023 年的旧政策，因为措辞和用户问题高度吻合，往往比 2026 年的新政策排得更靠前。</p>
+<h2 id="section-1-3" class="section">1.3 金标（ground truth）：标准答案和"标准条款"</h2>
+<p>每道题我们都准备了两样东西：一个标准答案（ground truth），以及"这道题应该看哪一条"——也就是<strong>金标条款</strong>。它相当于老师手里的参考答案页码。</p>
+<p>判断系统有没有"看到旧条款"，就是看这 5 张卡片里有没有那张金标旧条款。</p>
+<h2 id="section-1-4" class="section">1.4 毒化（poisoning）与门禁（gate）</h2>
+<p><strong>毒化</strong>：模型照着已经作废的旧条款回答，给出了一个"当年正确、现在错误"的答案。比如旧政策写"落户奖励最高 3000 万"，新政策改成"最高 1500 万"，模型答 3000 万——这就是被毒化了。</p>
+<p><strong>门禁</strong>：本项目提出的解法。在把 5 张卡片交给模型之前，先过一道安检，把"已废止、已失效、还没生效"的卡片收走。这个动作只读卡片自带的元数据（状态、生效日、失效日），不看题库里的任何标记，所以不存在"偷看答案"。</p>
+<p>两个分支的区别就这一句话：</p>
+<ul class="bullet"><li><strong>Naive（朴素分支）</strong>：检出来什么就给什么，5 张卡片原样喂给模型。</li><li><strong>Temporal（时序分支）</strong>：同样 5 张卡片，先过安检，剩下的再喂给模型。</li></ul>
+<p class="divider"></p>
+<h1 id="section-2" class="chapter">第二章 技术债一：三个指标名不副实，还有一个算错了</h1>
+<p class="quote">&nbsp;&nbsp;<strong>一句话</strong>：项目报告里三个支撑性数字——"旧条款穿透率 40.6%""拦截率 100%""条件毒化率 94.9%"——都不是它们名字所声称的那个意思，其中第三个是纯粹的计算错误。</p>
+<h2 id="section-2-1" class="section">2.1 先看这三个数字原本想说什么</h2>
+<table class="data-table"><thead><tr><th>指标</th><th>名字的含义</th><th>报告里的值</th></tr></thead><tbody><tr><td>穿透率（penetration）</td><td>检索出的 5 张卡片里，出现金标旧条款的比例</td><td>40.6%（39/96）</td></tr><tr><td>拦截率（filter rate）</td><td>出现了旧条款的题里，被门禁收走的比例</td><td>100%（39/39）</td></tr><tr><td>条件毒化率（conditionally poisoned）</td><td>旧条款出现时，模型照抄它的比例</td><td>94.9%（37/39）</td></tr></tbody></table>
+<p>三个数连起来读，像是"旧条款在四成题目里混了进来，但全被门禁拦下，而只要它混进来，模型几乎必抄"。逻辑很顺，但每一环都有问题。</p>
+<h2 id="section-2-2" class="section">2.2 问题一：分母里混进了 30 道"永远不可能穿透"的题</h2>
+<p>96 道题不是一种来源：</p>
+<table class="data-table"><thead><tr><th>来源</th><th>数量</th><th>生成方式</th><th>有没有金标条款编号</th></tr></thead><tbody><tr><td>TQ</td><td>49</td><td>早期自动构建，条款级新旧对照</td><td>有，库里真实存在的主键</td></tr><tr><td>EXP</td><td>17</td><td>本轮自动构建，同上</td><td>有</td></tr><tr><td>MAN</td><td>30</td><td>我手写的国家层面题、失效辨析题、时间限定题</td><td><strong>没有</strong>，旧条款文本是我手工摘的概述</td></tr></tbody></table>
+<p>MAN 题的"旧条款文本"是<strong>我读政策后手写的摘要</strong>，不是原文照抄。它和库里任何一个切片都不会逐字相同，所以用"文本比对"去判断"这张卡片是不是金标旧条款"，结果必然是"不是"。</p>
+<p>实测结果：<strong>MAN 的 30 道题，穿透判定全部为"否"（0/30）</strong>。</p>
+<p>这意味着 40.6% 这个数字的分母被稀释了。真正能计算穿透的只有 TQ+EXP 共 66 道，其中命中 39 道：</p>
+<p class="quote">&nbsp;&nbsp;<strong>59.1%（39/66）</strong> —— 这才是"金标旧条款召回率"的真实值；40.6% 是把 30 道结构上不可能命中的题算进分母后的结果。</p>
+<p>顺带一个反直觉的发现：<strong>57 道"未穿透"的题里，没有一道是真的"文本明明在卡片里、但比对算法没认出来"</strong>。我逐题做了"金标文本是否出现在 5 张卡片的任意一张里"的直接检查，命中数为 0。也就是说，匹配算法本身没坏，问题纯粹在分母口径。</p>
+<h2 id="section-2-3" class="section">2.3 问题二："拦截率 100%"的分母太小，掩盖了真实的污染规模</h2>
+<p>拦截率的分母是"金标旧条款出现的 39 道题"。但真实情况是：<strong>脏卡片远不止 39 次</strong>。</p>
+<p>实测（96 题 × 5 张卡片 = 480 个证据槽）：</p>
+<table class="data-table"><thead><tr><th>统计项</th><th>数量</th><th>占比</th></tr></thead><tbody><tr><td>证据槽总数</td><td>480</td><td>100%</td></tr><tr><td>被门禁收走</td><td><strong>300</strong></td><td><strong>62.5%</strong></td></tr><tr><td>├ 其中"状态为已废止"</td><td>250</td><td>52.1%</td></tr><tr><td>├ 其中"状态为已失效"</td><td>44</td><td>9.2%</td></tr><tr><td>└ 其中"尚未生效"（北京新规 11-15 才生效）</td><td>6</td><td>1.3%</td></tr><tr><td>上下文里混进过脏卡片的题</td><td><strong>73 道</strong></td><td><strong>76.0%</strong></td></tr></tbody></table>
+<p>换句话说：<strong>每 5 张卡片里有 3 张多是作废的</strong>。这不是算法出了故障，而是这批题库本身选的就是"新旧政策打架"的场景，旧政策措辞更贴合问题，天然排前面。</p>
+<p>所以论文里如果写"39 次旧条款召回全部拦截"，虽然字面没撒谎，但会让读者以为污染规模只有 39 次；实际暴露面是 73 道题、300 张卡片。正确的写法应该是：</p>
+<p class="quote">&nbsp;&nbsp;在 96 道题中，有 73 道（76.0%）的检索上下文混入了已废止或已失效的条款，共 300 张卡片；经时序门禁处理后，这 73 道题中时序分支毒化 0 道，朴素分支毒化 37 道（50.7%）。</p>
+<p>这句话比原句更难读，但它扛得住追问。</p>
+<h2 id="section-2-4" class="section">2.4 问题三（真正的 Bug）：94.9% 是错的，正确值是 71.8%</h2>
+<p><code>evaluate.py</code> 里这一行：</p>
+<pre class="code">"naive_conditionally_poisoned_rate": round(naive_poisoned / penetration, 4)</pre>
+<p><code>naive_poisoned</code>（37）是<strong>全部 96 道题</strong>里被毒化的数量；<code>penetration</code>（39）是<strong>另一批子集</strong>的数量。分子分母不是同一批题，相除得到的 94.9% 没有统计含义。极端情况下这个数会超过 100%。</p>
+<p>正确的"条件毒化率"应该是"在旧条款出现的题里，被毒化的比例"：</p>
+<p class="quote">&nbsp;&nbsp;28 / 39 = <strong>71.8%</strong></p>
+<p>71.8% 依然是很有说服力的数字（旧条款一旦进入上下文，七成概率被照抄），但它比 94.9% 老实，而且经得起复算。</p>
+<h2 id="section-2-5" class="section">2.5 我需要更正上一轮的一个说法</h2>
+<p>上一轮我告诉你"30 道手工题里有 14 道实际丢弃了失效条款却判为未穿透，所以穿透率被低估"。<strong>这个说法不准确，我撤回。</strong></p>
+<p>实测结论是：</p>
+<ul class="bullet"><li>真正"金标文本就在上下文里、但匹配算法没认出来"的题：<strong>0 道</strong>；</li><li>那 14 道题的实际情况是：门禁确实丢弃了 3～5 张脏卡片，但那些卡片来自<strong>别的</strong>已废止政策（比如问保险制度，却捡到了北京已废止的特殊保障规定），不是这道题的金标条款。</li></ul>
+<p>所以不是"算法坏了"，而是"我上一轮把两种不同的东西混为一谈了"。真正需要修的是口径和那个除法 bug，不是匹配算法。这一点很重要——如果按我上一轮的说法去改算法，会做无用功。</p>
+<h2 id="section-2-6" class="section">2.6 影响边界：哪些结论不受影响</h2>
+<table class="data-table"><thead><tr><th>结论</th><th>是否受影响</th><th>说明</th></tr></thead><tbody><tr><td>时序分支毒化率 0%</td><td><strong>不受影响</strong></td><td>全部 96 道题都是 0，与口径无关，是直接计数</td></tr><tr><td>朴素分支毒化 37 道</td><td><strong>不受影响</strong></td><td>直接计数</td></tr><tr><td>"架构级硬过滤"优于"模型自觉"</td><td><strong>不受影响</strong></td><td>来自消融实验，不依赖穿透率</td></tr><tr><td>穿透率 40.6%</td><td><strong>不能直接写</strong></td><td>应改为 59.1%（分母 66）或改名叫"含脏卡片题占比 76.0%"</td></tr><tr><td>拦截率 100%</td><td><strong>需补分母说明</strong></td><td>应同时报"300 张脏卡片全部拦截"</td></tr><tr><td>条件毒化率 94.9%</td><td><strong>必须改</strong></td><td>正确值 71.8%</td></tr></tbody></table>
+<h2 id="section-2-7" class="section">2.7 怎么修（4 步，均不需要重跑评估）</h2>
+<ol class="num"><li><strong>改命名</strong>：把 <code>penetration_rate</code> 改名为 <code>gold_clause_recall</code>（金标条款召回率），并在报表里注明分母只含"有金标编号的题"（66 道）。</li><li><strong>新增污染指标</strong>：从已有结果文件里直接统计"上下文含脏卡片的题数/卡片数"（就是本章 2.3 的表），落成一个新指标 <code>context_contamination</code>。这些数据已经在 <code>retrieved</code> 字段里，无需重新调用模型。</li><li><strong>修除法</strong>：<code>naive_conditionally_poisoned_rate</code> 改为 <code>poisoned_and_penetrated / penetration</code>。同类检查一遍 <code>agent_conditionally_poisoned_rate</code>。</li><li><strong>加断言</strong>：在 <code>compute_metrics</code> 里加一行保护，任何"分子包含分母外元素"的比率一律抛错。这类错误只会在写论文时暴露，越早拦住越省事。</li></ol>
+<p>预计改动量：<code>evaluate.py</code> 约 15 行；重算脚本约 40 行。</p>
+<p class="divider"></p>
+<h1 id="section-3" class="chapter">第三章 技术债三：27 道题"五条证据全被枪毙"，只能拒答</h1>
+<p class="quote">&nbsp;&nbsp;<strong>一句话</strong>：门禁太尽责，把 27 道题的 5 张卡片全部判定为作废，系统手里一张牌都没有，只能拒答。</p>
+<h2 id="section-3-1" class="section">3.1 场景还原</h2>
+<p>设想你问："在黄埔区，新引进的低空经济优质项目最高能拿多少落户奖励？"</p>
+<p>系统检索到的 5 张卡片，全部来自黄埔区 2023 年那份旧措施。门禁一看，5 张全部标着"已废止"，于是一张不留。模型收到的上下文是空的，它只能回答"我无法确定"。</p>
+<p>实测数据：</p>
+<table class="data-table"><thead><tr><th>项目</th><th>数量</th></tr></thead><tbody><tr><td>上下文被清空的题</td><td><strong>27 道（28.1%）</strong></td></tr><tr><td>其中 5 张卡片全为失效条款</td><td>25 道</td></tr><tr><td>其中因"尚未生效"被清空（北京新规）</td><td>2 道</td></tr><tr><td>这 27 道的时序分支判定</td><td><strong>27 道全部"拒答"</strong></td></tr><tr><td>这 27 道里，朴素分支的判定</td><td>毒化 16 道、拒答 11 道</td></tr></tbody></table>
+<h2 id="section-3-2" class="section">3.2 为什么会这样：检索本身就严重偏旧</h2>
+<p>第二章已经算过：480 个证据槽里 300 个是脏的。落到这 27 道题上，就是"5 张卡片全是旧政策"。</p>
+<p>根因是<strong>题库的选题方式</strong>：这批题问的都是"某某奖励标准是多少""某某门槛是多少"，而旧政策的条文措辞恰恰和这类问法最像。语义检索按"像不像"排序，旧条款永远赢。</p>
+<p>这不是模型的问题，也不是门禁的问题——是<strong>检索只取 5 张</strong>这个设定，在"新旧同名政策并存"时必然翻车。</p>
+<h2 id="section-3-3" class="section">3.3 这不是"答错"，是"没答"，但它压住了正确率的天花板</h2>
+<p>必须把两件事分开说，否则会被误解：</p>
+<ul class="bullet"><li><strong>毒化</strong>（答错）：给出过期数字，是最坏的结局。</li><li><strong>拒答</strong>（没答）：说"我不知道"，是安全但无用的结局。</li></ul>
+<p>时序分支的 59 次拒答里，27 次属于"没证据"，32 次属于"有证据但仍选择拒答"。前 27 次是可以修的，后 32 次是模型保守倾向，属于另一类问题。</p>
+<p>从指标上看，这 27 道题直接封住了上限：<strong>即便其余 69 道全对，时序分支正确率最高也只有 69/96 = 71.9%</strong>。当前是 38.5%（37/96），差距主要来自这 27 道。</p>
+<h2 id="section-3-4" class="section">3.4 一个实验：多看 15 张卡片，就能救回 25 道</h2>
+<p>我拿这 27 道题做了个实测：把检索数量从 5 张扩到 20 张，再让门禁过滤，看还剩不剩活卡。</p>
+<table class="data-table"><thead><tr><th>结果</th><th>题数</th></tr></thead><tbody><tr><td>过滤后至少剩 1 张有效卡片</td><td><strong>25 道（92.6%）</strong></td></tr><tr><td>仍然一张不剩</td><td>2 道</td></tr><tr><td>典型剩余量</td><td>3～5 张（个别题剩 8～13 张）</td></tr></tbody></table>
+<p>救回来的卡片大多来自<strong>同政策的新版本</strong>（例如黄埔区现行的新版措施）。也就是说：旧版排前 5、新版排第 6～20，只取 5 张就永远看不到新版。</p>
+<h2 id="section-3-5" class="section">3.5 剩下 2 道救不回来：那是数据缺失，不是策略问题</h2>
+<p>这两道是北京的时间限定题：</p>
+<ul class="bullet"><li>MAN-023："2026 年 11 月 15 日之后，在北京还能飞无人机吗？"</li><li>MAN-024："2026 年 11 月 15 日之前（现在），在北京可以飞无人机吗？"</li></ul>
+<p>在评估基准日（2026-10-27）看：新版《北京市无人驾驶航空器管理规定》11-15 才生效，被门禁判为"尚未生效"；旧的 3 部试行文件已废止，被收走。空空如也。</p>
+<p>更根本的原因是：<strong>库里没有"原版《北京市无人驾驶航空器管理规定》（2026-05-01 施行）"的全文</strong>——当初只拿到了它被替代的通知页，没拿到原文。所以 MAN-024 这类"现在能飞吗"的问题，本就无据可依。</p>
+<p>这条留给数据侧：拿到原版全文入库，这两道题自然可答。</p>
+<h2 id="section-3-6" class="section">3.6 怎么修（三档，按性价比排序）</h2>
+<table class="data-table"><thead><tr><th>档位</th><th>动作</th><th>预期效果</th><th>成本</th></tr></thead><tbody><tr><td><strong>第一档（立刻做）</strong></td><td>检索扩到 20 张 → 门禁过滤 → 只保留前 5 张有效卡片</td><td>27 道里 25 道恢复证据；时序正确率上限从 71.9% 抬到约 97%</td><td>改 1 处检索调用 + 重跑评估（约 1 小时）</td></tr><tr><td><strong>第二档（短期）</strong></td><td>空上下文时走"兜底回答"：不硬答，但明确告知"现有检索到的均为已废止条款，最新有效版本为 X"，并给出文件链接</td><td>把"完全拒答"变成"有信息量的拒答"，判分时可单独计一类</td><td>改 prompt 分支，不重跑</td></tr><tr><td><strong>第三档（中期）</strong></td><td>建"政策族谱"：同一政策的历次版本互相关联（旧版→新版→替代关系），检索时优先返回最新有效版</td><td>从根上消除"只取 5 张看不到新版"的问题</td><td>需要给 154 篇补"替代关系"字段，工作量中等</td></tr></tbody></table>
+<p>我建议先做第一档，因为它同时改善正确率和说服力，且不需要新数据。</p>
+<p class="divider"></p>
+<h1 id="section-4" class="chapter">第四章 技术债四：一道题半个黄埔</h1>
+<p class="quote">&nbsp;&nbsp;<strong>一句话</strong>：96 道题里 48 道是广州黄埔一个区，而所有毒化案例中 97% 也来自这个区。报告的"38.5% 毒化率"实际上测的是"黄埔一个区的毒化率"。</p>
+<h2 id="section-4-1" class="section">4.1 题目分布：一半集中在同一个区</h2>
+<table class="data-table"><thead><tr><th>地区</th><th>题数</th><th>占比</th></tr></thead><tbody><tr><td><strong>广州市黄埔区</strong></td><td><strong>48</strong></td><td><strong>50.0%</strong></td></tr><tr><td>全国（国家层面）</td><td>12</td><td>12.5%</td></tr><tr><td>福州市</td><td>8</td><td>8.3%</td></tr><tr><td>张家界市</td><td>6</td><td>6.2%</td></tr><tr><td>深圳市龙岗区</td><td>4</td><td>4.2%</td></tr><tr><td>无锡市 / 苏州市 / 北京市</td><td>各 2</td><td>各 2.1%</td></tr><tr><td>其余 12 个地区</td><td>各 1</td><td>各 1.0%</td></tr></tbody></table>
+<p>20 个地区里，<strong>有 12 个地区只有 1 道题</strong>。这种样本量做任何"地区比较"都没有统计意义。</p>
+<h2 id="section-4-2" class="section">4.2 一个必须知道的对比</h2>
+<table class="data-table"><thead><tr><th>分组</th><th>题数</th><th>朴素分支毒化</th><th>毒化率</th><th>时序分支正确率</th></tr></thead><tbody><tr><td>黄埔区</td><td>48</td><td>36</td><td><strong>75.0%</strong></td><td>35.4%</td></tr><tr><td>其余全部地区</td><td>48</td><td>1</td><td><strong>2.1%</strong></td><td>41.7%</td></tr></tbody></table>
+<p>差距是 36 倍。全库 37 例毒化里，<strong>36 例来自黄埔（97.3%）</strong>。</p>
+<p>为什么是黄埔？因为库里同时存着黄埔 2023 年旧措施和之后的新版措施，两版条文结构几乎一样、只是数字不同（3000 万→1500 万这类），这是毒化的完美温床。而其他城市大多是"只有一份现行文件"，没有旧版可抄。</p>
+<h2 id="section-4-3" class="section">4.3 这直接决定了"38.5%"能被怎么用</h2>
+<ul class="bullet"><li><strong>不能说</strong>：低空政策问答的毒化率约 38.5%。</li><li><strong>可以说</strong>：在"同城新旧政策并存"的场景下，朴素分支毒化率 75%（黄埔）；在"无旧版干扰"的场景下，朴素分支毒化率 2.1%（其余 48 题）。</li><li><strong>更准确的说法</strong>：整体 38.5% 是这两类场景按 50:50 混合后的加权值，而真实世界里"新旧并存"的城市比例远低于 50%，所以 38.5% <strong>高估</strong>了平均风险，但恰好准确描述了最危险的场景。</li></ul>
+<p>按地区做不加权平均（每个地区算一票），毒化率只有 <strong>4.4%</strong>；按题目平均是 <strong>38.5%</strong>。两个数差 9 倍，说明分布极度不均，任何单一数字都会误导。</p>
+<h2 id="section-4-4" class="section">4.4 审稿人一定会问的三个问题</h2>
+<ol class="num"><li>"你的题库是否过拟合于某一个城市？"——目前答案是"是，一半题来自黄埔"。</li><li>"结论能否外推到全国？"——目前只能说"在同城新旧并存的场景下成立，黄埔是典型案例"。</li><li>"每个地区只有一两道题，怎么比较地区差异？"——目前答案是"不做地区比较，只做场景比较"。</li></ol>
+<h2 id="section-4-5" class="section">4.5 怎么修</h2>
+<table class="data-table"><thead><tr><th>动作</th><th>说明</th><th>成本</th></tr></thead><tbody><tr><td><strong>分层配额补题</strong></td><td>每个双全城市（现有 17 个）补到至少 5 道对照题，黄埔封顶 20 道。目标题库 120～130 道</td><td>中（出题 + 核对答案，1～2 轮）</td></tr><tr><td><strong>双口径报告</strong></td><td>所有比率同时报"按题加权（micro）"和"按地区平均（macro）"，并注明差异原因</td><td>低（改报表）</td></tr><tr><td><strong>分场景报告</strong></td><td>把题分成"同城新旧并存""单一现行""国家层面""失效辨析"四类，分类报毒化率</td><td>低（加一个字段）</td></tr><tr><td><strong>置信区间</strong></td><td>每组用 bootstrap 算 95% 区间。48 题样本的 75% 大约在 61%～86% 之间，1 题样本等于没有区间</td><td>低（30 行脚本）</td></tr></tbody></table>
+<p>补齐配额后，最有价值的一句话会变成："在同城新旧并存的 60 道题中，朴素分支毒化 75%（95%CI 62%-85%），时序分支 0%（0%-6%）"——这句话可以进论文。</p>
+<p class="divider"></p>
+<h1 id="section-5" class="chapter">第五章 技术债五：状态只有两档，而且写完就不再变</h1>
+<p class="quote">&nbsp;&nbsp;<strong>一句话</strong>：政策状态是打标那一刻拍下的照片，不是实时读数；而且照片只有"有效/废止"两档，"到期失效"这一档根本没拍。</p>
+<h2 id="section-5-1" class="section">5.1 打标流水线的三个卡点</h2>
+<p>"打标"= 让大模型读一遍政策原文，输出结构化标签（政策名、地区、状态、生效日、失效日）。链路上有三个地方决定了状态的质量：</p>
+<p><strong>卡点一：提示词只允许两个选项。</strong></p>
+<pre class="code">"status": "只能是「现行有效」或「已废止」"</pre>
+<p>模型被明确要求二选一。即便它读出了"有效期至 2026 年 8 月 31 日"，也只能写"已废止"或"现行有效"。</p>
+<p><strong>卡点二：归一化函数会把未知值变成"现行有效"。</strong></p>
+<pre class="code">def _norm_status(value):
+    if 含"废止/失效/无效/已被取代": return "已废止"
+    if 含"现行/有效/生效/执行中":   return "现行有效"
+    return "现行有效"          # ← 兜底</pre>
+<p>也就是说，模型如果冒出"已失效""待废止""暂停执行"这类第三种答案，会被静默改成"现行有效"。这是最危险的一种——<strong>错误不会报错，只会被悄悄改成乐观值</strong>。</p>
+<p><strong>卡点三：状态在建库时写进卡片元数据，之后不重建库就不会变。</strong></p>
+<p>建库脚本把状态写进每张卡片的 metadata，门禁读到的是这个静态值。时间往前走，卡片上的字不会跟着变。</p>
+<h2 id="section-5-2" class="section">5.2 三种"失效"混成一种，答案就会错</h2>
+<p>现实里的"不能用"至少有四种，含义完全不同：</p>
+<table class="data-table"><thead><tr><th>类型</th><th>例子</th><th>正确答案应该是什么</th></tr></thead><tbody><tr><td>明文废止</td><td>无锡 162 号令被市政府决定废止</td><td>"已废止，依据改为国令 761 号"</td></tr><tr><td>有效期届满</td><td>苏州空中交通规则有效期至 2026-08-31</td><td>"已到期失效，不是被废止"</td></tr><tr><td>暂停实施</td><td>广州天河区因公平竞争审查暂停执行</td><td>"暂停中，文件本身未废止"</td></tr><tr><td>部分条款废止</td><td>绍兴废止低空落户奖补两项条款</td><td>"仅两条失效，其余有效"</td></tr></tbody></table>
+<p>如果一律标成"已废止"，出题时问"天河那份政策现在还执行吗"，标准答案写"已废止"就会错——实际是"暂停"。这类题在本项目题库里已经有 4 道（天河、光明、绍兴、宝安），全靠人工覆盖表把状态掰回来。</p>
+<p>实测数据：库里 13 份"已失效"文件，<strong>13 份全部由人工覆盖表写入</strong>，模型自己只标对了 2 份（其余都合并进了"已废止"）。</p>
+<h2 id="section-5-3" class="section">5.3 更麻烦的是：83 份文件没有到期日</h2>
+<p>门禁有三条规则：状态含"废止/失效"→ 剔除；生效日晚于查询日 → 剔除；失效日早于查询日 → 剔除。</p>
+<p>第三条规则要生效，前提是<strong>文件里真的写了失效日</strong>。实际情况：</p>
+<table class="data-table"><thead><tr><th>项目</th><th>数量</th><th>占比</th></tr></thead><tbody><tr><td>库内文件总数</td><td>154</td><td>100%</td></tr><tr><td>没有失效日（valid_to 为空）</td><td><strong>83</strong></td><td><strong>53.9%</strong></td></tr><tr><td>现行文件中没有失效日</td><td><strong>83 / 131</strong></td><td><strong>63.4%</strong></td></tr></tbody></table>
+<p>这 83 份文件的时效<strong>完全依赖那个静态状态标签</strong>。一旦它的有效期悄悄过去，门禁的日期规则抓不到，只能靠状态标签——而状态标签不会自己变。</p>
+<p>覆盖表里还有 24 条只补了到期日、没改状态（例如"规划期至 2026 年底"），它们现在都还对，但 2026-12-31 一过就全错。</p>
+<h2 id="section-5-4" class="section">5.4 2026 年 12 月 31 日：13 份文件同一天到期</h2>
+<p>这不是假设，是已经排好的时间表。到期名单包括深圳市级若干措施与实施细则、珠海 45 号文、南京保障办法、苏州、无锡、佛山、广州、惠州、湛江、大连、广西等"2024—2026"三年期规划。</p>
+<p>如果不做任何处理，2027 年 1 月 1 日那天：</p>
+<ul class="bullet"><li>这 13 份文件在库里仍标"现行有效"；</li><li>门禁因为它们没有失效日（或失效日字段未填）而放行；</li><li>系统会继续拿它们当现行依据回答。</li></ul>
+<p>而这批文件恰好是<strong>最多人问</strong>的市级核心政策。</p>
+<h2 id="section-5-5" class="section">5.5 怎么修：把"状态"从存储字段改成计算字段</h2>
+<p>核心思路一句话：<strong>不要存"它是不是有效"，要存"它什么时候生效、什么时候失效、依据是什么"，然后每次查询时算一次。</strong></p>
+<table class="data-table"><thead><tr><th>动作</th><th>说明</th><th>优先级</th></tr></thead><tbody><tr><td>打标改三档</td><td>提示词加"已失效（有效期届满）""暂停执行"，共五档；<code>_norm_status</code> 遇未知值改为保留原文并打标记，不再兜底成"现行有效"</td><td>高</td></tr><tr><td>补失效日</td><td>优先补 83 份缺 valid_to 的文件。文件名里带"2024—2026 年"的，可直接按规划期末推算，并在覆盖表注明"推算"</td><td>高</td></tr><tr><td>建库时算一次</td><td>建库时计算 <code>effective_status = 综合(状态, 生效日, 失效日, 建库日)</code>，把"截至建库日是否有效"和"失效日"同时写入卡片</td><td>中</td></tr><tr><td>查询时再算一次</td><td>门禁里加一条：读卡片时若 <code>valid_to &lt; as_of</code>，即使状态写"现行有效"也剔除（现有代码已有这条，缺的是数据，不是逻辑）</td><td>中</td></tr><tr><td>定期体检</td><td>每月跑一次 <code>status_tracker.py --check</code>，它会列出"已过期但仍标现行"的文件；当前为 0 条，12-31 之后会跳出一批</td><td>已就绪</td></tr></tbody></table>
+<p>一个具体的验收标准：<strong>在 2027-01-01 那天跑一次 <code>status_tracker.py --check</code>，如果输出 0 条异常，说明这套机制真的生效了。</strong></p>
+<p class="divider"></p>
+<h1 id="section-6" class="chapter">第六章 执行顺序建议</h1>
+<p>如果只做三件事，我建议按这个顺序：</p>
+<table class="data-table"><thead><tr><th>顺序</th><th>动作</th><th>为什么排这个位置</th><th>成本</th><th>需要重跑评估吗</th></tr></thead><tbody><tr><td>1</td><td>修三个指标口径 + 那个除法 bug</td><td>论文所有数字都从这里出；不修则后面全部白做</td><td>半天</td><td><strong>不需要</strong>（用已有结果文件重算）</td></tr><tr><td>2</td><td>检索扩到 20 张再过滤（第一档）</td><td>一次改动同时提升正确率和可信度</td><td>半天 + 1 小时重跑</td><td><strong>需要</strong>（1 小时）</td></tr><tr><td>3</td><td>补题到每城 5 道、黄埔封顶 20 道</td><td>解决"半个黄埔"的外推问题</td><td>1～2 轮出题</td><td><strong>需要</strong>（约 1 小时）</td></tr></tbody></table>
+<p>如果还有第四件事：把 83 份缺失效日的文件补齐，并在 12-31 之后做一次批量改标。这件事有明确的外部截止日期，建议提前排进日程。</p>
+<p>一个附带建议：<strong>给项目建 git 仓库</strong>。现在只有 D 盘的文件夹快照，任何一次"改错了想回退"都只能靠手工对比。这件事成本最低、收益最高，可以顺手做掉。</p>
+<p class="divider"></p>
+<h1 id="section-7" class="chapter">附录 A 数据核对表</h1>
+<p>下表每个数字都可以用附录 C 的命令复算。如果复算结果与本文不一致，以复算为准，并请更新本文。</p>
+<table class="data-table"><thead><tr><th>编号</th><th>指标</th><th>数值</th><th>数据来源</th></tr></thead><tbody><tr><td>A1</td><td>题库总题数</td><td>96（TQ 49 / EXP 17 / MAN 30）</td><td>benchmark_v9.json</td></tr><tr><td>A2</td><td>金标旧条款召回题数</td><td>39（40.6%，分母 96）</td><td>v9 items.old_clause_penetrated</td></tr><tr><td>A3</td><td>可计算分母（有金标编号的题）</td><td>66 → 39/66 = 59.1%</td><td>A2 ÷ (TQ+EXP)</td></tr><tr><td>A4</td><td>上下文含脏卡片的题</td><td>73（76.0%）</td><td>v9 items.retrieved + 失效政策名单</td></tr><tr><td>A5</td><td>被门禁收走的卡片</td><td>300（480 槽的 62.5%）</td><td>v9 items.agent_dropped</td></tr><tr><td>A6</td><td>全库朴素分支毒化</td><td>37/96 = 38.5%</td><td>v9 metrics</td></tr><tr><td>A7</td><td>全库时序分支毒化</td><td>0/96 = 0%</td><td>v9 metrics</td></tr><tr><td>A8</td><td>条件毒化率（错误值）</td><td>94.9% = 37/39</td><td>evaluate.py 当前实现</td></tr><tr><td>A9</td><td>条件毒化率（正确值）</td><td>71.8% = 28/39</td><td>本文复算</td></tr><tr><td>A10</td><td>上下文被清空的题</td><td>27（28.1%），全部拒答</td><td>agent_context_count == 0</td></tr><tr><td>A11</td><td>扩到 20 张后可救回</td><td>25/27</td><td>本次实测</td></tr><tr><td>A12</td><td>黄埔题数 / 毒化</td><td>48 题 / 36 例（75.0%）</td><td>region 分组</td></tr><tr><td>A13</td><td>其余地区题数 / 毒化</td><td>48 题 / 1 例（2.1%）</td><td>region 分组</td></tr><tr><td>A14</td><td>微平均 vs 地区宏平均毒化率</td><td>38.5% vs 4.4%</td><td>两种平均方式</td></tr><tr><td>A15</td><td>库内文件数 / 无失效日</td><td>154 / 83（53.9%）</td><td>corpus_manifest.json</td></tr><tr><td>A16</td><td>现行文件无失效日</td><td>83/131（63.4%）</td><td>同上</td></tr><tr><td>A17</td><td>"已失效"文件中由人工覆盖表写入</td><td>13/13</td><td>validity_overrides.json</td></tr><tr><td>A18</td><td>覆盖表只补日期未改状态</td><td>24 条</td><td>validity_overrides.json</td></tr></tbody></table>
+<p class="divider"></p>
+<h1 id="section-8" class="chapter">附录 B 术语对照表</h1>
+<table class="data-table"><thead><tr><th>中文</th><th>英文 / 代码字段</th><th>一句话解释</th></tr></thead><tbody><tr><td>切片</td><td>chunk</td><td>把政策文件剪成四五百字的卡片</td></tr><tr><td>检索</td><td>retrieval</td><td>按语义相似度挑出最相关的几张卡片</td></tr><tr><td>Top-5</td><td>top_k</td><td>只把前 5 张卡片交给模型</td></tr><tr><td>金标答案</td><td>ground_truth</td><td>人工确定的标准答案</td></tr><tr><td>金标条款</td><td>old_clause_text / old_clause_id</td><td>这道题对应的那条政策原文</td></tr><tr><td>穿透</td><td>penetration</td><td>金标旧条款有没有混进上下文</td></tr><tr><td>门禁</td><td>gate / usable()</td><td>把作废卡片收走的安检环节</td></tr><tr><td>毒化</td><td>poisoning</td><td>模型照抄作废条款，给出过期答案</td></tr><tr><td>拒答</td><td>refused</td><td>模型说"无法确定"</td></tr><tr><td>严格拯救</td><td>rescue_strict</td><td>朴素分支答错、时序分支答对的比例</td></tr><tr><td>失效密度</td><td>invalid chunk ratio</td><td>库里作废卡片占全部卡片的比例</td></tr><tr><td>覆盖表</td><td>validity_overrides</td><td>人工核验的政策状态表，优先级高于模型打标</td></tr></tbody></table>
+<p class="divider"></p>
+<h1 id="section-9" class="chapter">附录 C 复现命令</h1>
+<p>以下命令均在项目根目录执行，使用项目虚拟环境的 Python。</p>
+<p><strong>C1 指标口径重算（对应附录 A 的 A2～A6、A8～A9）</strong></p>
+<pre class="code">python -c "import json;r=json.load(open('results/temporal_eval_v9.json',encoding='utf-8'));it=r['items'];p=[x for x in it if x['old_clause_penetrated']];print('召回',len(p),'其中毒化',sum(1 for x in p if x['naive_judge']['status']=='POISONED'))"</pre>
+<p><strong>C2 上下文污染统计（A4、A5）</strong></p>
+<pre class="code">python -c "import json;r=json.load(open('results/temporal_eval_v9.json',encoding='utf-8'));print('丢弃卡片总数',sum(len(x['agent_dropped']) for x in r['items']),'受污染题数',sum(1 for x in r['items'] if x['agent_dropped']))"</pre>
+<p><strong>C3 全过滤题统计（A10）</strong></p>
+<pre class="code">python -c "import json;r=json.load(open('results/temporal_eval_v9.json',encoding='utf-8'));z=[x for x in r['items'] if x['agent_context_count']==0];print('全过滤',len(z),'全部拒答',all(x['agent_judge']['status']=='REFUSED' for x in z))"</pre>
+<p><strong>C4 地区分布与毒化对比（A12～A14）</strong></p>
+<pre class="code">python -c "import json;from collections import Counter;b=json.load(open('data/national/benchmark_v9.json',encoding='utf-8'));print(Counter(x['region'] for x in b).most_common(8))"</pre>
+<p><strong>C5 失效日完整度（A15、A16）</strong></p>
+<pre class="code">python -c "import json;m=json.load(open('data/national/corpus_manifest.json',encoding='utf-8'))['policies_detail'];print('无失效日',sum(1 for p in m if not str(p.get('valid_to','')).strip()),'/',len(m))"</pre>
+<p><strong>C6 政策状态体检（12-31 之后必跑）</strong></p>
+<pre class="code">python tools/status_tracker.py --check</pre>
+<p class="divider"></p>
+<h1 id="section-10" class="chapter">结语</h1>
+<p>这四项技术债有一个共同点：<strong>它们都不是"东西坏了"，而是"没说清楚"</strong>——指标的名字和它算的东西不一致、题库的构成和它声称的覆盖面不一致、状态标签的粒度和现实的失效形态不一致。</p>
+<p>这类问题的麻烦之处在于，它们不会让程序报错，只会让论文里的某句话在评审席上站不住。好消息是，四项里三项可以用已有数据直接修，不需要重新采集、也不需要重新跑模型。</p>
+<p>真正需要花时间的只有两件：补题（让题库配得上"全国"两个字），和补失效日（让数据配得上"随时间去变"这件事）。</p>
+</section>
+
+</body>
+</html>

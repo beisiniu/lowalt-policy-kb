@@ -1,0 +1,16 @@
+{
+  "policy_name": "关于加强信息通信业能力建设 支撑低空基础设施发展的实施意见",
+  "issue_date": "2026-10-27",
+  "effective_date": "2026-10-27",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "基础电信企业等建设低空通信网络须依无线电管理规定办理频率使用及台站许可，重点覆盖300米以下空域，2027年公共航路网络覆盖率不低于90%。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_工业和信息化部等五部门办公厅(秘书局、综合局、综合司)关于加强信息通信业能力建设 支撑低空基础设施发展的实施意见(工信厅联通信〔2026〕4号).txt",
+    "char_count": 3305,
+    "extracted_at": "2026-10-27T16:34:26+08:00"
+  }
+}

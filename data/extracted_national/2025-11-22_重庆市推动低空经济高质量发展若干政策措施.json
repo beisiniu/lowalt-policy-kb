@@ -1,0 +1,15 @@
+{
+  "policy_name": "重庆市推动低空经济高质量发展若干政策措施",
+  "issue_date": "2025-11-22",
+  "effective_date": "2025-11-22",
+  "expiry_date": "2027-12-31",
+  "apply_region": "重庆市",
+  "status": "现行有效",
+  "summary": "低空物流及空中交通航线需经军民航审批并常态化运营，依据机型大小及年架次门槛（如小型无人机≥1000架次）申请财政补贴。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-11-22_重庆市推动低空经济高质量发展若干政策措施.txt",
+    "char_count": 5049,
+    "extracted_at": "2026-10-26T22:54:16+08:00"
+  }
+}

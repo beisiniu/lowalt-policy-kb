@@ -1,0 +1,15 @@
+{
+  "policy_name": "杭州市低空经济高质量发展实施方案（2024—2027年）",
+  "issue_date": "2024-07-01",
+  "effective_date": "2024-07-28",
+  "expiry_date": "2027-07-27",
+  "apply_region": "杭州市",
+  "status": "现行有效",
+  "summary": "杭州市统筹低空产业与飞行活动，由市交通运输局牵头，建设起降场与航线网络，强化空域协同与安全管控，未设具体审批门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-07-01_杭州市低空经济高质量发展实施方案(2024-2027年)政策解读.txt",
+    "char_count": 1756,
+    "extracted_at": "2026-10-26T16:47:19+08:00"
+  }
+}

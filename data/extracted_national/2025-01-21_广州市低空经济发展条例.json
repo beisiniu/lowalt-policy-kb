@@ -1,0 +1,15 @@
+{
+  "policy_name": "广州市低空经济发展条例",
+  "issue_date": "2025-01-21",
+  "effective_date": "2025-02-28",
+  "expiry_date": "无",
+  "apply_region": "广州市",
+  "status": "现行有效",
+  "summary": "在适飞空域飞行无需审批但需实名登记并实时报送数据，管制空域需通过市级平台申请，基础设施变更需征得同意。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-01-21_广州市低空经济发展条例.txt",
+    "char_count": 7302,
+    "extracted_at": "2026-10-26T21:39:24+08:00"
+  }
+}

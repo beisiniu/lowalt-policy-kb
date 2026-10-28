@@ -1,0 +1,16 @@
+{
+  "policy_name": "国家空域基础分类方法",
+  "issue_date": "2023-12-21",
+  "effective_date": "2023-12-21",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "规范A至W七类空域划设，管制空域需审批及ATC许可，非管制空域需报备飞行计划，明确各类空域通信、监视设备及速度限制要求。",
+  "_assumed_effective": true,
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-12-21_国家空域基础分类方法.txt",
+    "char_count": 4792,
+    "extracted_at": "2026-10-26T20:46:20+08:00"
+  }
+}

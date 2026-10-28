@@ -1,0 +1,15 @@
+{
+  "policy_name": "清远市低空经济高质量发展三年行动方案（2024-2026年）",
+  "issue_date": "2024-11-06",
+  "effective_date": "2024-11-06",
+  "expiry_date": "无",
+  "apply_region": "清远市",
+  "status": "现行有效",
+  "summary": "清远市各部门推进低空飞行基础设施、场景应用与产业培育，方案为工作部署，未设通用航空飞行审批或备案门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2024-11-06_清远市人民政府办公室关于印发《清远市低空经济高质量发展三年行动方案（2024-2026年）》的通知.txt",
+    "char_count": 6730,
+    "extracted_at": "2026-10-26T03:23:36+08:00"
+  }
+}

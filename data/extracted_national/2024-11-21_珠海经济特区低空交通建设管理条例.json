@@ -1,0 +1,15 @@
+{
+  "policy_name": "珠海经济特区低空交通建设管理条例",
+  "issue_date": "2024-11-21",
+  "effective_date": "2025-01-01",
+  "expiry_date": "无",
+  "apply_region": "珠海市",
+  "status": "现行有效",
+  "summary": "珠海市内低空飞行需向市级服务平台申请或备案，经空中交通管理机构批准后方可起飞；微型无人机视距内飞行，其他机型需取得运营合格证及操控员执照。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-11-21_珠海经济特区低空交通建设管理条例.txt",
+    "char_count": 8350,
+    "extracted_at": "2026-10-27T00:07:57+08:00"
+  }
+}

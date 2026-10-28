@@ -1,0 +1,15 @@
+{
+  "policy_name": "佛山市推动低空经济高质量发展实施方案（2024—2026年）",
+  "issue_date": "2024-08-13",
+  "effective_date": "2024-08-13",
+  "expiry_date": "无",
+  "apply_region": "佛山市",
+  "status": "现行有效",
+  "summary": "佛山市各部门推进低空制造、基建与应用，企业开展低空飞行须对接军民航空域管理并履行飞行活动申报，拓展真高120米以下适飞空域。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_佛山市人民政府办公室关于印发佛山市推动低空经济高质量发展实施方案(2024—2026年)的通知.txt",
+    "char_count": 9171,
+    "extracted_at": "2026-10-27T14:03:43+08:00"
+  }
+}

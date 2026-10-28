@@ -1,0 +1,15 @@
+{
+  "policy_name": "中山市低空经济高质量发展行动方案（2026-2028年）",
+  "issue_date": "2026-07-14",
+  "effective_date": "2026-07-14",
+  "expiry_date": "无",
+  "apply_region": "中山市",
+  "status": "现行有效",
+  "summary": "中山市各主体开展低空基建、制造、应用及飞行活动，需接入“一网统飞”平台并接受安全监管，无重量高度审批门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2026-07-21_中山市人民政府关于印发《中山市低空经济高质量发展行动方案（2026-2028年）》的通知.txt",
+    "char_count": 7132,
+    "extracted_at": "2026-10-26T03:23:40+08:00"
+  }
+}

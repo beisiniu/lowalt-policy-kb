@@ -1,0 +1,499 @@
+{
+ "updated_at": "2026-10-27T23:02:18",
+ "votes": {
+  "3aac507801a5246d": {
+   "deepseek": {
+    "kind": "explicit_expiry",
+    "inferred_expiry": "2026-11-26",
+    "confidence": "high",
+    "evidence": "该过渡政策在2026年11月26日（国际民航公约对无人驾驶航空器适航管理要求生效日）之前有效。",
+    "reasoning": "正文明确过渡政策有效期至2026年11月26日，属确定日期。",
+    "at": "2026-10-27T22:34:32"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "该过渡政策在2026年11月26日（国际民航公约对无人驾驶航空器适航管理要求生效日）之前有效。",
+    "reasoning": "文件为长期监管公告，仅第七条特定过渡政策有截止日，整体无统一有效期。",
+    "at": "2026-10-27T22:34:35"
+   },
+   "glm": {
+    "kind": "explicit_expiry",
+    "inferred_expiry": "2026-11-26",
+    "confidence": "medium",
+    "evidence": "该过渡政策在2026年11月26日（国际民航公约对无人驾驶航空器适航管理要求生效日）之前有效",
+    "reasoning": "第七条过渡政策写明有效截止日，为全文最晚的明确时效终点。",
+    "at": "2026-10-27T22:38:03"
+   }
+  },
+  "d5100b3cda14d545": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "力争到2025年，全省无人机产业生态不断完善，具备山东特色的无人机产业体系基本建立。",
+    "reasoning": "2025年为目标年而非有效期终点，正文无有效期或规划期区间表述",
+    "at": "2026-10-27T22:36:11"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2025-12-31",
+    "confidence": "high",
+    "evidence": "力争到2025年，全省无人机产业生态不断完善，具备山东特色的无人机产业体系基本建立。",
+    "reasoning": "文件为实施方案，明确设定了2025年为阶段性目标终点，无其他有效期表述，故以该年份年底为时效终点。",
+    "at": "2026-10-27T22:36:14"
+   },
+   "glm": {
+    "kind": "unclear",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "力争到2025年，全省无人机产业生态不断完善，具备山东特色的无人机产业体系基本建立。",
+    "reasoning": "仅有目标年",
+    "at": "2026-10-27T22:36:42"
+   }
+  },
+  "afa81e03eb99e580": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "力争到2026年，全市形成以低空科创制造为核心、以低空检验测试为特色的低空经济产业体系",
+    "reasoning": "2026年为目标年，非有效期终点；全文无有效期或规划期区间表述",
+    "at": "2026-10-27T22:38:05"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "力争到2026年，全市形成以低空科创制造为核心、以低空检验测试为特色的低空经济产业体系",
+    "reasoning": "文中仅提及2026年为阶段性发展目标，未设定文件有效期或规划期区间，属长期有效意见。",
+    "at": "2026-10-27T22:38:07"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "力争到2026年，全市形成以低空科创制造为核心、以低空检验测试为特色的低空经济产业体系",
+    "reasoning": "仅有2026年目标年，无有效期或规划期区间，属长期指导意见",
+    "at": "2026-10-27T22:38:24"
+   }
+  },
+  "159c80f67d0cc1b5": {
+   "deepseek": {
+    "kind": "explicit_expiry",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "high",
+    "evidence": "信息时效期：2026-12-31",
+    "reasoning": "正文元数据明确标注信息时效期至2026-12-31，直接采用该日期",
+    "at": "2026-10-27T22:38:25"
+   },
+   "qwen": {
+    "kind": "explicit_expiry",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "high",
+    "evidence": "信息时效期：2026-12-31",
+    "reasoning": "正文元数据明确标注了信息时效期截止日期。",
+    "at": "2026-10-27T22:48:36"
+   },
+   "glm": {
+    "kind": "plan_period",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "high",
+    "evidence": "关于印发《长沙市推动低空经济高质量发展实施方案（2024—2026年）》的通知",
+    "reasoning": "标题载明规划期2024—2026年，期末为2026年12月31日",
+    "at": "2026-10-27T22:49:10"
+   }
+  },
+  "e008fb96a88697d3": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年，建成20个通用机场和100个以上垂直起降点",
+    "reasoning": "2027与2030均为目标年，非有效期终点，正文无有效期或规划期区间表述",
+    "at": "2026-10-27T22:49:12"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2030年，全面建成布局合理、功能完善、覆盖广泛的飞行起降基础设施网络",
+    "reasoning": "文中仅设定2027和2030年为发展目标年份，未规定文件有效期或规划期区间，属长期指导意见。",
+    "at": "2026-10-27T22:49:15"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2030年，全面建成布局合理、功能完善、覆盖广泛的飞行起降基础设施网络",
+    "reasoning": "仅有2027、2030目标年，无有效期或规划期，属长期指导意见",
+    "at": "2026-10-27T22:49:31"
+   }
+  },
+  "bd2c0f9899f83c33": {
+   "deepseek": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "medium",
+    "evidence": "高水平建设民航强省 打造低空经济发展高地行动方案（2024—2027年）",
+    "reasoning": "附件行动方案明确规划期为2024—2027年，取末年12月31日为时效终点",
+    "at": "2026-10-27T22:49:33"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "高水平建设民航强省 打造低空经济发展高地行动方案（2024—2027年）",
+    "reasoning": "附件明确列出行动方案规划期为2024至2027年，取末年12月31日。",
+    "at": "2026-10-27T22:49:36"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2035年，全面建成高水平民航强省和低空经济发展高地。",
+    "reasoning": "意见为指导性文件，2027、2035均为目标年，正文未设自身有效期。",
+    "at": "2026-10-27T22:53:10"
+   }
+  },
+  "46ba89f8e992c446": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年，海珠区低空管理机制运转顺畅、基础设施基本完备",
+    "reasoning": "2027年为目标年而非有效期终点，正文无规划期区间或有效期表述",
+    "at": "2026-10-27T22:53:12"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "到2027年，海珠区低空管理机制运转顺畅、基础设施基本完备……打造基于人工智能的低空经济示范区。",
+    "reasoning": "文件为工作方案，明确设定了“到2027年”的发展目标与愿景，视为规划期终点。",
+    "at": "2026-10-27T22:53:15"
+   },
+   "glm": {
+    "kind": "unclear",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2027年，海珠区低空管理机制运转顺畅、基础设施基本完备、应用场景加快拓展",
+    "reasoning": "全文仅有“到2027年”目标年，无有效期或规划期区间表述，无法定时效终点",
+    "at": "2026-10-27T22:55:23"
+   }
+  },
+  "8a1d29176777eaa0": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "《方案》提出了两个阶段性目标：到2027年，保税区低空经济发展要素和基础条件基本完备",
+    "reasoning": "2027、2030均为目标年，非规划期区间，无有效期表述，故长期有效",
+    "at": "2026-10-27T22:55:25"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2030年，基本建成较为完善的低空经济体系",
+    "reasoning": "文中仅提及2027和2030年的阶段性发展目标，未设定方案有效期或规划期区间。",
+    "at": "2026-10-27T22:55:27"
+   },
+   "glm": {
+    "kind": "unclear",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2030年，基本建成较为完善的低空经济体系",
+    "reasoning": "仅有2027、2030目标年，无规划期区间或有效期表述",
+    "at": "2026-10-27T22:56:07"
+   }
+  },
+  "da037fa281ee44c0": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年，低空空域协同管理机制运转高效，低空经济发展规模全国领先。到2030年，智能互联、功能完善、安全高效的低空设施网基本建成",
+    "reasoning": "2027、2030均为目标年，非有效期终点，全文无有效期或规划期区间表述",
+    "at": "2026-10-27T22:56:09"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2030年，智能互联、功能完善、安全高效的低空设施网基本建成",
+    "reasoning": "文中仅含2027和2030目标年，无规划期区间或有效期条款，属长期有效文件。",
+    "at": "2026-10-27T22:56:11"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2030年，智能互联、功能完善、安全高效的低空设施网基本建成，覆盖上中下游的特色产业链基本形成",
+    "reasoning": "2027、2030年均为目标年，全文无有效期或规划期，属长期指导文件",
+    "at": "2026-10-27T22:56:46"
+   }
+  },
+  "a6353369f584647a": {
+   "deepseek": {
+    "kind": "plan_period",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "high",
+    "evidence": "到2026年，低空经济产业生态不断完善，发展规模不断壮大，服务保障达到国内先进水平",
+    "reasoning": "正文以2026年为发展目标年，无有效期条款，按规划期取2026年末",
+    "at": "2026-10-27T22:56:48"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "high",
+    "evidence": "到2026年，低空经济产业生态不断完善，发展规模不断壮大",
+    "reasoning": "文件为实施方案，明确设定了至2026年的阶段性发展目标，视为规划期终点。",
+    "at": "2026-10-27T22:56:50"
+   },
+   "glm": {
+    "kind": "unclear",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2026年，低空经济产业生态不断完善，发展规模不断壮大",
+    "reasoning": "正文仅有'到2026年'目标年表述，无有效期或规划期区间，无法确定时效终点",
+    "at": "2026-10-27T22:57:28"
+   }
+  },
+  "3236bed43ba172a5": {
+   "deepseek": {
+    "kind": "plan_period",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "medium",
+    "evidence": "到2026年，推进新增“低空+”场景应用8个",
+    "reasoning": "正文仅给出2026年阶段目标，无有效期条款，按行动方案规划期取2026年末",
+    "at": "2026-10-27T22:57:29"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "high",
+    "evidence": "到2026年，推进新增“低空+”场景应用8个",
+    "reasoning": "文件为三年行动方案，明确设定了2026年为阶段性目标终点，无后续有效期表述。",
+    "at": "2026-10-27T22:57:32"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2026年，推进新增“低空+”场景应用8个，打造一批低空应用示范基地",
+    "reasoning": "正文仅有2026、2030年目标年，无规划期区间及有效期条款",
+    "at": "2026-10-27T22:58:22"
+   }
+  },
+  "60eeff33a50346cc": {
+   "deepseek": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "制定本行动方案，实施期为2025年至2027年。",
+    "reasoning": "正文明确实施期为2025年至2027年，取末年12月31日",
+    "at": "2026-10-27T22:58:23"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "制定本行动方案，实施期为2025年至2027年。",
+    "reasoning": "正文明确规定实施期区间为2025至2027年，取末年12月31日。",
+    "at": "2026-10-27T22:58:26"
+   },
+   "glm": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "制定本行动方案，实施期为2025年至2027年",
+    "reasoning": "正文明确实施期2025至2027年，规划期末年12月31日为时效终点",
+    "at": "2026-10-27T22:58:36"
+   }
+  },
+  "6c0f342d0bd00dca": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年，无人驾驶航空器责任保险强制投保制度初步建立",
+    "reasoning": "2027、2030均为目标年，非有效期终点；全文无有效期或规划期区间表述",
+    "at": "2026-10-27T22:58:38"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2030年，低空保险政策框架基本形成，对低空经济安全健康发展的保障作用持续增强。",
+    "reasoning": "文中仅含2027和2030目标年，无规划期区间或有效期条款，属长期有效文件。",
+    "at": "2026-10-27T22:58:40"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2030年，低空保险政策框架基本形成，对低空经济安全健康发展的保障作用持续增强。",
+    "reasoning": "仅设2027、2030目标年，无有效期或规划期区间，属长期指导性文件",
+    "at": "2026-10-27T22:59:08"
+   }
+  },
+  "7a11e75ff94972f8": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2027年底，实现政务服务“一网统飞”的州（市）达到5个。",
+    "reasoning": "2027年底是目标年而非有效期终点，全文无有效期或规划期区间表述",
+    "at": "2026-10-27T22:59:09"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年底，实现政务服务“一网统飞”的州（市）达到5个。",
+    "reasoning": "文中仅出现'到2027年底'的目标年表述，无规划期区间或有效期条款，属长期有效文件。",
+    "at": "2026-10-27T22:59:11"
+   },
+   "glm": {
+    "kind": "unclear",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2027年底，实现政务服务“一网统飞”的州（市）达到5个",
+    "reasoning": "全文仅有“到2027年底”类目标年，无规划期区间及有效期条款，目标年不能作时效终点",
+    "at": "2026-10-27T22:59:50"
+   }
+  },
+  "02424a63e63c885b": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年,低空经济标准体系基本建立",
+    "reasoning": "2027与2030均为目标年，非有效期终点，正文无规划期区间或有效期表述",
+    "at": "2026-10-27T22:59:51"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2030年,低空经济领域标准超过300项...基本形成",
+    "reasoning": "文中2027和2030年为体系建设目标年，非文件有效期或规划期区间，指南类文件通常长期有效。",
+    "at": "2026-10-27T22:59:53"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2030年,低空经济领域标准超过300项,结构优化、先进合理、国际兼容的低空经济标准体系基本形成",
+    "reasoning": "2027、2030年仅为目标年，全文无有效期或规划区间表述，属长期指导文件",
+    "at": "2026-10-27T23:00:22"
+   }
+  },
+  "3bb068aad134ef0e": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年,全国低空公共航路地面移动通信网络覆盖率不低于90%",
+    "reasoning": "2027年为目标年而非有效期终点，全文无有效期或规划期区间表述",
+    "at": "2026-10-27T23:00:23"
+   },
+   "qwen": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "high",
+    "evidence": "到2027年,全国低空公共航路地面移动通信网络覆盖率不低于90%",
+    "reasoning": "文中仅含2027年目标指标，无规划期区间或有效期条款，属长期有效文件。",
+    "at": "2026-10-27T23:00:25"
+   },
+   "glm": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2027年,全国低空公共航路地面移动通信网络覆盖率不低于90%",
+    "reasoning": "全文无有效期或规划期区间，2027年仅为发展目标年，属长期指导意见",
+    "at": "2026-10-27T23:00:45"
+   }
+  },
+  "15faf0fb5138d37e": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2027年，引育低空产业链相关企业200家以上，产业规模达到200亿元",
+    "reasoning": "2027年为目标年，非有效期终点；全文无有效期或规划期区间表述",
+    "at": "2026-10-27T23:00:47"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "到2027年，引育低空产业链相关企业200家以上，产业规模达到200亿元。",
+    "reasoning": "文件为实施方案，工作目标明确设定至2027年，视为规划期终点。",
+    "at": "2026-10-27T23:00:49"
+   },
+   "glm": {
+    "kind": "unclear",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "到2027年，引育低空产业链相关企业200家以上，产业规模达到200亿元",
+    "reasoning": "全文仅有“到2027年”目标年，无有效期或规划期区间，终点无法确定",
+    "at": "2026-10-27T23:01:12"
+   }
+  },
+  "aaedcd689f8576ac": {
+   "deepseek": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "《辽宁省低空经济制造业高质量发展三年行动计划（2025—2027年）》",
+    "reasoning": "标题明确规划期为2025—2027年，取末年12月31日为时效终点",
+    "at": "2026-10-27T23:01:13"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "《辽宁省低空经济制造业高质量发展三年行动计划（2025—2027年）》",
+    "reasoning": "标题明确标注规划期为2025至2027年，依据规则取末年12月31日。",
+    "at": "2026-10-27T23:01:16"
+   },
+   "glm": {
+    "kind": "plan_period",
+    "inferred_expiry": "2027-12-31",
+    "confidence": "high",
+    "evidence": "《辽宁省低空经济制造业高质量发展三年行动计划（2025—2027年）》",
+    "reasoning": "标题载明三年行动计划规划期2025—2027年，终点取末年12月31日",
+    "at": "2026-10-27T23:01:22"
+   }
+  },
+  "82c929c5cee57d6a": {
+   "deepseek": {
+    "kind": "open_ended",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "特制定本方案",
+    "reasoning": "正文无有效期或规划期区间，2026年为目标节点而非有效期终点",
+    "at": "2026-10-27T23:01:23"
+   },
+   "qwen": {
+    "kind": "plan_period",
+    "inferred_expiry": "2026-12-31",
+    "confidence": "high",
+    "evidence": "2024年启动前期工作，2026年建成投入使用",
+    "reasoning": "正文多处明确任务截止于2026年，构成事实上的行动规划期终点。",
+    "at": "2026-10-27T23:01:25"
+   },
+   "glm": {
+    "kind": "unclear",
+    "inferred_expiry": null,
+    "confidence": "medium",
+    "evidence": "2024年启动前期工作，2026年建成投入使用",
+    "reasoning": "仅有任务目标年份，无有效期或规划期区间表述",
+    "at": "2026-10-27T23:02:18"
+   }
+  }
+ }
+}

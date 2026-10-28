@@ -1,0 +1,16 @@
+{
+  "policy_name": "绿色航空制造业发展纲要(2023—2035年)",
+  "issue_date": "2023-10-10",
+  "effective_date": "2023-10-10",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "面向全国绿色航空制造业，要求新能源航空器（eVTOL、电动飞机等）须经适航审定取证后方可示范运营，并建立适航审定与安全监管体系。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_绿色航空制造业发展纲要(2023—2035年)(工信部联重装〔2023〕181号,工信部科技部财政部民航局).txt",
+    "char_count": 7711,
+    "extracted_at": "2026-10-27T17:17:01+08:00"
+  }
+}

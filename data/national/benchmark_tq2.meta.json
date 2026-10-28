@@ -1,0 +1,37 @@
+{
+  "built_at": "2026-10-27T23:38:21+0800",
+  "as_of": "2026-10-27",
+  "pairs_used": 60,
+  "items": 36,
+  "by_region": {
+    "广州市黄埔区": 12,
+    "武汉市": 9,
+    "深圳市龙岗区": 4,
+    "张家界市": 3,
+    "福州市": 3,
+    "芜湖市": 3,
+    "无锡市": 1,
+    "江苏省": 1
+  },
+  "by_type": {
+    "subsidy_changed": 8,
+    "procedure_changed": 8,
+    "eligibility_changed": 6,
+    "scope_changed": 6,
+    "threshold_changed": 5,
+    "repeal_recognition": 3
+  },
+  "rejected": 11,
+  "pair_stats": {
+    "clauses_total": 3166,
+    "old_clauses": 421,
+    "current_clauses": 2732,
+    "candidate_pairs": 171,
+    "topics": 20,
+    "skipped": {
+      "no_new_counterpart": 63,
+      "same_text": 0,
+      "low_similarity": 322
+    }
+  }
+}

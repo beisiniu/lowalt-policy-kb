@@ -1,0 +1,15 @@
+{
+  "policy_name": "中华人民共和国民用航空法",
+  "issue_date": "2026-01-06",
+  "effective_date": "2026-07-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "全国民用航空器及无人驾驶航空器活动须经适航审定与飞行管理，空域划分兼顾低空经济，划定无人驾驶航空器管制空域。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-01-06_中华人民共和国民用航空法(2025年修订,2026年7月1日施行,增设发展促进专章含低空经济条款).txt",
+    "char_count": 1667,
+    "extracted_at": "2026-10-27T14:14:17+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "无人驾驶航空器飞行管理暂行条例",
+  "issue_date": "2023-06-28",
+  "effective_date": "2024-01-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "境内无人机飞行须实名登记；中型、大型需适航许可，除微型外运营需运营合格证，小型及以上操控员需执照，管制空域（真高120米以上等）飞行须提前1日12时前申请批准。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-06-28_无人驾驶航空器飞行管理暂行条例.txt",
+    "char_count": 12425,
+    "extracted_at": "2026-10-26T16:47:13+08:00"
+  }
+}

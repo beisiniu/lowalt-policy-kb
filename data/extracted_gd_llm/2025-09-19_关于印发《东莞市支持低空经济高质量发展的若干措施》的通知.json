@@ -1,0 +1,15 @@
+{
+  "policy_name": "东莞市支持低空经济高质量发展的若干措施",
+  "issue_date": "2025-09-05",
+  "effective_date": "2025-09-05",
+  "expiry_date": "2027-12-31",
+  "apply_region": "东莞市",
+  "status": "现行有效",
+  "summary": "东莞低空企业开展起降设施建设、航线运营、适航取证等可申请财政补贴，需符合投资额、航线距离10公里、年100架次等门槛，无审批要求。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\gd_policies\\2025-09-19_关于印发《东莞市支持低空经济高质量发展的若干措施》的通知.txt",
+    "char_count": 3516,
+    "extracted_at": "2026-10-26T03:23:38+08:00"
+  }
+}

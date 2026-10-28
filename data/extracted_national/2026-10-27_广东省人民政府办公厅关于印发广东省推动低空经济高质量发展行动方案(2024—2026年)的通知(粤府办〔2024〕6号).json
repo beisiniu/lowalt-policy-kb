@@ -1,0 +1,15 @@
+{
+  "policy_name": "广东省推动低空经济高质量发展行动方案（2024—2026年）",
+  "issue_date": "2024-05-21",
+  "effective_date": "2024-05-21",
+  "expiry_date": "无",
+  "apply_region": "广东省",
+  "status": "现行有效",
+  "summary": "广东省统筹低空空域协同管理，建设省级低空飞行综合管理服务平台，支持广州、深圳、珠海等市先行先试，开展城市空中交通、低空物流等试点示范。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_广东省人民政府办公厅关于印发广东省推动低空经济高质量发展行动方案(2024—2026年)的通知(粤府办〔2024〕6号).txt",
+    "char_count": 11640,
+    "extracted_at": "2026-10-27T22:47:19+08:00"
+  }
+}

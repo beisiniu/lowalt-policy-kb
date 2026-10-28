@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>低空经济政策采集分布 · 中国地图</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; background: #f4f7fb; color: #1c2b3a; padding: 20px 24px; }
+  h1 { font-size: 22px; color: #14395c; margin-bottom: 4px; }
+  .sub { color: #6b7a8c; font-size: 13px; margin-bottom: 16px; }
+  .cards { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .card { background: #fff; border: 1px solid #e3eaf3; border-radius: 10px; padding: 12px 18px; min-width: 130px; }
+  .card .num { font-size: 26px; font-weight: 700; color: #1f4e79; }
+  .card .lab { font-size: 12px; color: #7c8aa0; margin-top: 2px; }
+  .grid { display: flex; gap: 16px; }
+  .panel { background: #fff; border: 1px solid #e3eaf3; border-radius: 10px; padding: 10px; }
+  #map { width: 66vw; height: 78vh; min-height: 620px; }
+  #bars { width: 30vw; height: 38vh; min-height: 300px; }
+  #bars2 { width: 30vw; height: 38vh; min-height: 300px; margin-top: 14px; }
+  .note { margin-top: 14px; font-size: 12px; color: #8a97a8; line-height: 1.8; }
+</style>
+</head>
+<body>
+<h1>低空经济政策采集分布（截至 2026-10-26）</h1>
+<div class="sub">按政策文件「区域提示」统计；未覆盖省份多为低空经济尚处起步的地区</div>
+<div class="cards" id="cards"></div>
+<div class="grid">
+  <div class="panel"><div id="map"></div></div>
+  <div>
+    <div class="panel"><div id="bars"></div></div>
+    <div class="panel"><div id="bars2"></div></div>
+  </div>
+</div>
+<div class="note">
+  <b>统计口径：</b>共 __TOTAL__ 篇政策原文，其中全国/部委层面 __NAT__ 篇（不计入地图），地方 __LOCAL__ 篇覆盖 __NPROV__ 个省级行政区、__NCITY__ 个地市/区县。已失效/已废止文件 __EXP__ 篇。<br>
+  <b>地图来源声明：</b>行政边界数据取自 DataV.GeoAtlas（阿里云高德系数据源，依据自然资源部标准地图绘制），完整包含台湾省、香港、澳门及南海诸岛（含九段线）。本图仅作数据分布示意，不作为权属依据。<br>
+  <b>数据文件：</b>lowalt-policy-kb/output/china_map/region_counts.json（明细见 sources/lowalt_policy_urls.json 种子库，全部 URL 已记录）
+</div>
+<script>__ECHARTS__</script>
+<script>window.__CHINA_GEO__ = __GEOJSON__;</script>
+<script>
+var DATA = __DATA__;
+(function() {
+  var c = document.getElementById('cards');
+  var items = [
+    [__TOTAL__, '政策总篇数'],
+    [__NPROV__, '覆盖省级行政区'],
+    [__NCITY__, '地市/区县数'],
+    [__NAT__, '全国/部委层面'],
+    [__EXP__, '已失效/废止文件']
+  ];
+  var html = '';
+  for (var i = 0; i < items.length; i++) {
+    html += '<div class="card"><div class="num">' + items[i][0] + '</div><div class="lab">' + items[i][1] + '</div></div>';
+  }
+  c.innerHTML = html;
+
+  var provData = [];
+  for (var i = 0; i < DATA.prov.length; i++) {
+    provData.push({ name: DATA.prov[i][0], value: DATA.prov[i][1] });
+  }
+  var maxV = 0;
+  for (var i = 0; i < DATA.prov.length; i++) { if (DATA.prov[i][1] > maxV) maxV = DATA.prov[i][1]; }
+
+  echarts.registerMap('china', window.__CHINA_GEO__);
+  var mapChart = echarts.init(document.getElementById('map'));
+  mapChart.setOption({
+    tooltip: { trigger: 'item', formatter: function(p) {
+      return p.value != null ? p.name + '：' + p.value + ' 篇' : p.name + '：暂未采集';
+    } },
+    visualMap: {
+      min: 0, max: maxV, left: 12, bottom: 12,
+      text: ['篇数多', '少'], calculable: false,
+      inRange: { color: ['#eef4fb', '#b8d4ee', '#6fa8dc', '#2e6da4', '#17466f'] },
+      textStyle: { color: '#5a6a7d' }
+    },
+    series: [{
+      type: 'map', map: 'china', roam: true, zoom: 1.18, top: 24,
+      label: { show: true, fontSize: 9.5, color: '#40566e' },
+      emphasis: { label: { show: true, fontWeight: 600 }, itemStyle: { areaColor: '#f9c74f' } },
+      data: provData
+    }]
+  });
+
+  function barOption(title, rows, color) {
+    var names = [], vals = [];
+    for (var i = 0; i < rows.length; i++) { names.push(rows[i][0]); vals.push(rows[i][1]); }
+    names.reverse(); vals.reverse();
+    return {
+      title: { text: title, left: 10, top: 6, textStyle: { fontSize: 14, color: '#14395c' } },
+      grid: { left: 96, right: 44, top: 36, bottom: 20 },
+      xAxis: { type: 'value', minInterval: 1 },
+      yAxis: { type: 'category', data: names, axisLabel: { fontSize: 11 } },
+      series: [{
+        type: 'bar', data: vals, barWidth: 14,
+        itemStyle: { color: color, borderRadius: [0, 4, 4, 0] },
+        label: { show: true, position: 'right', color: '#40566e' }
+      }]
+    };
+  }
+  var barTop = echarts.init(document.getElementById('bars'));
+  barTop.setOption(barOption('省级行政区 · 政策篇数 TOP12', DATA.prov.slice(0, 12), '#2e6da4'));
+  var barCity = echarts.init(document.getElementById('bars2'));
+  barCity.setOption(barOption('地市/区县 · 政策篇数 TOP14', DATA.city.slice(0, 14), '#3d9970'));
+
+  window.addEventListener('resize', function() {
+    mapChart.resize(); barTop.resize(); barCity.resize();
+  });
+})();
+</script>
+</body>
+</html>

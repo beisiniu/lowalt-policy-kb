@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市交通运输局《深圳市支持低空经济高质量发展的若干措施》实施细则",
+  "issue_date": "2025-09-30",
+  "effective_date": "2025-10-09",
+  "expiry_date": "2026-12-31",
+  "apply_region": "深圳市",
+  "status": "现行有效",
+  "summary": "深圳企业开展eVTOL/无人机适航取证、低空物流、通航短途运输及创新载体项目，须经市交通运输局申报审核获资助，航线需主管部门批复。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-09-30_《深圳市交通运输局〈深圳市支持低空经济高质量发展的若干措施〉实施细则》.txt",
+    "char_count": 3915,
+    "extracted_at": "2026-10-26T20:26:00+08:00"
+  }
+}

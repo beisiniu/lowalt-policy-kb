@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "source": "北京市人民政府-政策文件",
+  "updated_at": "2026-10-26T02:50:27+08:00",
+  "count": 3,
+  "records": {
+    "8b7fa64214d0558d": {
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202610/t20261023_4916567.html",
+      "title": "北京市行政规范性文件备案审查规定",
+      "publish_date": "2026-10-23",
+      "content_hash": "89b0cc5315e3237f5679f91ec854622d4f271c53c092fd7040cbb905ca3819a2",
+      "content_length": 3227,
+      "revision": 1,
+      "txt_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\beijing_policies\\2026-10-23_北京市行政规范性文件备案审查规定.txt",
+      "json_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\beijing_policies\\2026-10-23_北京市行政规范性文件备案审查规定.json",
+      "content_hashes": [
+        "89b0cc5315e3237f5679f91ec854622d4f271c53c092fd7040cbb905ca3819a2"
+      ],
+      "first_seen_at": "2026-10-26T02:50:12+08:00",
+      "last_crawled_at": "2026-10-26T02:50:24+08:00"
+    },
+    "84cb6fad8d82e2f1": {
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202610/t20261023_4916674.html",
+      "title": "北京市科学技术委员会、中关村科技园区管理委员会关于印发《北京市实验动物许可证管理办法》的通知",
+      "publish_date": "2026-10-23",
+      "content_hash": "ba07eb8ebfdae7539b4190406d3f0d1a61ae610eced73ea010256f21de85fc9c",
+      "content_length": 2826,
+      "revision": 1,
+      "txt_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\beijing_policies\\2026-10-23_北京市科学技术委员会、中关村科技园区管理委员会关于印发《北京市实验动物许可证管理办法》的通知.txt",
+      "json_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\beijing_policies\\2026-10-23_北京市科学技术委员会、中关村科技园区管理委员会关于印发《北京市实验动物许可证管理办法》的通知.json",
+      "content_hashes": [
+        "ba07eb8ebfdae7539b4190406d3f0d1a61ae610eced73ea010256f21de85fc9c"
+      ],
+      "first_seen_at": "2026-10-26T02:50:14+08:00",
+      "last_crawled_at": "2026-10-26T02:50:25+08:00"
+    },
+    "8f6b7c05058c2f03": {
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202610/t20261022_4914459.html",
+      "title": "中共北京市委金融委员会办公室 中国人民银行北京市分行等单位关于印发《北京市全面提升金融营商环境实施方案》的通知",
+      "publish_date": "2026-10-22",
+      "content_hash": "2674f75d6a2a9bbbe24e55d9d5c90723f276ddde6e68ec34649bca603d089d1e",
+      "content_length": 4274,
+      "revision": 1,
+      "txt_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\beijing_policies\\2026-10-22_中共北京市委金融委员会办公室_中国人民银行北京市分行等单位关于印发《北京市全面提升金融营商环境实施方案》的通知.txt",
+      "json_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\beijing_policies\\2026-10-22_中共北京市委金融委员会办公室_中国人民银行北京市分行等单位关于印发《北京市全面提升金融营商环境实施方案》的通知.json",
+      "content_hashes": [
+        "2674f75d6a2a9bbbe24e55d9d5c90723f276ddde6e68ec34649bca603d089d1e"
+      ],
+      "first_seen_at": "2026-10-26T02:50:16+08:00",
+      "last_crawled_at": "2026-10-26T02:50:27+08:00"
+    }
+  }
+}

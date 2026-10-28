@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市低空飞行活动管理办法（2026年修订）",
+  "issue_date": "2026-08-20",
+  "effective_date": "2026-09-01",
+  "expiry_date": "2031-08-31",
+  "apply_region": "深圳市",
+  "status": "现行有效",
+  "summary": "使用微型、轻型民用无人驾驶航空器在适飞空域内飞行的，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式",
+  "_engine": "rules",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\policies\\2026-08-20_深圳市低空飞行活动管理办法（2026年修订）.txt",
+    "char_count": 570,
+    "extracted_at": "2026-10-26T02:04:04+08:00"
+  }
+}

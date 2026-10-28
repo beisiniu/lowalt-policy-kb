@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "created_at": "2026-10-26T16:21:48+08:00",
+    "benchmark_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\benchmark_temporal_demo.json",
+    "benchmark_fingerprint": "5d34b62aebf293065e453d1fded80e7e667f6821bebc8c15239d7ed759fdbf7c",
+    "backend": {
+      "backend": "chroma",
+      "collection": "lowalt_temporal_demo",
+      "persist_dir": "demo/chroma_temporal",
+      "embedding_function": "hash",
+      "count": 3
+    },
+    "model": "deepseek-flash",
+    "judge_model": "deepseek-flash",
+    "as_of": "2026-10-26",
+    "top_k": 5,
+    "thinking": false
+  },
+  "metrics": {
+    "n": 2,
+    "penetration_count": 2,
+    "penetration_rate": 1.0,
+    "new_clause_penetration_count": 2,
+    "new_clause_penetration_rate": 1.0,
+    "old_clause_filtered_count": 2,
+    "old_clause_filter_rate": 1.0,
+    "naive_poisoned": 0,
+    "agent_poisoned": 0,
+    "naive_poison_rate": 0.0,
+    "agent_poison_rate": 0.0,
+    "naive_correct": 2,
+    "agent_correct": 2,
+    "naive_correct_rate": 1.0,
+    "agent_correct_rate": 1.0,
+    "naive_refused": 0,
+    "agent_refused": 0,
+    "naive_refusal_rate": 0.0,
+    "agent_refusal_rate": 0.0,
+    "naive_conditionally_poisoned_rate": 0.0,
+    "agent_conditionally_poisoned_rate": 0.0,
+    "rescued_to_correct": 0,
+    "de_poisoned": 0,
+    "rescue_rate_strict": 0.0,
+    "de_poison_rate": 0.0,
+    "absolute_poison_reduction": 0.0
+  },
+  "items": [
+    {
+      "id": "TQ-0001",
+      "topic": "飞行计划审批",
+      "region": "深圳市",
+      "question": "在深圳飞微型无人机，是不是还得提前2个工作日申请飞行计划？听说微型、轻型都不豁免？",
+      "ground_truth": "在深圳适飞空域内使用微型、轻型民用无人驾驶航空器飞行，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式。",
+      "conflict_type": "approval_removed",
+      "retrieved": [
+        {
+          "id": "demo-old-2025",
+          "policy_name": "深圳市低空飞行活动管理办法（2025年）",
+          "article": "第七条",
+          "region": "深圳市",
+          "score": 0.615039,
+          "valid_from": "2025-06-01",
+          "valid_to": "2026-08-31",
+          "text": "第七条 使用民用无人驾驶航空器在适飞空域内飞行的，应当提前2个工作日提出飞行计划申请；微型、轻型民用无人驾驶航空器不适用豁免，仍须申请。"
+        },
+        {
+          "id": "demo-new-2026",
+          "policy_name": "深圳市低空飞行活动管理办法（2026年修订）",
+          "article": "第五条、第六条",
+          "region": "深圳市",
+          "score": 0.589366,
+          "valid_from": "2026-09-01",
+          "valid_to": null,
+          "text": "第五条 使用微型、轻型民用无人驾驶航空器在适飞空域内飞行的，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式。第六条 使用小型、中型、大型民用无人驾驶航空器飞行的，应当提前1个工作日通过市低空飞行服务保障平台提出飞行计划申请。"
+        },
+        {
+          "id": "demo-old-2024",
+          "policy_name": "深圳市低空飞行活动管理暂行办法（2024年）",
+          "article": "第六条",
+          "region": "深圳市",
+          "score": 0.575479,
+          "valid_from": "2024-01-01",
+          "valid_to": "2025-05-31",
+          "text": "第六条 在本市范围内使用民用无人驾驶航空器从事飞行活动的，无论机型大小、无论是否经营性，均应当提前5个工作日向市低空管理部门提出飞行计划申请，经批准后方可实施。"
+        }
+      ],
+      "old_clause_penetrated": true,
+      "old_clause_filtered": true,
+      "old_clause_rank": 1,
+      "new_clause_penetrated": true,
+      "new_clause_rank": 2,
+      "naive_answer": "不是。根据《深圳市低空飞行活动管理办法（2026年修订）》第五条，使用微型、轻型民用无人驾驶航空器在适飞空域内飞行的，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式。\n\n您提到的“提前2个工作日申请、微型和轻型不豁免”是《深圳市低空飞行活动管理办法（2025年）》第七条的规定，已被2026年修订版第五条取代。",
+      "naive_judge": {
+        "status": "CORRECT",
+        "reason": "模型引用现行第五条，明确微型轻型无需申请，并指出旧条款已被取代，结论与标准答案一致。",
+        "uses_old_clause": false,
+        "agreement": 1.0
+      },
+      "agent_answer": "不是。根据《深圳市低空飞行活动管理办法（2026年修订）》第五条，使用微型、轻型民用无人驾驶航空器在适飞空域内飞行的，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式。因此“提前2个工作日申请”和“微型、轻型都不豁免”的说法都不成立；提前1个工作日申请飞行计划的要求见该办法第六条，适用于小型、中型、大型民用无人驾驶航空器。",
+      "agent_judge": {
+        "status": "CORRECT",
+        "reason": "模型引用现行第五条，正确说明微型轻型无需申请，未采纳旧条款。",
+        "uses_old_clause": false,
+        "agreement": 1.0
+      },
+      "agent_route": "generate",
+      "agent_steps": [
+        "temporal_check:keep=1,drop=2",
+        "generate"
+      ],
+      "agent_dropped": [
+        {
+          "id": "demo-old-2025",
+          "policy_name": "深圳市低空飞行活动管理办法（2025年）",
+          "article": "第七条",
+          "reason": "状态为「已废止」",
+          "valid_from": "2025-06-01",
+          "valid_to": "2026-08-31"
+        },
+        {
+          "id": "demo-old-2024",
+          "policy_name": "深圳市低空飞行活动管理暂行办法（2024年）",
+          "article": "第六条",
+          "reason": "状态为「已废止」",
+          "valid_from": "2024-01-01",
+          "valid_to": "2025-05-31"
+        }
+      ],
+      "agent_context_count": 1
+    },
+    {
+      "id": "TQ-0002",
+      "topic": "飞行计划审批",
+      "region": "深圳市",
+      "question": "在深圳飞大疆Mini 3这种小无人机，是不是不管大小、不管是不是经营性，都得提前5个工作日向市低空管理部门申请飞行计划，批准了才能飞？",
+      "ground_truth": "不是。在深圳使用微型、轻型民用无人驾驶航空器在适飞空域内飞行，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式。只有使用小型、中型、大型民用无人驾驶航空器飞行时，才需要提前1个工作日通过市低空飞行服务保障平台提出飞行计划申请。",
+      "conflict_type": "approval_removed",
+      "retrieved": [
+        {
+          "id": "demo-old-2024",
+          "policy_name": "深圳市低空飞行活动管理暂行办法（2024年）",
+          "article": "第六条",
+          "region": "深圳市",
+          "score": 0.619564,
+          "valid_from": "2024-01-01",
+          "valid_to": "2025-05-31",
+          "text": "第六条 在本市范围内使用民用无人驾驶航空器从事飞行活动的，无论机型大小、无论是否经营性，均应当提前5个工作日向市低空管理部门提出飞行计划申请，经批准后方可实施。"
+        },
+        {
+          "id": "demo-new-2026",
+          "policy_name": "深圳市低空飞行活动管理办法（2026年修订）",
+          "article": "第五条、第六条",
+          "region": "深圳市",
+          "score": 0.577,
+          "valid_from": "2026-09-01",
+          "valid_to": null,
+          "text": "第五条 使用微型、轻型民用无人驾驶航空器在适飞空域内飞行的，无需提出飞行计划申请，实行实名登记与飞行前信息报备相结合的管理方式。第六条 使用小型、中型、大型民用无人驾驶航空器飞行的，应当提前1个工作日通过市低空飞行服务保障平台提出飞行计划申请。"
+        },
+        {
+          "id": "demo-old-2025",
+          "policy_name": "深圳市低空飞行活动管理办法（2025年）",
+          "article": "第七条",
+          "region": "深圳市",
+          "score": 0.56762,
+          "valid_from": "2025-06-01",
+          "valid_to": "2026-08-31",
+          "text": "第七条 使用民用无人驾驶航空器在适飞空域内飞行的，应当提前2个工作日提出飞行计划申请；微型、轻型民用无人驾驶航空器不适用豁免，仍须申请。"
+        }
+      ],
+      "old_clause_penetrated": true,
+      "old_clause_filtered": true,
+      "old_clause_rank": 1,
+      "new_clause_penetrated": true,
+      "new_clause_rank": 2,
+      "naive_answer": "不是。该说法只符合《深圳市低空飞行活动管理暂行办法（2024年）》第六条，但该条已被后续规定更新，不能作为现行结论。\n\n按较新的《深圳市低空飞行活动管理办法（2026年修订）》第五条、第六条：\n- 大疆Mini 3属于微型、轻型民用无人驾驶航空器；在适飞空域内飞行，**无需提出飞行计划申请**，实行实名登记与飞行前信息报备相结合的管理方式（第五条）。\n- 只有使用小型、中型、大型民用无人驾驶航空器飞行，才需提前**1个工作日**通过市低空飞行服务保障平台提出飞行计划申请（第六条）。\n\n另外，《深圳市低空飞行活动管理办法（2025年）》第七条曾规定适飞空域内飞行应提前2个工作日申请且微型、轻型不豁免，但该规定与2026年修订版不一致，应以2026年修订版为准。",
+      "naive_judge": {
+        "status": "CORRECT",
+        "reason": "核心结论与标准答案一致：微型轻型无需申请，仅小型以上需提前1个工作日。",
+        "uses_old_clause": false,
+        "agreement": 1.0
+      },
+      "agent_answer": "不是。根据《深圳市低空飞行活动管理办法（2026年修订）》第五条、第六条：\n\n1. **大疆Mini 3属于微型/轻型民用无人驾驶航空器**，在适飞空域内飞行**无需提出飞行计划申请**，实行实名登记与飞行前信息报备相结合的管理方式（第五条）。不存在“提前5个工作日申请、批准后才能飞”的要求。\n\n2. 需要提前申请的是**小型、中型、大型**民用无人驾驶航空器，且期限是**提前1个工作日**通过市低空飞行服务保障平台提出飞行计划申请（第六条），并非5个工作日。\n\n3. 资料中未按“经营性/非经营性”区分申请要求，也未出现“5个工作日”的规定。",
+      "agent_judge": {
+        "status": "CORRECT",
+        "reason": "正确引用现行条款，明确微型/轻型无需申请、小型以上提前1个工作日，否定5个工作日旧规。",
+        "uses_old_clause": false,
+        "agreement": 1.0
+      },
+      "agent_route": "generate",
+      "agent_steps": [
+        "temporal_check:keep=1,drop=2",
+        "generate"
+      ],
+      "agent_dropped": [
+        {
+          "id": "demo-old-2024",
+          "policy_name": "深圳市低空飞行活动管理暂行办法（2024年）",
+          "article": "第六条",
+          "reason": "状态为「已废止」",
+          "valid_from": "2024-01-01",
+          "valid_to": "2025-05-31"
+        },
+        {
+          "id": "demo-old-2025",
+          "policy_name": "深圳市低空飞行活动管理办法（2025年）",
+          "article": "第七条",
+          "reason": "状态为「已废止」",
+          "valid_from": "2025-06-01",
+          "valid_to": "2026-08-31"
+        }
+      ],
+      "agent_context_count": 1
+    }
+  ]
+}

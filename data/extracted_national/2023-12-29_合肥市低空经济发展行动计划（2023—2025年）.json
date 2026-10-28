@@ -1,0 +1,15 @@
+{
+  "policy_name": "合肥市低空经济发展行动计划（2023—2025年）",
+  "issue_date": "2023-12-29",
+  "effective_date": "2023-12-29",
+  "expiry_date": "无",
+  "apply_region": "合肥市",
+  "status": "现行有效",
+  "summary": "规划合肥低空产业，探索固定航线备案制简化审批，制定无人机飞行管理办法规范航线申报与空域使用。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-12-29_合肥市低空经济发展行动计划（2023—2025年）.txt",
+    "char_count": 3511,
+    "extracted_at": "2026-10-26T22:08:01+08:00"
+  }
+}

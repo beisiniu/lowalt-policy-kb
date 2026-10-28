@@ -1,0 +1,73 @@
+{
+  "built_at": "2026-10-28T00:43:18+0800",
+  "as_of": "2026-10-27",
+  "version": "v3",
+  "items": 4,
+  "pairs_stage": {
+    "clauses_total": 3166,
+    "old_clauses": 421,
+    "current_clauses": 2732,
+    "candidate_pairs": 64,
+    "topics": 12,
+    "skipped": {
+      "no_new_counterpart": 63,
+      "same_text": 0,
+      "low_similarity": 515
+    }
+  },
+  "utilization": {
+    "pairs_attempted": 6,
+    "level_counts": {
+      "Medium": 3,
+      "High": 2,
+      "Low": 1
+    },
+    "level_high_rate": 0.3333,
+    "high_pairs_without_valid_point": 0,
+    "points_raw": 4,
+    "points_valid": 4,
+    "questions_raw": 4,
+    "questions_valid": 4,
+    "mean_points_per_high_pair": 2.0,
+    "max_points_in_a_pair": 2,
+    "by_region": {
+      "张家界市": 2,
+      "广州市黄埔区": 2
+    },
+    "by_type": {
+      "repeal_recognition": 2,
+      "eligibility_changed": 1,
+      "subsidy_changed": 1
+    },
+    "by_mechanism": {
+      "contradiction": 4
+    },
+    "by_answer_type": {
+      "boolean": 3,
+      "numeric": 1
+    }
+  },
+  "rejected": [
+    {
+      "region": "广州市黄埔区",
+      "level": "Medium",
+      "reason": "同一适航奖励事项，奖励标准与上限均未变，仅表述和用语调整"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "两条均为无人机安全管理通告，未涉及补贴奖励内容"
+    },
+    {
+      "region": "武汉市",
+      "level": "Medium",
+      "reason": "均为适用范围界定，答案实质相同，仅表述与分类细化"
+    },
+    {
+      "region": "福州市",
+      "level": "Medium",
+      "reason": "招商落地项目固投按技改政策补助的表述基本一致，无实质冲突"
+    }
+  ],
+  "rejected_total": 4
+}

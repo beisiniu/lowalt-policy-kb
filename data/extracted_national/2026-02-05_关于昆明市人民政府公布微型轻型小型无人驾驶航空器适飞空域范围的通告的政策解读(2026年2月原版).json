@@ -1,0 +1,16 @@
+{
+  "policy_name": "昆明市人民政府关于公布微型、轻型、小型无人驾驶航空器适飞空域范围的通告",
+  "issue_date": "2026-02-05",
+  "effective_date": "2026-02-05",
+  "expiry_date": "无",
+  "apply_region": "昆明市",
+  "status": "现行有效",
+  "summary": "昆明市微型、轻型、小型无人驾驶航空器在真高120米以下适飞空域飞行无需向空管机构申请，管制空域内飞行须经批准。",
+  "_assumed_effective": true,
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-02-05_关于昆明市人民政府公布微型轻型小型无人驾驶航空器适飞空域范围的通告的政策解读(2026年2月原版).txt",
+    "char_count": 7013,
+    "extracted_at": "2026-10-27T03:13:48+08:00"
+  }
+}

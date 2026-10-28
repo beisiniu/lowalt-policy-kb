@@ -1,0 +1,15 @@
+{
+  "policy_name": "支持低空经济发展的若干政策措施",
+  "issue_date": "2025-04-29",
+  "effective_date": "2025-04-29",
+  "expiry_date": "2028-04-28",
+  "apply_region": "四川省",
+  "status": "现行有效",
+  "summary": "该政策为产业扶持措施，非审批法规；核心要求是项目需经政府审批或备案，并符合A类通用机场、垂直起降场等建设标准及投资比例限制方可申请财政补助。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2025-04-29_支持低空经济发展的若干政策措施.txt",
+    "char_count": 2833,
+    "extracted_at": "2026-10-26T22:54:06+08:00"
+  }
+}

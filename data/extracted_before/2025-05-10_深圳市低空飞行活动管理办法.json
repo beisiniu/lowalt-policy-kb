@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市低空飞行活动管理办法",
+  "issue_date": "2025-05-10",
+  "effective_date": "2025-06-01",
+  "expiry_date": "2028-05-31",
+  "apply_region": "深圳市",
+  "status": "现行有效",
+  "summary": "在本市范围内使用民用无人驾驶航空器从事飞行活动的，无论机型大小、无论是否经营性，均应当提前5个工作日向市低空管理部门提出飞行计划申请，经批准后方可实施",
+  "_engine": "rules",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\policies\\2025-05-10_深圳市低空飞行活动管理办法.txt",
+    "char_count": 606,
+    "extracted_at": "2026-10-26T02:04:04+08:00"
+  }
+}

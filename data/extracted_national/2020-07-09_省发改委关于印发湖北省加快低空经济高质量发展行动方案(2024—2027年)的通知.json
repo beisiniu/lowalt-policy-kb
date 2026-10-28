@@ -1,0 +1,15 @@
+{
+  "policy_name": "湖北省加快低空经济高质量发展行动方案（2024—2027年）",
+  "issue_date": "2024-07-18",
+  "effective_date": "2024-07-18",
+  "expiry_date": "无",
+  "apply_region": "湖北省",
+  "status": "现行有效",
+  "summary": "湖北省低空飞行须经省级低空飞行综合管理服务平台一窗口申请、一站式审批，空域分类划设并与军民航协调，通用机场及起降场地建设可获补助。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2020-07-09_省发改委关于印发湖北省加快低空经济高质量发展行动方案(2024—2027年)的通知.txt",
+    "char_count": 6593,
+    "extracted_at": "2026-10-27T22:46:09+08:00"
+  }
+}

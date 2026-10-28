@@ -1,0 +1,15 @@
+{
+  "policy_name": "广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则",
+  "issue_date": "2023-12-27",
+  "effective_date": "2023-12-27",
+  "expiry_date": "2026-10-23",
+  "apply_region": "广州市黄埔区",
+  "status": "已废止",
+  "summary": "适用于区内注册企业，对落户、基建、适航取证等给予补贴；需经部门审核及公示，部分项目需获空域批复或民航局TC/PC证。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-12-27_广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则（2023）.txt",
+    "char_count": 8660,
+    "extracted_at": "2026-10-27T02:04:41+08:00"
+  }
+}

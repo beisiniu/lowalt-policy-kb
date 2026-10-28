@@ -1,0 +1,15 @@
+{
+  "policy_name": "海珠区低空经济发展工作方案",
+  "issue_date": "2024-08-22",
+  "effective_date": "2024-08-22",
+  "expiry_date": "无",
+  "apply_region": "广州市海珠区",
+  "status": "现行有效",
+  "summary": "海珠区各部门推进低空经济，需争取军地民协同空域管理、申报示范区，建设起降点与低空智联网，无明确审批门槛。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-08-22_海珠区低空经济发展工作方案.txt",
+    "char_count": 7646,
+    "extracted_at": "2026-10-27T14:27:47+08:00"
+  }
+}

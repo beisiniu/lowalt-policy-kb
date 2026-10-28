@@ -1,0 +1,15 @@
+{
+  "policy_name": "龙岗区关于促进低空经济产业发展的若干措施",
+  "issue_date": "2023-12-01",
+  "effective_date": "2024-01-01",
+  "expiry_date": "无",
+  "apply_region": "深圳市龙岗区",
+  "status": "现行有效",
+  "summary": "在龙岗注册经营的低空企业申请航线补贴需经主管部门审批，无人机物流按重量分级补贴，测试场运营需备案。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-12-01_龙岗区关于促进低空经济产业发展的若干措施.txt",
+    "char_count": 4134,
+    "extracted_at": "2026-10-26T20:59:51+08:00"
+  }
+}

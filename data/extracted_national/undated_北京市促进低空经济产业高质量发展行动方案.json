@@ -1,0 +1,15 @@
+{
+  "policy_name": "北京市促进低空经济产业高质量发展行动方案（2024-2027年）（征求意见稿）",
+  "issue_date": "无",
+  "effective_date": "无",
+  "expiry_date": "无",
+  "apply_region": "北京市",
+  "status": "现行有效",
+  "summary": "北京市三年行动方案，面向低空制造、飞行应用与安防反制，未设具体审批门槛，仅要求企业参与统一飞行服务平台及适航检测。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\undated_北京市促进低空经济产业高质量发展行动方案.txt",
+    "char_count": 5002,
+    "extracted_at": "2026-10-26T17:00:05+08:00"
+  }
+}

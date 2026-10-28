@@ -1,0 +1,15 @@
+{
+  "policy_name": "芜湖市低空经济高质量发展行动方案（2023—2025年）",
+  "issue_date": "2023-10-13",
+  "effective_date": "2023-10-13",
+  "expiry_date": "2025-12-31",
+  "apply_region": "芜湖市",
+  "status": "已失效",
+  "summary": "芜湖市推进低空经济产业培育、基础设施与监管平台建设，要求无人机用户通过智能融合低空系统平台申请空域航线与飞行计划，实现一网受理。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-10-13_芜湖市人民政府关于印发芜湖市低空经济高质量发展行动方案(2023—2025年)的通知.txt",
+    "char_count": 5720,
+    "extracted_at": "2026-10-26T17:36:53+08:00"
+  }
+}

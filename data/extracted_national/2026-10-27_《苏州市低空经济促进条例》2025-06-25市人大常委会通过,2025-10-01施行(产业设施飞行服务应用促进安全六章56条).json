@@ -1,0 +1,15 @@
+{
+  "policy_name": "苏州市低空经济促进条例",
+  "issue_date": "2025-06-25",
+  "effective_date": "2025-10-01",
+  "expiry_date": "无",
+  "apply_region": "苏州市",
+  "status": "现行有效",
+  "summary": "苏州市低空飞行活动须接入全市统一飞行服务平台，管制空域及周边飞行实施分级管控，采取预警、警告、限制飞行等措施。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_《苏州市低空经济促进条例》2025-06-25市人大常委会通过,2025-10-01施行(产业设施飞行服务应用促进安全六章56条).txt",
+    "char_count": 2604,
+    "extracted_at": "2026-10-27T22:46:52+08:00"
+  }
+}

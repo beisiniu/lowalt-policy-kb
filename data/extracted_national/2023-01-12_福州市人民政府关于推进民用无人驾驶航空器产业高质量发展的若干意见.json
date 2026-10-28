@@ -1,0 +1,15 @@
+{
+  "policy_name": "福州市人民政府关于推进民用无人驾驶航空器产业高质量发展的若干意见",
+  "issue_date": "2023-01-12",
+  "effective_date": "2023-01-12",
+  "expiry_date": "2026-01-06",
+  "apply_region": "福州市",
+  "status": "已废止",
+  "summary": "福州无人机企业开展飞行须经部队空域申请报批，产业园经审定授牌，政策有效期至2026-01-06已失效。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2023-01-12_福州市人民政府关于推进民用无人驾驶航空器产业高质量发展的若干意见.txt",
+    "char_count": 3246,
+    "extracted_at": "2026-10-26T17:00:01+08:00"
+  }
+}

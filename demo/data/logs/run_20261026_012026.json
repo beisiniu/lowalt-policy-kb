@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-10-26T01:20:26+08:00",
+  "finished_at": "2026-10-26T01:20:26+08:00",
+  "elapsed_sec": 0.28,
+  "listed": 3,
+  "new": 3,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "items": [
+    {
+      "status": "new",
+      "title": "深圳经济特区低空经济产业促进条例",
+      "url": "http://127.0.0.1:8765/detail/p1.html",
+      "publish_date": "2026-03-15",
+      "revision": 1,
+      "content_length": 677,
+      "saved_to": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\policies\\2026-03-15_深圳经济特区低空经济产业促进条例.txt",
+      "note": ""
+    },
+    {
+      "status": "new",
+      "title": "民用无人驾驶航空器运行安全管理规定",
+      "url": "http://127.0.0.1:8765/detail/p2.html",
+      "publish_date": "2026-06-01",
+      "revision": 1,
+      "content_length": 557,
+      "saved_to": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\policies\\2026-06-01_民用无人驾驶航空器运行安全管理规定.txt",
+      "note": ""
+    },
+    {
+      "status": "new",
+      "title": "深圳市低空飞行活动管理办法",
+      "url": "http://127.0.0.1:8765/detail/p3.html",
+      "publish_date": "2025-05-10",
+      "revision": 1,
+      "content_length": 351,
+      "saved_to": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\policies\\2025-05-10_深圳市低空飞行活动管理办法.txt",
+      "note": ""
+    }
+  ]
+}

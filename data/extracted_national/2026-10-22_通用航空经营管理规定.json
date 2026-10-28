@@ -1,0 +1,15 @@
+{
+  "policy_name": "通用航空经营管理规定",
+  "issue_date": "2026-07-01",
+  "effective_date": "2026-07-01",
+  "expiry_date": "无",
+  "apply_region": "全国",
+  "status": "现行有效",
+  "summary": "通用航空企业从事经营须取得经营许可并符合条件，自公布之日起施行。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-22_通用航空经营管理规定.txt",
+    "char_count": 1318,
+    "extracted_at": "2026-10-26T17:37:06+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "深圳市交通运输专项资金港航业领域资助资金实施细则",
+  "issue_date": "2021-12-29",
+  "effective_date": "2022-01-01",
+  "expiry_date": "2025-12-31",
+  "apply_region": "深圳市",
+  "status": "已废止",
+  "summary": "深圳港航企业申请财政资助需满足吞吐量、航线或船籍等量化门槛，经申报审核公示后拨付，失信企业不予扶持。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2021-12-29_深圳市交通运输局关于印发《深圳市交通运输专项资金港航业领域资助资金实施细则》的通知.txt",
+    "char_count": 4337,
+    "extracted_at": "2026-10-27T01:09:44+08:00"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "policy_name": "沈阳市促进低空经济高质量发展若干政策措施",
+  "issue_date": "2024-09-27",
+  "effective_date": "2024-10-27",
+  "expiry_date": "2027-10-26",
+  "apply_region": "辽宁省沈阳市",
+  "status": "现行有效",
+  "summary": "对经审批的适航取证、基建及航线运营给予资金奖励，要求通航/无人机运输需有权部门审批，明确重量分级补贴标准。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-09-27_沈阳市促进低空经济高质量发展若干政策措施.txt",
+    "char_count": 2940,
+    "extracted_at": "2026-10-26T23:42:17+08:00"
+  }
+}

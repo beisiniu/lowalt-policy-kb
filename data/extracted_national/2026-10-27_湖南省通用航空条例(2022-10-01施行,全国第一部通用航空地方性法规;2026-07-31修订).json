@@ -1,0 +1,15 @@
+{
+  "policy_name": "湖南省通用航空条例",
+  "issue_date": "2022-07-28",
+  "effective_date": "2022-10-01",
+  "expiry_date": "无",
+  "apply_region": "湖南省",
+  "status": "现行有效",
+  "summary": "湖南省内通用机场建设、低空空域使用及飞行活动须依法办理审批或备案，飞行计划按空域类别报备或审批，飞行服务站24小时提供服务。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_湖南省通用航空条例(2022-10-01施行,全国第一部通用航空地方性法规;2026-07-31修订).txt",
+    "char_count": 7171,
+    "extracted_at": "2026-10-27T22:47:45+08:00"
+  }
+}

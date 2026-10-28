@@ -1,0 +1,397 @@
+{
+  "built_at": "2026-10-28T00:45:38+0800",
+  "as_of": "2026-10-27",
+  "version": "v3",
+  "items": 41,
+  "pairs_stage": {
+    "clauses_total": 3166,
+    "old_clauses": 421,
+    "current_clauses": 2732,
+    "candidate_pairs": 64,
+    "topics": 12,
+    "skipped": {
+      "no_new_counterpart": 63,
+      "same_text": 0,
+      "low_similarity": 515
+    }
+  },
+  "utilization": {
+    "pairs_attempted": 64,
+    "level_counts": {
+      "Medium": 5,
+      "High": 24,
+      "Low": 35
+    },
+    "level_high_rate": 0.375,
+    "high_pairs_without_valid_point": 3,
+    "points_raw": 53,
+    "points_valid": 42,
+    "questions_raw": 51,
+    "questions_valid": 41,
+    "mean_points_per_high_pair": 2.0,
+    "max_points_in_a_pair": 4,
+    "by_region": {
+      "张家界市": 3,
+      "广州市黄埔区": 34,
+      "福州市": 1,
+      "深圳市龙岗区": 3
+    },
+    "by_type": {
+      "repeal_recognition": 3,
+      "eligibility_changed": 10,
+      "subsidy_changed": 23,
+      "threshold_changed": 3,
+      "scope_changed": 1,
+      "procedure_changed": 1
+    },
+    "by_mechanism": {
+      "contradiction": 33,
+      "omission_b": 5,
+      "omission_a": 3
+    },
+    "by_answer_type": {
+      "boolean": 15,
+      "numeric": 22,
+      "enum": 4
+    }
+  },
+  "rejected": [
+    {
+      "region": "广州市黄埔区",
+      "level": "Medium",
+      "reason": "同一适航奖励事项，奖励标准与限额一致，仅表述和用词变化"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "两条均为无人机安全管理通告，未涉及补贴奖励事项"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "两条均为适用范围界定，非操控员资质事项，且无实质冲突"
+    },
+    {
+      "region": "福州市",
+      "level": "High",
+      "issue": "对签约1年内开工的无人机招商项目，落地后固定资产投入按什么政策补助",
+      "reasons": [
+        "两答案完全相同"
+      ]
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "A讲临时限制飞行区域，B讲管制空域地面警示标志，非同一事项"
+    },
+    {
+      "region": "深圳市龙岗区",
+      "level": "Low",
+      "reason": "A讲集聚区租金补贴和起降点建设补贴，B讲测试基地运营补贴，非同一事项"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "A讲限制区域禁飞，B讲集群飞行申请，非同一事项"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "A讲商贸场所周边禁飞范围，B讲无人机投保责任保险，非同一事项"
+    },
+    {
+      "region": "无锡市",
+      "level": "Low",
+      "reason": "A讲突发事件应急处置方案，B讲低空飞行基础设施规划，事项不同"
+    },
+    {
+      "region": "芜湖市",
+      "level": "Medium",
+      "reason": "同一用地保障事项，答案相同仅表述体例变化"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "A规定禁飞区域，B规定飞行计划申请流程，非同一事项"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "A讲禁飞区域周边范围，B讲投保责任保险，非同一事项"
+    },
+    {
+      "region": "张家界市",
+      "level": "Low",
+      "reason": "A讲人才培养补贴，B废止的是运营企业补贴，非同一事项"
+    },
+    {
+      "region": "武汉市",
+      "level": "Low",
+      "reason": "A讲禁飞区域范围，B讲投保义务，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "单个产品产业化补助的金额标准",
+      "reasons": [
+        "b_quote 长度 11 超范围"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "question": "黄埔区企业一款低空航空器核心产品实现装机量产后，能拿多少奖励？",
+      "reasons": [
+        "指向的冲突点无效"
+      ]
+    },
+    {
+      "region": "深圳市龙岗区",
+      "level": "Low",
+      "reason": "A讲载人/物流航线运营补贴，B讲地面基础设施与测试基地运营补贴，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "中型无人驾驶航空器取得生产许可证并交付50架后，一次性奖励金额是多少",
+      "reasons": [
+        "两答案互相包含"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "大型非载人无人驾驶航空器取得生产许可证并交付50架后，一次性奖励金额是多少",
+      "reasons": [
+        "两答案互相包含"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "中型起降场、大型起降枢纽、eVTOL起降场、直升机起降平台建设补贴的单个上限金额",
+      "reasons": [
+        "a_quote 长度 14 超范围"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "question": "在黄埔区建一个eVTOL起降场，单个最多能拿多少建设补贴？",
+      "reasons": [
+        "指向的冲突点无效"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Medium",
+      "reason": "两条均涉及同一项目重复扶持时的从高不重复、补差发放原则，答案一致，仅表述和体例有"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "对低空飞行相关项目按实际运营费用给予补贴的最高比例是多少",
+      "reasons": [
+        "两答案互相包含"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "单个低空飞行相关项目每年可获得的运营补贴最高金额是多少",
+      "reasons": [
+        "a_quote 长度 11 超范围"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲航空器适航取证奖励，B讲技能人才培训奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "无人机小型起降点建设补贴的额度确定方式",
+      "reasons": [
+        "a_quote 长度 13 超范围"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "eVTOL起降场建设补贴的单个项目上限",
+      "reasons": [
+        "a_quote 长度 14 超范围"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "question": "在黄埔区建无人机小型起降点，建设补贴按什么标准算？",
+      "reasons": [
+        "指向的冲突点无效"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "question": "在黄埔区建eVTOL起降场，单个项目补贴上限是多少万元？",
+      "reasons": [
+        "指向的冲突点无效"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "申请载物飞行服务补贴是否需取得运营合格证及空域和航线批复",
+      "reasons": [
+        "两答案互相包含"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "question": "在黄埔区申请载物飞行服务补贴，是否必须取得运营合格证及空域和航线批复？",
+      "reasons": [
+        "指向的冲突点无效"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A补试验场运营费，B补载人载物场景运营，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲标准制定奖励，B讲适航取证奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲核心技术产业化产值补助，B讲企业租赁场地租金补贴，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A补飞行架次运营，B补基础设施建设，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲航空器型号合格证/生产许可证奖励，B讲培训执照人数奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Medium",
+      "reason": "均为补贴上限与预算控制的总则性表述，答案实质相同"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲标准制定奖励，B讲场景应用运营补贴，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲基础设施建设补贴，B讲飞行服务运营补贴，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲航空器型号合格证与生产许可证奖励，B讲培训机构人才奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲租房租金补贴，B讲核心技术产业化奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A为重大项目落户奖励，B为适航航空器奖励，事项不同"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Medium",
+      "reason": "均为补贴上限与预算总量控制，答案实质相同"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲技术攻关产业化产值补助，B讲适航取证奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "issue": "单个项目（企业）每年运营补贴的最高限额",
+      "reasons": [
+        "b_quote 不在现行条款原文中"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "High",
+      "question": "在黄埔区做载物无人机示范项目，每个项目每年运营补贴最高多少万元？",
+      "reasons": [
+        "指向的冲突点无效"
+      ]
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲基础设施建设补贴，B讲技能人才培训奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲租房补贴，B讲适航取证奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A补低空飞行试验场运营费，B补产业集聚区租房租金，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A规定部门分工，B规定核心技术产业化奖励标准，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A规定部门兑现分工，B规定场景应用补贴标准，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A补试飞验证场地运营费，B补起降基础设施建费，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲飞行服务架次补贴，B讲起降基础设施补贴，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲标准制修订扶持，B讲适航证奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲制造业总部企业落户奖，B讲航空器适航取证奖励，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲起降点建设补贴审核，B讲飞行服务运营补贴，非同一事项"
+    },
+    {
+      "region": "广州市黄埔区",
+      "level": "Low",
+      "reason": "A讲标准制修订扶持，B讲起降基础设施补贴，非同一事项"
+    }
+  ],
+  "rejected_total": 57
+}

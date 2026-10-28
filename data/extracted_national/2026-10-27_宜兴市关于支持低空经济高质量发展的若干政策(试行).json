@@ -1,0 +1,15 @@
+{
+  "policy_name": "宜兴市关于支持低空经济高质量发展的若干政策(试行)",
+  "issue_date": "2026-10-27",
+  "effective_date": "2024-01-01",
+  "expiry_date": "无",
+  "apply_region": "宜兴市",
+  "status": "现行有效",
+  "summary": "宜兴市低空经济企业开展载客航线、无人机货运航线须经审批并常态化运营，按机型架次补贴，适航取证TC/PC最高奖1500万元。",
+  "_engine": "llm:deepseek-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2026-10-27_宜兴市关于支持低空经济高质量发展的若干政策(试行).txt",
+    "char_count": 2995,
+    "extracted_at": "2026-10-27T22:26:47+08:00"
+  }
+}

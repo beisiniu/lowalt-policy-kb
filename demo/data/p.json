@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "source": "低空经济政策专栏（本地演示站）",
+  "updated_at": "2026-10-26T02:52:53+08:00",
+  "count": 3,
+  "records": {
+    "6287eb21ab067d99": {
+      "url": "http://127.0.0.1:56814/detail/p1.html",
+      "title": "深圳经济特区低空经济产业促进条例",
+      "publish_date": "2026-03-15",
+      "content_hash": "98af4d646971930852298b77f0187f91bc1c7accc58cd3760b82371afee3b5cc",
+      "content_length": 677,
+      "revision": 1,
+      "txt_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\pp\\2026-03-15_深圳经济特区低空经济产业促进条例.txt",
+      "json_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\pp\\2026-03-15_深圳经济特区低空经济产业促进条例.json",
+      "content_hashes": [
+        "98af4d646971930852298b77f0187f91bc1c7accc58cd3760b82371afee3b5cc"
+      ],
+      "first_seen_at": "2026-10-26T02:52:53+08:00",
+      "last_crawled_at": "2026-10-26T02:52:53+08:00"
+    },
+    "9c56fc0e81839e8d": {
+      "url": "http://127.0.0.1:56814/detail/p2.html",
+      "title": "民用无人驾驶航空器运行安全管理规定",
+      "publish_date": "2026-06-01",
+      "content_hash": "c135ffa0b291c7efbedcee9d3c09de120b8fa18e7b66f0c5e3c7bed280d98625",
+      "content_length": 557,
+      "revision": 1,
+      "txt_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\pp\\2026-06-01_民用无人驾驶航空器运行安全管理规定.txt",
+      "json_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\pp\\2026-06-01_民用无人驾驶航空器运行安全管理规定.json",
+      "content_hashes": [
+        "c135ffa0b291c7efbedcee9d3c09de120b8fa18e7b66f0c5e3c7bed280d98625"
+      ],
+      "first_seen_at": "2026-10-26T02:52:53+08:00",
+      "last_crawled_at": "2026-10-26T02:52:53+08:00"
+    },
+    "61a17cc3f793ffcf": {
+      "url": "http://127.0.0.1:56814/detail/p3.html",
+      "title": "深圳市低空飞行活动管理办法",
+      "publish_date": "2025-05-10",
+      "content_hash": "3eacfab0695b7cf34f704f293a551ca371121389e763186397761f98d85e3e20",
+      "content_length": 351,
+      "revision": 1,
+      "txt_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\pp\\2025-05-10_深圳市低空飞行活动管理办法.txt",
+      "json_path": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\demo\\data\\pp\\2025-05-10_深圳市低空飞行活动管理办法.json",
+      "content_hashes": [
+        "3eacfab0695b7cf34f704f293a551ca371121389e763186397761f98d85e3e20"
+      ],
+      "first_seen_at": "2026-10-26T02:52:53+08:00",
+      "last_crawled_at": "2026-10-26T02:52:53+08:00"
+    }
+  }
+}

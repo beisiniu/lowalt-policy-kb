@@ -1,0 +1,15 @@
+{
+  "policy_name": "大连市低空经济高质量发展行动方案（2024-2026年）",
+  "issue_date": "2024-12-06",
+  "effective_date": "2024-12-06",
+  "expiry_date": "无",
+  "apply_region": "大连市",
+  "status": "现行有效",
+  "summary": "该方案为产业促进类政策，未设定具体审批门槛；要求通过设立低空综合服务中心实现飞行活动一站式申请受理与全流程监控。",
+  "_engine": "llm:qwen3.8-flash",
+  "_meta": {
+    "source_file": "D:\\2026-10-26-01-13-54\\lowalt-policy-kb\\data\\national_policies\\2024-12-06_大连市低空经济高质量发展行动方案（2024-2026年）.txt",
+    "char_count": 6306,
+    "extracted_at": "2026-10-26T22:54:22+08:00"
+  }
+}
