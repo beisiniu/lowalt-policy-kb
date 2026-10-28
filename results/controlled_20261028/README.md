@@ -22,6 +22,7 @@
 | `run_noise_50/` | 186 | 0 | 31 题 ×6 方法 ×50% joint_missing（seed43） |
 | `run_reliability_smoke/` | 12 | 0 | 3 道硬题 ×4 方法：族谱扩展/不确定门禁冒烟 |
 | `reliability_noise_smoke.json` | 3 | 0 | 100% chunk metadata 缺失 + family_uncertainty |
+| `reliability_noise_offline.json` | 31×4 | — | 100% chunk metadata 缺失的四方法离线全量统计（不调用 API） |
 
 最终合并表：`combined_summary.md` / `combined_summary.json`。
 正式报告：`../../output/控制实验报告_20261028.md`。

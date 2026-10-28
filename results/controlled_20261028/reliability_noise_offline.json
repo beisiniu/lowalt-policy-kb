@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-10-27",
+  "n": 31,
+  "condition": {
+    "noise": "joint_missing",
+    "rate": 1.0,
+    "seed": 17,
+    "pool_mode": "retrieval",
+    "pool_size": 6
+  },
+  "family_edges": 8,
+  "truth": "clean snapshot retrieval + family expansion",
+  "note": "chunk metadata corrupted; family registry kept clean; not a policy_registry_corrupt experiment",
+  "methods": {
+    "temporal_filter": {
+      "target_new_in_context": 28,
+      "old_in_context": 30,
+      "invalid_kept": 218,
+      "route_generate": 31,
+      "route_refuse": 0
+    },
+    "uncertainty_filter": {
+      "target_new_in_context": 28,
+      "old_in_context": 0,
+      "invalid_kept": 0,
+      "route_generate": 29,
+      "route_refuse": 2
+    },
+    "family_filter": {
+      "target_new_in_context": 31,
+      "old_in_context": 30,
+      "invalid_kept": 218,
+      "route_generate": 31,
+      "route_refuse": 0
+    },
+    "family_uncertainty": {
+      "target_new_in_context": 31,
+      "old_in_context": 0,
+      "invalid_kept": 0,
+      "route_generate": 31,
+      "route_refuse": 0
+    }
+  }
+}

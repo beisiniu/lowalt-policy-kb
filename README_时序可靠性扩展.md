@@ -106,6 +106,7 @@ family_uncertainty
 | `tests/test_temporal_reliability.py` | 13 项三态/族谱/门禁/组合测试 | 已完成 |
 | `results/controlled_20261028/audit/audit_reliability.json` | 31 题全量离线审计 | 已完成 |
 | `results/controlled_20261028/run_reliability_smoke/` | 3 题 ×4 方法 API 冒烟 | 已完成 |
+| `results/controlled_20261028/reliability_noise_offline.json` | 100% chunk metadata 缺失 + 四方法离线全量统计 | 已完成 |
 | `results/controlled_20261028/reliability_noise_smoke.json` | 100% 缺失 + family_uncertainty 小样本 | 已完成 |
 
 ## 4. 命令
