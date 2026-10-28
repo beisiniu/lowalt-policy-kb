@@ -46,4 +46,4 @@
 - 单裁判且与答题同供应商；正式主表应三裁判 + 人工抽检。
 - 50% 名义比例实际曝光 3 政策/61 切片/12 题；100% 为 6 政策/218 切片。
 - 结果不可与旧 `results/tq3_temporal_eval_k9_3judge.json` 直接混算：裁判提示和 baseline 集合不同。
-- 代码与结果已整理进本地 Git；未推送远程。请求缓存被 `.gitignore` 排除，完整备份/结果包保留缓存。
+- 代码与结果已提交并推送到 GitHub：`https://github.com/beisiniu/lowalt-policy-kb`（`main`，commit `92587c0`）。请求缓存被 `.gitignore` 排除，完整备份/结果包保留缓存。
