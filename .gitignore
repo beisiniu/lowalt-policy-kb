@@ -32,6 +32,7 @@ data/logs/
 data/gd_logs/
 data/beijing_logs/
 data/_tmp/
+data/_temporal_debug/
 data/_new_list.txt
 data/manual_inbox/*
 region_counts_tmp.json
