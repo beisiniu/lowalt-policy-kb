@@ -508,10 +508,10 @@ git remote add origin https://github.com/<你的账号>/<仓库名>.git
 git push -u origin main
 ```
 
-若初始提交使用了占位作者，先改成你的 GitHub 身份再推送：
+当前提交使用了占位作者 `lowalt-policy-kb <lowalt-policy-kb@users.noreply.github.com>`。若要把作者改成你的 GitHub 身份，先设置身份再批量改写（尚未推送，可安全改写）：
 
 ```bash
 git config user.name  "你的名字"
 git config user.email "你的邮箱"
-git commit --amend --reset-author --no-edit
+git rebase --root --exec "git commit --amend --no-edit --reset-author"
 ```
