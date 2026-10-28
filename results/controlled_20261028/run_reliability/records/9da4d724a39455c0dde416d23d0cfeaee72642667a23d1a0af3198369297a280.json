@@ -1,0 +1,70 @@
+{
+  "case_key": "9da4d724a39455c0dde416d23d0cfeaee72642667a23d1a0af3198369297a280",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-030",
+  "item_fingerprint": "1a39a6138e52d4557248aeb3ea6e96c002f9639df743c2c269bddf97ba7b2e87",
+  "condition": {
+    "suite": "reliability",
+    "method": "uncertainty_filter"
+  },
+  "condition_key": "d0d51e11c19471eb12c97c8635dac7a093e1dc225da0455fa77dfb33cc807090",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n所给资料仅包含《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第六条，内容为技能人才培训奖励（非载人类无人驾驶员航空器操作员培训最高20万元、载人类eVTOL驾驶员培训最高50万元），并未涉及eVTOL载人飞行示范项目的补贴标准。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，未给出可判错的补贴标准结论，属于拒答；未引用旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "context_ids": [
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_f8c8b32ac68b32f94a5ece2b"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_f8c8b32ac68b32f94a5ece2b"
+    ],
+    "old_recalled": true,
+    "new_recalled": false,
+    "old_in_context": false,
+    "new_in_context": false
+  },
+  "request": {
+    "answer_key": "1006dacf8b8292856705a9b978ca615a667371c1a1aeadf112aa76c8232c6a52",
+    "judge_key": "7c5343429f252f0af5844278fd50b347f9dc9766f83168b6145f511d22ad610f",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:55:10+08:00"
+}

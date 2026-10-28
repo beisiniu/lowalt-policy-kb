@@ -1,0 +1,86 @@
+{
+  "case_key": "7d4e41f7867aaa37bc4d808da5ea30742aee45acddf6c6f8c4049242ac1a7797",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-036",
+  "item_fingerprint": "1da0f9dbc045abb5c93c9441898de60192ab530c7d5d4a55d4f70f464b839419",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_uncertainty"
+  },
+  "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_fdc6b1a5abd107133f6d3edf",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.3707
+    },
+    {
+      "id": "clause_a3fea476991f8ef2ad6b7296",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.3569
+    }
+  ],
+  "gate": null,
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，对提供低空飞行器载物飞行服务的示范项目，取得运营合格证及空域和航线批复的，按照不超过实际运营费用的30%给予补贴。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新政策第九条，载物飞行按不超过实际运营费用30%补贴，与标准答案一致，未受旧条款50%干扰。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_a3fea476991f8ef2ad6b7296"
+    ],
+    "context_ids": [
+      "clause_82fa08081d0a1d649a260119",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_a3fea476991f8ef2ad6b7296"
+    ],
+    "true_invalid_retrieved": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "69085e479471180749d460368613836292a8264d35e691bb69c5bdf0b2dc9912",
+    "judge_key": "dde3332cd296ad85b97f048a9b42f596bcd6f5b533d29b602886be4ff4aab4cb",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:56:13+08:00"
+}

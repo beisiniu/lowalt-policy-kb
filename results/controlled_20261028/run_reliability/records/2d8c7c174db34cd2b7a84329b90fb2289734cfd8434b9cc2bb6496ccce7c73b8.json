@@ -1,0 +1,87 @@
+{
+  "case_key": "2d8c7c174db34cd2b7a84329b90fb2289734cfd8434b9cc2bb6496ccce7c73b8",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-021",
+  "item_fingerprint": "27d6b88964ad1ac4f5f7aec41545a353872abcca72c0b0ee38fff7f66c282e89",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_filter"
+  },
+  "condition_key": "b237cdd8954f6f1b03f44e0045dc5b77584f2269b8a2b72f3b99535cee9bc649",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_fdc6b1a5abd107133f6d3edf",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.4123
+    },
+    {
+      "id": "clause_a3fea476991f8ef2ad6b7296",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.3927
+    }
+  ],
+  "gate": null,
+  "answer": "按运营费用算，不按飞行架次。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，对提供低空飞行器载人飞行服务的示范项目，取得运营合格证及空域航线批复的，按照不超过实际运营费用的50%给予补贴，每个项目每年最高不超过300万元。按架次补贴适用于载物飞行服务（小、中、大型载物无人机分别最高20元/架次、30元/架次、40元/架次）。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新条款，明确载人按实际运营费用不超过50%补贴，并正确区分载物按架次，与标准答案一致。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_a3fea476991f8ef2ad6b7296"
+    ],
+    "context_ids": [
+      "clause_82fa08081d0a1d649a260119",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_a3fea476991f8ef2ad6b7296"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ca293fd275ae1f51580813d0"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ca293fd275ae1f51580813d0"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "7ee2d91f190079d6f5dc5e9d44c6a3beeca78a4df5c8f0d0c2fb8c3d5ac3aed9",
+    "judge_key": "a16b2b553c5a88831bbfcb4009a1782d07c0bdc27bf680655afcbfddf915f7ab",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:55:40+08:00"
+}

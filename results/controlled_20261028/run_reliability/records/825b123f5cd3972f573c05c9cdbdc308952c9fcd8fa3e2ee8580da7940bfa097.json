@@ -1,0 +1,85 @@
+{
+  "case_key": "825b123f5cd3972f573c05c9cdbdc308952c9fcd8fa3e2ee8580da7940bfa097",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-009",
+  "item_fingerprint": "9ecd899964896570d162d1cff639aa31f9d6fa2968a89938942d6aa4eaaba690",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_filter"
+  },
+  "condition_key": "b237cdd8954f6f1b03f44e0045dc5b77584f2269b8a2b72f3b99535cee9bc649",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_55105e7dd46561c5f71d17ce",
+      "old_policy_id": "37efaf630cf6ee2c",
+      "new_policy_id": "dadb383c12cb2ad2",
+      "score": 0.2618
+    },
+    {
+      "id": "clause_f7d37763253275726722b169",
+      "old_policy_id": "37efaf630cf6ee2c",
+      "new_policy_id": "dadb383c12cb2ad2",
+      "score": 0.2485
+    }
+  ],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）只规定“根据实际发放的飞行乘用券数量给予相应奖励”，未写明每年度奖励金额上限；资料中“每个企业每年合计奖励不超过1000万元”的上限出自《杭州市支持低空经济高质量发展的若干措施》，不适用于龙岗区。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，未给出可判错结论；正确指出旧500万上限不适用，并排除杭州条款，属有依据拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_647535620ca83fc0482af9e1",
+      "clause_80ff599cde23524519559973",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_f7d37763253275726722b169"
+    ],
+    "context_ids": [
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_647535620ca83fc0482af9e1",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_f7d37763253275726722b169"
+    ],
+    "true_invalid_retrieved": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_80ff599cde23524519559973"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_80ff599cde23524519559973"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "edad558136f6218b3742018917b07bba551d01452b25db2ddcd16f083f64bfe5",
+    "judge_key": "d8d4a14bd730f7999cdb27d2a7cb6fdd9c87f65fd2f13884d36b52d84d66d310",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:55:22+08:00"
+}

@@ -1,0 +1,86 @@
+{
+  "case_key": "a4b1140f1d3c5bdbab577eeb63b4fed7e41f086bc5b88dc31f644f3214d32ed4",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-003",
+  "item_fingerprint": "54e906862740da040e03e54f4d4bb732514df6549a467117b4451f50b222e94a",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_uncertainty"
+  },
+  "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_82fa08081d0a1d649a260119",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.4174
+    },
+    {
+      "id": "clause_02f2d8c0e088bc11cc077407",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.371
+    }
+  ],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第五条仅规定对获得空域批复、提供公共服务的低空飞行试验场给予激励，每个低空飞行试验场主体方每年度不超过200万元，未对专业团队人数（包括是否须配备5人以上）作出规定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答指出新政策未规定团队人数，与标准答案一致，未采用旧条款的5人要求。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "context_ids": [
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "true_invalid_retrieved": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "1c059aaae9a9e1cdb3b279605b33cffe8b9e49fdb13d198f200bb4055ff08657",
+    "judge_key": "851ae42d6968300a88497d7f86c4c60fe6a3e5f557ba141617a910e00ce2458f",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:56:13+08:00"
+}

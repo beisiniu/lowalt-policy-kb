@@ -1,0 +1,68 @@
+{
+  "case_key": "065f04e8ea8901b6d5b4c29c7f4f9e4d0815692595001f77ca43fce24355d61e",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-011",
+  "item_fingerprint": "9d42e4ab3533eac64f742c6ec295aba0a5a6caa97301a05ace9a0f3eb1d96dd7",
+  "condition": {
+    "suite": "reliability",
+    "method": "naive"
+  },
+  "condition_key": "6620e02e050f6c054866b8b3ac23b7257804bbc98cf735a12394334758118024",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "不能申请。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条第（一）项，获得大型载人无人驾驶航空器型号合格证（TC）后，须“并完成首批产品交付”才给予一次性奖励1500万元；仅取得TC、尚未交付不符合条件。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答依据旧细则要求完成首批交付，但新政策仅要求取得TC即可奖励，核心结论错误且源于旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "context_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_kept": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "e5a1da81644b3b1008eef3643b1b70fc1f8fcf33a6ef0326dbe2a903df59af52",
+    "judge_key": "449467aec26d4296c3483e73a512861e2fda9f184422c4fbba7df79476f860c2",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:51:29+08:00"
+}

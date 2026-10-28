@@ -1,0 +1,76 @@
+{
+  "case_key": "b97e6acb939913a878dde2c284d7878b8e1dff80d1c66f2328c5729c525bcfd7",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-036",
+  "item_fingerprint": "1da0f9dbc045abb5c93c9441898de60192ab530c7d5d4a55d4f70f464b839419",
+  "condition": {
+    "suite": "reliability",
+    "method": "naive"
+  },
+  "condition_key": "6620e02e050f6c054866b8b3ac23b7257804bbc98cf735a12394334758118024",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n资料中涉及黄埔区载物飞行示范项目运营费用补贴比例的条款为《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，其规定“按照不超过实际运营费用的30%”给予补贴，但该条同时要求“取得运营合格证及空域和航线批复”，且该措施名称为“促进低空经济与航空航天高质量发展”，与问题所涉其他资料（《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》及其实施细则）并非同一政策文件。在无法确认适用哪一政策文件的情况下，不能确定唯一比例。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称无法确定，未给出可判错结论；虽提及30%但以资料不足为由拒答，符合REFUSED。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "context_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "true_invalid_retrieved": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4"
+    ],
+    "true_invalid_kept": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_9b4e6ce113ad95578308de32",
+      "clause_5b4ab64b18e7e50594fcf4b4"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "c2abf9697298e5e747d353c326e16d333fe102047cfbebd7af60e82a5c8c7675",
+    "judge_key": "a4bca293d64d6e93f844388eef2af00e7d2e6c963dced80ebb26102fda95f0d4",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:52:21+08:00"
+}

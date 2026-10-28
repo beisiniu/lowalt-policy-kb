@@ -1,0 +1,79 @@
+{
+  "case_key": "64327739021d6fcadae5ecdba8b394605f3caa98fca94a4484eb40515609e5a0",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-006",
+  "item_fingerprint": "fe9ec6e1e4126b77ab87a0b7b59aaa5d1dab7b5b5de9fef9a2b18e480e59c517",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_uncertainty"
+  },
+  "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_b8e19c90f082da244d01f627",
+      "old_policy_id": "b6919dae3085302f",
+      "new_policy_id": "0b987afc879cf624",
+      "score": 0.3984
+    }
+  ],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：资料[1]明确废止的是“（六）扩大公共服务和生产应用”中“对通用航空企业提供上述业务年度纳税10万元及以上的，前三年分别按市级经济贡献的50%、40%、30%给予奖励”这一奖励条款（《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》），即该按市级经济贡献比例给予前三年奖励的规定已被废止。但资料中未说明“森林灭火、医疗救助”是否属于该被废止条款所指的“上述业务”，也未提供其他仍有效的奖励依据，因此无法确定是否还能按该比例获得奖励。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答指出奖励条款已被废止，但称无法确定森林灭火、医疗救助是否属该条款业务，未给出可判错结论，属资料不足拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_d9a2bf82c0dfbbceb2529619",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_5b0712af59cfb92ad4e7ae94",
+      "clause_87d16f6eba3f1e8cd28606e3",
+      "clause_b8e19c90f082da244d01f627"
+    ],
+    "context_ids": [
+      "clause_d9a2bf82c0dfbbceb2529619",
+      "clause_b8e19c90f082da244d01f627"
+    ],
+    "true_invalid_retrieved": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_5b0712af59cfb92ad4e7ae94",
+      "clause_87d16f6eba3f1e8cd28606e3"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_70da7dc80dc7c9ba269150f6",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b42d435ed531ab8f272f3897",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_5b0712af59cfb92ad4e7ae94",
+      "clause_87d16f6eba3f1e8cd28606e3"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "1b0d2476e0fccfdac8140c034da42c131e74fe02a952c30c5d65a30dd18c50ec",
+    "judge_key": "efe777d9b7789c1d96b33213eff45865c7f84699d78091d4d70d5cda1bb9632b",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:56:13+08:00"
+}

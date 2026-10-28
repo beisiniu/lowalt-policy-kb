@@ -1,0 +1,88 @@
+{
+  "case_key": "2f3bf79a63739d9703aac04e7807bc3b7395d8d0a12b7a4716e2b56e1f738b84",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-032",
+  "item_fingerprint": "9651698389b07a8864a0cf3e58335625dd36e0141fdc9f14be8322b01db52592",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_uncertainty"
+  },
+  "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_b49e76749648682dabe5711f",
+      "old_policy_id": "da98f894f7142a23",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.5472
+    },
+    {
+      "id": "clause_6e2535d0f0dad3b4b1f5f99b",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.4797
+    }
+  ],
+  "gate": null,
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第二条，鼓励引进智能航空器整机、核心零部件、机载设备、关键原材料等研制企业以及数字化建设和运营维护等低空上下游重点企业，经综合评定，按照实缴注册资本和实际固定资产投资，分批次给予被引入企业最高1000万元补助。即落户奖励最高1000万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用现行新条款，结论最高1000万元与标准答案一致，未受旧3000万元条款影响。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_5e8d0113c1e96c31306fdcb8",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_3d8b8ba5a6c85e9d80bed9b2",
+      "clause_bc66ec4409344e52ddeec174",
+      "clause_7dcca5bb442085818291d0b6",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_a7eb5a21c85f8b556e5ae5ca",
+      "clause_d3a52f5e82bea44896fa3941",
+      "clause_b49e76749648682dabe5711f",
+      "clause_6e2535d0f0dad3b4b1f5f99b"
+    ],
+    "context_ids": [
+      "clause_b49e76749648682dabe5711f",
+      "clause_6e2535d0f0dad3b4b1f5f99b"
+    ],
+    "true_invalid_retrieved": [
+      "clause_5e8d0113c1e96c31306fdcb8",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_3d8b8ba5a6c85e9d80bed9b2",
+      "clause_bc66ec4409344e52ddeec174",
+      "clause_7dcca5bb442085818291d0b6",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_a7eb5a21c85f8b556e5ae5ca",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_5e8d0113c1e96c31306fdcb8",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_3d8b8ba5a6c85e9d80bed9b2",
+      "clause_bc66ec4409344e52ddeec174",
+      "clause_7dcca5bb442085818291d0b6",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_a7eb5a21c85f8b556e5ae5ca",
+      "clause_d3a52f5e82bea44896fa3941"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "89ea69aee5d58a9464e73516c173e145f1f4bbc3e919613396f284cd1cd807a4",
+    "judge_key": "026b672ee305bf7ccd4ac3d4b65f6be978e467d4a964077dcd695ff63408639c",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:56:13+08:00"
+}

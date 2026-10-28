@@ -1,0 +1,68 @@
+{
+  "case_key": "fd3763269505c91e4ee56a5a24a3951edd4f1c126ec82cea7cb08ce50d72a5ac",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-025",
+  "item_fingerprint": "4f4506abed1d0e61b50e2fbc073aa8b5a439868f26eb0456a9006ef07737eabb",
+  "condition": {
+    "suite": "reliability",
+    "method": "temporal_filter"
+  },
+  "condition_key": "a9bf3cc69c96220bd55428ac9e9ea3fbb337b3aee24e2eb99bb81103eda2c285",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第八条，本区企业或机构围绕低空航空器相关的电池系统、飞行控制系统、动力系统、航空级碳纤维机体等核心领域开展技术攻关并实现产业化的，形成的产品在任一正式发布型号的中大型航空器装机量产，给予20万元一次性奖励；单个企业最高补贴100万元，政策有效期内累计补助不超过10款产品。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用现行新政策第八条，核心结论为20万元一次性奖励，与标准答案一致，未采用旧条款的产值2%补助。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_60e6615403c62d9203762bba",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_d1d1550af0162daf66000630",
+      "clause_1425a7b0d7904bfb38761f0b",
+      "clause_9671f13e668a02e2e15dad65",
+      "clause_b49e76749648682dabe5711f",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "context_ids": [
+      "clause_10748340be7aa63ef62f0128",
+      "clause_b49e76749648682dabe5711f",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "true_invalid_retrieved": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_60e6615403c62d9203762bba",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_d1d1550af0162daf66000630",
+      "clause_1425a7b0d7904bfb38761f0b",
+      "clause_9671f13e668a02e2e15dad65"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_60e6615403c62d9203762bba",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_d1d1550af0162daf66000630",
+      "clause_1425a7b0d7904bfb38761f0b",
+      "clause_9671f13e668a02e2e15dad65"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "74fef6be52cc8fcd1c47b8a14b7a8a8cde9d8df059fb31f6cd405785d2002822",
+    "judge_key": "b4e87e240f8299910298bc94ff20914385dc1bc999f62ca54e47bba1014da2c4",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:54:43+08:00"
+}

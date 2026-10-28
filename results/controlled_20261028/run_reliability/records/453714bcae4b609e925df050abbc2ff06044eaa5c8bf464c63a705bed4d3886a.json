@@ -1,0 +1,76 @@
+{
+  "case_key": "453714bcae4b609e925df050abbc2ff06044eaa5c8bf464c63a705bed4d3886a",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-029",
+  "item_fingerprint": "8e9537ca5a21616fc005510b23fc65826fc5a1ece25721809b9b268bd236d20b",
+  "condition": {
+    "suite": "reliability",
+    "method": "prompt_only"
+  },
+  "condition_key": "617121a5ca8f05ece17b35388581fbf62d4a236913a663b2fb56ea7b52deb789",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：评估日2026-10-27，原《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条（要求起降点设施点位经区住房和城乡建设局组织第三方专业技术团队审查通过）已于2026-10-23失效，不能作为现行依据；现行有效的《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条只规定“纳入区低空航线和起降点规划且进入常态化运营状态”等条件，未提及第三方技术团队审查这一前置要求。资料中也没有其他现行条款对此作出规定，故无法确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答指出旧条款已失效，现行条款未规定第三方审查前置要求，但以资料不足为由未给出明确结论，属于有依据的拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "context_ids": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_c23de099f06ea304d0c2efaa"
+    ],
+    "true_invalid_retrieved": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc"
+    ],
+    "true_invalid_kept": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "02f3c07b707e33165b6a168353633ab01441ba414443ed935d6d9879990b7bc8",
+    "judge_key": "6ac9fc272d22f8ccb1b90d670a408bcfe7162cea77719855f072d31434a5f61f",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:53:33+08:00"
+}

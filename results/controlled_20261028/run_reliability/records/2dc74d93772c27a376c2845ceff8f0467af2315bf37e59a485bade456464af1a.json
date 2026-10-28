@@ -1,0 +1,78 @@
+{
+  "case_key": "2dc74d93772c27a376c2845ceff8f0467af2315bf37e59a485bade456464af1a",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-004",
+  "item_fingerprint": "63a7fb5f7c561597935807f6701f639d6c88329db1da79242a1bf97b11e34780",
+  "condition": {
+    "suite": "reliability",
+    "method": "naive"
+  },
+  "condition_key": "6620e02e050f6c054866b8b3ac23b7257804bbc98cf735a12394334758118024",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "不能。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条，须由区住房和城乡建设部门联合相关职能部门完成竣工验收并投入使用一年后，方可申请补贴；同时根据第九条，起降点设施点位还需经区住房和城乡建设局组织第三方专业技术团队审查通过，且建设竣工时间应在《措施》有效期内。",
+  "answer_source": "model",
+  "judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": true,
+    "reason": "答案结论正确但依据错误：引用旧细则的竣工验收、运营一年等条件，而非现行核心条件“纳入区规划且常态化运营”，属旧条款导致的条件错误。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "context_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "true_invalid_kept": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "8074e6d443b761344631fcf83ced34919d0c6ca30ee3726478f2929c30359a4c",
+    "judge_key": "a5fb013705aeae379f39692a96b46b978766c78686ca1b0d167066e89c47a624",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:51:17+08:00"
+}

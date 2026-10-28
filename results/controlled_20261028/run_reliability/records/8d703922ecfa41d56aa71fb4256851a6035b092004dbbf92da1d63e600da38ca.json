@@ -1,0 +1,87 @@
+{
+  "case_key": "8d703922ecfa41d56aa71fb4256851a6035b092004dbbf92da1d63e600da38ca",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-017",
+  "item_fingerprint": "a5f9b343df71e0e3daad9343f318cd0a994082f98039badf284b990e59bd8b2e",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_uncertainty"
+  },
+  "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_10748340be7aa63ef62f0128",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.4898
+    },
+    {
+      "id": "clause_82fa08081d0a1d649a260119",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.4126
+    }
+  ],
+  "gate": null,
+  "answer": "每家企业每年最高补贴200万元。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条，对规模以上的低空经济与航空航天企业，在区内规划打造的低空经济和航空航天特色产业集聚区内租赁研发、生产、办公用房且自用的，最高给予实际租金费用50%且不超过20元每月每平方米的场地支持，每家企业每年最高补贴200万元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新政策，结论200万元与标准答案一致，未受旧条款100万元影响。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_b12488a50398dce274e7f153",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_82fa08081d0a1d649a260119"
+    ],
+    "context_ids": [
+      "clause_ef3ae4843a4e5b135215241f",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_82fa08081d0a1d649a260119"
+    ],
+    "true_invalid_retrieved": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_a17c34f10656262c0c024751",
+      "clause_aba66f43e645d108be585078",
+      "clause_8423ab41dad8a9d00f59d92d",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_b12488a50398dce274e7f153"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "35348363b283fe8a11502fcec61c11d7ee5e964bf1cf9bd13c1107a73f52b596",
+    "judge_key": "db4f26f152a6e3590c11d88b8bc42240610dc7f844859d083d114adc0105ebdd",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:56:13+08:00"
+}

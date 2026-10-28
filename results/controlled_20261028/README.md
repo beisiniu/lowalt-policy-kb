@@ -21,6 +21,7 @@
 | `run_noise_100/` | 372 | 0 | 31 题 ×6 方法 ×2 种 100% 联合损坏 |
 | `run_noise_50/` | 186 | 0 | 31 题 ×6 方法 ×50% joint_missing（seed43） |
 | `run_reliability_smoke/` | 12 | 0 | 3 道硬题 ×4 方法：族谱扩展/不确定门禁冒烟 |
+| `run_reliability/` | 186 | 0 | 31 题 ×6 方法全量 API：naive/prompt/temporal/uncertainty/family/family_uncertainty |
 | `reliability_noise_smoke.json` | 3 | 0 | 100% chunk metadata 缺失 + family_uncertainty |
 | `reliability_noise_offline.json` | 31×4 | — | 100% chunk metadata 缺失的四方法离线全量统计（不调用 API） |
 
@@ -36,6 +37,9 @@
 - 100% 联合缺失：temporal/downweight/llm_gate/naive 均 58.1%；date 48.4%；prompt 35.5%。
 - 100% 伪造未来：temporal/downweight/llm_gate/naive 均 58.1%；date 48.4%；prompt 45.2%。
 - 单字段 noise（只删日期或只删 status）被另一字段冗余拦住，机制上不改变过滤结果。
+- 扩展全量：temporal 正确 22/31；family_filter/family_uncertainty 正确 24/31、目标新条款 31/31、0 毒化、0 无效入上下文；族谱净增 2 题，多对 TQ3-011/030/032/041，少对 TQ3-006/010（拒答而非毒化）。
+- uncertainty_filter 在干净元数据下与 temporal 31/31 答案相同，作为缺失条件下的对照组保留。
+- naive 跨运行波动 18/31–20/31 毒化；prompt_only/temporal 状态稳定。严格对照用同一 run 内 naive。
 
 ## 身份与缓存
 
@@ -50,4 +54,4 @@
 - 单裁判且与答题同供应商；正式主表应三裁判 + 人工抽检。
 - 50% 名义比例实际曝光 3 政策/61 切片/12 题；100% 为 6 政策/218 切片。
 - 结果不可与旧 `results/tq3_temporal_eval_k9_3judge.json` 直接混算：裁判提示和 baseline 集合不同。
-- 代码与结果已提交并推送到 GitHub：`https://github.com/beisiniu/lowalt-policy-kb`（`main`，commit `92587c0`）。请求缓存被 `.gitignore` 排除，完整备份/结果包保留缓存。
+- 核心实验已推送到 GitHub：`https://github.com/beisiniu/lowalt-policy-kb`（`main`，commit `92587c0`）；时序可靠性扩展的全量结果目前只在本地提交，未推送远程。请求缓存被 `.gitignore` 排除，完整备份/结果包保留缓存。

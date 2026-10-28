@@ -1,0 +1,74 @@
+{
+  "case_key": "b1b493e302031f78552ef59389399d8077491e58b8ebe19a9accc62f71938287",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-009",
+  "item_fingerprint": "9ecd899964896570d162d1cff639aa31f9d6fa2968a89938942d6aa4eaaba690",
+  "condition": {
+    "suite": "reliability",
+    "method": "prompt_only"
+  },
+  "condition_key": "617121a5ca8f05ece17b35388581fbf62d4a236913a663b2fb56ea7b52deb789",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：评估日2026-10-27时，《龙岗区关于促进低空经济产业发展的若干措施》已废止（有效期至2026-04-01），其原第（八）条“每个企业每年度不超过500万元”的补贴上限不能作为现行依据；现行有效的《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）仅规定“根据实际发放的飞行乘用券数量给予相应奖励”，未载明每年度奖励金额上限。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答正确指出旧文件已废止、500万上限不能作为现行依据，现行文件未规定年度奖励上限，与标准答案一致。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_647535620ca83fc0482af9e1",
+      "clause_80ff599cde23524519559973"
+    ],
+    "context_ids": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_81519dad7df4bf439ac8ed75",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_d7f5b2bd153d6f360dbf18de",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_647535620ca83fc0482af9e1",
+      "clause_80ff599cde23524519559973"
+    ],
+    "true_invalid_retrieved": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_80ff599cde23524519559973"
+    ],
+    "true_invalid_kept": [
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_89c65bf2750f554af6725eb6",
+      "clause_b90e9568ca6c4de6b24e1444",
+      "clause_41d751b6793451159034ce26",
+      "clause_f251c06201de96fc9eff463a",
+      "clause_80ff599cde23524519559973"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "5ceee5f8bbd4fbc622e7060ee55d0016f65bd86e65f3910bfdebfcd8ae2cfeee",
+    "judge_key": "693786d882f1049903fcf07561eb839610bd9c7ddf51dc85bfc0256a6a86f175",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:52:48+08:00"
+}

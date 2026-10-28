@@ -1,0 +1,67 @@
+{
+  "case_key": "c72170fa763c989cbe236c1ff1b8240a6a5f6f42cbe477eb54826fdb5e0df8c5",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-010",
+  "item_fingerprint": "be25e764bacb8ac282bb8e22fcf0904a63e914225b40ba3bc333a75450d1ccfc",
+  "condition": {
+    "suite": "reliability",
+    "method": "uncertainty_filter"
+  },
+  "condition_key": "d0d51e11c19471eb12c97c8635dac7a093e1dc225da0455fa77dfb33cc807090",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定“交付满50架”这一条件。\n\n《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条规定：对将总部或研发、生产、制造引入本区的低空经济企业，在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，最高分别给予1500万元奖励；其中大型载人新型航空器每次奖励1500万元。该条并未规定以交付数量（如满50架）作为奖励条件，资料中也无其他条款提及“交付满50架”的要求。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新政策第七条，指出未规定交付50架条件，核心结论与标准答案一致，未采用旧条款要求。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_7fc6ffd3aef849c56a4cc051",
+      "clause_5301605e260f3f11821b9726"
+    ],
+    "context_ids": [
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_7fc6ffd3aef849c56a4cc051",
+      "clause_5301605e260f3f11821b9726"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "d51dc6bcb9f460830ec3106fdca045c7113ea262c47dce9e02bc8720c7f1b47d",
+    "judge_key": "f90bc52600f636dfd720838d3d6106abcc70ba1b0d11eb0b0e09909f470476c5",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:55:09+08:00"
+}

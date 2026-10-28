@@ -1,0 +1,76 @@
+{
+  "case_key": "275ac66b4a487690a1da67cd6980b1fa9c77af6d8d5e65a2bbb1ed7ad522d1d4",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-003",
+  "item_fingerprint": "54e906862740da040e03e54f4d4bb732514df6549a467117b4451f50b222e94a",
+  "condition": {
+    "suite": "reliability",
+    "method": "naive"
+  },
+  "condition_key": "6620e02e050f6c054866b8b3ac23b7257804bbc98cf735a12394334758118024",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十五条，申请该扶持的企业应同时符合：提供试飞验证公共服务的企业应已获得空域批复；提供试飞验证服务的企业拥有专业的服务团队，团队成员5人以上。",
+  "answer_source": "model",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答依据已失效旧细则第十五条，错误要求5人以上团队；现行新措施未规定团队人数，核心结论错误且明确来自旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "context_ids": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_a3fea476991f8ef2ad6b7296",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_retrieved": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_kept": [
+      "clause_fc6b5fa78a3b78ce80ebefcd",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_ca293fd275ae1f51580813d0",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_7c1a2c2ce2a84c4086a7743d"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "a1bf7259fa8dec92a104400237b5ddaf969e8b30cd32512a38845611703faa06",
+    "judge_key": "85069d1cc654cb1aa8fa02e38db494075cc618145f4af3fd335bd8f98d50abe5",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:51:15+08:00"
+}

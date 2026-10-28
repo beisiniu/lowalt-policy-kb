@@ -1,0 +1,69 @@
+{
+  "case_key": "3fe86db8e2db9dd4a3a87337da4ef99ba5004f7c5e88f2f3e9b6fcd4a5b6b52c",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-034",
+  "item_fingerprint": "b97803023787443e739af920d6b1383a19089689a50e565b8c5aedaa143ad29f",
+  "condition": {
+    "suite": "reliability",
+    "method": "temporal_filter"
+  },
+  "condition_key": "a9bf3cc69c96220bd55428ac9e9ea3fbb337b3aee24e2eb99bb81103eda2c285",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "按建设投入算。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条，对纳入区低空航线和起降点规划且进入常态化运营状态的无人机小型起降点，最高按照实际建设投入的50%给予建设补贴，每个中小型起降点不超过10万元，每家企业每年度该项补贴金额不超过600万元。该条款未规定按运营费用补贴。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新条款，明确按实际建设投入计算，与标准答案一致，未采用旧运营费用口径。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "context_ids": [
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_4fc279b910727dd115483a9d"
+    ],
+    "true_invalid_retrieved": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_5b4ab64b18e7e50594fcf4b4",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_4b2b0370fb0c573f14233df2"
+    ],
+    "old_recalled": false,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "1ee85b3972ec91d09589c1480b64fc0b4d8082815105989e677e30491d5fb876",
+    "judge_key": "2e0f12a7a038a3de9f1f6ffef61423dd4e8d9de8b6c11c684ea7ddb9e3b73aea",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:55:01+08:00"
+}

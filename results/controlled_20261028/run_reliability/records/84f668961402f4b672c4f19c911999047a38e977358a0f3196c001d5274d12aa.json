@@ -1,0 +1,65 @@
+{
+  "case_key": "84f668961402f4b672c4f19c911999047a38e977358a0f3196c001d5274d12aa",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-011",
+  "item_fingerprint": "9d42e4ab3533eac64f742c6ec295aba0a5a6caa97301a05ace9a0f3eb1d96dd7",
+  "condition": {
+    "suite": "reliability",
+    "method": "uncertainty_filter"
+  },
+  "condition_key": "d0d51e11c19471eb12c97c8635dac7a093e1dc225da0455fa77dfb33cc807090",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条对大型载人新型航空器型号合格证（TC）规定了1500万元奖励，但该条同时要求企业已将总部或研发、生产、制造引入本区，且政策有效期内每家企业奖励不超过3000万元、同一企业获得多个产品型号合格证和生产许可证的不重复奖励。资料未说明“尚未交付”是否影响申请资格，也未载明申报条件、申报时间和审核程序，因此仅凭现有资料无法判断该企业能否申请。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，未给出可判错的明确结论；未引用旧交付要求，属有依据的拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "context_ids": [
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "5b13f17cd5711553e1b63bf3a86239bf0b8dbfe27ede04a5413efaff80730655",
+    "judge_key": "3fe6f9f55c2061cea288aea35ac35aae9591c6b74f2ee02740694549b7598bb5",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:55:09+08:00"
+}

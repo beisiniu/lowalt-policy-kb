@@ -1,0 +1,70 @@
+{
+  "case_key": "1eda221348e690d8ce63c6925d5adeb73d1e4c79c52557247bad6c59641b83fd",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-041",
+  "item_fingerprint": "135234d8e987b3a47802926f081e3016a73ac28768b86618d16b040521912fe0",
+  "condition": {
+    "suite": "reliability",
+    "method": "uncertainty_filter"
+  },
+  "condition_key": "d0d51e11c19471eb12c97c8635dac7a093e1dc225da0455fa77dfb33cc807090",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "检索到的 9 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "answer_source": "refusal",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料失效、无法确定，未给出可判错的明确结论，属于资料不足拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_5537fcfb8ea1075bc918e14a"
+    ],
+    "context_ids": [],
+    "true_invalid_retrieved": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_5537fcfb8ea1075bc918e14a"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_4b2b0370fb0c573f14233df2",
+      "clause_cd022a0cc45192920d49ce97",
+      "clause_fb162157fc33384728ff6e87",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_69c0086ff8bdb550a4d2d634",
+      "clause_5537fcfb8ea1075bc918e14a"
+    ],
+    "old_recalled": true,
+    "new_recalled": false,
+    "old_in_context": false,
+    "new_in_context": false
+  },
+  "request": {
+    "answer_key": null,
+    "judge_key": "ff5e1b86eef0844e34bcbb0dc2fb8bff0a73e57154bb57382651fcbcbbf260eb",
+    "answer_cache_hit": false,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:55:10+08:00"
+}

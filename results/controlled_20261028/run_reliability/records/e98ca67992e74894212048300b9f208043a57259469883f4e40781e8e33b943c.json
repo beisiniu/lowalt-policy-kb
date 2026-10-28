@@ -1,0 +1,82 @@
+{
+  "case_key": "e98ca67992e74894212048300b9f208043a57259469883f4e40781e8e33b943c",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-011",
+  "item_fingerprint": "9d42e4ab3533eac64f742c6ec295aba0a5a6caa97301a05ace9a0f3eb1d96dd7",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_uncertainty"
+  },
+  "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_82fa08081d0a1d649a260119",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.318
+    },
+    {
+      "id": "clause_6e2535d0f0dad3b4b1f5f99b",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.3166
+    }
+  ],
+  "gate": null,
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条，对将总部或研发、生产、制造引入本区的低空经济企业，在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，大型载人新型航空器每次奖励1500万元。该条以取得型号合格证（TC）、生产许可证（PC）为奖励条件，并未要求航空器已交付。因此，仅就“刚拿到型号合格证、尚未交付”这一事实而言，符合该条规定的奖励条件；但适用主体须为将总部或研发、生产、制造引入本区的低空经济企业，且政策有效期内每家企业奖励不超过3000万元，同一企业获得多个产品型号合格证、生产许可证的不重复奖励。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新条款，结论为取得TC即可奖励1500万元，不要求交付，与标准答案一致，未受旧条款交付要求影响。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_6e2535d0f0dad3b4b1f5f99b"
+    ],
+    "context_ids": [
+      "clause_5301605e260f3f11821b9726",
+      "clause_990d77ebf04c0b7ec5f2474c",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_e9bbb110faf6e09fbbd9ed69",
+      "clause_c9923301293d6e1187f95956",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_6e2535d0f0dad3b4b1f5f99b"
+    ],
+    "true_invalid_retrieved": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "461615d5a56a40606a19c9d25ded0710aa39a77c85fb17df0e1a2a61e27b5318",
+    "judge_key": "f1c1d5e193499799c1f76721891850184154ad9e0ebf66707b9ee0f5bf58d1de",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:56:13+08:00"
+}

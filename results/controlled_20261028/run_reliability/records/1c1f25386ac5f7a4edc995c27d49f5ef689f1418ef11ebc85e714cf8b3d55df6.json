@@ -1,0 +1,74 @@
+{
+  "case_key": "1c1f25386ac5f7a4edc995c27d49f5ef689f1418ef11ebc85e714cf8b3d55df6",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-013",
+  "item_fingerprint": "867ae63ee389745daa340e7f107c8f913f8996970afbb8a52010b5485c8cbcf3",
+  "condition": {
+    "suite": "reliability",
+    "method": "prompt_only"
+  },
+  "condition_key": "617121a5ca8f05ece17b35388581fbf62d4a236913a663b2fb56ea7b52deb789",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：评估日2026-10-27，原《龙岗区关于促进低空经济产业发展的若干措施》中“经备案、提供免费或低收费公共服务”的运营费用补贴条款（第十二项）已于2026-04-01失效（状态为已废止），不能作为现行依据。评估日现行有效的《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》仅规定“每年按不超过项目运营费用的50%给予补贴，单个项目每年最高不超过300万元”，未将“经备案并提供免费或低收费公共服务”列为申请前提。因此，现行政策下是否必须先经备案并提供免费或低收费公共服务，资料不足以确定。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，未给出可判错结论；虽提及旧条款失效，但未明确否定备案要求，属拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_80ff599cde23524519559973",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_e13a9f1604b71144f25e87df",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_80ff599cde23524519559973",
+      "clause_4fc279b910727dd115483a9d",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_55105e7dd46561c5f71d17ce",
+      "clause_e13a9f1604b71144f25e87df",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_retrieved": [
+      "clause_80ff599cde23524519559973",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [
+      "clause_80ff599cde23524519559973",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_0d554d0d7cb175f00f560653",
+      "clause_54362f901e608fc6feb3d358",
+      "clause_69dd10ae1a75cb1554b167ae",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "253b63ac44d984135594bd935248427f06bd3a533d4c1e6fbf00a766e9e07f09",
+    "judge_key": "ab7f7c9ae0d8647a8ee0887e6018c3f10983f48ab8c9e6bc1b6f5c79e2649826",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:52:56+08:00"
+}

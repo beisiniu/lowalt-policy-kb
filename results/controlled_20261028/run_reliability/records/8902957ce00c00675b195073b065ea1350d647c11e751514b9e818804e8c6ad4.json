@@ -1,0 +1,86 @@
+{
+  "case_key": "8902957ce00c00675b195073b065ea1350d647c11e751514b9e818804e8c6ad4",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-029",
+  "item_fingerprint": "8e9537ca5a21616fc005510b23fc65826fc5a1ece25721809b9b268bd236d20b",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_uncertainty"
+  },
+  "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [
+    {
+      "id": "clause_02f2d8c0e088bc11cc077407",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.3671
+    },
+    {
+      "id": "clause_82fa08081d0a1d649a260119",
+      "old_policy_id": "153d6dea833fab42",
+      "new_policy_id": "7d74983a660ebb85",
+      "score": 0.2803
+    }
+  ],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条只规定了补贴对象须“纳入区低空航线和起降点规划且进入常态化运营状态”，并按实际建设投入分类给予补贴，未提及第三方技术团队审查这一前置条件。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据现行条款，指出未规定第三方审查前置，仅要求纳入规划并常态化运营，与标准答案一致，未采用旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_82fa08081d0a1d649a260119"
+    ],
+    "context_ids": [
+      "clause_fdc6b1a5abd107133f6d3edf",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_82fa08081d0a1d649a260119"
+    ],
+    "true_invalid_retrieved": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_fb162157fc33384728ff6e87",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_903d0768cc8318de86574cdf",
+      "clause_7c1a2c2ce2a84c4086a7743d",
+      "clause_cd7ceed42ae1ccd56168dc52",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_2c83f7fc311c480f1f0151dc"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "24589c3fb61e9288bc9e9dc00b95b72774aa256eb29a8be9b7b8cc1a03538156",
+    "judge_key": "c9c6b2b7286bc41da0987fb9c82e302147c3d3fd7be07263eda33b85431e164b",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:56:13+08:00"
+}

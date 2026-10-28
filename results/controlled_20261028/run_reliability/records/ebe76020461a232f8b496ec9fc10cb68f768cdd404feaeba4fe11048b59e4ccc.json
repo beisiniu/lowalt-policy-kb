@@ -1,0 +1,76 @@
+{
+  "case_key": "ebe76020461a232f8b496ec9fc10cb68f768cdd404feaeba4fe11048b59e4ccc",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-026",
+  "item_fingerprint": "5140aac4af55b1276963c6350d7edbe63276e520b4964048ef35acb49890bf06",
+  "condition": {
+    "suite": "reliability",
+    "method": "naive"
+  },
+  "condition_key": "6620e02e050f6c054866b8b3ac23b7257804bbc98cf735a12394334758118024",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料，黄埔区企业研发的低空航空器核心产品获得奖励，存在两套不同规定，条件分别如下：\n\n**一、按《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第八条【核心技术产业化扶持】**\n- 支持领域：低空航空器相关的电池系统、飞行控制系统、动力系统、航空级碳纤维机体等核心领域，开展技术攻关并实现产业化。\n- 产值条件：政策有效期内，形成的产品在区内的产值达到2000万元以上。\n- 奖励标准：按产值的2%给予单个产品最高100万元补助；同一产品仅能申请一次补助；政策有效期内补助不超过10个产品。\n\n**二、按《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第八条【核心技术产业化扶持】**\n- 支持领域：低空航空器相关的电池系统、飞行控制系统、动力系统、航空级碳纤维机体等核心领域（以及航空航天相关核心领域）。\n- 装机条件（低空经济领域）：形成的产品在任一正式发布型号的中大型航空器装机量产。\n- 奖励标准：给予20万元一次性奖励；单个企业最高补贴100万元；政策有效期内累计补助不超过10款产品。\n\n另需注意，《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十九条也规定“对实现产业化的产品，按照其产值的2%给予单个产品最高100万元补助”，但该条未列明具体产值门槛，门槛条件以《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第八条为准。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答明确给出新政策装机量产条件，并区分新旧规定，核心结论与标准答案一致，未将旧条款作为现行依据。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_60e6615403c62d9203762bba",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_d1d1550af0162daf66000630"
+    ],
+    "context_ids": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_02f2d8c0e088bc11cc077407",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_60e6615403c62d9203762bba",
+      "clause_10748340be7aa63ef62f0128",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_d1d1550af0162daf66000630"
+    ],
+    "true_invalid_retrieved": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_60e6615403c62d9203762bba",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_d1d1550af0162daf66000630"
+    ],
+    "true_invalid_kept": [
+      "clause_b12488a50398dce274e7f153",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_de7ab739a99407aeb9ec546e",
+      "clause_ed6e3f69cda5cad69a9b019e",
+      "clause_60e6615403c62d9203762bba",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_d1d1550af0162daf66000630"
+    ],
+    "true_invalid_blocked": [],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": true,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "c76a466d9e96efcb30ff6f86fb71c1068ccb72b599fb731010e64e624f52b0f9",
+    "judge_key": "fb5f499a54fd7e1b83606fcd38bb85deba2f523a536b2e10e86c70948e070e10",
+    "answer_cache_hit": false,
+    "judge_cache_hit": false
+  },
+  "created_at": "2026-10-28T20:52:01+08:00"
+}

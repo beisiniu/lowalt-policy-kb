@@ -511,13 +511,13 @@ https://github.com/beisiniu/lowalt-policy-kb
 
 当前提交作者是占位身份 `lowalt-policy-kb <lowalt-policy-kb@users.noreply.github.com>`。仓库已经推送过；若要改写作者历史，需要 force push，不建议在已有远程记录后随意操作。
 
-## 12. 时序可靠性扩展（2026-10-28，开发中）
+## 12. 时序可靠性扩展（2026-10-28，开发轮已完成）
 
 在原有“过滤 vs Naive”之外，新增两个方向：
 
 1. **不确定性时序门禁**：valid / invalid / uncertain 三态，缺失不再默认有效；
 2. **政策族谱 + 同源扩展**：旧政策命中时按政策身份召回继任条款，解决“过滤后没牌”。
 
-已离线验证：族谱扩展把目标现行条款召回从 **28/31 提升到 31/31**；100% chunk metadata 缺失时，`family_uncertainty` 离线为 31/31 目标召回、0 个真实无效切片进入上下文。3 题 API 冒烟中，`family_filter` / `family_uncertainty` 均 3/3 正确，Temporal 3/3 拒答，Naive 3/3 毒化。
+31 题 ×6 方法全量 API（186 条、0 失败）结果：`temporal_filter` 正确 22/31、拒答 9/31；`family_filter` / `family_uncertainty` 正确 **24/31**、拒答 7/31，目标现行条款召回 **31/31**，0 毒化、0 无效切片进入上下文。族谱净增 2 题（多对 TQ3-011/030/032/041，少对 TQ3-006/010；后者是拒答而非毒化），代价是上下文约 2.1 倍。
 
-完整设计、命令、边界和待办见 [README_时序可靠性扩展.md](README_时序可靠性扩展.md)。
+完整设计、全量结果、命令、边界和待办见 [README_时序可靠性扩展.md](README_时序可靠性扩展.md)。全量运行为 `results/controlled_20261028/run_reliability/`，开发轮单裁判，不作为最终论文主表。

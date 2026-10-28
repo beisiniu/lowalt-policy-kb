@@ -1,0 +1,143 @@
+{
+  "protocol": "controlled-v1",
+  "suite": "reliability",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "benchmark_fingerprint": "445d3860e0ebbee1e3cce89b29fda95cfeffff924efc78d9c331b5cbca6acd5c",
+  "as_of": "2026-10-27",
+  "top_k": 9,
+  "items": [
+    "TQ3-001",
+    "TQ3-002",
+    "TQ3-003",
+    "TQ3-004",
+    "TQ3-006",
+    "TQ3-008",
+    "TQ3-009",
+    "TQ3-010",
+    "TQ3-011",
+    "TQ3-013",
+    "TQ3-014",
+    "TQ3-016",
+    "TQ3-017",
+    "TQ3-018",
+    "TQ3-021",
+    "TQ3-022",
+    "TQ3-023",
+    "TQ3-024",
+    "TQ3-025",
+    "TQ3-026",
+    "TQ3-027",
+    "TQ3-028",
+    "TQ3-029",
+    "TQ3-030",
+    "TQ3-031",
+    "TQ3-032",
+    "TQ3-034",
+    "TQ3-036",
+    "TQ3-039",
+    "TQ3-040",
+    "TQ3-041"
+  ],
+  "conditions": [
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "naive"
+      },
+      "condition_key": "6620e02e050f6c054866b8b3ac23b7257804bbc98cf735a12394334758118024"
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "prompt_only"
+      },
+      "condition_key": "617121a5ca8f05ece17b35388581fbf62d4a236913a663b2fb56ea7b52deb789"
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "temporal_filter"
+      },
+      "condition_key": "a9bf3cc69c96220bd55428ac9e9ea3fbb337b3aee24e2eb99bb81103eda2c285"
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "uncertainty_filter"
+      },
+      "condition_key": "d0d51e11c19471eb12c97c8635dac7a093e1dc225da0455fa77dfb33cc807090"
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "family_filter"
+      },
+      "condition_key": "b237cdd8954f6f1b03f44e0045dc5b77584f2269b8a2b72f3b99535cee9bc649"
+    },
+    {
+      "condition": {
+        "suite": "reliability",
+        "method": "family_uncertainty"
+      },
+      "condition_key": "cc5498f12fb5792d6e8630b3758d56cc906ed9932adeb7e5fe9b8d8bd2a1c63f"
+    }
+  ],
+  "method_protocol": "date_rerank: valid_to DESC(null first), valid_from DESC; llm_gate: ID-validated per-clause temporal decisions; temporal_filter: usable() hard filter; uncertainty_filter: valid/invalid/uncertain gate; family_*: policy-family successor expansion before gate",
+  "family_extra": 2,
+  "answer": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 1200,
+    "thinking": false
+  },
+  "gate": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 1200,
+    "thinking": false
+  },
+  "judge": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "style": "deepseek",
+    "temperature": 0.0,
+    "max_tokens": 400,
+    "thinking": false
+  },
+  "noise": {
+    "unit": "policy_id",
+    "modes": [
+      "expiry_missing",
+      "status_missing",
+      "joint_missing",
+      "joint_wrong_future"
+    ],
+    "rates": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "pool_mode": "retrieval",
+    "methods": [
+      "temporal_filter"
+    ],
+    "selection": "seeded hash order, nested prefixes"
+  },
+  "code_digest": "f094a7e975595ecc0b05660d1e205e3bdf8b3e00c920625a260f14ede9ba4d1a",
+  "git_head": "b8421760ab434d9f56115c23a1a07fabc7115a3d",
+  "created_at": "2026-10-28T20:51:07+08:00"
+}

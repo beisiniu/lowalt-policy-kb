@@ -1,0 +1,69 @@
+{
+  "case_key": "6db61d75fe360cae9c538d6f098d8842d63523c26f9c44070066cce45f8efc58",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-031",
+  "item_fingerprint": "ab139dc42c8b74588478e6de2f2435e085850df1263ff8fe78f39c924647ac23",
+  "condition": {
+    "suite": "reliability",
+    "method": "uncertainty_filter"
+  },
+  "condition_key": "d0d51e11c19471eb12c97c8635dac7a093e1dc225da0455fa77dfb33cc807090",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，在黄埔区开展载物无人机示范项目，小型载物无人机每架次最高补贴20元。",
+  "answer_source": "model",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用现行新政策，小型载物无人机最高20元/架次，与标准答案一致，未使用旧条款。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_82fa08081d0a1d649a260119",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "context_ids": [
+      "clause_c23de099f06ea304d0c2efaa",
+      "clause_82fa08081d0a1d649a260119"
+    ],
+    "true_invalid_retrieved": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_f93dedca806ecf96cf3f2533",
+      "clause_9ac1885a6de8c9f7d367c21e",
+      "clause_6e7b0172a8efdcbad81e667b",
+      "clause_2c83f7fc311c480f1f0151dc",
+      "clause_9882f14668bb0bac6d3f72bc",
+      "clause_f8c8b32ac68b32f94a5ece2b",
+      "clause_ed6e3f69cda5cad69a9b019e"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "a0ad9d4f64526d8279608be8f403e6e04fa028862084a820a551912ca9d94353",
+    "judge_key": "9b8a560bbd4667a5c002c0f13545972fc5b62dce874614d56864e07833f8adff",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:55:10+08:00"
+}

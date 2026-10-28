@@ -1,0 +1,67 @@
+{
+  "case_key": "5b9cf9fd0e11410cae12b942365a99bfaed188c92e1f96f17415b7beda29954c",
+  "protocol": "controlled-v1",
+  "item_id": "TQ3-001",
+  "item_fingerprint": "69d2e6ebabcb944d1a74dc2ebfdf170e3ff706621ed65cf728ed744d5921a93f",
+  "condition": {
+    "suite": "reliability",
+    "method": "family_filter"
+  },
+  "condition_key": "b237cdd8954f6f1b03f44e0045dc5b77584f2269b8a2b72f3b99535cee9bc649",
+  "snapshot_fingerprint": "1fa9422d9b5ee3bd29eb68b2735d7639a1910f1ca6d882625167f485362baa30",
+  "noise": null,
+  "family_added": [],
+  "gate": null,
+  "answer": "根据现有政策资料无法确定。\n\n理由：原规定短途客运航线财政补贴的条款（《张家界市加快通用航空产业发展推进方案》第（五）项）已被《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》明确废止，因此资料中不再有可据以申请该航线财政补贴的现行条款；通告仅说明张政办发〔2023〕4号文件其余内容在规定有效期内继续施行，未涉及该补贴的替代安排。",
+  "answer_source": "model",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答正确指出补贴条款已废止，但以资料不足为由未给出明确结论，属拒答。"
+  },
+  "audit": {
+    "retrieved_ids": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_b8e19c90f082da244d01f627",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_408f3d58cac63ec2a1b232aa",
+      "clause_85aa48df9637f7906651befb",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7",
+      "clause_d9a2bf82c0dfbbceb2529619"
+    ],
+    "context_ids": [
+      "clause_b8e19c90f082da244d01f627",
+      "clause_408f3d58cac63ec2a1b232aa",
+      "clause_85aa48df9637f7906651befb",
+      "clause_d9a2bf82c0dfbbceb2529619"
+    ],
+    "true_invalid_retrieved": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7"
+    ],
+    "true_invalid_kept": [],
+    "true_invalid_blocked": [
+      "clause_deab65b7bb0fa8bac59f9cde",
+      "clause_fc742e4863fee41a6e3c622d",
+      "clause_2e71fb5e3544815d142e044f",
+      "clause_ea93d2e4f433de0764bffc1d",
+      "clause_b9858eb943fd52a844cc95b7"
+    ],
+    "old_recalled": true,
+    "new_recalled": true,
+    "old_in_context": false,
+    "new_in_context": true
+  },
+  "request": {
+    "answer_key": "808b7984b728d57285cd15a84d530d302a20f0f6d8edd0579071291480f3398f",
+    "judge_key": "b27513654cde755550caa4189a1d3d7e6f67f3630148449e63c6702e4c4dedc5",
+    "answer_cache_hit": true,
+    "judge_cache_hit": true
+  },
+  "created_at": "2026-10-28T20:55:10+08:00"
+}
