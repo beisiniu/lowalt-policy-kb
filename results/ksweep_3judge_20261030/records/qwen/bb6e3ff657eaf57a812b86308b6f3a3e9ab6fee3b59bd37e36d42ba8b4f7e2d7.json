@@ -1,0 +1,27 @@
+{
+  "case_key": "bb6e3ff657eaf57a812b86308b6f3a3e9ab6fee3b59bd37e36d42ba8b4f7e2d7",
+  "k": 9,
+  "branch": "temporal",
+  "item_id": "TQ3-018",
+  "condition": {
+    "suite": "ksweep",
+    "k": 9,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条只规定，对纳入区低空航线和起降点规划且进入常态化运营状态的无人机小型起降点等基础设施企业给予建设补贴，最高按实际建设投入的50%、每个中小型起降点不超过10万元。该条未提及“竣工验收”或“投用满一年”作为申请条件，资料中也没有其他条款对此作出规定。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型回答称“无法确定”，未给出明确结论。虽然其引用的新政策确实无旧条款要求，但标准答案明确为“不需要”，模型未能直接否定旧条件或确认新条件，属于资料不足导致的拒答/不确定状态，而非错误引用旧条款。"
+  },
+  "created_at": "2026-10-29T21:38:16+08:00"
+}

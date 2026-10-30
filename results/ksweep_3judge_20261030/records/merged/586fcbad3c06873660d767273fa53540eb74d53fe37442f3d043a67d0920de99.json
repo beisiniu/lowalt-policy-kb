@@ -1,0 +1,28 @@
+{
+  "case_key": "586fcbad3c06873660d767273fa53540eb74d53fe37442f3d043a67d0920de99",
+  "k": 1,
+  "branch": "temporal",
+  "item_id": "TQ3-031",
+  "answer": "检索到的 1 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称证据失效且无现行条款，拒绝回答。但提供的new_clause_text明确包含“小型载物无人机最高20元/架次”的现行规定，与标准答案一致。模型未利用有效证据，属于错误拒答。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

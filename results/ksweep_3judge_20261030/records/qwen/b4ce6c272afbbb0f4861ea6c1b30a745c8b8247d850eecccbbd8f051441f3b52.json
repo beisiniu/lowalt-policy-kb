@@ -1,0 +1,27 @@
+{
+  "case_key": "b4ce6c272afbbb0f4861ea6c1b30a745c8b8247d850eecccbbd8f051441f3b52",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-008",
+  "condition": {
+    "suite": "ksweep",
+    "k": 1,
+    "branch": "naive"
+  },
+  "answer": "按上年度该企业在本区所开航线实际飞行成本的50%予以补贴，每个企业每年度不超过500万元。依据：《龙岗区关于促进低空经济产业发展的若干措施》三、（八）。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧条款的飞行成本50%补贴，而非现行按飞行乘用券数量奖励。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答引用了已失效的旧条款（按飞行成本50%补贴），而现行新政策规定为根据实际发放的飞行乘用券数量给予奖励，核心结论错误且明确源于旧文件。"
+  },
+  "created_at": "2026-10-29T21:34:52+08:00"
+}

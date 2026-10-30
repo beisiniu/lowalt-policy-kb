@@ -1,0 +1,27 @@
+{
+  "case_key": "3fbe8c92cc2198b4aa318a8a55bad411b79ea64fcac41fb01a94cc37669ba6ca",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-036",
+  "condition": {
+    "suite": "ksweep",
+    "k": 1,
+    "branch": "naive"
+  },
+  "answer": "根据现有政策资料无法确定。资料中仅有《深圳市宝安区关于促进低空经济产业发展的若干措施》第二条关于宝安区无人机飞行试验场建设及运营费用补贴的规定，未涉及黄埔区，也未规定运营费用按比例补贴。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型回答称资料不足无法确定，未给出错误结论。虽然实际上新证据中有明确答案（30%），但模型因引用了无关地区（深圳）的证据而选择拒答/表示不确定，符合REFUSED定义中‘没有给出明确可判错的结论’的情形，且未使用旧条款导致错误。"
+  },
+  "created_at": "2026-10-29T21:35:18+08:00"
+}

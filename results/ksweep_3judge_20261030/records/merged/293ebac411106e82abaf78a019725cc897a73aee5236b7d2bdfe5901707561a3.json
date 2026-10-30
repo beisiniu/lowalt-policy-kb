@@ -1,0 +1,28 @@
+{
+  "case_key": "293ebac411106e82abaf78a019725cc897a73aee5236b7d2bdfe5901707561a3",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-001",
+  "answer": "根据现有政策资料无法确定。\n\n《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》已废止张政办发〔2023〕4号文件中“(五)支持通用航空运营企业发展”部分，其中包含对开辟省内外短途客运航线（飞机乘客座位不少于8个，年均乘客上座率不低于50%，单条航线年飞行时间200小时及以上）按航线给予财政补贴的规定。该补贴条款已被废止，资料中未提供替代性的补贴政策，因此无法确定现在是否还能按航线申请财政补贴。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型虽正确指出补贴条款已废止，但最终结论为无法确定，未给出标准答案的明确否定结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型正确识别补贴条款已废止，但因资料中无替代政策而声称“无法确定”，未直接给出标准答案要求的“不能”这一明确结论。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

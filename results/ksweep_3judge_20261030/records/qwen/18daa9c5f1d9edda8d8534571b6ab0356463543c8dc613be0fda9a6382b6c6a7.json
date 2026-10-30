@@ -1,0 +1,27 @@
+{
+  "case_key": "18daa9c5f1d9edda8d8534571b6ab0356463543c8dc613be0fda9a6382b6c6a7",
+  "k": 13,
+  "branch": "temporal",
+  "item_id": "TQ3-002",
+  "condition": {
+    "suite": "ksweep",
+    "k": 13,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n理由：张家界市原《张家界市加快通用航空产业发展推进方案》（张政办发〔2023〕4号）中“对开展低空旅游（含市域内各大景区景点之间的短途客运航线运营）、航空运动等业务的通用航空企业给予财政补贴”的规定，已被《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》第一条废止。资料中未提供张家界市替代性的低空旅游补贴政策，因此无法确定在张家界开展低空旅游业务的通航企业目前能否取得财政补贴。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型明确表示无法确定，未给出可判错的结论，属于拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型正确识别旧补贴条款已废止，但因缺乏新政策依据而选择拒答（无法确定），未给出错误结论。根据标准答案“不能”，若模型能基于“无新政策即无补贴”的逻辑推断出否定结论则更优，但当前回答属于有依据的保守拒答，非毒化或错误。"
+  },
+  "created_at": "2026-10-29T21:39:19+08:00"
+}

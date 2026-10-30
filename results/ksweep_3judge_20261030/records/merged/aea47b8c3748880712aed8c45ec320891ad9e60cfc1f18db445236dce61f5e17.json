@@ -1,0 +1,28 @@
+{
+  "case_key": "aea47b8c3748880712aed8c45ec320891ad9e60cfc1f18db445236dce61f5e17",
+  "k": 15,
+  "branch": "temporal",
+  "item_id": "TQ3-003",
+  "answer": "根据现有政策资料无法确定。\n\n资料中与试飞验证公共服务相关的规定为《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第五条和《广州市低空经济发展条例》第二十一条，二者均未对低空飞行试验场（试飞基地）的专业团队人数作出要求，也未出现“5人以上专业团队”的表述。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "回答指出政策未规定团队人数，与标准答案一致，未采纳旧条款的5人要求。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答指出新政策未规定团队人数要求，与标准答案一致。虽然提及无法确定，但核心结论正确否定了旧条款的5人限制，且未引用旧文件作为现行依据。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

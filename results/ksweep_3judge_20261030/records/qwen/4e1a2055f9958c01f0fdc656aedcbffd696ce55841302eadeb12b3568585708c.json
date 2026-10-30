@@ -1,0 +1,27 @@
+{
+  "case_key": "4e1a2055f9958c01f0fdc656aedcbffd696ce55841302eadeb12b3568585708c",
+  "k": 3,
+  "branch": "temporal",
+  "item_id": "TQ3-010",
+  "condition": {
+    "suite": "ksweep",
+    "k": 3,
+    "branch": "temporal"
+  },
+  "answer": "检索到的 3 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料均失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称所有依据失效且无现行条款，故拒绝回答。虽然结论未直接给出错误数值，但未能利用提供的new_clause_text得出正确答案，属于资料不足导致的拒答。"
+  },
+  "created_at": "2026-10-29T21:36:05+08:00"
+}

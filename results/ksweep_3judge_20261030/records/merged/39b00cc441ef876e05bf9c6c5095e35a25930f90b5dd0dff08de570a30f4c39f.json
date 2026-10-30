@@ -1,0 +1,28 @@
+{
+  "case_key": "39b00cc441ef876e05bf9c6c5095e35a25930f90b5dd0dff08de570a30f4c39f",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-025",
+  "answer": "按该产品产值的2%给予补助，单个产品最高100万元。（《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十九条）",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧条款，按产值2%补助，与现行20万元一次性奖励不符",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答引用了已失效的旧条款（按产值2%补助），而现行新政策规定为给予20万元一次性奖励。核心结论与数值均错误，且明确源于旧文件毒化。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

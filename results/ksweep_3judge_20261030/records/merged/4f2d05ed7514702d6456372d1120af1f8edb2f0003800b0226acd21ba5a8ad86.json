@@ -1,0 +1,28 @@
+{
+  "case_key": "4f2d05ed7514702d6456372d1120af1f8edb2f0003800b0226acd21ba5a8ad86",
+  "k": 19,
+  "branch": "temporal",
+  "item_id": "TQ3-024",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，对提供低空飞行器载物飞行服务的示范项目，每个项目每年最高不超过200万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，载物示范项目每年上限200万元，与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答引用了现行新政策，准确指出载物飞行示范项目每个项目每年补贴上限为200万元，与标准答案及新证据一致。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

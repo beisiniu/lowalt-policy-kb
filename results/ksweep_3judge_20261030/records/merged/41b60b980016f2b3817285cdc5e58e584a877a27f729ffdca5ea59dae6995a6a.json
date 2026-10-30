@@ -1,0 +1,28 @@
+{
+  "case_key": "41b60b980016f2b3817285cdc5e58e584a877a27f729ffdca5ea59dae6995a6a",
+  "k": 12,
+  "branch": "temporal",
+  "item_id": "TQ3-036",
+  "answer": "在黄埔区做无人机载物飞行示范项目，按不超过实际运营费用的30%给予补贴。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，该项目还须取得运营合格证及空域和航线批复，并按小、中、大型载物无人机分别给予最高20元/架次、30元/架次、40元/架次运营补贴，每个项目每年最高不超过200万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "核心结论30%与标准答案一致，引用现行条款，未采纳旧条款的50%比例",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答核心结论“按不超过实际运营费用的30%补贴”与现行新条款及标准答案完全一致，并正确引用了新政策依据，未受旧条款干扰。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "case_key": "e823492473483bb0705896a5e7e5e31ed42644da0632f078a7748b717a36adc1",
+  "k": 14,
+  "branch": "naive",
+  "item_id": "TQ3-013",
+  "answer": "是。根据《龙岗区关于促进低空经济产业发展的若干措施》第（十二）条，申请运营费用补贴须同时满足：经备案，且提供免费或低收费公共服务；补贴按年实际运营成本50%计算，年度不超过300万元。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型依据已失效旧条款，错误认定须备案并提供免费或低收费公共服务，与现行规定不符。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型依据已失效的旧条款，错误认定申请补贴必须先经备案并提供免费或低收费公共服务。现行新政策未设此限制，核心结论与标准答案相反。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

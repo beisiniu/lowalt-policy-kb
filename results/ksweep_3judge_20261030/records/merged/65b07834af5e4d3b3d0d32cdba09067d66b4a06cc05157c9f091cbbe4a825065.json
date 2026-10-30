@@ -1,0 +1,33 @@
+{
+  "case_key": "65b07834af5e4d3b3d0d32cdba09067d66b4a06cc05157c9f091cbbe4a825065",
+  "k": 13,
+  "branch": "temporal",
+  "item_id": "TQ3-011",
+  "answer": "根据现有政策资料无法确定。\n\n理由：《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条【适航航空器奖励】规定，奖励对象为“将总部或研发、生产、制造引入本区的低空经济企业”，条件是“在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后”，大型载人新型航空器每次奖励1500万元。该条同时要求“同一企业获得多个产品型号合格证、生产许可证的，不重复奖励”，但资料未明确仅取得型号合格证（TC）、尚未取得生产许可证（PC）时能否申请奖励，也未说明“尚未交付”是否影响申请资格。因此，仅凭现有资料无法判断该情形能否申请奖励。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型回答错误。新政策第七条明确“获得...型号合格证（TC）...后”即可奖励，未要求交付或PC证。旧条款才要求交付。模型以资料不足为由拒答/否定，属误判，非引用旧条款导致结论错误，故为OTHER_ERROR。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型称资料不足、无法确定，未给出可判错的明确结论。实际新条款'获得TC、PC后最高分别给予1500万元，大型载人每次奖励1500万元'已能推出仅取得TC即可申请，属应答而拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

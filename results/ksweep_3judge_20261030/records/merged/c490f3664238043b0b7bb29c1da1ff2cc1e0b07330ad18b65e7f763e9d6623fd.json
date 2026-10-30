@@ -1,0 +1,28 @@
+{
+  "case_key": "c490f3664238043b0b7bb29c1da1ff2cc1e0b07330ad18b65e7f763e9d6623fd",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-036",
+  "answer": "检索到的 5 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称所有证据失效且无现行条款，但new_clause_text明确给出了载物飞行按不超过30%补贴的现行规定。模型因错误判断证据时效性而拒答，属于资料不足导致的拒绝，非毒化或事实错误。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

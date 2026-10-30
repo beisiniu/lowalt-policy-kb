@@ -1,0 +1,28 @@
+{
+  "case_key": "8ab418b2af7902c44c327a0cf1752ed4cc326903042a9752305c767e0a177b49",
+  "k": 14,
+  "branch": "naive",
+  "item_id": "TQ3-041",
+  "answer": "在黄埔区建中型起降场，单个项目补贴额度上限为200万元/个。依据：《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条（五）。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效细则第九条，给出200万元，而现行标准为300万元。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧细则，将中型起降场补贴上限错误定为200万元。根据新政策，该类别上限应为300万元，核心数值因旧条款导致错误。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

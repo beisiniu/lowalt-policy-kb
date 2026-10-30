@@ -1,0 +1,28 @@
+{
+  "case_key": "517d872b5fc139b02a4846f36c84ed61e7be1bb9b4d89fecb9446e041b690ed8",
+  "k": 12,
+  "branch": "naive",
+  "item_id": "TQ3-018",
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条，建设无人机小型起降点等低空经济相关基础设施的企业，按实际建设投入的50%分类别给予一次性补贴，但须“由区住房和城乡建设部门联合相关职能部门完成竣工验收并投入使用一年后进行补贴申请”。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采纳已失效细则第八条，错误要求竣工验收并投用满一年，与现行条款不符。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型依据已失效的旧细则第八条，错误认定需竣工验收并投用满一年。新政策规定只需纳入规划且常态化运营即可申请，核心结论与现行标准相反。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

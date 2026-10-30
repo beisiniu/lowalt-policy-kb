@@ -1,0 +1,27 @@
+{
+  "case_key": "3ddef3c3daa9a434e707f5ebc75cb6f52bed48cecf7c88d6735fbb7970e6ab0a",
+  "k": 9,
+  "branch": "temporal",
+  "item_id": "TQ3-026",
+  "condition": {
+    "suite": "ksweep",
+    "k": 9,
+    "branch": "temporal"
+  },
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第八条，低空经济领域企业须满足：形成的产品在任一正式发布型号的中大型航空器装机量产，方可获得20万元一次性奖励。此外，单个企业最高补贴100万元，政策有效期内累计补助不超过10款产品。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行第八条，核心条件与标准答案一致，未采纳旧条款。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答准确引用新政策第八条，核心条件“任一正式发布型号的中大型航空器装机量产”与标准答案一致，奖励金额及限制条件无误。"
+  },
+  "created_at": "2026-10-29T21:38:31+08:00"
+}

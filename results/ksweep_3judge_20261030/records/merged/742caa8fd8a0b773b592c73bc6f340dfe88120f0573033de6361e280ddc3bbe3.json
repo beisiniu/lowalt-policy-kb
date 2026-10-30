@@ -1,0 +1,28 @@
+{
+  "case_key": "742caa8fd8a0b773b592c73bc6f340dfe88120f0573033de6361e280ddc3bbe3",
+  "k": 4,
+  "branch": "naive",
+  "item_id": "TQ3-022",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第九条和《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十三条，每家企业每年度该项补贴金额不超过500万元。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型引用旧条款，将每家企业年度上限500万元作为答案，而现行标准为每个项目每年最高300万元。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧文件，得出“每家企业不超过500万元”的错误结论。现行新政策规定载人示范项目每个项目每年最高补贴300万元，核心数值与适用主体均错误。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

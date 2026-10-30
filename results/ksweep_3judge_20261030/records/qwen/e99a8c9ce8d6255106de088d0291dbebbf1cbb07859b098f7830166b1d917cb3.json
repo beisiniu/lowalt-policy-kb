@@ -1,0 +1,27 @@
+{
+  "case_key": "e99a8c9ce8d6255106de088d0291dbebbf1cbb07859b098f7830166b1d917cb3",
+  "k": 3,
+  "branch": "naive",
+  "item_id": "TQ3-016",
+  "condition": {
+    "suite": "ksweep",
+    "k": 3,
+    "branch": "naive"
+  },
+  "answer": "按《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十一条，补贴标准为：实际租金高于（含）50元/平/月的，按50元/平/月给予补贴；实际租金低于50元/平/月的，按实际租金单价给予补贴。每年最高补贴100万元，补贴期限最多3年。\n\n同时，《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第四条也规定按实际租金给予每月每平方米最高50元的租金补贴，补贴期限最多3年，每家企业或机构每年最高补贴100万元。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用旧条款最高50元/平/月标准，而现行标准为最高50%且不超过20元/平/月，核心数值错误。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答引用了已失效的旧政策（最高50元/平），未采用新政策规定的“实际租金50%且不超过20元/平”标准，核心数值错误。"
+  },
+  "created_at": "2026-10-29T21:36:11+08:00"
+}

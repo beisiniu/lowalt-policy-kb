@@ -1,0 +1,27 @@
+{
+  "case_key": "6811cf9899418820b3837db0576c4c6349d7e823ed734d6874e49fecd0d62e8a",
+  "k": 12,
+  "branch": "temporal",
+  "item_id": "TQ3-001",
+  "condition": {
+    "suite": "ksweep",
+    "k": 12,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n理由：原规定短途客运航线财政补贴的内容（对开辟省内外短途客运航线且单条航线年飞行时间200小时及以上的通用航空企业按航线给予财政补贴）已被《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》第一条明确废止，资料中未见替代性的省内外短途客运航线补贴条款。《关于支持全省低空经济高质量发展的若干政策措施》第二条的运营补贴仅适用于利用电动垂直起降航空器（eVTOL）、飞行汽车等新型飞行器开展的商业化飞行，不能据此确定普通短途客运航线可申请补贴。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称无法确定，未给出可判错的结论，属拒答",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "glm",
+  "judge_model": "glm-5.3-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型正确引用废止通告并指出旧补贴条款已失效、无替代条款，未依赖旧条款作答；但最终以'无法确定'作结，未给出资料已能支持的'不能按航线申请补贴'的明确否定结论，属过度保守拒答。"
+  },
+  "created_at": "2026-10-29T21:49:15+08:00"
+}

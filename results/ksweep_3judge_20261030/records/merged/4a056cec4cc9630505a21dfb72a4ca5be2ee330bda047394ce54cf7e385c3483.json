@@ -1,0 +1,28 @@
+{
+  "case_key": "4a056cec4cc9630505a21dfb72a4ca5be2ee330bda047394ce54cf7e385c3483",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-041",
+  "answer": "根据现有政策资料无法确定。《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条只规定按实际建设投入的50%分类别给予一次性补贴，并说明各类型补贴额上限见第九条，但资料中未提供第九条的具体上限数额。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称资料不足无法确定，未给出具体数值。虽然其引用的旧文件条款号有误且结论缺失，但核心表现为拒答而非输出错误结论，符合REFUSED定义。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

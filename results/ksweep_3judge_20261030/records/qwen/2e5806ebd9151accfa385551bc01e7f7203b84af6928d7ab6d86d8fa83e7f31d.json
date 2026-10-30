@@ -1,0 +1,27 @@
+{
+  "case_key": "2e5806ebd9151accfa385551bc01e7f7203b84af6928d7ab6d86d8fa83e7f31d",
+  "k": 20,
+  "branch": "naive",
+  "item_id": "TQ3-003",
+  "condition": {
+    "suite": "ksweep",
+    "k": 20,
+    "branch": "naive"
+  },
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十五条，申请该扶持的企业应同时符合两项条件：一是提供试飞验证公共服务的企业应已获得空域批复；二是提供试飞验证服务的企业拥有专业的服务团队，团队成员5人以上。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型引用已失效细则第十五条，错误得出必须配备5人以上团队，与现行条款未规定人数不符。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧细则第十五条，错误认定必须配备5人以上团队。新政策未规定人数要求，核心结论与标准答案相反，属旧条款毒化。"
+  },
+  "created_at": "2026-10-29T21:41:30+08:00"
+}

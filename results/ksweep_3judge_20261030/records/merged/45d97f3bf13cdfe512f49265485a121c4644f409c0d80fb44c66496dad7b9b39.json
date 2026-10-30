@@ -1,0 +1,28 @@
+{
+  "case_key": "45d97f3bf13cdfe512f49265485a121c4644f409c0d80fb44c66496dad7b9b39",
+  "k": 20,
+  "branch": "temporal",
+  "item_id": "TQ3-030",
+  "answer": "在黄埔区开展eVTOL载人飞行示范项目，适用《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条：对提供低空飞行器载人飞行服务的示范项目，取得运营合格证及空域航线批复的，按照不超过实际运营费用的50%，给予每个项目每年最高不超过300万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行第九条，核心结论与标准答案一致，未采纳旧架次补贴标准。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答引用了现行新政策第九条，核心结论（按实际运营费用50%补贴，每年最高300万元）与标准答案及新证据完全一致，未受旧条款干扰。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

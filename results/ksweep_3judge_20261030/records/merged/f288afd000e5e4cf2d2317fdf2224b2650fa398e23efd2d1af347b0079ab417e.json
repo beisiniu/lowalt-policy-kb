@@ -1,0 +1,28 @@
+{
+  "case_key": "f288afd000e5e4cf2d2317fdf2224b2650fa398e23efd2d1af347b0079ab417e",
+  "k": 20,
+  "branch": "temporal",
+  "item_id": "TQ3-026",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第八条，本区企业或机构需围绕低空航空器相关的电池系统、飞行控制系统、动力系统、航空级碳纤维机体等核心领域开展技术攻关并实现产业化，且形成的产品需在**任一正式发布型号的中大型航空器上装机量产**，方可获得**20万元一次性奖励**。单个企业最高补贴100万元，政策有效期内累计补助不超过10款产品。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "引用现行第八条，核心条件与标准答案一致，未采纳旧条款。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答准确引用新政策第八条，核心条件“任一正式发布型号的中大型航空器装机量产”与标准答案一致，未受旧条款干扰。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

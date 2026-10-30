@@ -1,0 +1,28 @@
+{
+  "case_key": "bab10bc4683986847edea88745296be9ac3261d54d5a9e267fd8eeeefe0ea16f",
+  "k": 11,
+  "branch": "temporal",
+  "item_id": "TQ3-021",
+  "answer": "按运营费用算，不按飞行架次。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，对提供低空飞行器载人飞行服务的示范项目，取得运营合格证及空域航线批复的，按照不超过实际运营费用的50%给予补贴，每个项目每年最高不超过300万元。按架次补贴适用于载物飞行服务（小、中、大型载物无人机分别为最高20元/架次、30元/架次、40元/架次）。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型采用现行条款，载人飞行按实际运营费用50%补贴，结论与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新政策，正确指出载人飞行补贴按实际运营费用50%计算，并区分了载物飞行的架次补贴标准，与标准答案一致。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

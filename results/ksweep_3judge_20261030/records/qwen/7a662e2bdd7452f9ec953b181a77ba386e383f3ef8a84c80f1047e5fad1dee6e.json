@@ -1,0 +1,27 @@
+{
+  "case_key": "7a662e2bdd7452f9ec953b181a77ba386e383f3ef8a84c80f1047e5fad1dee6e",
+  "k": 1,
+  "branch": "temporal",
+  "item_id": "TQ3-032",
+  "condition": {
+    "suite": "ksweep",
+    "k": 1,
+    "branch": "temporal"
+  },
+  "answer": "检索到的 1 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称检索到的政策依据已失效且无现行条款，从而拒绝回答。但提供的new_clause_text明确显示现行最高补助为1000万元，与ground_truth一致。模型未能识别有效证据导致拒答，属于资料不足或判断失误导致的REFUSED状态（注：若视为有错误结论则应为OTHER_ERROR，但此处核心是未给出可判错的数值结论而是表示无法确定，符合REFUSED定义中“资料不足、无法确定”的描述，尽管实际上资料充足）。根据指令“有依据地否定某项要求不是拒答”，但此处是否定所有依据的有效性，故归为REFUSED。"
+  },
+  "created_at": "2026-10-29T21:35:08+08:00"
+}

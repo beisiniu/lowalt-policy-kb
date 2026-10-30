@@ -1,0 +1,27 @@
+{
+  "case_key": "2ad55bffc5c2783a75f57f920a1b971adc9eecbe35aeea27b2b98509e93be27d",
+  "k": 14,
+  "branch": "temporal",
+  "item_id": "TQ3-009",
+  "condition": {
+    "suite": "ksweep",
+    "k": 14,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）仅规定“根据实际发放的飞行乘用券数量给予相应奖励”，未写明每年度奖励金额上限；该措施（十三）明确对应实施细则由深圳市龙岗区发展和改革局另行制定，资料中未包含该实施细则。资料中“每个企业每年合计奖励不超过1000万元”的上限出自《杭州市支持低空经济高质量发展的若干措施》，不适用于龙岗区。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型结论为未规定上限，与标准答案一致，未采纳旧条款的500万上限。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "glm",
+  "judge_model": "glm-5.3-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "指出现行修订措施仅按乘用券数量奖励、未写明年度上限，与标准答案'未规定上限'一致；并正确排除旧政策500万及杭州1000万上限的不适用；提示实施细则待定属合理补充，实质结论明确非拒答。"
+  },
+  "created_at": "2026-10-29T21:54:32+08:00"
+}

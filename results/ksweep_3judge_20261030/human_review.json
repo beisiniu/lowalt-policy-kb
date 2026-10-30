@@ -1,0 +1,100 @@
+{
+  "reviewed_at": "2026-10-29",
+  "reviewer": "user",
+  "scope": "K扫描11条无多数票人工复核",
+  "record_count": 11,
+  "notes": [
+    "A TQ3-004×3 维持POISONED；B TQ3-026×3 改OTHER_ERROR；C TQ3-031×2、E TQ3-021、F TQ3-024 改REFUSED；D TQ3-011 维持POISONED。",
+    "只影响K扫描行为统计，不改变K=9的检索层选择。"
+  ],
+  "overrides": {
+    "b2c70f6ac1de76bf04215b82f9ab350aa6bd9b64b07296162116fc6d752c7c3b": {
+      "k": 2,
+      "item_id": "TQ3-004",
+      "branch": "naive",
+      "status": "POISONED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：结论“不能”正确，但适用条件来自旧细则；按旧条款污染关键条件判毒化。"
+    },
+    "914616b35f2c95288046ce03e22d4745edb39cef5428d212191adaaacaee438a": {
+      "k": 3,
+      "item_id": "TQ3-004",
+      "branch": "naive",
+      "status": "POISONED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：同上。"
+    },
+    "b648ee36a67a6732c339dcd39a47cbd1e835019b0a5db97ded36333f787984d9": {
+      "k": 17,
+      "item_id": "TQ3-004",
+      "branch": "naive",
+      "status": "POISONED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：同上。"
+    },
+    "dd7719982e7eaed3685e70e45f3078fc09219fd83c18767ed096537b96d16200": {
+      "k": 7,
+      "item_id": "TQ3-026",
+      "branch": "naive",
+      "status": "OTHER_ERROR",
+      "auto_status": "CORRECT",
+      "reason": "人工复核：编造“产值2000万”门槛，属模型幻觉，判其他错误。"
+    },
+    "2bd3b6ee9cc7096d445492fcf4a3b6c2a7830c019d14c5a735e4c04e4680b2d4": {
+      "k": 15,
+      "item_id": "TQ3-026",
+      "branch": "naive",
+      "status": "OTHER_ERROR",
+      "auto_status": "CORRECT",
+      "reason": "人工复核：编造“产值2000万”门槛，属模型幻觉，判其他错误。"
+    },
+    "1f0d693f784ae142b2720a948d81aeb90c478c3466ab9ee7a107d2baf23e1f82": {
+      "k": 17,
+      "item_id": "TQ3-026",
+      "branch": "naive",
+      "status": "OTHER_ERROR",
+      "auto_status": "POISONED",
+      "reason": "人工复核：编造“产值2000万”门槛，属模型幻觉，判其他错误。"
+    },
+    "466c7fd57162db788175a97dadeca9be024684c531ffe03a7e3b0913cc9558a1": {
+      "k": 10,
+      "item_id": "TQ3-031",
+      "branch": "naive",
+      "status": "REFUSED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：最终称无法确定，判拒答；列出旧值不等于结论。"
+    },
+    "3c43ff4c5043688acb84e601ffa48f60219257e81aabe411484b6fd98a938c4a": {
+      "k": 14,
+      "item_id": "TQ3-031",
+      "branch": "naive",
+      "status": "REFUSED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：同上。"
+    },
+    "1d61d09b7f41a05932e1e0f6ebd39a44136c0c050da90a9cab4c40192043b513": {
+      "k": 13,
+      "item_id": "TQ3-011",
+      "branch": "naive",
+      "status": "POISONED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：以旧交付条件否定 TC 即可申请，核心结论错误且来自旧条款，判毒化。"
+    },
+    "83ea45504f9350ed7a70df9dac7aed0851ec2e17e76b536d02ec138e915b3473": {
+      "k": 20,
+      "item_id": "TQ3-021",
+      "branch": "naive",
+      "status": "REFUSED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：新旧并列后称无法确定，判拒答。"
+    },
+    "c1e72a86986e14ca92039c8adbf68f432c997fcd80aab99fbca5848664f8724f": {
+      "k": 15,
+      "item_id": "TQ3-024",
+      "branch": "naive",
+      "status": "REFUSED",
+      "auto_status": "POISONED",
+      "reason": "人工复核：新旧并列后称无法确定，判拒答。"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "case_key": "b44d04d97ae1b57baee7329438144d551f8b501caa2f55a80c39e99670e1fdc7",
+  "k": 17,
+  "branch": "temporal",
+  "item_id": "TQ3-003",
+  "condition": {
+    "suite": "ksweep",
+    "k": 17,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n资料[1]《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第五条仅规定：对获得空域批复、提供公共服务的低空飞行试验场，按综合低空试飞服务保障成效给予激励，每个低空飞行试验场主体方每年度不超过200万元；资料中未对专业团队人数（包括“5人以上”）作出任何要求。资料[4]《广州市低空经济发展条例》第二十一条也只规定试飞基地负责提供内场性能测试、外场飞行测试、航空器运行风险评估、试飞试验等综合性服务，未涉及人员配备数量。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "回答指出政策未规定团队人数，与标准答案一致，未采纳旧条款的5人要求。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答指出新政策未规定团队人数要求，与标准答案一致。虽提及无法确定，但核心结论正确且基于现行有效证据，未受旧条款误导。"
+  },
+  "created_at": "2026-10-29T21:41:02+08:00"
+}

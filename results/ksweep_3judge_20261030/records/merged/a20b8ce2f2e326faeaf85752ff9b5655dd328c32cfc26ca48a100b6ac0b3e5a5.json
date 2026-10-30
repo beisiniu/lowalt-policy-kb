@@ -1,0 +1,33 @@
+{
+  "case_key": "a20b8ce2f2e326faeaf85752ff9b5655dd328c32cfc26ca48a100b6ac0b3e5a5",
+  "k": 3,
+  "branch": "naive",
+  "item_id": "TQ3-008",
+  "answer": "根据《龙岗区关于促进低空经济产业发展的若干措施》第（八）条，对在本区开设经主管部门审批航线的低空载人服务企业，按上年度该企业在本区所开航线实际飞行成本的50%予以补贴，每个企业每年度不超过500万元。\n\n另据《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》第（七）条，对在龙岗区开设低空载人服务的企业，根据实际发放的飞行乘用券数量给予相应奖励。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型将旧条款50%飞行成本补贴作为主要答案，核心结论错误，虽提及新条款但未以新规为准。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答同时列出了旧政策和新修订政策的补贴依据，并明确引用了现行有效的《若干措施（修订）》中“根据实际发放的飞行乘用券数量给予相应奖励”的规定，核心结论与标准答案一致。"
+  },
+  "glm_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "回答将旧条款'按上年度实际飞行成本50%补贴、年度不超500万'作为有效计算方式列出，未说明其已被修订措施取代，与现行'按实际发放飞行乘用券数量给予奖励'相矛盾，新旧并列使核心结论含过时数值。"
+  },
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2,
+      "CORRECT": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

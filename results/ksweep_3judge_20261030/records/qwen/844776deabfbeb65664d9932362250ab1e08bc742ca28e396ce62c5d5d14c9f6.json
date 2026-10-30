@@ -1,0 +1,27 @@
+{
+  "case_key": "844776deabfbeb65664d9932362250ab1e08bc742ca28e396ce62c5d5d14c9f6",
+  "k": 20,
+  "branch": "temporal",
+  "item_id": "TQ3-013",
+  "condition": {
+    "suite": "ksweep",
+    "k": 20,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》仅规定“每年按不超过项目运营费用的50%给予补贴，单个项目每年最高不超过300万元”，未提及申请运营费用补贴须先经备案，也未提及须提供免费或低收费公共服务。资料中其他政策（如《云南省支持低空经济健康发展的若干措施》涉及免费测试服务）不适用于龙岗区。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答指出新政策未规定备案及免费/低收费条件，结论与标准答案一致。虽表述为“无法确定”但实质否定了旧条款的强制性要求，核心逻辑正确，未因引用旧文件导致错误结论。"
+  },
+  "created_at": "2026-10-29T21:41:38+08:00"
+}

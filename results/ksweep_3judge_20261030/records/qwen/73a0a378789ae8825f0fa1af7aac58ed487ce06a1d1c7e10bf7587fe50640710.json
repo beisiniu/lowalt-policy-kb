@@ -1,0 +1,27 @@
+{
+  "case_key": "73a0a378789ae8825f0fa1af7aac58ed487ce06a1d1c7e10bf7587fe50640710",
+  "k": 16,
+  "branch": "temporal",
+  "item_id": "TQ3-040",
+  "condition": {
+    "suite": "ksweep",
+    "k": 16,
+    "branch": "temporal"
+  },
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条，在黄埔区建设直升机起降平台，须纳入区低空航线和起降点规划且进入常态化运营状态，最高按实际建设投入的50%给予建设补贴，单个直升机起降平台不超过300万元；同时每家企业每年度该项补贴金额不超过600万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，核心数值300万元与标准答案一致，未采纳旧条款的200万元。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型依据现行新政策回答，核心结论300万元与标准答案一致，未引用旧条款的200万元上限。"
+  },
+  "created_at": "2026-10-29T21:40:27+08:00"
+}

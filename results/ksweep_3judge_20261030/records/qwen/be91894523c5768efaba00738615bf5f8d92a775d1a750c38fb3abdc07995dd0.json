@@ -1,0 +1,27 @@
+{
+  "case_key": "be91894523c5768efaba00738615bf5f8d92a775d1a750c38fb3abdc07995dd0",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-021",
+  "condition": {
+    "suite": "ksweep",
+    "k": 1,
+    "branch": "naive"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十三条只规定了补助期最多3年、每家企业每年度该项补贴金额上限为500万元，以及飞行架次凭证材料的审查和评审方式（飞行架次数评定依据交易记录和飞行报批记录），但未明确载人低空飞行示范项目的补贴是按飞行架次计算还是按运营费用计算。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型回答称资料不足无法确定，未给出明确结论。虽然引用了旧细则片段，但核心表现为拒答而非输出错误结论，符合REFUSED定义。"
+  },
+  "created_at": "2026-10-29T21:35:06+08:00"
+}

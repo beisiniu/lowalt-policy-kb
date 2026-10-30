@@ -1,0 +1,28 @@
+{
+  "case_key": "7410259cd72a5ccef3bb32f8e737fa57ea92548fdcdfc82c802a565fac703d24",
+  "k": 6,
+  "branch": "naive",
+  "item_id": "TQ3-008",
+  "answer": "按《龙岗区关于促进低空经济产业发展的若干措施》第（八）条，对在本区开设经主管部门审批航线的低空载人服务企业，按上年度该企业在本区所开航线实际飞行成本的50%予以补贴，每个企业每年度不超过500万元。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧条款，按飞行成本50%补贴，而现行标准为按飞行乘用券数量奖励。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧条款（按飞行成本50%补贴），而现行新政策规定按实际发放的飞行乘用券数量给予奖励，核心结论错误且源于旧文件。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

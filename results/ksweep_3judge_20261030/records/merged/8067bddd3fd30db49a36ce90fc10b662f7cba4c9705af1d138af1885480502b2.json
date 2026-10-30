@@ -1,0 +1,28 @@
+{
+  "case_key": "8067bddd3fd30db49a36ce90fc10b662f7cba4c9705af1d138af1885480502b2",
+  "k": 4,
+  "branch": "naive",
+  "item_id": "TQ3-026",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十九条，企业或机构需围绕低空航空器相关核心领域开展技术攻关，并**实现产业化**；对实现产业化的产品，按其产值的2%给予单个产品最高100万元补助。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧细则，核心条件答为实现产业化，未答现行要求的装机量产，结论错误。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧细则，将奖励条件错误表述为“实现产业化”，而新政策明确要求“在任一正式发布型号的中大型航空器装机量产”。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

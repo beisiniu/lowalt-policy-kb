@@ -1,0 +1,33 @@
+{
+  "case_key": "f7b302294acd18eadfab3427823e4a266519e2977475b732813cff2e6400e2ce",
+  "k": 14,
+  "branch": "naive",
+  "item_id": "TQ3-036",
+  "answer": "根据现有政策资料无法确定。\n\n资料中涉及黄埔区载物飞行服务补贴的条款存在不同规定：《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十二条按飞行架次给予补贴（微轻小型无人机30元/架次、中大型无人机90元/架次），未规定按实际运营费用比例补贴；《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条则规定载物飞行服务示范项目按不超过实际运营费用的30%给予补贴。两份资料对同一事项的补贴方式规定不一致，且未说明适用关系，故无法确定应按哪一比例执行。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料冲突无法确定，未采纳现行30%结论，属拒答。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型声称资料不足无法确定，但新证据明确载物项目按不超过30%补贴。其引用的旧细则条款号及内容（第二十二条、架次补贴）与提供的old_clause_text（第十四条、比例补贴）不符，属无依据编造或混淆，导致错误拒答。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": true,
+    "reason": "新措施第九条已明确载物飞行示范项目按不超过实际运营费用的30%补贴，答案却以新旧文件'规定不一致、未说明适用关系'为由称无法确定，未给出明确结论，误将旧细则当作并行有效依据，属无充分理由的拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

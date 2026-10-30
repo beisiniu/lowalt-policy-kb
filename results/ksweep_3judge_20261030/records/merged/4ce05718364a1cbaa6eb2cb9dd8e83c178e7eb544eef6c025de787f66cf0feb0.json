@@ -1,0 +1,28 @@
+{
+  "case_key": "4ce05718364a1cbaa6eb2cb9dd8e83c178e7eb544eef6c025de787f66cf0feb0",
+  "k": 20,
+  "branch": "naive",
+  "item_id": "TQ3-006",
+  "answer": "不能。根据《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》，已废止《张家界市加快通用航空产业发展推进方案》第（六）项中“对通用航空企业提供上述业务年度纳税10万元及以上的，前三年分别按市级经济贡献的50%、40%、30%给予奖励”的规定，该通告自2024年9月24日公布之日起施行。因此，在张家界开展森林灭火、医疗救助等业务且年纳税10万元以上的通航企业，不能再按市级经济贡献比例领取前三年奖励。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "正确引用废止通告，结论与标准答案一致",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答正确指出该奖励条款已被废止，核心结论与标准答案一致，且准确引用了新的废止通告作为依据。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "case_key": "23c7216b82486966123723f20d4bf42b9d468a8fd43b8416a963bb189cf265b0",
+  "k": 13,
+  "branch": "temporal",
+  "item_id": "TQ3-001",
+  "answer": "根据现有政策资料无法确定。\n\n理由：原规定短途客运航线财政补贴的内容（对开辟省内外短途客运航线且单条航线年飞行时间200小时及以上的通用航空企业按航线给予财政补贴）已被《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》第一条明确废止；该通告同时载明张政办发〔2023〕4号文件其余内容在规定有效期内继续施行，但资料中未提供替代性的航线补贴条款，因此无法确认目前是否还能按航线申请财政补贴。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称无法确定，未给出可判错结论，属拒答",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型正确识别出原补贴条款已被废止。虽然结论表述为“无法确定是否还能申请”，但核心逻辑是确认旧政策失效且无新替代政策，这与标准答案“不能”在实质上一致（即不再享受该特定补贴），未引用旧条款作为现行依据。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型已正确认定按航线补贴条款被2024年通告废止，但未据此得出明确结论，反而以未提供替代条款为由称'无法确定'。废止补贴条款本身即意味着不能再按航线申请补贴，证据充分，应答'不能'，故属拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "CORRECT": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

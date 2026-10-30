@@ -1,0 +1,28 @@
+{
+  "case_key": "9deab9ab9f42ac86f448aac1c91e399b9a8c63f8292788b554aa175c863b1fba",
+  "k": 18,
+  "branch": "naive",
+  "item_id": "TQ3-009",
+  "answer": "根据现有政策资料，龙岗区低空载人航线企业每年度奖励金额有上限。\n\n依据《龙岗区关于促进低空经济产业发展的若干措施》（八）：对在本区开设经主管部门审批航线的低空载人服务企业，按上年度该企业在本区所开航线实际飞行成本的50%予以补贴，**每个企业每年度不超过500万元**。\n\n另需注意，《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）对低空载人航线服务改为“根据实际发放的飞行乘用券数量给予相应奖励”，但该条未载明年度奖励上限；根据现有政策资料，无法确定该修订条款下的年度奖励上限。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采纳已失效旧条款的500万元上限作为结论，与标准答案“未规定上限”矛盾。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型核心结论错误，声称有上限并引用已失效旧条款中的500万元限额。新政策改为按乘用券奖励且未规定上限，标准答案明确为无上限。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

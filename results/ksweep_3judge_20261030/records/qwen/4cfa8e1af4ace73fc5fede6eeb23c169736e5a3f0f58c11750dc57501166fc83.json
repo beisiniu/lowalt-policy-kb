@@ -1,0 +1,27 @@
+{
+  "case_key": "4cfa8e1af4ace73fc5fede6eeb23c169736e5a3f0f58c11750dc57501166fc83",
+  "k": 7,
+  "branch": "temporal",
+  "item_id": "TQ3-031",
+  "condition": {
+    "suite": "ksweep",
+    "k": 7,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。所给《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第六条仅涉及技能人才培训奖励（非载人类无人驾驶员航空器操作员培训最高20万元、载人类eVTOL驾驶员培训最高50万元），未涉及载物无人机示范项目按架次补贴的标准。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的补贴数值，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型回答称无法确定，但新证据明确给出了小型载物无人机最高20元/架次的补贴标准。模型引用了无关条款（第六条）导致结论错误，属于有依据的误判而非单纯拒答或旧条款毒化。"
+  },
+  "created_at": "2026-10-29T21:37:50+08:00"
+}

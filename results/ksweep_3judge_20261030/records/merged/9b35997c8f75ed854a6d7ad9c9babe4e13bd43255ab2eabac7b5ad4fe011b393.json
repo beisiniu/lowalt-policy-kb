@@ -1,0 +1,28 @@
+{
+  "case_key": "9b35997c8f75ed854a6d7ad9c9babe4e13bd43255ab2eabac7b5ad4fe011b393",
+  "k": 20,
+  "branch": "temporal",
+  "item_id": "TQ3-031",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，对提供低空飞行器载物飞行服务的示范项目，取得运营合格证及空域和航线批复的，按照不超过实际运营费用的30%，对小中大型载物无人机分别给予最高20元/架次、30元/架次、40元/架次运营补贴。因此，小型载物无人机每架次最高补贴20元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "引用现行条款，小型载物无人机最高20元/架次，与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答依据新政策，准确指出小型载物无人机每架次最高补贴20元，与标准答案一致。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "case_key": "da45650bd39898bf5e7625e7eb4d0856ea438fd5dd1f35902c77b6adae7b8605",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-034",
+  "answer": "按建设投入算，不按运营费用算。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条，对纳入区低空航线和起降点规划且进入常态化运营状态的无人机小型起降点等低空经济相关基础设施的企业，最高按照实际建设投入的50%分类别给予建设补贴，每个中小型起降点、智能起降柜机不超过10万元，每家企业每年度该项补贴金额不超过600万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，核心结论为建设投入补贴，与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答依据新政策第三条，明确补贴按实际建设投入计算，结论与标准答案一致，未受旧条款干扰。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

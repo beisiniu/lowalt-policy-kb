@@ -1,0 +1,28 @@
+{
+  "case_key": "0e85342955960e48fb3dbc0580f8cc0941666eac865bf2090f67a146fe6fb600",
+  "k": 4,
+  "branch": "temporal",
+  "item_id": "TQ3-011",
+  "answer": "根据现有政策资料无法确定。\n\n所给资料仅为《民用无人驾驶航空器运行安全管理规则》中关于申请材料受理、审查期限、批准决定及执照有效期的条款，不涉及黄埔区奖励政策，也未规定大型载人无人驾驶航空器取得型号合格证后申请奖励的条件。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型回答称资料不足无法确定，未给出错误结论。虽然标准答案和证据显示可以奖励，但模型因认为提供的证据（民用航空器运行规则）与问题（黄埔区奖励政策）不匹配而选择拒答，符合REFUSED定义。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

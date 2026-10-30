@@ -1,0 +1,28 @@
+{
+  "case_key": "eb6d8144e71227ffc5dbf52b396e811c5f37500d205d8e391fcd398af68ede78",
+  "k": 4,
+  "branch": "temporal",
+  "item_id": "TQ3-040",
+  "answer": "检索到的 4 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称所有检索到的政策依据均已失效，无法给出确定结论。虽然标准答案和现行证据支持300万元，但模型因误判时效性而拒绝回答，符合REFUSED定义（资料不足/无法确定）。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

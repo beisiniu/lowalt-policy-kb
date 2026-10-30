@@ -1,0 +1,27 @@
+{
+  "case_key": "a68bb9d8ac748acbbacab46998e10e86ccabe0540df317187b0eaea9cc98e6c4",
+  "k": 15,
+  "branch": "temporal",
+  "item_id": "TQ3-004",
+  "condition": {
+    "suite": "ksweep",
+    "k": 15,
+    "branch": "temporal"
+  },
+  "answer": "不能。根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条，企业须同时满足“纳入区低空航线和起降点规划”且“进入常态化运营状态”，才可按实际建设投入最高50%申请建设补贴；无人机小型起降点每个不超过10万元，每家企业每年度该项补贴不超过600万元。仅建成但未纳入规划或未进入常态化运营的，不符合申请条件。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "引用现行条款，核心结论与标准答案一致：须纳入规划且常态化运营。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答正确指出不能仅凭建成申请，需满足纳入规划及常态化运营条件，引用了现行新政策条款，结论与标准答案一致。"
+  },
+  "created_at": "2026-10-29T21:39:55+08:00"
+}

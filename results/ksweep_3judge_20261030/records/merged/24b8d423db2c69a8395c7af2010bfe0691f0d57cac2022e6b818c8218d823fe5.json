@@ -1,0 +1,33 @@
+{
+  "case_key": "24b8d423db2c69a8395c7af2010bfe0691f0d57cac2022e6b818c8218d823fe5",
+  "k": 9,
+  "branch": "temporal",
+  "item_id": "TQ3-010",
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条规定，对将总部或研发、生产、制造引入本区的低空经济企业，在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，最高分别给予1500万元奖励，其中大型载人新型航空器每次奖励1500万元。该条款并未提及“交付满50架”作为奖励条件，资料中也没有任何关于交付数量门槛的规定。因此，该说法在现有政策资料中无依据，但奖励是否还有其他未列明的条件，根据现有政策资料无法确定。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的明确结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型正确指出新政策未提及交付数量门槛，核心结论（不需要交付满50架）与标准答案一致。虽表述为“无法确定其他条件”，但已明确否定旧条款的50架要求，符合现行证据。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型正确引用新条款，指出交付满50架的说法在现行资料中无依据，未采信旧条款，但最终以奖励可能存在其他未列明条件为由，总体结论为无法确定，未给出与标准答案一致的明确结论，属于有依据却不表态的拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "CORRECT": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

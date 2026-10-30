@@ -1,0 +1,27 @@
+{
+  "case_key": "f1c07212447b2dc8be677ff4f2061f7e6ecb9d2cde5dbad3beec71b42b5d11fc",
+  "k": 13,
+  "branch": "temporal",
+  "item_id": "TQ3-031",
+  "condition": {
+    "suite": "ksweep",
+    "k": 13,
+    "branch": "temporal"
+  },
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，在黄埔区开展载物无人机示范项目，小型载物无人机每架次最高补贴20元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，小型载物无人机最高20元/架次，与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答引用了现行新政策，准确指出小型载物无人机每架次最高补贴为20元，与标准答案及新证据一致，未受旧条款干扰。"
+  },
+  "created_at": "2026-10-29T21:39:40+08:00"
+}

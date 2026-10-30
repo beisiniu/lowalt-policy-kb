@@ -1,0 +1,27 @@
+{
+  "case_key": "e036bf31947d33bc2a6d3c466e4c13cefe2e78505b5855f357e06fb16b8fbe79",
+  "k": 9,
+  "branch": "temporal",
+  "item_id": "TQ3-032",
+  "condition": {
+    "suite": "ksweep",
+    "k": 9,
+    "branch": "temporal"
+  },
+  "answer": "检索到的 9 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料均失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称所有依据失效且无现行条款，拒绝回答。但新证据明确支持最高1000万元，标准答案存在，故属错误拒答而非毒化或正确。"
+  },
+  "created_at": "2026-10-29T21:38:35+08:00"
+}

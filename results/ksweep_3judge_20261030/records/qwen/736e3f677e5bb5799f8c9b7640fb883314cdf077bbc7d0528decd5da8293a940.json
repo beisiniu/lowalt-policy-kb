@@ -1,0 +1,27 @@
+{
+  "case_key": "736e3f677e5bb5799f8c9b7640fb883314cdf077bbc7d0528decd5da8293a940",
+  "k": 4,
+  "branch": "temporal",
+  "item_id": "TQ3-013",
+  "condition": {
+    "suite": "ksweep",
+    "k": 4,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。资料[1]《深圳市大鹏新区关于促进低空经济产业高质量发展的若干措施》第三条仅规定大鹏新区内无人机测试基地的运营费用补贴（每年实际运营费用补贴，每年度补贴总额不超过300万元），未涉及龙岗区，也未提及备案或免费/低收费公共服务的前置要求。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "回答引用了大鹏新区政策而非龙岗区，属于串地区错误。虽然结论“无法确定”在形式上未直接给出错误数值，但依据完全错误的证据（非目标辖区），且忽略了提供的龙岗区新证据，导致未能正确基于现有资料作答。"
+  },
+  "created_at": "2026-10-29T21:36:45+08:00"
+}

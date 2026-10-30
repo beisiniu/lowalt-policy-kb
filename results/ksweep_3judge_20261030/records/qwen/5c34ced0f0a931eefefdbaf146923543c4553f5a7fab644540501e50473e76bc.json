@@ -1,0 +1,27 @@
+{
+  "case_key": "5c34ced0f0a931eefefdbaf146923543c4553f5a7fab644540501e50473e76bc",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-011",
+  "condition": {
+    "suite": "ksweep",
+    "k": 1,
+    "branch": "naive"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条中可查到的是：大型非载人无人驾驶航空器生产许可证（PC）后产品交付量达50架奖励500万元；中型无人驾驶航空器型号合格证（TC）后完成首批产品交付奖励300万元；中型无人驾驶航空器生产许可证（PC）后产品交付量达50架奖励300万元。资料未涉及“大型载人无人驾驶航空器”取得型号合格证（TC）后的奖励规定，也未涉及尚未交付情形能否申请，因此无法据此判断。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称资料未涉及大型载人TC奖励，实际上旧条款明确提及且新条款已更新。虽结论错误（应为可申领），但属于对证据的遗漏或误读导致的无法确定，而非引用旧条款得出错误数值，故判拒答。"
+  },
+  "created_at": "2026-10-29T21:34:56+08:00"
+}

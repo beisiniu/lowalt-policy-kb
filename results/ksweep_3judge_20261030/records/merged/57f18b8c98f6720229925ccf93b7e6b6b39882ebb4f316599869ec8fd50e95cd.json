@@ -1,0 +1,28 @@
+{
+  "case_key": "57f18b8c98f6720229925ccf93b7e6b6b39882ebb4f316599869ec8fd50e95cd",
+  "k": 6,
+  "branch": "naive",
+  "item_id": "TQ3-028",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条，对规模以上的低空经济与航空航天企业，在我区规划打造的低空经济和航空航天特色产业集聚区内租赁研发、生产、办公用房且自用的，每家企业每年最高补贴200万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，核心数值200万元与标准答案一致",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答引用了现行新政策，正确指出每家企业每年最高补贴200万元，与标准答案及新证据一致，未受旧条款干扰。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "case_key": "dd0a1e1745f7bbdbe4b8b5bd6a7ffa8321d4a2d2abd89be8d0f43679180827c2",
+  "k": 3,
+  "branch": "naive",
+  "item_id": "TQ3-034",
+  "answer": "在黄埔区建无人机小型起降点，补贴按**建设投入**计算，不按运营费用计算。依据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第三条，对建设无人机小型起降点等低空经济相关基础设施的企业，按照实际建设投入的50%分类别给予一次性补贴，每个小型起降点不超过10万元，每家企业每年度该项补贴金额不超过600万元；《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条进一步明确，该补贴为一次性补贴，需由区住房和城乡建设部门联合相关职能部门完成竣工验收并投入使用一年后申请。上述资料未规定按运营费用给予补贴。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "核心结论为建设投入补贴，与标准答案一致；虽引用旧政策名称但结论正确。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答核心结论正确，指出按建设投入计算。虽引用文件名称略有偏差（应为新措施第三条），但关键数值、适用条件及否定运营费用补贴的结论均符合现行证据和标准答案，未受旧条款误导。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

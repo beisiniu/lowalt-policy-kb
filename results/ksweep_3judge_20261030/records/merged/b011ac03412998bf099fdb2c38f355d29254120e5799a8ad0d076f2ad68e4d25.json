@@ -1,0 +1,33 @@
+{
+  "case_key": "b011ac03412998bf099fdb2c38f355d29254120e5799a8ad0d076f2ad68e4d25",
+  "k": 13,
+  "branch": "temporal",
+  "item_id": "TQ3-032",
+  "answer": "根据现有政策资料无法确定。资料[1]《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条仅规定了适航航空器奖励（型号合格证TC、生产许可证PC相关奖励），未涉及“落户奖励”标准。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型回答称无法确定，但新证据明确给出最高1000万元补助。虽未直接引用旧条款导致错误数值，但结论与现行有效政策不符，属于未能正确提取新证据信息的错误。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称资料不足无法确定，仅引用新措施第七条适航奖励条款，遗漏第二条最高1000万元补助规定，但未引用旧条款3000万元落户奖，未给出可判错的错误结论，属拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "case_key": "e86b695f15c412e8131f7558b40eb67e18b32bb000ef77c2a611c0a7f87d54fc",
+  "k": 10,
+  "branch": "temporal",
+  "item_id": "TQ3-018",
+  "condition": {
+    "suite": "ksweep",
+    "k": 10,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条只规定，企业申请建设补贴的条件是“纳入区低空航线和起降点规划且进入常态化运营状态”，补贴按实际建设投入最高50%分类别给予，每个中小型起降点、智能起降柜机不超过10万元。该条未提及“竣工验收”或“投用满一年”的要求，资料中也没有其他条款对此作出规定。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "回答称无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型正确指出新政策仅要求纳入规划且常态化运营，未提及竣工验收和满一年要求，结论与标准答案一致。"
+  },
+  "created_at": "2026-10-29T21:38:44+08:00"
+}

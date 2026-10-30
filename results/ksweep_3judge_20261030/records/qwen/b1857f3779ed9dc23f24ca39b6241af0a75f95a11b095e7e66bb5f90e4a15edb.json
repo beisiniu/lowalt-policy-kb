@@ -1,0 +1,27 @@
+{
+  "case_key": "b1857f3779ed9dc23f24ca39b6241af0a75f95a11b095e7e66bb5f90e4a15edb",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-031",
+  "condition": {
+    "suite": "ksweep",
+    "k": 5,
+    "branch": "temporal"
+  },
+  "answer": "检索到的 5 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料均失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称所有检索依据均失效且无现行条款，从而拒绝回答。但提供的new_clause_text明确给出了小型载物无人机最高20元/架次的标准，与ground_truth一致。模型未能识别有效证据导致拒答，属于资料不足或判断错误导致的拒答状态。"
+  },
+  "created_at": "2026-10-29T21:36:52+08:00"
+}

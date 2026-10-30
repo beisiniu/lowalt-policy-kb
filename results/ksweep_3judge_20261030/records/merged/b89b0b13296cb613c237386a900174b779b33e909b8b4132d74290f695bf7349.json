@@ -1,0 +1,28 @@
+{
+  "case_key": "b89b0b13296cb613c237386a900174b779b33e909b8b4132d74290f695bf7349",
+  "k": 16,
+  "branch": "temporal",
+  "item_id": "TQ3-011",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条，对将总部或研发、生产、制造引入本区的低空经济企业，在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，大型载人新型航空器每次奖励1500万元。该条以取得型号合格证（TC）、生产许可证（PC）为奖励条件，并未要求航空器已交付。因此，大型载人无人驾驶航空器刚取得型号合格证、尚未交付，在符合该条其他条件（将总部或研发、生产、制造引入本区等）的前提下，可以依据该条申请奖励；但需注意该条同时规定政策有效期内每家企业奖励不超过3000万元，同一企业获得多个产品型号合格证、生产许可证的不重复奖励。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "引用现行条款，结论为取得TC即可申请1500万奖励，与标准答案一致，未受旧交付要求影响。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答依据新政策第七条，正确指出取得TC即可申请奖励，无需交付，结论与标准答案一致。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

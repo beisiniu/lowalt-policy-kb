@@ -1,0 +1,28 @@
+{
+  "case_key": "f7c21512f6af088d4445ef0adba1d1320f07665d428ab22ea4613e82d96b263c",
+  "k": 2,
+  "branch": "naive",
+  "item_id": "TQ3-002",
+  "answer": "可以。根据《张家界市加快通用航空产业发展推进方案》第（五）条，对开展低空旅游（含市域内各大景区景点之间的短途客运航线运营）、航空运动等业务的通用航空企业给予财政补贴，所需资金从国内航线航班奖补资金中统筹解决。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "引用已废止的第（五）条，错误得出可获补贴的结论",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型依据已废止的旧条款回答“可以”，而新证据明确该补贴条款已被废止，标准答案为“不能”。核心结论错误且直接源于引用失效文件。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

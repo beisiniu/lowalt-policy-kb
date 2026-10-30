@@ -1,0 +1,27 @@
+{
+  "case_key": "d2b038609ef5e7d05ce41b2d396ec746978674904538d9cdc6bf6484fc5b0af4",
+  "k": 4,
+  "branch": "naive",
+  "item_id": "TQ3-027",
+  "condition": {
+    "suite": "ksweep",
+    "k": 4,
+    "branch": "naive"
+  },
+  "answer": "每平方米每月最高补贴50元。\n\n依据：《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第四条：按实际租金给予每月每平方米最高50元的租金补贴；《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十一条进一步明确，实际租金高于（含）50元/平/月的，按50元/平/月给予补贴，实际租金低于50元/平/月的按实际租金单价给予补贴。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用旧细则50元/平/月标准，而现行条款为不超过20元，核心数值错误。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答50元/平/月，引用了已失效的旧细则第十一条。现行新政策明确规定租金补贴不超过20元每月每平方米，核心数值错误且源于旧条款。"
+  },
+  "created_at": "2026-10-29T21:36:50+08:00"
+}

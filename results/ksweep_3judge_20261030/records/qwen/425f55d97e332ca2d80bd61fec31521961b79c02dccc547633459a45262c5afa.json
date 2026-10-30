@@ -1,0 +1,27 @@
+{
+  "case_key": "425f55d97e332ca2d80bd61fec31521961b79c02dccc547633459a45262c5afa",
+  "k": 1,
+  "branch": "temporal",
+  "item_id": "TQ3-010",
+  "condition": {
+    "suite": "ksweep",
+    "k": 1,
+    "branch": "temporal"
+  },
+  "answer": "检索到的 1 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料失效、无现行条款，未给出可判错结论，属拒答",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称检索到的政策依据已失效且无现行条款，从而拒绝回答。但提供的new_clause_text明确显示新政策取消了交付量限制，标准答案也确认不需要交付满50架。模型未能识别或引用有效的现行证据，属于资料不足导致的拒答。"
+  },
+  "created_at": "2026-10-29T21:34:54+08:00"
+}

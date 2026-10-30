@@ -1,0 +1,28 @@
+{
+  "case_key": "2428ae4e5e1abc7191b5bb31e1cabeb43103011ff71acbcea1c23ff9b65f2f1b",
+  "k": 19,
+  "branch": "naive",
+  "item_id": "TQ3-027",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条，对规模以上的低空经济与航空航天企业，在我区规划打造的低空经济和航空航天特色产业集聚区内租赁研发、生产、办公用房且自用的，最高给予实际租金费用50%且不超过20元每月每平方米的场地支持，每家企业每年最高补贴200万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "引用现行条款，核心数值20元/月/平方米与标准答案一致",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新政策，明确租金补贴上限为20元/月/平方米，与标准答案及现行证据一致。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "case_key": "a41e2c5b9f28765accae8fefa0531e5f9bd4655eec3137f8635e4c073b26c30d",
+  "k": 8,
+  "branch": "temporal",
+  "item_id": "TQ3-029",
+  "answer": "根据现有政策资料无法确定。《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条只规定了补贴条件（纳入区低空航线和起降点规划且进入常态化运营状态）和补贴标准（最高按实际建设投入的50%，每个中小型起降点、智能起降柜机不超过10万元等），未提及“第三方技术团队审查”这一前置要求。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型依据现行条款指出未规定第三方审查前置要求，与标准答案一致，未采纳旧条款。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型依据新政策指出未规定第三方审查前置要求，并准确列出纳入规划及常态化运营等现行条件，结论与标准答案一致。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

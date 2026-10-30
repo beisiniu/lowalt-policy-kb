@@ -1,0 +1,27 @@
+{
+  "case_key": "899458eba2472ca3a41f8ea153437c1bd9862fb14e2c38ea4af5fefb9645d8c6",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-026",
+  "condition": {
+    "suite": "ksweep",
+    "k": 5,
+    "branch": "temporal"
+  },
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条，企业须在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，方可获得奖励。奖励标准为：大型载人新型航空器每次1500万元、大型非载人新型航空器每次500万元、中型新型航空器每次300万元；政策有效期内每家企业奖励不超过3000万元，同一企业获得多个产品型号合格证、生产许可证的不重复奖励。",
+  "ds_judge": {
+    "status": "OTHER_ERROR",
+    "reason": "引用第七条及TC/PC条件与金额，均非现行第八条装机量产要求，属编造或答非所问",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "回答引用了错误的条款（第七条而非第八条），且结论完全错误。标准答案要求“中大型航空器装机量产”，回答却编造了需获得TC/PC证及高额奖励标准，属于无证据编造或串用其他政策内容，非旧条款导致。"
+  },
+  "created_at": "2026-10-29T21:37:12+08:00"
+}

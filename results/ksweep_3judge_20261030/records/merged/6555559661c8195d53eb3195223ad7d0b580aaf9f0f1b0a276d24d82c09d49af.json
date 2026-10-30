@@ -1,0 +1,28 @@
+{
+  "case_key": "6555559661c8195d53eb3195223ad7d0b580aaf9f0f1b0a276d24d82c09d49af",
+  "k": 2,
+  "branch": "naive",
+  "item_id": "TQ3-032",
+  "answer": "在黄埔区新引进低空经济重大项目，落户奖励最高为3000万元。依据：《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第二条、《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二条。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧条款，答3000万元，与现行标准1000万元不符。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答最高3000万元，引用了已失效的旧文件条款。现行新政策规定最高补助为1000万元，与标准答案一致，故判定为毒化。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

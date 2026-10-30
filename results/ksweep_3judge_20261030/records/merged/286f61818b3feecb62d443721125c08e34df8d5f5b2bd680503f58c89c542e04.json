@@ -1,0 +1,28 @@
+{
+  "case_key": "286f61818b3feecb62d443721125c08e34df8d5f5b2bd680503f58c89c542e04",
+  "k": 15,
+  "branch": "naive",
+  "item_id": "TQ3-010",
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条第（一）项，在获得中国民用航空局颁发的大型载人无人驾驶航空器生产许可证（PC）后，且产品交付量达到50架，给予一次性奖励1500万元。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型引用已失效旧细则，错误要求交付满50架，与现行条款取得PC即可奖励相悖。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧细则，错误地认为需交付满50架。现行新政策规定取得生产许可证即可奖励，无交付量门槛，核心结论与标准答案相反。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

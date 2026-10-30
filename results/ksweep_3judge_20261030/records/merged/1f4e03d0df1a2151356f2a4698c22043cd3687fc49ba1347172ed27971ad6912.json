@@ -1,0 +1,28 @@
+{
+  "case_key": "1f4e03d0df1a2151356f2a4698c22043cd3687fc49ba1347172ed27971ad6912",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-001",
+  "answer": "可以。依据《张家界市加快通用航空产业发展推进方案》第（五）条，对开辟省内外短途客运航线且同时满足以下条件的通用航空企业，按航线给予财政补贴：飞机乘客座位不少于8个，年均乘客上座率不低于50%，单条航线年飞行时间200小时及以上。所需资金从国内航线航班奖补资金中统筹解决。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型依据已被废止的旧条款，错误回答可按航线申请补贴，与标准答案相反",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答称“可以”补贴，直接引用了已被废止的旧条款内容。根据新证据，该按航线财政补贴条款已明确废止，标准答案为“不能”，模型结论与现行法规相反，属于典型的旧条款毒化。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "case_key": "834f860c50e275099b9f5b4584142b4f439d3735cfa2229dadf8843ec9979e65",
+  "k": 17,
+  "branch": "temporal",
+  "item_id": "TQ3-041",
+  "condition": {
+    "suite": "ksweep",
+    "k": 17,
+    "branch": "temporal"
+  },
+  "answer": "在黄埔区建中型起降场，单个项目补贴上限为300万元。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条，中型起降场等低空经济相关基础设施最高按实际建设投入的50%给予建设补贴，每个中型起降场不超过300万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型采用现行条款，中型起降场补贴上限300万元，与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答依据新政策得出300万元上限，与标准答案及现行证据一致。虽旧条款为200万，但模型未引用旧数据，结论正确。"
+  },
+  "created_at": "2026-10-29T21:40:51+08:00"
+}

@@ -1,0 +1,28 @@
+{
+  "case_key": "bac5c252fc43c2c7513e5859cd2e0fd864fd2a26b16101a22c0ced7bef7402ad",
+  "k": 9,
+  "branch": "temporal",
+  "item_id": "TQ3-014",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第八条，黄埔区企业研发的低空航空器电池系统产品要获得核心技术产业化扶持，需满足以下条件：\n\n1. **技术领域**：属于低空航空器相关的电池系统核心领域，开展技术攻关并实现产业化。\n2. **装机量产条件**：形成的产品需在**任一正式发布型号的中大型航空器**上装机量产。\n3. **奖励标准**：满足上述条件后，给予**20万元一次性奖励**。\n4. **上限限制**：单个企业最高补贴**100万元**；政策有效期内累计补助不超过**10款产品**。\n\n（牵头单位为区工业和信息化局。）",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，核心条件与标准答案一致，未采纳旧产值条款。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答准确引用了现行新政策条款，核心条件“在任一正式发布型号的中大型航空器装机量产”与标准答案及新证据一致，未受旧产值指标干扰。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

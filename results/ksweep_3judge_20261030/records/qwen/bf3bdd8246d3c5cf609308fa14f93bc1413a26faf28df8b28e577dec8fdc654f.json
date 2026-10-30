@@ -1,0 +1,27 @@
+{
+  "case_key": "bf3bdd8246d3c5cf609308fa14f93bc1413a26faf28df8b28e577dec8fdc654f",
+  "k": 2,
+  "branch": "naive",
+  "item_id": "TQ3-022",
+  "condition": {
+    "suite": "ksweep",
+    "k": 2,
+    "branch": "naive"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n资料中仅规定“每家企业每年度该项补贴金额不超过500万元”（《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第九条），该上限是按**企业**设定，而非按**项目**设定；资料未规定单个项目每年的补贴上限。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型引用旧条款称无法确定，未给出300万元结论，属拒答",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型回答称无法确定，但新证据明确给出“每个项目每年最高不超过300万元”。模型仅引用旧条款且未识别新政策更新，导致结论错误（非单纯引用旧数字，而是基于旧逻辑得出无依据的否定结论）。"
+  },
+  "created_at": "2026-10-29T21:35:28+08:00"
+}

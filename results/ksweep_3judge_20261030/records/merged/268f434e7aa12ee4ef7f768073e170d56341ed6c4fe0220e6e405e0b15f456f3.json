@@ -1,0 +1,28 @@
+{
+  "case_key": "268f434e7aa12ee4ef7f768073e170d56341ed6c4fe0220e6e405e0b15f456f3",
+  "k": 10,
+  "branch": "naive",
+  "item_id": "TQ3-039",
+  "answer": "是。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条，起降点设施点位需经区住房和城乡建设局组织第三方专业技术团队审查通过方可申请该项补贴；同条另规定，起降点设施建设竣工时间应在《措施》有效期内且起降点设施点位经区住房和城乡建设局组织第三方专业技术团队审查通过。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型依据已失效旧细则第九条，错误认定须经区住建局第三方审查，与现行条款不符。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型依据已失效的旧细则第九条，错误认定需住建局第三方审查。新政策仅要求纳入规划且常态化运营，未规定该前置审查条件。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

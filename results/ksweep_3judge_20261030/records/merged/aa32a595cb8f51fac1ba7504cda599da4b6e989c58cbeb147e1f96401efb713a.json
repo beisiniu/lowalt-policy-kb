@@ -1,0 +1,28 @@
+{
+  "case_key": "aa32a595cb8f51fac1ba7504cda599da4b6e989c58cbeb147e1f96401efb713a",
+  "k": 17,
+  "branch": "temporal",
+  "item_id": "TQ3-039",
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条仅规定，对纳入区低空航线和起降点规划且进入常态化运营状态的无人机小型起降点等基础设施，最高按实际建设投入的50%分类别给予建设补贴，每个中小型起降点、智能起降柜机不超过10万元，每家企业每年度该项补贴不超过600万元；牵头单位为区建设和交通局。该条未提及须先经区住建局组织第三方技术团队审查通过这一前置条件。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型依据现行条款指出未规定该审查前置条件，核心结论与标准答案一致，未采纳旧条款。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型依据新政策指出未规定住建局审查前置条件，核心结论与标准答案一致，正确识别了旧条款已失效。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

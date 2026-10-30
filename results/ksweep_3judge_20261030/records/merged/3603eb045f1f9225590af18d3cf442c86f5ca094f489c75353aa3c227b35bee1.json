@@ -1,0 +1,28 @@
+{
+  "case_key": "3603eb045f1f9225590af18d3cf442c86f5ca094f489c75353aa3c227b35bee1",
+  "k": 2,
+  "branch": "naive",
+  "item_id": "TQ3-041",
+  "answer": "根据现有政策资料无法确定。\n\n资料中《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条明确“各类型补贴额上限具体见第九条”，但所提供的第九条内容仅包含竣工时间要求、每家企业每年度该项补贴金额上限600万元及专家评审程序，未列出中型起降场的单项目补贴上限。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型回答称资料不足无法确定，未给出具体数值。虽然其引用的旧文件片段描述有误（实际包含200万上限），但其最终结论是“无法确定”而非错误数值，符合拒答定义。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

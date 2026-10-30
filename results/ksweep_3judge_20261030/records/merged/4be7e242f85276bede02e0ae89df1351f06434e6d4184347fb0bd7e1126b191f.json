@@ -1,0 +1,33 @@
+{
+  "case_key": "4be7e242f85276bede02e0ae89df1351f06434e6d4184347fb0bd7e1126b191f",
+  "k": 8,
+  "branch": "temporal",
+  "item_id": "TQ3-011",
+  "answer": "根据现有政策资料无法确定。\n\n理由：资料[3]《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第六条规定的奖励对象是“开展非载人类无人驾驶员航空器操作员培训的企业机构”和“开展载人类电动垂直起降飞行器（eVTOL）驾驶员培训的企业机构”，奖励条件是政策有效期内取得中国民航局颁发执照的人数达到一定规模。该条针对的是培训企业机构的培训奖励，并未规定航空器型号合格证或交付相关的奖励事项。因此，大型载人无人驾驶航空器刚取得型号合格证、尚未交付能否申请奖励，资料中无对应规定。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型引用了错误的条款（第六条培训奖励）来回答适航奖励问题，导致结论为“无法确定”，而新政策第七条明确规定取得TC即可奖励。这是主体/条款匹配错误，非旧条款毒化。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型未检索到新措施第七条适航航空器奖励条款，仅依据培训奖励条款错误声称资料无相关规定而拒答。实际新规明确取得大型载人航空器TC即按次奖1500万元、无交付要求，模型未给出明确可判错的结论，属检索失败导致的拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

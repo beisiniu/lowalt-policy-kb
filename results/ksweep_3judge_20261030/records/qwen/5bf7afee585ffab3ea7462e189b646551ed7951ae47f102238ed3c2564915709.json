@@ -1,0 +1,27 @@
+{
+  "case_key": "5bf7afee585ffab3ea7462e189b646551ed7951ae47f102238ed3c2564915709",
+  "k": 12,
+  "branch": "temporal",
+  "item_id": "TQ3-011",
+  "condition": {
+    "suite": "ksweep",
+    "k": 12,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n理由：《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条【适航航空器奖励】规定，对将总部或研发、生产、制造引入本区的低空经济企业，在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后给予奖励，其中大型载人新型航空器每次奖励1500万元。该条同时要求“获得……型号合格证（TC）、生产许可证（PC）后”，即奖励条件同时涉及型号合格证和生产许可证两项证件；问题中该航空器仅“刚拿到型号合格证”，资料未说明其是否已取得生产许可证，也未说明“尚未交付”是否影响奖励条件，因此仅凭现有资料无法判断能否申请奖励。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型错误解读新政策条款，将“TC、PC后”误读为需同时具备两证，且以资料不足为由拒答。实际上新政策明确取得TC即可奖励，无需交付或PC，标准答案支持可获奖励。"
+  },
+  "created_at": "2026-10-29T21:39:12+08:00"
+}

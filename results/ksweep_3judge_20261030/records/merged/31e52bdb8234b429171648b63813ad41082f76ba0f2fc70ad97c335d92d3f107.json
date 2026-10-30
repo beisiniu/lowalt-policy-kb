@@ -1,0 +1,28 @@
+{
+  "case_key": "31e52bdb8234b429171648b63813ad41082f76ba0f2fc70ad97c335d92d3f107",
+  "k": 15,
+  "branch": "naive",
+  "item_id": "TQ3-040",
+  "answer": "在黄埔区建高架直升机起降平台，单个项目补贴最高为200万元/个。\n\n依据：《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第九条（四）规定，高架直升机起降平台补贴额度上限为200万元/个。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧细则，高架平台补贴200万元，而现行标准为300万元，核心数值错误。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧细则，得出高架平台补贴上限200万元的错误结论。根据新政策，直升机起降平台（含高架）单个项目补贴上限统一为300万元。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

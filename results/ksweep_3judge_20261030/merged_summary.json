@@ -1,0 +1,1176 @@
+{
+  "created_at": "2026-10-29T23:17:11+08:00",
+  "merged": 1240,
+  "unresolved": 0,
+  "no_majority": 11,
+  "human_reviewed": 11,
+  "human_overrides": 7,
+  "ds_qwen_agreement": 0.8782,
+  "ds_qwen_kappa": 0.8204,
+  "glm_pair_agreement": 0.4636,
+  "glm_pair_kappa": 0.2197,
+  "glm_used": 151,
+  "groups": [
+    {
+      "k": 1,
+      "branch": "naive",
+      "new_recall": 0,
+      "old_penetration": 20,
+      "ds": {
+        "n": 31,
+        "POISONED": 24,
+        "CORRECT": 0,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7742,
+        "correct_rate": 0.0,
+        "refuse_rate": 0.2258,
+        "weighted_score": -0.729
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 24,
+        "CORRECT": 0,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7742,
+        "correct_rate": 0.0,
+        "refuse_rate": 0.2258,
+        "weighted_score": -0.729
+      }
+    },
+    {
+      "k": 1,
+      "branch": "temporal",
+      "new_recall": 0,
+      "old_penetration": 20,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 0,
+        "REFUSED": 31,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.0,
+        "refuse_rate": 1.0,
+        "weighted_score": 0.2
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 0,
+        "REFUSED": 31,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.0,
+        "refuse_rate": 1.0,
+        "weighted_score": 0.2
+      },
+      "strict_rescue_ds": 0.0,
+      "strict_rescue_majority": 0.0
+    },
+    {
+      "k": 2,
+      "branch": "naive",
+      "new_recall": 1,
+      "old_penetration": 24,
+      "ds": {
+        "n": 31,
+        "POISONED": 25,
+        "CORRECT": 2,
+        "REFUSED": 4,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.8065,
+        "correct_rate": 0.0645,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.7161
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 25,
+        "CORRECT": 2,
+        "REFUSED": 4,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.8065,
+        "correct_rate": 0.0645,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.7161
+      }
+    },
+    {
+      "k": 2,
+      "branch": "temporal",
+      "new_recall": 1,
+      "old_penetration": 24,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 1,
+        "REFUSED": 29,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.0323,
+        "refuse_rate": 0.9355,
+        "weighted_score": 0.2194
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 1,
+        "REFUSED": 29,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.0323,
+        "refuse_rate": 0.9355,
+        "weighted_score": 0.2194
+      },
+      "strict_rescue_ds": 0.0,
+      "strict_rescue_majority": 0.0
+    },
+    {
+      "k": 3,
+      "branch": "naive",
+      "new_recall": 6,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 25,
+        "CORRECT": 2,
+        "REFUSED": 4,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.8065,
+        "correct_rate": 0.0645,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.7161
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 25,
+        "CORRECT": 2,
+        "REFUSED": 4,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.8065,
+        "correct_rate": 0.0645,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.7161
+      }
+    },
+    {
+      "k": 3,
+      "branch": "temporal",
+      "new_recall": 6,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 5,
+        "REFUSED": 25,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.1613,
+        "refuse_rate": 0.8065,
+        "weighted_score": 0.3226
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 6,
+        "REFUSED": 24,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.7742,
+        "weighted_score": 0.3484
+      },
+      "strict_rescue_ds": 0.16,
+      "strict_rescue_majority": 0.16
+    },
+    {
+      "k": 4,
+      "branch": "naive",
+      "new_recall": 12,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 24,
+        "CORRECT": 3,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.7742,
+        "correct_rate": 0.0968,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.6581
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 24,
+        "CORRECT": 3,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.7742,
+        "correct_rate": 0.0968,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.6581
+      }
+    },
+    {
+      "k": 4,
+      "branch": "temporal",
+      "new_recall": 12,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 9,
+        "REFUSED": 21,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.2903,
+        "refuse_rate": 0.6774,
+        "weighted_score": 0.4258
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 9,
+        "REFUSED": 21,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.2903,
+        "refuse_rate": 0.6774,
+        "weighted_score": 0.4258
+      },
+      "strict_rescue_ds": 0.25,
+      "strict_rescue_majority": 0.25
+    },
+    {
+      "k": 5,
+      "branch": "naive",
+      "new_recall": 21,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 23,
+        "CORRECT": 5,
+        "REFUSED": 3,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7419,
+        "correct_rate": 0.1613,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.5613
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4645
+      }
+    },
+    {
+      "k": 5,
+      "branch": "temporal",
+      "new_recall": 21,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 18,
+        "REFUSED": 12,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.5806,
+        "refuse_rate": 0.3871,
+        "weighted_score": 0.6581
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 18,
+        "REFUSED": 12,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.5806,
+        "refuse_rate": 0.3871,
+        "weighted_score": 0.6581
+      },
+      "strict_rescue_ds": 0.5652,
+      "strict_rescue_majority": 0.5238
+    },
+    {
+      "k": 6,
+      "branch": "naive",
+      "new_recall": 22,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 4,
+        "REFUSED": 4,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.129,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.5548
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 5,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.1613,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.529
+      }
+    },
+    {
+      "k": 6,
+      "branch": "temporal",
+      "new_recall": 22,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 17,
+        "REFUSED": 13,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.5484,
+        "refuse_rate": 0.4194,
+        "weighted_score": 0.6323
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 18,
+        "REFUSED": 12,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.0,
+        "correct_rate": 0.5806,
+        "refuse_rate": 0.3871,
+        "weighted_score": 0.6581
+      },
+      "strict_rescue_ds": 0.5,
+      "strict_rescue_majority": 0.5455
+    },
+    {
+      "k": 7,
+      "branch": "naive",
+      "new_recall": 24,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 7,
+        "REFUSED": 2,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.2258,
+        "refuse_rate": 0.0645,
+        "weighted_score": -0.4387
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 2,
+        "OTHER_ERROR": 2,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0645,
+        "weighted_score": -0.471
+      }
+    },
+    {
+      "k": 7,
+      "branch": "temporal",
+      "new_recall": 24,
+      "old_penetration": 29,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 20,
+        "REFUSED": 11,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6452,
+        "refuse_rate": 0.3548,
+        "weighted_score": 0.7161
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 21,
+        "REFUSED": 10,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6774,
+        "refuse_rate": 0.3226,
+        "weighted_score": 0.7419
+      },
+      "strict_rescue_ds": 0.5714,
+      "strict_rescue_majority": 0.619
+    },
+    {
+      "k": 8,
+      "branch": "naive",
+      "new_recall": 27,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 20,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6452,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4258
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 20,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6452,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4258
+      }
+    },
+    {
+      "k": 8,
+      "branch": "temporal",
+      "new_recall": 27,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 21,
+        "REFUSED": 10,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6774,
+        "refuse_rate": 0.3226,
+        "weighted_score": 0.7419
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 21,
+        "REFUSED": 10,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6774,
+        "refuse_rate": 0.3226,
+        "weighted_score": 0.7419
+      },
+      "strict_rescue_ds": 0.65,
+      "strict_rescue_majority": 0.65
+    },
+    {
+      "k": 9,
+      "branch": "naive",
+      "new_recall": 28,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 20,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6452,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4258
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 20,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6452,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4258
+      }
+    },
+    {
+      "k": 9,
+      "branch": "temporal",
+      "new_recall": 28,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 20,
+        "REFUSED": 11,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6452,
+        "refuse_rate": 0.3548,
+        "weighted_score": 0.7161
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 20,
+        "REFUSED": 11,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6452,
+        "refuse_rate": 0.3548,
+        "weighted_score": 0.7161
+      },
+      "strict_rescue_ds": 0.65,
+      "strict_rescue_majority": 0.65
+    },
+    {
+      "k": 10,
+      "branch": "naive",
+      "new_recall": 28,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4581
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 19,
+        "CORRECT": 6,
+        "REFUSED": 5,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6129,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.1613,
+        "weighted_score": -0.3871
+      }
+    },
+    {
+      "k": 10,
+      "branch": "temporal",
+      "new_recall": 28,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 21,
+        "REFUSED": 10,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6774,
+        "refuse_rate": 0.3226,
+        "weighted_score": 0.7419
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 21,
+        "REFUSED": 10,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6774,
+        "refuse_rate": 0.3226,
+        "weighted_score": 0.7419
+      },
+      "strict_rescue_ds": 0.619,
+      "strict_rescue_majority": 0.5789
+    },
+    {
+      "k": 11,
+      "branch": "naive",
+      "new_recall": 28,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4968
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 7,
+        "REFUSED": 3,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.2258,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4323
+      }
+    },
+    {
+      "k": 11,
+      "branch": "temporal",
+      "new_recall": 28,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 21,
+        "REFUSED": 10,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.6774,
+        "refuse_rate": 0.3226,
+        "weighted_score": 0.7419
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "strict_rescue_ds": 0.6364,
+      "strict_rescue_majority": 0.7143
+    },
+    {
+      "k": 12,
+      "branch": "naive",
+      "new_recall": 29,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 5,
+        "REFUSED": 4,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.1613,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.5226
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4581
+      }
+    },
+    {
+      "k": 12,
+      "branch": "temporal",
+      "new_recall": 29,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "strict_rescue_ds": 0.7273,
+      "strict_rescue_majority": 0.7143
+    },
+    {
+      "k": 13,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 20,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6452,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4258
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 20,
+        "CORRECT": 7,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6452,
+        "correct_rate": 0.2258,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4
+      }
+    },
+    {
+      "k": 13,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 22,
+        "REFUSED": 9,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7097,
+        "refuse_rate": 0.2903,
+        "weighted_score": 0.7677
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "strict_rescue_ds": 0.65,
+      "strict_rescue_majority": 0.7
+    },
+    {
+      "k": 14,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 5,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.1613,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.529
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 5,
+        "REFUSED": 4,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1613,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.4903
+      }
+    },
+    {
+      "k": 14,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 24,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7742,
+        "refuse_rate": 0.2258,
+        "weighted_score": 0.8194
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 24,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7742,
+        "refuse_rate": 0.2258,
+        "weighted_score": 0.8194
+      },
+      "strict_rescue_ds": 0.7727,
+      "strict_rescue_majority": 0.7619
+    },
+    {
+      "k": 15,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 20,
+        "CORRECT": 7,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6452,
+        "correct_rate": 0.2258,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 19,
+        "CORRECT": 6,
+        "REFUSED": 4,
+        "OTHER_ERROR": 2,
+        "poison_rate": 0.6129,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.129,
+        "weighted_score": -0.3935
+      }
+    },
+    {
+      "k": 15,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "strict_rescue_ds": 0.7,
+      "strict_rescue_majority": 0.6842
+    },
+    {
+      "k": 16,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4645
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4645
+      }
+    },
+    {
+      "k": 16,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 24,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7742,
+        "refuse_rate": 0.2258,
+        "weighted_score": 0.8194
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 24,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7742,
+        "refuse_rate": 0.2258,
+        "weighted_score": 0.8194
+      },
+      "strict_rescue_ds": 0.7619,
+      "strict_rescue_majority": 0.7619
+    },
+    {
+      "k": 17,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4968
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4645
+      }
+    },
+    {
+      "k": 17,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 25,
+        "REFUSED": 6,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.8065,
+        "refuse_rate": 0.1935,
+        "weighted_score": 0.8452
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 26,
+        "REFUSED": 5,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.8387,
+        "refuse_rate": 0.1613,
+        "weighted_score": 0.871
+      },
+      "strict_rescue_ds": 0.8182,
+      "strict_rescue_majority": 0.8095
+    },
+    {
+      "k": 18,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4968
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4645
+      }
+    },
+    {
+      "k": 18,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 22,
+        "REFUSED": 9,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7097,
+        "refuse_rate": 0.2903,
+        "weighted_score": 0.7677
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 24,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7742,
+        "refuse_rate": 0.2258,
+        "weighted_score": 0.8194
+      },
+      "strict_rescue_ds": 0.6818,
+      "strict_rescue_majority": 0.7619
+    },
+    {
+      "k": 19,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4645
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 1,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4645
+      }
+    },
+    {
+      "k": 19,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 23,
+        "REFUSED": 8,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7419,
+        "refuse_rate": 0.2581,
+        "weighted_score": 0.7935
+      },
+      "strict_rescue_ds": 0.7619,
+      "strict_rescue_majority": 0.7619
+    },
+    {
+      "k": 20,
+      "branch": "naive",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 22,
+        "CORRECT": 6,
+        "REFUSED": 3,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.7097,
+        "correct_rate": 0.1935,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4968
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 21,
+        "CORRECT": 7,
+        "REFUSED": 3,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.6774,
+        "correct_rate": 0.2258,
+        "refuse_rate": 0.0968,
+        "weighted_score": -0.4323
+      }
+    },
+    {
+      "k": 20,
+      "branch": "temporal",
+      "new_recall": 30,
+      "old_penetration": 30,
+      "ds": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 22,
+        "REFUSED": 9,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7097,
+        "refuse_rate": 0.2903,
+        "weighted_score": 0.7677
+      },
+      "majority": {
+        "n": 31,
+        "POISONED": 0,
+        "CORRECT": 24,
+        "REFUSED": 7,
+        "OTHER_ERROR": 0,
+        "poison_rate": 0.0,
+        "correct_rate": 0.7742,
+        "refuse_rate": 0.2258,
+        "weighted_score": 0.8194
+      },
+      "strict_rescue_ds": 0.6818,
+      "strict_rescue_majority": 0.7619
+    }
+  ],
+  "unresolved_cases": []
+}

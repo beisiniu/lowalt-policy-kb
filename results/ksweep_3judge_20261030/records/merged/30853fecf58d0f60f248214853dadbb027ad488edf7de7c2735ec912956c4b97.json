@@ -1,0 +1,28 @@
+{
+  "case_key": "30853fecf58d0f60f248214853dadbb027ad488edf7de7c2735ec912956c4b97",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-028",
+  "answer": "每家企业每年租金补贴最高100万元。依据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十一条。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧细则，给出100万元，而现行标准为200万元。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答最高100万元，引用了已失效的旧细则。现行新政策规定每家企业每年最高补贴200万元，结论错误且源于旧条款。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

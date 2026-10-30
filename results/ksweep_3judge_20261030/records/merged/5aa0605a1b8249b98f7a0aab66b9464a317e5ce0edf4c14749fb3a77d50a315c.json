@@ -1,0 +1,28 @@
+{
+  "case_key": "5aa0605a1b8249b98f7a0aab66b9464a317e5ce0edf4c14749fb3a77d50a315c",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-011",
+  "answer": "根据现有政策资料无法确定。\n\n所给资料中，《民用无人驾驶航空器运行安全管理规则》规定的是运行许可、执照审批及有效期等事项，《珠海经济特区低空交通建设管理条例》第二十条规定的是运营合格证和操控员执照的取得要求，两份资料均未涉及“黄埔区”“大型载人无人驾驶航空器取得型号合格证后申请奖励”的任何规定。因此，能否申请奖励、奖励条件及金额等均无法依据现有资料判断。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称资料不足无法确定，但提供的new_clause_text明确显示取得TC即可奖励，无需交付。模型未利用现有证据得出正确结论，属于有依据却拒答或遗漏关键信息，符合REFUSED定义（虽非完全无据，但未给出可判错的错误结论，而是回避了核心问题）。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "case_key": "1a92c11fbc93e4a6b83866a12674776193cd9d5f5ea0545664065c5e55d29a18",
+  "k": 6,
+  "branch": "naive",
+  "item_id": "TQ3-017",
+  "condition": {
+    "suite": "ksweep",
+    "k": 6,
+    "branch": "naive"
+  },
+  "answer": "每年最高补贴100万元。依据：《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第四条、《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十一条。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧条款，给出100万元，而现行标准为200万元。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答100万元，引用了已失效的旧文件。新政策明确规定最高补贴200万元，核心数值错误且源于旧条款。"
+  },
+  "created_at": "2026-10-29T21:37:38+08:00"
+}

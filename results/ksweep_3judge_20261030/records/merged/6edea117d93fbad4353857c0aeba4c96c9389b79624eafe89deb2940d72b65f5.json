@@ -1,0 +1,28 @@
+{
+  "case_key": "6edea117d93fbad4353857c0aeba4c96c9389b79624eafe89deb2940d72b65f5",
+  "k": 15,
+  "branch": "temporal",
+  "item_id": "TQ3-022",
+  "answer": "根据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第九条，对提供低空飞行器载人飞行服务的示范项目，取得运营合格证及空域航线批复的，按照不超过实际运营费用的50%，给予每个项目每年最高不超过300万元。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "引用现行条款，核心结论300万元与标准答案一致",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答引用新政策，结论“每个项目每年最高不超过300万元”与标准答案及现行证据一致，未受旧条款干扰。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

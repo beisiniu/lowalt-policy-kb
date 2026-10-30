@@ -1,0 +1,27 @@
+{
+  "case_key": "736e3f677e5bb5799f8c9b7640fb883314cdf077bbc7d0528decd5da8293a940",
+  "k": 4,
+  "branch": "temporal",
+  "item_id": "TQ3-013",
+  "condition": {
+    "suite": "ksweep",
+    "k": 4,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。资料[1]《深圳市大鹏新区关于促进低空经济产业高质量发展的若干措施》第三条仅规定大鹏新区内无人机测试基地的运营费用补贴（每年实际运营费用补贴，每年度补贴总额不超过300万元），未涉及龙岗区，也未提及备案或免费/低收费公共服务的前置要求。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "glm",
+  "judge_model": "glm-5.3-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "回答称'现有政策资料无法确定'，仅引用大鹏新区文件并指出未涉及龙岗区，未给出明确可判错的结论，属拒答而非毒化。现行龙岗修订文件已不再将备案及免费/低收费公共服务设为补贴前置条件，正确答案为'不需要'。"
+  },
+  "created_at": "2026-10-29T21:44:13+08:00"
+}

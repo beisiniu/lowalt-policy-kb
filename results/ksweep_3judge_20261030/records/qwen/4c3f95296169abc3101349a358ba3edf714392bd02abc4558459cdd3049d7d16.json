@@ -1,0 +1,27 @@
+{
+  "case_key": "4c3f95296169abc3101349a358ba3edf714392bd02abc4558459cdd3049d7d16",
+  "k": 3,
+  "branch": "naive",
+  "item_id": "TQ3-030",
+  "condition": {
+    "suite": "ksweep",
+    "k": 3,
+    "branch": "naive"
+  },
+  "answer": "在黄埔区开展eVTOL载人飞行示范项目，补贴标准为：示范项目提供eVTOL无人驾驶飞行器飞行服务1000架次以上的，按照300元/架次给予补贴。依据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十二条第一项。\n\n同时需注意：每家企业每年度该项补贴金额上限为500万元，补助期最多3年（《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十三条）。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效细则按300元/架次补贴，而非现行按实际运营费用50%、年上限300万元的标准。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧细则，按架次定额补贴（300元/架次），而现行新规改为按运营费用50%且上限300万。核心结论与数值均错误。"
+  },
+  "created_at": "2026-10-29T21:36:12+08:00"
+}

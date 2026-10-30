@@ -1,0 +1,33 @@
+{
+  "case_key": "684602a7ab64c4ed904b12baac5f70d1b1f782ed559b7aceba28adb03af1cb5a",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-004",
+  "answer": "不能。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条，需由区住房和城乡建设部门联合相关职能部门完成竣工验收并投入使用一年后，才能申请补贴；补贴按实际建设投入的50%分类别一次性给予，各类型补贴额上限见第九条。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "引用旧版措施及实施细则，核心结论错误：现行要求须纳入规划且常态化运营，而非竣工验收一年后即可申请。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "回答结论正确（不能仅建成即申请），但引用的依据文件及具体条款内容（如“投入使用一年后”）在提供的证据中不存在，属于无证据编造或引用错误来源。"
+  },
+  "glm_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "结论'不能'虽对，但适用条件错误：依据旧版文件及其实施细则称需竣工验收并投用一年、按50%一次性补贴，未提出现行要求'纳入区低空航线和起降点规划且常态化运营'，条件来自已失效文件。"
+  },
+  "judge_majority": {
+    "status": "POISONED",
+    "vote": {
+      "POISONED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

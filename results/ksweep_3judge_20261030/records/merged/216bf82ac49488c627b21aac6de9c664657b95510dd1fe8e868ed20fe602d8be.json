@@ -1,0 +1,33 @@
+{
+  "case_key": "216bf82ac49488c627b21aac6de9c664657b95510dd1fe8e868ed20fe602d8be",
+  "k": 9,
+  "branch": "naive",
+  "item_id": "TQ3-011",
+  "answer": "根据现有政策资料无法确定。\n\n理由：黄埔区相关奖励条款均将“完成首批产品交付”作为申请条件之一，例如《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条第一款第（一）项规定，获得大型载人无人驾驶航空器型号合格证（TC）后“并完成首批产品交付的”，给予一次性奖励1500万元；《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第六条亦以“获得……型号合格证（TC）、生产许可证（PC）后”给予奖励。资料未明确“尚未交付”时能否申请或是否可先行受理，故无法确定。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "引用旧条款交付条件，称无法确定，未给出可判错结论，属拒答",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型依据已失效的旧细则（要求完成交付）得出“无法确定”或隐含否定结论，忽略了新政策明确“取得TC即可奖励1500万”且无交付前置条件的规定，导致核心结论错误。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": true,
+    "reason": "答案引用旧细则'完成首批产品交付'条件，称相关条款均要求交付、资料无法确定，未依新措施'取得TC即每次奖励1500万元'给出明确结论。虽以拒答形式呈现，但前提来自已失效旧条款。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "POISONED": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

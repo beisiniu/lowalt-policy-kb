@@ -1,0 +1,27 @@
+{
+  "case_key": "5cb5afba957ca7abb4aea193f8914309a7c42ecd3bee34167be230c469815368",
+  "k": 2,
+  "branch": "naive",
+  "item_id": "TQ3-025",
+  "condition": {
+    "suite": "ksweep",
+    "k": 2,
+    "branch": "naive"
+  },
+  "answer": "按产品产值的2%给予补助，单个产品最高100万元。依据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第八条，还须满足：政策有效期内该产品在区内的产值达到2000万元以上；同一产品仅能申请一次补助；政策有效期内补助不超过10个产品。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用旧条款按产值2%最高100万元补助，而现行政策为20万元一次性奖励，核心结论错误。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答核心结论为“按产品产值2%补助”，这与现行新政策规定的“给予20万元一次性奖励”相悖。该错误直接引用了已失效的旧条款内容，属于典型的旧条款毒化。"
+  },
+  "created_at": "2026-10-29T21:35:30+08:00"
+}

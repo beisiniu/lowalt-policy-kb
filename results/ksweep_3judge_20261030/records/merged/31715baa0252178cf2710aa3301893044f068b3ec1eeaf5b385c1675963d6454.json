@@ -1,0 +1,33 @@
+{
+  "case_key": "31715baa0252178cf2710aa3301893044f068b3ec1eeaf5b385c1675963d6454",
+  "k": 7,
+  "branch": "temporal",
+  "item_id": "TQ3-011",
+  "answer": "根据现有政策资料无法确定。\n\n理由：资料[3]《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第六条规定的奖励对象是“在我区开展非载人类无人驾驶员航空器操作员培训的企业机构”和“在我区开展载人类电动垂直起降飞行器（eVTOL）驾驶员培训的企业机构”，奖励条件是“政策有效期内取得中国民航局颁发执照的人数达到一定规模”，即奖励针对的是培训企业机构及其学员取证人数，而非航空器型号取证或交付环节。所问“大型载人无人驾驶航空器刚拿到型号合格证、尚未交付”能否申请奖励，资料中没有任何对应条款，无法据此判断。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型声称资料不足，但新证据第七条明确TC奖励1500万且未要求交付，属有证据却误判为无依据。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型称资料中无对应条款、无法确定，未给出可判定的明确结论。现行新措施第七条已明确取得TC即按每次1500万元奖励、无交付要求，模型漏引该条而拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

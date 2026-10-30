@@ -1,0 +1,27 @@
+{
+  "case_key": "63100a3dd1498213730766c8c998e863685eff1034af386d65fe12d4a492b3db",
+  "k": 12,
+  "branch": "naive",
+  "item_id": "TQ3-013",
+  "condition": {
+    "suite": "ksweep",
+    "k": 12,
+    "branch": "naive"
+  },
+  "answer": "是。依据《龙岗区关于促进低空经济产业发展的若干措施》第（十二）条，申请运营费用补贴的无人机飞行试验场运营企业须“经备案”且“提供免费或低收费公共服务”，补贴按年实际运营成本50%计算，年度不超过300万元。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型依据已失效旧条款，错误认定须备案并提供免费或低收费公共服务，与现行规定不符。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型依据已失效的旧条款（要求备案及免费/低收费）得出“是”的错误结论，而现行新政策已取消这些前置条件，仅规定对测试基地项目给予补贴。"
+  },
+  "created_at": "2026-10-29T21:39:16+08:00"
+}

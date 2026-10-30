@@ -1,0 +1,28 @@
+{
+  "case_key": "ba30331f837cb34b0ad51a201b35e2d4e0a2f611ef7a9587a1f350d6e6eedb97",
+  "k": 14,
+  "branch": "temporal",
+  "item_id": "TQ3-032",
+  "answer": "根据现有政策资料无法确定。\n\n所给资料仅包含《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条关于适航航空器奖励（型号合格证TC、生产许可证PC奖励）的内容，未涉及“新引进低空经济重大项目落户奖励”的条款或金额。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型回答称资料不足无法确定，未给出错误结论。虽然标准答案和证据显示最高1000万，但模型因认为缺失相关条款而拒答，符合REFUSED定义（资料不足、没有给出明确可判错的结论）。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

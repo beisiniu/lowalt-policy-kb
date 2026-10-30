@@ -1,0 +1,27 @@
+{
+  "case_key": "1d61d09b7f41a05932e1e0f6ebd39a44136c0c050da90a9cab4c40192043b513",
+  "k": 13,
+  "branch": "naive",
+  "item_id": "TQ3-011",
+  "condition": {
+    "suite": "ksweep",
+    "k": 13,
+    "branch": "naive"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n理由：资料[2]《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条第一款第（一）项规定，获得大型载人无人驾驶航空器型号合格证（TC）后，须“并完成首批产品交付的”，才给予一次性奖励1500万元。该企业刚取得TC、尚未交付，不满足“完成首批产品交付”的条件，故按该条不能申请该项奖励。但资料中未说明是否存在其他可适用条款，因此对“能否申请奖励”这一结论无法确定。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型依据已失效旧条款要求完成交付，否定刚取得TC即可申请奖励，核心结论错误。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "glm",
+  "judge_model": "glm-5.3-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": true,
+    "reason": "模型仅按旧细则'须完成首批产品交付'的条件分析，并称资料未说明其他可适用条款，最终结论为'无法确定能否申请'，未给出明确可判错的结论，属资料不足型拒答而非毒化。"
+  },
+  "created_at": "2026-10-29T22:05:56+08:00"
+}

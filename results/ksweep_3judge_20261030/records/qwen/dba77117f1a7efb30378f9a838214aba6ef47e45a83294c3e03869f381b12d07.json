@@ -1,0 +1,27 @@
+{
+  "case_key": "dba77117f1a7efb30378f9a838214aba6ef47e45a83294c3e03869f381b12d07",
+  "k": 18,
+  "branch": "temporal",
+  "item_id": "TQ3-010",
+  "condition": {
+    "suite": "ksweep",
+    "k": 18,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定“交付满50架”这一条件。《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第七条只规定：对将总部或研发、生产、制造引入本区的低空经济企业，在获得中国民用航空局颁发的低空新型航空器型号合格证（TC）、生产许可证（PC）后，最高分别给予1500万元奖励；其中大型载人新型航空器每次奖励1500万元。该条未提及交付数量要求。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "回答称无法确定，未给出可判错的结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型依据新政策指出无交付数量要求，结论与标准答案一致。虽未直接断言“不需要”，但通过引用新条款证明旧条件不存在，核心逻辑正确，未受旧毒化影响。"
+  },
+  "created_at": "2026-10-29T21:40:57+08:00"
+}

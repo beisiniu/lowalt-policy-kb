@@ -1,0 +1,27 @@
+{
+  "case_key": "b5dfcaab52baf97aed4da7a21814a4e2abb658ee9722658bd51e744d90e4e738",
+  "k": 3,
+  "branch": "naive",
+  "item_id": "TQ3-027",
+  "condition": {
+    "suite": "ksweep",
+    "k": 3,
+    "branch": "naive"
+  },
+  "answer": "每平方米每月最高补贴50元。依据：《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第四条；《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十一条。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用旧细则的50元/平/月标准，而现行条款上限为20元，核心数值错误。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型回答50元/平/月，引用了已失效的旧细则第十一条。现行新政策规定补贴上限为不超过20元每月每平方米，核心数值错误且明确源于旧条款。"
+  },
+  "created_at": "2026-10-29T21:36:27+08:00"
+}

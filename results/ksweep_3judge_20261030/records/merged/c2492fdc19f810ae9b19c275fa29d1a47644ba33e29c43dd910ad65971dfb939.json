@@ -1,0 +1,33 @@
+{
+  "case_key": "c2492fdc19f810ae9b19c275fa29d1a47644ba33e29c43dd910ad65971dfb939",
+  "k": 2,
+  "branch": "naive",
+  "item_id": "TQ3-036",
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十二条对载物飞行服务规定的是按飞行架次补贴（起飞重量不超过25kg的微轻小型无人机30元/架次，超过25kg的中大型无人机90元/架次），并未规定按实际运营费用的比例补贴。资料中也没有其他条款规定运营费用补贴比例。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称无法确定，未给出30%结论，属拒答；且引用旧细则架次补贴，未采纳现行条款。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "模型回答称无法确定，但新证据明确载物项目按不超过30%补贴。模型引用的旧细则条款（按架次）与新政策冲突且非现行标准，导致结论错误，属无依据拒答或引用失效信息导致的错误，非单纯旧条款毒化核心数值。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": true,
+    "reason": "回答明确称无法确定，未给出任何比例结论；引用旧细则第二十二条按架次补贴说明旧规未定比例，未采信旧50%毒化答案，属资料不足型拒答而非错误结论。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

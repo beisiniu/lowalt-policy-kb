@@ -1,0 +1,33 @@
+{
+  "case_key": "6deba23ada383b97eaf7d6e5547bfc77b20adb2fb91d9568706377882fb6dc6b",
+  "k": 13,
+  "branch": "temporal",
+  "item_id": "TQ3-029",
+  "answer": "根据现有政策资料无法确定。《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第三条只规定了补贴对象须“纳入区低空航线和起降点规划且进入常态化运营状态”，并按实际建设投入分类别给予补贴，未提及“第三方技术团队审查通过”这一前置条件。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "回答称无法确定，未给出可判错的结论，属拒答",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型正确指出新政策未规定第三方审查前置要求，并准确引用了纳入规划和常态化运营的条件，结论与标准答案一致。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型正确指出新政策仅要求纳入区低空航线和起降点规划并常态化运营，未提及第三方审查前置条件，但最终以'现有资料无法确定'收尾，未给出是否需要的明确结论，属于拒答而非可判错的结论。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "CORRECT": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

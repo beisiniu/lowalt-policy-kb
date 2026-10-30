@@ -1,0 +1,27 @@
+{
+  "case_key": "d6128a91bd1fe237df8ab6a555c2122315517e7a9dcd6f226dbbbe8dbee14b8e",
+  "k": 9,
+  "branch": "temporal",
+  "item_id": "TQ3-001",
+  "condition": {
+    "suite": "ksweep",
+    "k": 9,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n理由：原规定短途客运航线财政补贴的条款（《张家界市加快通用航空产业发展推进方案》第（五）项）已被《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》明确废止，因此该补贴条款不再有效；资料中未提供替代性的补贴政策，故无法确定现在是否还能按航线申请财政补贴。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称无法确定，未给出可判错的结论，属拒答",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型虽正确识别旧条款已废止，但结论为“无法确定”，未直接回答标准答案中的“不能”。根据规则，有依据地否定某项要求不是拒答，但此处模型因缺乏替代政策而选择拒绝给出明确的可执行性判断，符合REFUSED定义。"
+  },
+  "created_at": "2026-10-29T21:34:04+08:00"
+}

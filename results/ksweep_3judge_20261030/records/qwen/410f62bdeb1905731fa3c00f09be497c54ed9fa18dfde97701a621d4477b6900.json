@@ -1,0 +1,27 @@
+{
+  "case_key": "410f62bdeb1905731fa3c00f09be497c54ed9fa18dfde97701a621d4477b6900",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-030",
+  "condition": {
+    "suite": "ksweep",
+    "k": 5,
+    "branch": "temporal"
+  },
+  "answer": "检索到的 5 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料均失效、无现行条款，未给出可判错结论，属拒答",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称所有检索到的政策依据均已失效，导致无法给出结论。但提供的new_clause_text明确包含现行有效的补贴标准（按实际运营费用50%，最高300万），与ground_truth一致。模型错误地判定证据失效而拒答，属于资料判断失误导致的拒答。"
+  },
+  "created_at": "2026-10-29T21:37:17+08:00"
+}

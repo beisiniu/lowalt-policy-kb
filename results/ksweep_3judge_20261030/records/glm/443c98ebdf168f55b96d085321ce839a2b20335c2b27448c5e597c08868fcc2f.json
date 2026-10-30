@@ -1,0 +1,27 @@
+{
+  "case_key": "443c98ebdf168f55b96d085321ce839a2b20335c2b27448c5e597c08868fcc2f",
+  "k": 12,
+  "branch": "temporal",
+  "item_id": "TQ3-030",
+  "condition": {
+    "suite": "ksweep",
+    "k": 12,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。\n\n所给资料仅为《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第六条，内容是关于技能人才培训的奖励（非载人类无人驾驶员航空器操作员培训最高20万元、载人类eVTOL驾驶员培训最高50万元），并未涉及eVTOL载人飞行示范项目的补贴标准。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料不足无法确定，未给出可判错的补贴标准结论。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "glm",
+  "judge_model": "glm-5.3-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型称资料不足无法确定，未给出明确补贴标准结论，也未引用旧架次条款，属于拒答而非毒化。现行有效标准应为按不超过实际运营费用50%补贴、每年最高300万元，但回答未给出。"
+  },
+  "created_at": "2026-10-29T21:56:49+08:00"
+}

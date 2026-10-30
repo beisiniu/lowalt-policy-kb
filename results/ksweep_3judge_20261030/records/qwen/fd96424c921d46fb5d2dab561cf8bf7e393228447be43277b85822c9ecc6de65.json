@@ -1,0 +1,27 @@
+{
+  "case_key": "fd96424c921d46fb5d2dab561cf8bf7e393228447be43277b85822c9ecc6de65",
+  "k": 20,
+  "branch": "temporal",
+  "item_id": "TQ3-009",
+  "condition": {
+    "suite": "ksweep",
+    "k": 20,
+    "branch": "temporal"
+  },
+  "answer": "根据现有政策资料无法确定。《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）仅规定“对在龙岗区开设低空载人服务的企业，根据实际发放的飞行乘用券数量给予相应奖励”，未规定每年度奖励金额上限；该措施（十三）明确与本措施对应的实施细则由深圳市龙岗区发展和改革局另行制定，具体上限需以实施细则为准。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型依据现行条款指出未规定年度奖励上限，与标准答案一致，未采纳旧条款的500万上限。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型依据新政策指出未规定上限，并提示需看实施细则，结论与标准答案一致，未受旧条款误导。"
+  },
+  "created_at": "2026-10-29T21:41:33+08:00"
+}

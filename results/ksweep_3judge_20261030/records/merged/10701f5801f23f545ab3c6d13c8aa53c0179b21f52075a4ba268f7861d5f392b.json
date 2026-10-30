@@ -1,0 +1,28 @@
+{
+  "case_key": "10701f5801f23f545ab3c6d13c8aa53c0179b21f52075a4ba268f7861d5f392b",
+  "k": 1,
+  "branch": "temporal",
+  "item_id": "TQ3-024",
+  "answer": "检索到的 1 条政策依据在当前时点（2026-10-27）均已失效，不能作为现行依据；知识库中没有可用的现行条款，无法给出确定结论。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称资料失效、无法确定，未给出可判错结论，属拒答。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型声称证据失效且无现行条款，拒绝回答。但提供的new_clause_text明确包含“每个项目每年最高不超过200万元”，与标准答案一致，属于有依据可答却拒答。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

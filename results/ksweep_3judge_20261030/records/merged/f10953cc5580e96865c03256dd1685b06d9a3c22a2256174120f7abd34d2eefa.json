@@ -1,0 +1,28 @@
+{
+  "case_key": "f10953cc5580e96865c03256dd1685b06d9a3c22a2256174120f7abd34d2eefa",
+  "k": 7,
+  "branch": "temporal",
+  "item_id": "TQ3-006",
+  "answer": "根据现有政策资料无法确定。\n\n《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》已废止“对通用航空企业提供上述业务年度纳税10万元及以上的，前三年分别按市级经济贡献的50%、40%、30%给予奖励”这一条款，自2024年9月24日公布之日起施行。因此，该奖励条款本身已被废止，不能据此主张按市级经济贡献比例领取前三年奖励。至于废止后是否有其他替代性奖励政策，资料中未提供，无法确定。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型正确引用废止通告，结论为不能领取该奖励，与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型正确指出该奖励条款已被废止，核心结论与标准答案一致。虽提及无法确定是否有替代政策，但未给出错误肯定结论，符合现行证据。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

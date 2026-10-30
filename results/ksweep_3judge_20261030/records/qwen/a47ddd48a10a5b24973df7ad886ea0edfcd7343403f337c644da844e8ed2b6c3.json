@@ -1,0 +1,27 @@
+{
+  "case_key": "a47ddd48a10a5b24973df7ad886ea0edfcd7343403f337c644da844e8ed2b6c3",
+  "k": 7,
+  "branch": "naive",
+  "item_id": "TQ3-031",
+  "condition": {
+    "suite": "ksweep",
+    "k": 7,
+    "branch": "naive"
+  },
+  "answer": "根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第二十二条，起飞重量不超过25kg的微轻小型无人机按30元/架次给予补贴；《广州开发区（黄埔区）促进低空经济高质量发展的若干措施》第九条则规定年载物飞行服务10000架次以上的示范项目按最高90元/架次给予补贴。因此，小型载物无人机每架次最高补贴为90元/架次（适用年载物飞行服务10000架次以上的示范项目）。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用旧细则30元/架次并误读现行条款为90元，核心数值错误，正确答案为20元/架次。",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型引用已失效的旧细则（30元/架次）及错误解读新政策，得出90元/架次的结论。现行有效的新规定明确小型载物无人机最高补贴为20元/架次，核心数值严重错误且源于旧条款毒化。"
+  },
+  "created_at": "2026-10-29T21:37:51+08:00"
+}

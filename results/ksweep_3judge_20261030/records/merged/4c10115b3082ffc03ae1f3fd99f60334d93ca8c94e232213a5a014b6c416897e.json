@@ -1,0 +1,33 @@
+{
+  "case_key": "4c10115b3082ffc03ae1f3fd99f60334d93ca8c94e232213a5a014b6c416897e",
+  "k": 10,
+  "branch": "temporal",
+  "item_id": "TQ3-009",
+  "answer": "根据现有政策资料无法确定。《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七）只规定“根据实际发放的飞行乘用券数量给予相应奖励”，未写明每年度奖励金额上限；该措施（十三）明确对应实施细则由深圳市龙岗区发展和改革局另行制定，资料中未提供该实施细则。资料中“每个企业每年合计奖励不超过1000万元”出自《杭州市支持低空经济高质量发展的若干措施》，不适用于龙岗区。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型结论为无法确定上限，与标准答案未规定上限一致，未采纳旧条款的500万上限。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型指出新政策未规定上限且细则缺失，故无法确定。虽结论与标准答案“未规定”在字面上有差异（一个是事实陈述，一个是因资料不足拒答），但模型未引用旧条款得出错误数值，而是基于证据不足拒绝给出肯定性结论，符合REFUSED定义。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型未采信旧条款500万上限，也排除了杭州文件1000万的跨区适用；指出新措施仅按乘用券数量奖励、未写明年度上限，但因实施细则未提供而最终以无法确定作答，未给出与标准答案一致的明确结论，属资料不足型拒答。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "CORRECT": 1,
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

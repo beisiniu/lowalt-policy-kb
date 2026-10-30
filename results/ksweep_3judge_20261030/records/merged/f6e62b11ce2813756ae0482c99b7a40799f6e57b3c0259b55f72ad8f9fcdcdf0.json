@@ -1,0 +1,33 @@
+{
+  "case_key": "f6e62b11ce2813756ae0482c99b7a40799f6e57b3c0259b55f72ad8f9fcdcdf0",
+  "k": 1,
+  "branch": "naive",
+  "item_id": "TQ3-039",
+  "answer": "根据现有政策资料无法确定。\n\n《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第八条只规定：企业建设无人机小型起降点等低空经济相关基础设施，按实际建设投入的50%分类别给予一次性补贴，须由区住房和城乡建设部门联合相关职能部门完成竣工验收并投入使用一年后申请补贴，补贴额上限见第九条。该条未提及“须先经区住建局组织第三方技术团队审查通过”这一前置条件。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "引用旧细则称无法确定，未给出标准答案的现行申请条件，属拒答",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "OTHER_ERROR",
+    "uses_old_clause": false,
+    "reason": "回答称“无法确定”且引用了不存在的第八条内容，未依据新政策明确否定旧审查要求，属于无证据编造或检索失败导致的错误结论。"
+  },
+  "glm_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型答“无法确定”，未给出明确结论。现行政策规定补贴条件为纳入区规划并常态化运营，并无第三方审查前置要求，模型既未确认也未否定该要求，仅引用旧细则第八条的沉默推出无法判断，属拒答而非毒化。"
+  },
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2,
+      "OTHER_ERROR": 1
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

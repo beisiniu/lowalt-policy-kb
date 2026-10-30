@@ -1,0 +1,27 @@
+{
+  "case_key": "7d42761ae334bb1bc9d6757bbc93ede6dca67b9297c950264fc1483e24a91422",
+  "k": 5,
+  "branch": "temporal",
+  "item_id": "TQ3-008",
+  "condition": {
+    "suite": "ksweep",
+    "k": 5,
+    "branch": "temporal"
+  },
+  "answer": "根据《深圳市龙岗区关于支持低空经济产业高质量发展的若干措施（修订）》（七），对在龙岗区开设低空载人服务的企业，按实际发放的飞行乘用券数量给予相应奖励。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，核心结论与标准答案一致",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "模型回答引用了最新修订文件，结论为按实际发放的飞行乘用券数量给予奖励，与标准答案及新证据完全一致，未受旧条款干扰。"
+  },
+  "created_at": "2026-10-29T21:36:39+08:00"
+}

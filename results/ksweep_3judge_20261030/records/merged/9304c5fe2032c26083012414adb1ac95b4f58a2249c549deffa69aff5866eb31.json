@@ -1,0 +1,28 @@
+{
+  "case_key": "9304c5fe2032c26083012414adb1ac95b4f58a2249c549deffa69aff5866eb31",
+  "k": 8,
+  "branch": "naive",
+  "item_id": "TQ3-001",
+  "answer": "根据现有政策资料无法确定。\n\n原因：按航线给予财政补贴的规定出自《张家界市加快通用航空产业发展推进方案》第（五）项，但《张家界市人民政府关于废止张政办发〔2023〕4号文件部分内容的通告》（张政通〔2024〕3号）已明确废止该项内容（包括“对开辟省内外短途客运航线……按航线给予财政补贴”）。资料中未显示该补贴条款有替代性规定，因此无法确认目前是否仍可按航线申请财政补贴。",
+  "ds_judge": {
+    "status": "REFUSED",
+    "reason": "模型称无法确定，未给出可判错的结论，属拒答",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "REFUSED",
+    "uses_old_clause": false,
+    "reason": "模型虽识别出旧条款已废止，但错误地以“无替代规定”为由声称无法确定结论。标准答案明确为“不能”，模型未给出肯定性否定结论，属于拒答/不确定状态。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "REFUSED",
+    "vote": {
+      "REFUSED": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}

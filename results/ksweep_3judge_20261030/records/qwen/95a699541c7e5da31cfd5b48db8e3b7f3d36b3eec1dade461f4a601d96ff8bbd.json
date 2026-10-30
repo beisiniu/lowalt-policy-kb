@@ -1,0 +1,27 @@
+{
+  "case_key": "95a699541c7e5da31cfd5b48db8e3b7f3d36b3eec1dade461f4a601d96ff8bbd",
+  "k": 12,
+  "branch": "naive",
+  "item_id": "TQ3-011",
+  "condition": {
+    "suite": "ksweep",
+    "k": 12,
+    "branch": "naive"
+  },
+  "answer": "可以申请，但需满足交付条件后才给予奖励。根据《广州开发区（黄埔区）促进低空经济高质量发展的若干措施实施细则》第十七条第（一）项，在获得中国民用航空局颁发的大型载人无人驾驶航空器型号合格证（TC）后，**并完成首批产品交付的**，给予一次性奖励1500万元。刚拿到TC、尚未交付的，暂不符合“完成首批产品交付”这一条件。",
+  "ds_judge": {
+    "status": "POISONED",
+    "reason": "模型采用已失效旧细则，错误要求完成首批交付，与现行条款取得TC即可奖励相悖",
+    "uses_old_clause": true,
+    "agreement": 1.0
+  },
+  "judge_name": "qwen",
+  "judge_model": "qwen3.8-flash",
+  "judge_system_version": "controlled-v1",
+  "judge": {
+    "status": "POISONED",
+    "uses_old_clause": true,
+    "reason": "模型依据已失效的旧细则（要求完成交付）得出“暂不符合条件”的错误结论，而新政策规定取得型号合格证即可奖励，无需等待交付。"
+  },
+  "created_at": "2026-10-29T21:39:19+08:00"
+}

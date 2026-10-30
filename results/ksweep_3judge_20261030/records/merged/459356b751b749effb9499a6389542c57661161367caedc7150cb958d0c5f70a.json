@@ -1,0 +1,28 @@
+{
+  "case_key": "459356b751b749effb9499a6389542c57661161367caedc7150cb958d0c5f70a",
+  "k": 18,
+  "branch": "temporal",
+  "item_id": "TQ3-017",
+  "answer": "每家企业每年最高补贴200万元。依据《广州开发区（黄埔区）促进低空经济与航空航天高质量发展的若干措施》第四条。",
+  "ds_judge": {
+    "status": "CORRECT",
+    "reason": "模型引用现行条款，核心数值200万元与标准答案一致。",
+    "uses_old_clause": false,
+    "agreement": 1.0
+  },
+  "qwen_judge": {
+    "status": "CORRECT",
+    "uses_old_clause": false,
+    "reason": "回答正确引用新政策，结论为200万元，与标准答案及现行证据一致。"
+  },
+  "glm_judge": null,
+  "judge_majority": {
+    "status": "CORRECT",
+    "vote": {
+      "CORRECT": 2
+    },
+    "no_majority": false,
+    "auto_status": null,
+    "human_reviewed": false
+  }
+}
